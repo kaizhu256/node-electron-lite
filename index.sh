@@ -2,9 +2,9 @@
 shNpmPostinstall() {
     # this function will run npm postinstall
     local DIR_TMP FILE_BIN FILE_LINK FILE_TMP FILE_URL || return $?
-    shDownloadAndInstall() {
-        # this function will download and install electron and slimerjs
-        if [ ! -f $FILE_BIN ]
+    shDownload() {
+        # this function will download electron
+        if [ ! -s "$FILE_BIN" ]
         then
             # check if unzip is installed
             if ! (unzip > /dev/null 2>&1)
@@ -14,15 +14,17 @@ shNpmPostinstall() {
                 return 1
             fi
             # download electron
-            if [ ! -f $FILE_TMP.downloaded ]
+            if [ ! -f "$FILE_TMP.downloaded" ]
             then
                 printf "downloading $FILE_URL to $FILE_TMP ...\n" || return $?
-                mkdir -p $DIR_TMP && curl -#L -o $FILE_TMP $FILE_URL || return $?
+                mkdir -p $DIR_TMP || return $?
+                curl -#L -o $FILE_TMP $FILE_URL || return $?
                 touch $FILE_TMP.downloaded || return $?
             fi
-            # unzip electron
-            mkdir -p external && unzip -d external -q $FILE_TMP || return $?
         fi
+        # unzip electron
+        mkdir -p external || return $?
+        unzip -d external -oq $FILE_TMP || return $?
         # install electron
         if [ "$FILE_LINK" ]
         then
@@ -32,21 +34,24 @@ shNpmPostinstall() {
     DIR_TMP=/tmp/$USER
     case $(uname) in
     Darwin)
-        # download and install electron
+        # download electron
         FILE_BIN=external/Electron.app/Contents/MacOS/Electron || return $?
         FILE_LINK=external/electron || return $?
         FILE_TMP=$DIR_TMP/electron-v0.35.0-darwin-x64.zip || return $?
         FILE_URL=https://github.com/atom/electron/releases/download\
 /v0.35.0/electron-v0.35.0-darwin-x64.zip || return $?
-        shDownloadAndInstall || return $?
+        shDownload || return $?
+        # link electron
+        rm -f $FILE_LINK || return $?
+        ln -s Electron.app/Contents/MacOS/Electron $FILE_LINK || return $?
         ;;
     Linux)
-        # download and install electron
+        # download electron
         FILE_BIN=external/electron || return $?
         FILE_TMP=$DIR_TMP/electron-v0.35.0-linux-x64.zip || return $?
         FILE_URL=https://github.com/atom/electron/releases/download\
 /v0.35.0/electron-v0.35.0-linux-x64.zip || return $?
-        shDownloadAndInstall || return $?
+        shDownload || return $?
         ;;
     esac
 }

@@ -55,7 +55,7 @@ this electron script will screen-capture http://electron.atom.io/
 instruction
     1. save this js script as example.js
     2. run the shell command:
-        $ npm install electron-prebuilt && \
+        $ npm install kaizhu256/node-electron-prebuilt-lite#alpha && \
             printf '{"main":"example.js","name":"example","version":"0.0.0"}' > \
                 package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
@@ -165,19 +165,20 @@ rm -fr external && \
 npm run-script postinstall && \
 ./external/electron --version || exit $?;"
     },
-    "version": "2015.10.2"
+    "version": "2015.10.3"
 }
 ```
 
 
 
 # todo
+- npm publish 2015.10.3
 - none
 
 
 
 # change since 9fe8c225
-- npm publish 2015.10.2
+- fix linux build
 - none
 
 
@@ -200,8 +201,8 @@ shBuild() {
     # init env
     . node_modules/.bin/utility2 && shInit || return $?
 
-    # run npm-test on published package
-    shRun shNpmTestPublished || return $?
+    #!! # run npm-test on published package
+    #!! shRun shNpmTestPublished || return $?
 
     # test example js script
     MODE_BUILD=testExampleJs MODE_LINENO=0 shRunScreenCapture \
