@@ -172,12 +172,12 @@ npm run-script postinstall && \
 
 
 # todo
-- npm publish 2015.10.3
 - none
 
 
 
 # change since 9fe8c225
+- npm publish 2015.10.3
 - fix linux build
 - none
 
@@ -201,8 +201,8 @@ shBuild() {
     # init env
     . node_modules/.bin/utility2 && shInit || return $?
 
-    #!! # run npm-test on published package
-    #!! shRun shNpmTestPublished || return $?
+    # run npm-test on published package
+    shRun shNpmTestPublished || return $?
 
     # test example js script
     MODE_BUILD=testExampleJs MODE_LINENO=0 shRunScreenCapture \
