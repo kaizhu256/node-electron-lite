@@ -37,8 +37,8 @@ lightweight version of electron-prebuilt with zero npm-dependencies
 - darwin or linux os
 - unzip installed on os
 
-#### this package will install into node_modules the external programs
-- electron @ 0.35.0
+#### this package will
+- dynamically download and install electron @ 0.35.1 from https://github.com/atom/electron/releases
 
 
 
@@ -55,7 +55,7 @@ this electron script will screen-capture http://electron.atom.io/
 instruction
     1. save this js script as example.js
     2. run the shell command:
-        $ npm install kaizhu256/node-electron-prebuilt-lite#alpha && \
+        $ npm install electron-prebuilt-lite && \
             printf '{"main":"example.js","name":"example","version":"0.0.0"}' > \
                 package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
@@ -100,6 +100,7 @@ instruction
             // save screen-capture
             require('fs')
                 .writeFileSync('screen-capture.testExampleJs.browser.png', data.toPng());
+            // exit
             process.exit(0);
             break;
         }
@@ -122,8 +123,6 @@ instruction
 
 
 # package-listing
-- electron binary dynamically downloaded from https://github.com/atom/electron/releases
-
 [![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-prebuilt-lite)
 
 
@@ -138,7 +137,7 @@ instruction
     },
     "description": "lightweight version of electron-prebuilt with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.3"
+        "utility2": "2015.11.4"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -165,7 +164,7 @@ rm -fr external && \
 npm run-script postinstall && \
 ./external/electron --version || exit $?;"
     },
-    "version": "2015.10.3"
+    "version": "2015.10.4"
 }
 ```
 
@@ -176,9 +175,11 @@ npm run-script postinstall && \
 
 
 
-# change since 9fe8c225
-- npm publish 2015.10.3
-- fix linux build
+# change since cbb6812b
+- npm publish 2015.10.4
+- update to electron @ 0.35.1
+- update devDependencty to utility2@2015.11.4
+- fix quickstart screen-capture example
 - none
 
 

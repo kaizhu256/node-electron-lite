@@ -37,9 +37,9 @@ shNpmPostinstall() {
         # download electron
         FILE_BIN=external/Electron.app/Contents/MacOS/Electron || return $?
         FILE_LINK=external/electron || return $?
-        FILE_TMP=$DIR_TMP/electron-v0.35.0-darwin-x64.zip || return $?
+        FILE_TMP=$DIR_TMP/electron-v0.35.1-darwin-x64.zip || return $?
         FILE_URL=https://github.com/atom/electron/releases/download\
-/v0.35.0/electron-v0.35.0-darwin-x64.zip || return $?
+/v0.35.1/electron-v0.35.1-darwin-x64.zip || return $?
         shDownload || return $?
         # link electron
         rm -f $FILE_LINK || return $?
@@ -48,9 +48,9 @@ shNpmPostinstall() {
     Linux)
         # download electron
         FILE_BIN=external/electron || return $?
-        FILE_TMP=$DIR_TMP/electron-v0.35.0-linux-x64.zip || return $?
+        FILE_TMP=$DIR_TMP/electron-v0.35.1-linux-x64.zip || return $?
         FILE_URL=https://github.com/atom/electron/releases/download\
-/v0.35.0/electron-v0.35.0-linux-x64.zip || return $?
+/v0.35.1/electron-v0.35.1-linux-x64.zip || return $?
         shDownload || return $?
         ;;
     esac
