@@ -9,7 +9,7 @@ shNpmPostinstall() {
             # check if unzip is installed
             if ! (unzip > /dev/null 2>&1)
             then
-                printf "ERROR - electron-prebuilt-lite requires 'unzip' to install\n" 1>&2 || \
+                printf "ERROR - electron-lite requires 'unzip' to install\n" 1>&2 || \
                     return $?
                 return 1
             fi

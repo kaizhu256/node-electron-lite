@@ -1,21 +1,21 @@
-electron-prebuilt-lite
+electron-lite
 ==============
-lightweight version of electron-prebuilt with zero npm-dependencies
+minimal npm installer for electron with zero npm-dependencies
 
-[![NPM](https://img.shields.io/npm/v/electron-prebuilt-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-prebuilt-lite) [![NPM](https://img.shields.io/npm/dm/electron-prebuilt-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-prebuilt-lite)
+[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-lite)
 
 
 
 # screen-capture
-[![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.testExampleJs.browser.png)
+[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
 
 
 
-# build-status [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-prebuilt-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-prebuilt-lite)
+# build-status [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
-| git-branch : | [master](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/alpha)|
+| git-branch : | [master](https://github.com/kaizhu256/node-electron-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-lite/tree/alpha)|
 |--:|:--|:--|:--|
-| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-electron-prebuilt-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-prebuilt-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-prebuilt-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-prebuilt-lite/tree/gh-pages/build..alpha..travis-ci.org)|
+| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..alpha..travis-ci.org)|
 
 #### master branch
 - stable branch
@@ -55,7 +55,7 @@ this electron script will screen-capture http://electron.atom.io/
 instruction
     1. save this js script as example.js
     2. run the shell command:
-        $ npm install electron-prebuilt-lite && \
+        $ npm install electron-lite && \
             printf '{"main":"example.js","name":"example","version":"0.0.0"}' > \
                 package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
@@ -110,10 +110,10 @@ instruction
 ```
 
 #### output from shell
-[![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.testExampleJs.svg)](https://travis-ci.org/kaizhu256/node-electron-prebuilt-lite)
+[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
 #### output from electron
-[![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.electron.png)
+[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.electron.png)
 
 
 
@@ -123,7 +123,7 @@ instruction
 
 
 # package-listing
-[![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-prebuilt-lite)
+[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-lite)
 
 
 
@@ -132,12 +132,12 @@ instruction
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron-prebuilt-lite" : "index.js",
+        "electron-lite" : "index.js",
         "electron" : "external/electron"
     },
-    "description": "lightweight version of electron-prebuilt with zero npm-dependencies",
+    "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.4"
+        "utility2": "2015.11.6"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -149,11 +149,11 @@ instruction
         "web", "web-scrape", "web-scraper"
     ],
     "license": "MIT",
-    "name": "electron-prebuilt-lite",
+    "name": "electron-lite",
     "os": ["darwin", "linux"],
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/kaizhu256/node-electron-prebuilt-lite.git"
+        "url" : "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
         "build-ci": "node_modules/.bin/utility2 shRun shReadmeBuild",
@@ -164,7 +164,7 @@ rm -fr external && \
 npm run-script postinstall && \
 ./external/electron --version || exit $?;"
     },
-    "version": "2015.10.4"
+    "version": "2015.10.5"
 }
 ```
 
@@ -175,17 +175,16 @@ npm run-script postinstall && \
 
 
 
-# change since cbb6812b
-- npm publish 2015.10.4
-- update to electron @ 0.35.1
-- update devDependencty to utility2@2015.11.4
-- fix quickstart screen-capture example
+# change since 13339ae0
+- npm publish 2015.10.5
+- change name from electron-prebuilt-lite to electron-lite
+- update devDependency with utility2 @ 2015.11.6
 - none
 
 
 
 # changelog of last 50 commits
-[![screen-capture](https://kaizhu256.github.io/node-electron-prebuilt-lite/build/screen-capture.gitLog.svg)](https://github.com/kaizhu256/node-electron-prebuilt-lite/commits)
+[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLog.svg)](https://github.com/kaizhu256/node-electron-lite/commits)
 
 
 

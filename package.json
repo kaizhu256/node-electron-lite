@@ -1,12 +1,12 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron-prebuilt-lite" : "index.js",
+        "electron-lite" : "index.js",
         "electron" : "external/electron"
     },
-    "description": "lightweight version of electron-prebuilt with zero npm-dependencies",
+    "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.4"
+        "utility2": "2015.11.6"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -18,11 +18,11 @@
         "web", "web-scrape", "web-scraper"
     ],
     "license": "MIT",
-    "name": "electron-prebuilt-lite",
+    "name": "electron-lite",
     "os": ["darwin", "linux"],
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/kaizhu256/node-electron-prebuilt-lite.git"
+        "url" : "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
         "build-ci": "node_modules/.bin/utility2 shRun shReadmeBuild",
@@ -30,5 +30,5 @@
         "preinstall": "mkdir -p external && touch external/electron",
         "test": "node_modules/.bin/utility2 shRun shReadmeExportPackageJson && rm -fr external && npm run-script postinstall && ./external/electron --version || exit $?;"
     },
-    "version": "2015.10.4"
+    "version": "2015.10.5"
 }
