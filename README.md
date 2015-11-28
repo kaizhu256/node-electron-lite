@@ -12,6 +12,7 @@ minimal npm installer for electron with zero npm-dependencies
 
 
 # build-status [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+[![build commit status](https://kaizhu256.github.io/node-electron-lite/build/build.badge.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
 | git-branch : | [master](https://github.com/kaizhu256/node-electron-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-lite/tree/alpha)|
 |--:|:--|:--|:--|
@@ -38,7 +39,7 @@ minimal npm installer for electron with zero npm-dependencies
 - unzip installed on os
 
 #### this package will
-- dynamically download and install electron @ 0.35.1 from https://github.com/atom/electron/releases
+- dynamically download and install electron @ 0.35.2 from https://github.com/atom/electron/releases
 
 
 
@@ -132,12 +133,11 @@ instruction
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron-lite" : "index.js",
         "electron" : "external/electron"
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.6"
+        "utility2": "2015.11.10"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -162,23 +162,25 @@ instruction
         "test": "node_modules/.bin/utility2 shRun shReadmeExportPackageJson && \
 rm -fr external && \
 npm run-script postinstall && \
-./external/electron --version || exit $?;"
+./external/electron --version && \
+node_modules/.bin/utility2 test node test.js"
     },
-    "version": "2015.10.5"
+    "version": "2015.11.1"
 }
 ```
 
 
 
 # todo
+- add test-report and badge
 - none
 
 
 
-# change since 13339ae0
-- npm publish 2015.10.5
-- change name from electron-prebuilt-lite to electron-lite
-- update devDependency with utility2 @ 2015.11.6
+# change since f991bc6c
+- npm publish 2015.11.1
+- update to electron @ 0.35.2
+- add file test.js
 - none
 
 
@@ -208,7 +210,7 @@ shBuild() {
     MODE_BUILD=testExampleJs MODE_LINENO=0 shRunScreenCapture \
         shReadmeTestJs example.js || return $?
     # save screen-capture
-    cp /tmp/app/screen-capture.*.png $npm_config_dir_build || return $?
+    cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
 
     # run npm-test
     MODE_BUILD=npmTest shRunScreenCapture npm test || return $?
@@ -223,5 +225,5 @@ MODE_BUILD=gitLsTree shRunScreenCapture shGitLsTree || exit $?
 MODE_BUILD=gitLog shRunScreenCapture git log -50 --pretty="%ai\u000a%B" || exit $?
 # upload build-artifacts to github, and if number of commits > 16, then squash older commits
 COMMIT_LIMIT=16 shBuildGithubUpload || exit $?
-exit $EXIT_CODE
+exit "$EXIT_CODE"
 ```
