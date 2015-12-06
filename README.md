@@ -39,7 +39,7 @@ minimal npm installer for electron with zero npm-dependencies
 - unzip installed on os
 
 #### this package will
-- dynamically download and install electron @ 0.35.2 from https://github.com/atom/electron/releases
+- dynamically download and install electron @ 0.35.4 from https://github.com/atom/electron/releases
 
 
 
@@ -137,7 +137,7 @@ instruction
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.10"
+        "utility2": "2015.11.13"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -165,22 +165,21 @@ npm run-script postinstall && \
 ./external/electron --version && \
 node_modules/.bin/utility2 test node test.js"
     },
-    "version": "2015.11.1"
+    "version": "2015.11.2"
 }
 ```
 
 
 
 # todo
-- add test-report and badge
+- merge test.js and index.sh into README.md
 - none
 
 
 
-# change since f991bc6c
-- npm publish 2015.11.1
-- update to electron @ 0.35.2
-- add file test.js
+# change since a8259b27
+- npm publish 2015.11.2
+- upgrade to electron @ 0.35.4
 - none
 
 
