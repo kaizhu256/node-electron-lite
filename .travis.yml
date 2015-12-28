@@ -18,7 +18,7 @@ language:
 node_js:
     - "node"
 script:
-    - npm run-script build-ci --unsafe-perm=true
+    - npm run-script build-ci
 # http://docs.travis-ci.com/user/workers/container-based-infrastructure
 sudo:
     false

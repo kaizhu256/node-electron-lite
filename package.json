@@ -5,7 +5,7 @@
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.13"
+        "utility2": "2015.12.4"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -27,7 +27,12 @@
         "build-ci": "node_modules/.bin/utility2 shRun shReadmeBuild",
         "postinstall": "./index.sh shNpmPostinstall",
         "preinstall": "mkdir -p external && touch external/electron",
-        "test": "node_modules/.bin/utility2 shRun shReadmeExportPackageJson && rm -fr external && npm run-script postinstall && ./external/electron --version && node_modules/.bin/utility2 test node test.js"
+        "test": "export MODE_LINENO=0 && node_modules/.bin/utility2 shRun shReadmeExportFile package.json package.json && rm -fr external && npm run-script postinstall && ./external/electron --version && node_modules/.bin/utility2 test node test.js"
+
+
+
+
+
     },
-    "version": "2015.11.2"
+    "version": "2015.12.3"
 }

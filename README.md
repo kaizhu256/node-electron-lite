@@ -36,7 +36,6 @@ minimal npm installer for electron with zero npm-dependencies
 # documentation
 #### this package requires
 - darwin or linux os
-- unzip installed on os
 
 #### this package will
 - dynamically download and install electron @ 0.35.4 from https://github.com/atom/electron/releases
@@ -58,7 +57,7 @@ instruction
     2. run the shell command:
         $ npm install electron-lite && \
             printf '{"main":"example.js","name":"example","version":"0.0.0"}' > \
-                package.json && \
+            package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
     3. view screencapture ./screen-capture.testExampleJs.browser.png
 */
@@ -137,7 +136,7 @@ instruction
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.11.13"
+        "utility2": "2015.12.4"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -159,13 +158,14 @@ instruction
         "build-ci": "node_modules/.bin/utility2 shRun shReadmeBuild",
         "postinstall": "./index.sh shNpmPostinstall",
         "preinstall": "mkdir -p external && touch external/electron",
-        "test": "node_modules/.bin/utility2 shRun shReadmeExportPackageJson && \
+        "test": "export MODE_LINENO=0 && \
+node_modules/.bin/utility2 shRun shReadmeExportFile package.json package.json && \
 rm -fr external && \
 npm run-script postinstall && \
 ./external/electron --version && \
 node_modules/.bin/utility2 test node test.js"
     },
-    "version": "2015.11.2"
+    "version": "2015.12.3"
 }
 ```
 
@@ -177,9 +177,9 @@ node_modules/.bin/utility2 test node test.js"
 
 
 
-# change since a8259b27
-- npm publish 2015.11.2
-- upgrade to electron @ 0.35.4
+# change since 37bb58a7
+- npm publish 2015.12.3
+- remove linux unzip dependency by including busybox.unzip @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 - none
 
 
@@ -206,23 +206,30 @@ shBuild() {
     shRun shNpmTestPublished || return $?
 
     # test example js script
-    MODE_BUILD=testExampleJs MODE_LINENO=0 shRunScreenCapture \
-        shReadmeTestJs example.js || return $?
+    (export MODE_BUILD=testExampleJs &&
+        export MODE_LINENO=0 &&
+        shRunScreenCapture shReadmeTestJs example.js) || return $?
     # save screen-capture
     cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
 
     # run npm-test
-    MODE_BUILD=npmTest shRunScreenCapture npm test || return $?
+    (export MODE_BUILD=npmTest &&
+        shRunScreenCapture npm test) || return $?
 }
 shBuild
 
 # save exit-code
 EXIT_CODE=$?
 # create package-listing
-MODE_BUILD=gitLsTree shRunScreenCapture shGitLsTree || exit $?
+(export MODE_BUILD=gitLsTree &&
+    shRunScreenCapture shGitLsTree) || exit $?
 # create recent changelog of last 50 commits
-MODE_BUILD=gitLog shRunScreenCapture git log -50 --pretty="%ai\u000a%B" || exit $?
+(export MODE_BUILD=gitLog &&
+    shRunScreenCapture git log -50 --pretty="%ai\u000a%B") || exit $?
 # upload build-artifacts to github, and if number of commits > 16, then squash older commits
-COMMIT_LIMIT=16 shBuildGithubUpload || exit $?
+# export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build" || exit $?
+(export COMMIT_LIMIT=16 &&
+    export MODE_BUILD=githubUpload &&
+    shBuildGithubUpload) || exit $?
 exit "$EXIT_CODE"
 ```

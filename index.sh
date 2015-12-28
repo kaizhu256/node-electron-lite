@@ -6,13 +6,6 @@ shNpmPostinstall() {
         # this function will download electron
         if [ ! -s "$FILE_BIN" ]
         then
-            # check if unzip is installed
-            if ! (unzip > /dev/null 2>&1)
-            then
-                printf "ERROR - electron-lite requires 'unzip' to install\n" 1>&2 || \
-                    return $?
-                return 1
-            fi
             # download electron
             if [ ! -f "$FILE_TMP.downloaded" ]
             then
@@ -46,6 +39,8 @@ shNpmPostinstall() {
         ln -s Electron.app/Contents/MacOS/Electron $FILE_LINK || return $?
         ;;
     Linux)
+        # install unzip
+        export PATH="$(pwd):$PATH" || return $?
         # download electron
         FILE_BIN=external/electron || return $?
         FILE_TMP=$DIR_TMP/electron-v0.35.4-linux-x64.zip || return $?
@@ -57,4 +52,4 @@ shNpmPostinstall() {
 }
 
 # run command
-"$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+"$@"
