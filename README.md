@@ -2,7 +2,20 @@ electron-lite
 ==============
 minimal npm installer for electron with zero npm-dependencies
 
-[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.org/package/electron-lite)
+[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite)
+
+
+
+# todo
+- merge test.js and index.sh into README.md
+- none
+
+
+
+# change since 7e8a4b00
+- npm publish 2015.12.4
+- upgrade to electron @ v0.35.6
+- none
 
 
 
@@ -34,11 +47,14 @@ minimal npm installer for electron with zero npm-dependencies
 
 
 # documentation
+#### this package will
+- dynamically download and install electron @ 0.35.6 from https://github.com/atom/electron/releases
+
 #### this package requires
 - darwin or linux os
 
-#### this package will
-- dynamically download and install electron @ 0.35.4 from https://github.com/atom/electron/releases
+#### this package includes
+- external linux unzip binary @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 
 
 
@@ -132,11 +148,11 @@ instruction
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron" : "external/electron"
+        "electron": "external/electron"
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2015.12.4"
+        "utility2": "2016.1.5"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -144,43 +160,33 @@ instruction
         "capture",
         "electron", "electron-prebuilt",
         "headless", "headless-browser",
+        "light", "lightweight", "lite",
+        "minimal",
         "scrape", "scraper", "screen", "screen-capture", "screencapture", "screenshot",
         "web", "web-scrape", "web-scraper"
     ],
     "license": "MIT",
     "name": "electron-lite",
     "os": ["darwin", "linux"],
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/kaizhu256/node-electron-lite.git"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
-        "build-ci": "node_modules/.bin/utility2 shRun shReadmeBuild",
+        "build-ci": "utility2 shRun shReadmeBuild",
         "postinstall": "./index.sh shNpmPostinstall",
         "preinstall": "mkdir -p external && touch external/electron",
         "test": "export MODE_LINENO=0 && \
-node_modules/.bin/utility2 shRun shReadmeExportFile package.json package.json && \
+export NODE_ENV=test && \
+utility2 shRun shReadmeExportFile package.json package.json && \
 rm -fr external && \
-npm run-script postinstall && \
+npm run postinstall && \
 ./external/electron --version && \
-node_modules/.bin/utility2 test node test.js"
+utility2 test node test.js"
     },
-    "version": "2015.12.3"
+    "version": "2015.12.4"
 }
 ```
-
-
-
-# todo
-- merge test.js and index.sh into README.md
-- none
-
-
-
-# change since 37bb58a7
-- npm publish 2015.12.3
-- remove linux unzip dependency by including busybox.unzip @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
-- none
 
 
 
