@@ -1,8 +1,9 @@
+*.00
+*.01
 *.log
 *~
 .*
 example.js
 external
-Procfile
 node_modules
 tmp

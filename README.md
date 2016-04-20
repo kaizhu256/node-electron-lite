@@ -12,9 +12,9 @@ minimal npm installer for electron with zero npm-dependencies
 
 
 
-# change since 7e8a4b00
-- npm publish 2015.12.4
-- upgrade to electron @ v0.35.6
+# change since 9776e100
+- npm publish 2016.3.1
+- upgrade to electron @ v0.36.12
 - none
 
 
@@ -48,7 +48,7 @@ minimal npm installer for electron with zero npm-dependencies
 
 # documentation
 #### this package will
-- dynamically download and install electron @ 0.35.6 from https://github.com/atom/electron/releases
+- dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases
 
 #### this package requires
 - darwin or linux os
@@ -184,7 +184,7 @@ npm run postinstall && \
 ./external/electron --version && \
 utility2 test node test.js"
     },
-    "version": "2015.12.4"
+    "version": "2016.3.1"
 }
 ```
 
