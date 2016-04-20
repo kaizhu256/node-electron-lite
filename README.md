@@ -12,9 +12,10 @@ minimal npm installer for electron with zero npm-dependencies
 
 
 
-# change since 9776e100
-- npm publish 2016.3.1
-- upgrade to electron @ v0.36.12
+# change since 2b8b2ee8
+- npm publish 2016.3.2
+- add file cli.js
+- fix npm install
 - none
 
 
@@ -148,7 +149,7 @@ instruction
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron": "external/electron"
+        "electron": "cli.js"
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
@@ -175,7 +176,6 @@ instruction
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
         "postinstall": "./index.sh shNpmPostinstall",
-        "preinstall": "mkdir -p external && touch external/electron",
         "test": "export MODE_LINENO=0 && \
 export NODE_ENV=test && \
 utility2 shRun shReadmeExportFile package.json package.json && \
@@ -184,7 +184,7 @@ npm run postinstall && \
 ./external/electron --version && \
 utility2 test node test.js"
     },
-    "version": "2016.3.1"
+    "version": "2016.3.2"
 }
 ```
 

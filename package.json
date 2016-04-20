@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
-        "electron": "external/electron"
+        "electron": "cli.js"
     },
     "description": "minimal npm installer for electron with zero npm-dependencies",
     "devDependencies": {
@@ -28,7 +28,6 @@
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
         "postinstall": "./index.sh shNpmPostinstall",
-        "preinstall": "mkdir -p external && touch external/electron",
         "test": "export MODE_LINENO=0 && export NODE_ENV=test && utility2 shRun shReadmeExportFile package.json package.json && rm -fr external && npm run postinstall && ./external/electron --version && utility2 test node test.js"
 
 
@@ -37,5 +36,5 @@
 
 
     },
-    "version": "2016.3.1"
+    "version": "2016.3.2"
 }
