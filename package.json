@@ -1,11 +1,13 @@
 {
+    "package.json": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
         "electron": "cli.js"
     },
-    "description": "minimal npm installer for electron with zero npm-dependencies",
+    "description": "this package will dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases with zero npm-dependencies",
+
     "devDependencies": {
-        "utility2": "2016.1.5"
+        "utility2": "2016.3.1"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -27,14 +29,16 @@
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
+        "build-doc": ":",
         "postinstall": "./index.sh shNpmPostinstall",
-        "test": "export MODE_LINENO=0 && export NODE_ENV=test && utility2 shRun shReadmeExportFile package.json package.json && rm -fr external && npm run postinstall && ./external/electron --version && utility2 test node test.js"
+        "test": ". node_modules/.bin/utility2 && shReadmeExportScripts && cp $(shFileTrimLeft tmp/README.package.json) package.json && rm -fr external && npm run postinstall && ./cli.js --version && utility2 test node test.js",
 
 
 
 
 
 
+        "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.3.2"
+    "version": "2016.3.3"
 }

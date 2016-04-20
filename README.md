@@ -1,27 +1,30 @@
 electron-lite
 ==============
-minimal npm installer for electron with zero npm-dependencies
+this package will dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases with zero npm-dependencies
 
 [![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite)
 
 
 
-# todo
-- merge test.js and index.sh into README.md
+# documentation
+#### todo
 - none
 
-
-
-# change since 2b8b2ee8
-- npm publish 2016.3.2
-- add file cli.js
-- fix npm install
+#### change since 46701e7b
+- npm publish 2016.3.3
+- fix race-condition for parallel npm install
 - none
+
+#### this package requires
+- darwin or linux os
+
+#### this package includes
+- external linux unzip binary @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 
 
 
 # screen-capture
-[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
 
 
 
@@ -47,22 +50,11 @@ minimal npm installer for electron with zero npm-dependencies
 
 
 
-# documentation
-#### this package will
-- dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases
-
-#### this package requires
-- darwin or linux os
-
-#### this package includes
-- external linux unzip binary @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
-
-
-
 # quickstart screen-capture example
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+
 #### to run this example, follow the instruction in the script below
 - example.js
-
 ```javascript
 /*
 example.js
@@ -126,11 +118,11 @@ instruction
 }());
 ```
 
+#### output from electron
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+
 #### output from shell
 [![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
-
-#### output from electron
-[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.electron.png)
 
 
 
@@ -147,13 +139,15 @@ instruction
 # package.json
 ```json
 {
+    "package.json": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
     "bin": {
         "electron": "cli.js"
     },
-    "description": "minimal npm installer for electron with zero npm-dependencies",
+    "description": "this package will dynamically download and install electron @ 0.36.12 \
+from https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2016.1.5"
+        "utility2": "2016.3.1"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -175,16 +169,18 @@ instruction
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
+        "build-doc": ":",
         "postinstall": "./index.sh shNpmPostinstall",
-        "test": "export MODE_LINENO=0 && \
-export NODE_ENV=test && \
-utility2 shRun shReadmeExportFile package.json package.json && \
+        "test": ". node_modules/.bin/utility2 && \
+shReadmeExportScripts && \
+cp $(shFileTrimLeft tmp/README.package.json) package.json && \
 rm -fr external && \
 npm run postinstall && \
-./external/electron --version && \
-utility2 test node test.js"
+./cli.js --version && \
+utility2 test node test.js",
+        "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.3.2"
+    "version": "2016.3.3"
 }
 ```
 
@@ -197,45 +193,36 @@ utility2 test node test.js"
 
 # internal build-script
 - build.sh
-
 ```shell
 # build.sh
 
 # this shell script will run the build for this package
 
-shBuild() {
-    # this function will run the main build
-    # init env
-    . node_modules/.bin/utility2 && shInit || return $?
-
-    # run npm-test on published package
-    shRun shNpmTestPublished || return $?
-
+shBuildCiTestPre() {(set -e
+# this function will run the pre-test build
     # test example js script
     (export MODE_BUILD=testExampleJs &&
-        export MODE_LINENO=0 &&
-        shRunScreenCapture shReadmeTestJs example.js) || return $?
+        shRunScreenCapture shReadmeTestJs example.js)
     # save screen-capture
     cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
+)}
 
-    # run npm-test
-    (export MODE_BUILD=npmTest &&
-        shRunScreenCapture npm test) || return $?
+shBuild() {
+# this function will run the main build
+    set -e
+    # init env
+    . node_modules/.bin/utility2 && shInit
+    # cleanup github-gh-pages dir
+    # export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build"
+    # init github-gh-pages commit-limit
+    export COMMIT_LIMIT=16
+    # if branch is alpha, beta, or master, then run default build
+    if [ "$CI_BRANCH" = alpha ] ||
+        [ "$CI_BRANCH" = beta ] ||
+        [ "$CI_BRANCH" = master ]
+    then
+        shBuildCiDefault
+    fi
 }
 shBuild
-
-# save exit-code
-EXIT_CODE=$?
-# create package-listing
-(export MODE_BUILD=gitLsTree &&
-    shRunScreenCapture shGitLsTree) || exit $?
-# create recent changelog of last 50 commits
-(export MODE_BUILD=gitLog &&
-    shRunScreenCapture git log -50 --pretty="%ai\u000a%B") || exit $?
-# upload build-artifacts to github, and if number of commits > 16, then squash older commits
-# export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build" || exit $?
-(export COMMIT_LIMIT=16 &&
-    export MODE_BUILD=githubUpload &&
-    shBuildGithubUpload) || exit $?
-exit "$EXIT_CODE"
 ```
