@@ -10,9 +10,9 @@ this package will dynamically download and install electron @ 1.0.2 from https:/
 #### todo
 - none
 
-#### change since 220fbe1c
-- npm publish 2016.4.2
-- upgrade to electron @ 1.0.2
+#### change since 1a6a2d39
+- npm publish 2016.4.3
+- fix missing README.md in published package
 - none
 
 #### this package requires
@@ -180,7 +180,7 @@ npm run postinstall && \
 utility2 test node test.js",
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.4.2"
+    "version": "2016.4.3"
 }
 ```
 
