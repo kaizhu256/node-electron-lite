@@ -4,10 +4,10 @@
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases with zero npm-dependencies",
+    "description": "this package will dynamically download and install electron @ 1.0.2 from https://github.com/atom/electron/releases with zero npm-dependencies",
 
     "devDependencies": {
-        "utility2": "2016.3.1"
+        "utility2": "2016.3.6"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -40,5 +40,5 @@
 
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.3.3"
+    "version": "2016.4.2"
 }

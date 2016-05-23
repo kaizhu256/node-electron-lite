@@ -4,18 +4,18 @@ shNpmPostinstall() {(set -e
 # this function will run npm postinstall
     case "$(uname)" in
     Darwin)
-        FILE_BASE="electron-v0.36.12-darwin-x64.zip"
+        FILE_BASE="electron-v1.0.2-darwin-x64.zip"
         FILE_BIN=external/Electron.app/Contents/MacOS/Electron
         FILE_URL=https://github.com/atom/electron/releases/download\
-/v0.36.12/electron-v0.36.12-darwin-x64.zip
+/v1.0.2/electron-v1.0.2-darwin-x64.zip
         ;;
     Linux)
         # init unzip
         export PATH="$(pwd):$PATH"
-        FILE_BASE="electron-v0.36.12-linux-x64.zip"
+        FILE_BASE="electron-v1.0.2-linux-x64.zip"
         FILE_BIN=external/electron
         FILE_URL=https://github.com/atom/electron/releases/download\
-/v0.36.12/electron-v0.36.12-linux-x64.zip
+/v1.0.2/electron-v1.0.2-linux-x64.zip
         ;;
     esac
     if [ ! -s "$FILE_BIN" ]
@@ -33,6 +33,7 @@ shNpmPostinstall() {(set -e
                 curl -#L -o "$FILE_TMP" "$FILE_URL"
             fi
             chmod 755 "$FILE_TMP"
+            # handle race-condition
             mv "$FILE_TMP" "/tmp/$FILE_BASE" 2>/dev/null || true
         fi
         # unzip electron-zipfile

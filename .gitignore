@@ -3,6 +3,7 @@
 *.log
 *~
 .*
+core
 example.js
 external
 node_modules

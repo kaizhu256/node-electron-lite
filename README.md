@@ -1,8 +1,8 @@
 electron-lite
 ==============
-this package will dynamically download and install electron @ 0.36.12 from https://github.com/atom/electron/releases with zero npm-dependencies
+this package will dynamically download and install electron @ 1.0.2 from https://github.com/atom/electron/releases with zero npm-dependencies
 
-[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite)
+[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
 
 
@@ -10,9 +10,9 @@ this package will dynamically download and install electron @ 0.36.12 from https
 #### todo
 - none
 
-#### change since 46701e7b
-- npm publish 2016.3.3
-- fix race-condition for parallel npm install
+#### change since 220fbe1c
+- npm publish 2016.4.2
+- upgrade to electron @ 1.0.2
 - none
 
 #### this package requires
@@ -88,13 +88,13 @@ instruction
         switch (modeNext) {
         case 1:
             // wait for electron to init
-            require('app').once('ready', onNext);
+            require('electron').app.once('ready', onNext);
             break;
         case 2:
             // init options
             options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
             // init browserWindow;
-            options.BrowserWindow = require('browser-window');
+            options.BrowserWindow = require('electron').BrowserWindow;
             options.browserWindow = new options.BrowserWindow(options);
             // goto next step when webpage is loaded
             options.browserWindow.webContents.once('did-stop-loading', onNext);
@@ -144,10 +144,10 @@ instruction
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will dynamically download and install electron @ 0.36.12 \
+    "description": "this package will dynamically download and install electron @ 1.0.2 \
 from https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2016.3.1"
+        "utility2": "2016.3.6"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -180,7 +180,7 @@ npm run postinstall && \
 utility2 test node test.js",
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.3.3"
+    "version": "2016.4.2"
 }
 ```
 
@@ -207,9 +207,8 @@ shBuildCiTestPre() {(set -e
     cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
 )}
 
-shBuild() {
+shBuild() {(set -e
 # this function will run the main build
-    set -e
     # init env
     . node_modules/.bin/utility2 && shInit
     # cleanup github-gh-pages dir
@@ -223,6 +222,6 @@ shBuild() {
     then
         shBuildCiDefault
     fi
-}
+)}
 shBuild
 ```
