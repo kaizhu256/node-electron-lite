@@ -1,6 +1,6 @@
 electron-lite
 ==============
-this package will dynamically download and install electron @ 1.0.2 from https://github.com/atom/electron/releases with zero npm-dependencies
+this package will dynamically download and install electron @ 1.1.3 from https://github.com/atom/electron/releases with zero npm-dependencies
 
 [![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -10,9 +10,9 @@ this package will dynamically download and install electron @ 1.0.2 from https:/
 #### todo
 - none
 
-#### change since 1a6a2d39
-- npm publish 2016.4.3
-- fix missing README.md in published package
+#### change since adf8e5df
+- npm publish 2016.5.1
+- upgrade to electron @ 1.1.3
 - none
 
 #### this package requires
@@ -144,10 +144,10 @@ instruction
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will dynamically download and install electron @ 1.0.2 \
+    "description": "this package will dynamically download and install electron @ 1.1.3 \
 from https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2016.3.6"
+        "utility2": "2016.4.2"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -180,7 +180,7 @@ npm run postinstall && \
 utility2 test node test.js",
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.4.3"
+    "version": "2016.5.1"
 }
 ```
 
@@ -212,7 +212,7 @@ shBuild() {(set -e
     # init env
     . node_modules/.bin/utility2 && shInit
     # cleanup github-gh-pages dir
-    # export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build"
+    export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build"
     # init github-gh-pages commit-limit
     export COMMIT_LIMIT=16
     # if branch is alpha, beta, or master, then run default build
