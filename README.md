@@ -1,8 +1,12 @@
 electron-lite
 ==============
-this package will dynamically download and install electron @ 1.1.3 from https://github.com/atom/electron/releases with zero npm-dependencies
+this package will dynamically download and install electron v1.2.8 @ https://github.com/atom/electron/releases with zero npm-dependencies
 
-[![NPM](https://img.shields.io/npm/v/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![NPM](https://img.shields.io/npm/dm/electron-lite.svg?style=flat-square)](https://www.npmjs.com/package/electron-lite) [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+
+[![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
+
+[![package-listing](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-lite)
 
 
 
@@ -10,9 +14,9 @@ this package will dynamically download and install electron @ 1.1.3 from https:/
 #### todo
 - none
 
-#### change since adf8e5df
-- npm publish 2016.5.1
-- upgrade to electron @ 1.1.3
+#### change since e94ae1fc
+- npm publish 2016.7.1
+- upgrade to electron v1.2.8
 - none
 
 #### this package requires
@@ -62,10 +66,10 @@ example.js
 this electron script will screen-capture http://electron.atom.io/
 
 instruction
-    1. save this js script as example.js
+    1. save this script as example.js
     2. run the shell command:
         $ npm install electron-lite && \
-            printf '{"main":"example.js","name":"example","version":"0.0.0"}' > \
+            printf '{"main":"example.js","name":"undefined","version":"0.0.1"}' > \
             package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
     3. view screencapture ./screen-capture.testExampleJs.browser.png
@@ -126,16 +130,6 @@ instruction
 
 
 
-# npm-dependencies
-- none
-
-
-
-# package-listing
-[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-lite)
-
-
-
 # package.json
 ```json
 {
@@ -144,10 +138,9 @@ instruction
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will dynamically download and install electron @ 1.1.3 \
-from https://github.com/atom/electron/releases with zero npm-dependencies",
+    "description": "{{packageJson.description}}",
     "devDependencies": {
-        "utility2": "2016.4.2"
+        "utility2": "kaizhu256/node-utility2#alpha"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -170,17 +163,16 @@ from https://github.com/atom/electron/releases with zero npm-dependencies",
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
         "build-doc": ":",
+        "example.js": "utility2 shRunScreenCapture shReadmeTestJs example.js",
         "postinstall": "./index.sh shNpmPostinstall",
-        "test": ". node_modules/.bin/utility2 && \
-shReadmeExportScripts && \
-cp $(shFileTrimLeft tmp/README.package.json) package.json && \
+        "test": "\
 rm -fr external && \
 npm run postinstall && \
 ./cli.js --version && \
 utility2 test node test.js",
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.5.1"
+    "version": "2016.7.1"
 }
 ```
 
@@ -202,7 +194,7 @@ shBuildCiTestPre() {(set -e
 # this function will run the pre-test build
     # test example js script
     (export MODE_BUILD=testExampleJs &&
-        shRunScreenCapture shReadmeTestJs example.js)
+        npm run example.js) || return $?
     # save screen-capture
     cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
 )}
@@ -212,7 +204,7 @@ shBuild() {(set -e
     # init env
     . node_modules/.bin/utility2 && shInit
     # cleanup github-gh-pages dir
-    export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build"
+    # export BUILD_GITHUB_UPLOAD_PRE_SH="rm -fr build"
     # init github-gh-pages commit-limit
     export COMMIT_LIMIT=16
     # if branch is alpha, beta, or master, then run default build

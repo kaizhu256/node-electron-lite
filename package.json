@@ -4,10 +4,9 @@
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will dynamically download and install electron @ 1.1.3 from https://github.com/atom/electron/releases with zero npm-dependencies",
-
+    "description": "this package will dynamically download and install electron v1.2.8 @ https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
-        "utility2": "2016.4.2"
+        "utility2": "kaizhu256/node-utility2#alpha"
     },
     "keywords": [
         "atom", "atom-shell",
@@ -30,15 +29,14 @@
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
         "build-doc": ":",
+        "example.js": "utility2 shRunScreenCapture shReadmeTestJs example.js",
         "postinstall": "./index.sh shNpmPostinstall",
-        "test": ". node_modules/.bin/utility2 && shReadmeExportScripts && cp $(shFileTrimLeft tmp/README.package.json) package.json && rm -fr external && npm run postinstall && ./cli.js --version && utility2 test node test.js",
-
-
+        "test": "rm -fr external && npm run postinstall && ./cli.js --version && utility2 test node test.js",
 
 
 
 
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.5.1"
+    "version": "2016.7.1"
 }
