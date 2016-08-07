@@ -1,6 +1,6 @@
 electron-lite
 ==============
-this package will dynamically download and install electron v1.2.8 @ https://github.com/atom/electron/releases with zero npm-dependencies
+this package will download and install electron v1.2.8 from https://github.com/atom/electron/releases with zero npm-dependencies
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -12,18 +12,19 @@ this package will dynamically download and install electron v1.2.8 @ https://git
 
 # documentation
 #### todo
+- upgrade to electron v1.3.x
 - none
 
-#### change since e94ae1fc
-- npm publish 2016.7.1
-- upgrade to electron v1.2.8
+#### change since 6a5d9222
+- npm publish 2016.7.2
+- update README.md
 - none
 
 #### this package requires
 - darwin or linux os
 
-#### this package includes
-- external linux unzip binary @ https://busybox.net/downloads/binaries/1.21.1/busybox-i486
+#### additional info
+- includes external linux unzip binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 
 
 
@@ -169,10 +170,10 @@ instruction
 rm -fr external && \
 npm run postinstall && \
 ./cli.js --version && \
-utility2 test node test.js",
+utility2 test test.js",
         "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.7.1"
+    "version": "2016.7.2"
 }
 ```
 
