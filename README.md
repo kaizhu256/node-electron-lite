@@ -1,6 +1,6 @@
 electron-lite
 ==============
-this package will download and install electron v1.2.8 from https://github.com/atom/electron/releases with zero npm-dependencies
+this package will download and install electron v1.3.7 from https://github.com/atom/electron/releases with zero npm-dependencies
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -12,12 +12,12 @@ this package will download and install electron v1.2.8 from https://github.com/a
 
 # documentation
 #### todo
-- upgrade to electron v1.3.x
+- upgrade to electron v1.4.x when stable
 - none
 
-#### change since 6a5d9222
-- npm publish 2016.7.2
-- update README.md
+#### change since d26a8821
+- npm publish 2016.8.1
+- upgrade to electron v1.3.7
 - none
 
 #### this package requires
@@ -112,8 +112,10 @@ instruction
             break;
         case 4:
             // save screen-capture
-            require('fs')
-                .writeFileSync('screen-capture.testExampleJs.browser.png', data.toPng());
+            require('fs').writeFileSync(
+                'screen-capture.testExampleJs.browser.png',
+                data.toPng()
+            );
             // exit
             process.exit(0);
             break;
@@ -163,17 +165,14 @@ instruction
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
-        "build-doc": ":",
-        "example.js": "utility2 shRunScreenCapture shReadmeTestJs example.js",
         "postinstall": "./index.sh shNpmPostinstall",
         "test": "\
 rm -fr external && \
 npm run postinstall && \
 ./cli.js --version && \
-utility2 test test.js",
-        "test-published": "utility2 shRun shNpmTestPublished"
+utility2 test test.js"
     },
-    "version": "2016.7.2"
+    "version": "2016.8.1"
 }
 ```
 
@@ -193,11 +192,14 @@ utility2 test test.js",
 
 shBuildCiTestPre() {(set -e
 # this function will run the pre-test build
-    # test example js script
+    # test example.js
     (export MODE_BUILD=testExampleJs &&
-        npm run example.js) || return $?
+        shRunScreenCapture shReadmeTestJs example.js) || return $?
     # save screen-capture
     cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
+    # test published-package
+    (export MODE_BUILD=npmTestPublished &&
+        shRunScreenCapture shNpmTestPublished) || return $?
 )}
 
 shBuild() {(set -e

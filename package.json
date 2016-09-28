@@ -4,7 +4,7 @@
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will download and install electron v1.2.8 from https://github.com/atom/electron/releases with zero npm-dependencies",
+    "description": "this package will download and install electron v1.3.7 from https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -28,15 +28,12 @@
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
-        "build-doc": ":",
-        "example.js": "utility2 shRunScreenCapture shReadmeTestJs example.js",
         "postinstall": "./index.sh shNpmPostinstall",
-        "test": "rm -fr external && npm run postinstall && ./cli.js --version && utility2 test test.js",
+        "test": "rm -fr external && npm run postinstall && ./cli.js --version && utility2 test test.js"
 
 
 
 
-        "test-published": "utility2 shRun shNpmTestPublished"
     },
-    "version": "2016.7.2"
+    "version": "2016.8.1"
 }
