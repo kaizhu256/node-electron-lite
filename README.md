@@ -1,6 +1,6 @@
 electron-lite
 ==============
-this package will download and install electron v1.3.7 from https://github.com/atom/electron/releases with zero npm-dependencies
+this package will download and install electron v1.3.8 from https://github.com/atom/electron/releases with zero npm-dependencies
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -10,14 +10,19 @@ this package will download and install electron v1.3.7 from https://github.com/a
 
 
 
+# screen-capture
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+
+
+
 # documentation
 #### todo
 - upgrade to electron v1.4.x when stable
 - none
 
-#### change since d26a8821
-- npm publish 2016.8.1
-- upgrade to electron v1.3.7
+#### change since b1a24230
+- npm publish 2016.9.1
+- upgrade to electron v1.3.8
 - none
 
 #### this package requires
@@ -25,11 +30,6 @@ this package will download and install electron v1.3.7 from https://github.com/a
 
 #### additional info
 - includes external linux unzip binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
-
-
-
-# screen-capture
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
 
 
 
@@ -64,7 +64,7 @@ this package will download and install electron v1.3.7 from https://github.com/a
 /*
 example.js
 
-this electron script will screen-capture http://electron.atom.io/
+this electron script will screen-capture the webpage http://electron.atom.io
 
 instruction
     1. save this script as example.js
@@ -104,7 +104,7 @@ instruction
             // goto next step when webpage is loaded
             options.browserWindow.webContents.once('did-stop-loading', onNext);
             // open url
-            options.browserWindow.loadURL('http://electron.atom.io/');
+            options.browserWindow.loadURL('http://electron.atom.io');
             break;
         case 3:
             // screen-capture webpage
@@ -172,7 +172,7 @@ npm run postinstall && \
 ./cli.js --version && \
 utility2 test test.js"
     },
-    "version": "2016.8.1"
+    "version": "2016.9.1"
 }
 ```
 

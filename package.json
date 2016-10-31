@@ -4,7 +4,7 @@
     "bin": {
         "electron": "cli.js"
     },
-    "description": "this package will download and install electron v1.3.7 from https://github.com/atom/electron/releases with zero npm-dependencies",
+    "description": "this package will download and install electron v1.3.8 from https://github.com/atom/electron/releases with zero npm-dependencies",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -35,5 +35,5 @@
 
 
     },
-    "version": "2016.8.1"
+    "version": "2016.9.1"
 }
