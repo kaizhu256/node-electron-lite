@@ -1,1 +1,1 @@
-require('utility2').testRun({});
+require('utility2').testRunDefault({});

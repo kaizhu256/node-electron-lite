@@ -1,6 +1,6 @@
 electron-lite
-==============
-this package will download and install electron v1.3.8 from https://github.com/atom/electron/releases with zero npm-dependencies
+=============
+this zero-dependency package will download and install the electron-browser v1.3.13 from https://github.com/atom/electron/releases
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -20,9 +20,9 @@ this package will download and install electron v1.3.8 from https://github.com/a
 - upgrade to electron v1.4.x when stable
 - none
 
-#### change since b1a24230
-- npm publish 2016.9.1
-- upgrade to electron v1.3.8
+#### change since 8cb95047
+- npm publish 2016.12.1
+- upgrade to electron v1.3.13
 - none
 
 #### this package requires
@@ -172,7 +172,7 @@ npm run postinstall && \
 ./cli.js --version && \
 utility2 test test.js"
     },
-    "version": "2016.9.1"
+    "version": "2016.12.1"
 }
 ```
 
