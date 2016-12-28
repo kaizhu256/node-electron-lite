@@ -11,6 +11,11 @@
 */
 (function () {
     'use strict';
+    module.exports = require('./package.json');
+    module.exports.__dirname = __dirname;
+    if (module !== require.main) {
+        return;
+    }
     require('child_process').spawn(__dirname + (process.platform === 'darwin'
         ? '/external/Electron.app/Contents/MacOS/Electron'
         : '/external/electron'), process.argv.slice(2), { stdio: [0, 1, 2] })

@@ -1,6 +1,6 @@
 electron-lite
 =============
-this zero-dependency package will download and install the electron-browser v1.3.13 from https://github.com/atom/electron/releases
+this zero-dependency package will download and install the electron-browser v1.3.13 from https://github.com/electron/electron/releases
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
 
@@ -20,16 +20,19 @@ this zero-dependency package will download and install the electron-browser v1.3
 - upgrade to electron v1.4.x when stable
 - none
 
-#### change since 8cb95047
-- npm publish 2016.12.1
-- upgrade to electron v1.3.13
+#### change since cbde6ce6
+- npm publish 2016.12.28
+- update download-url
+- rename file cli.js -> lib.electron.js
+- rename file index.sh -> lib.electron.sh
+- rename file unzip -> busybox
 - none
 
 #### this package requires
 - darwin or linux os
 
 #### additional info
-- includes external linux unzip binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
+- includes external linux busybox binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 
 
 
@@ -138,9 +141,7 @@ instruction
 {
     "package.json": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "bin": {
-        "electron": "cli.js"
-    },
+    "bin": { "electron": "lib.electron.js" },
     "description": "{{packageJson.description}}",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -157,6 +158,7 @@ instruction
         "web", "web-scrape", "web-scraper"
     ],
     "license": "MIT",
+    "main": "lib.electron",
     "name": "electron-lite",
     "os": ["darwin", "linux"],
     "repository": {
@@ -165,14 +167,14 @@ instruction
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
-        "postinstall": "./index.sh shNpmPostinstall",
+        "postinstall": "./lib.electron.sh shNpmPostinstall",
         "test": "\
 rm -fr external && \
 npm run postinstall && \
-./cli.js --version && \
+./lib.electron.js --version && \
 utility2 test test.js"
     },
-    "version": "2016.12.1"
+    "version": "2016.12.28"
 }
 ```
 
