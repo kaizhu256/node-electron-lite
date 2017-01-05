@@ -4,18 +4,16 @@ postinstall() {(set -e
 # this function will run npm postinstall
     export PATH="$(pwd):$PATH"
     VERSION=v1.3.13
+    FILE_BASE="electron-$VERSION-linux-x64.zip"
+    FILE_BIN=external/electron
+    FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
+    UNZIP="./busybox unzip"
     case "$(uname)" in
     Darwin)
         FILE_BASE="electron-$VERSION-darwin-x64.zip"
         FILE_BIN=external/Electron.app/Contents/MacOS/Electron
         FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
-        ;;
-    *)
-        FILE_BASE="electron-$VERSION-linux-x64.zip"
-        FILE_BIN=external/electron
-        FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
-        # init busybox
-        alias unzip="busybox unzip"
+        UNZIP=unzip
         ;;
     esac
     if [ ! -s "$FILE_BIN" ]
@@ -38,7 +36,7 @@ postinstall() {(set -e
         fi
         # unzip file
         mkdir -p external
-        unzip -d external -oq "/tmp/$FILE_BASE"
+        $UNZIP -d external -oq "/tmp/$FILE_BASE"
     fi
 )}
 

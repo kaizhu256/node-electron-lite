@@ -25,9 +25,9 @@ this zero-dependency package will download and install the electron-v1.3.13 preb
 - upgrade to electron v1.4.x when stable
 - none
 
-#### change since dd36d358
-- npm publish 2017.1.5
-- add api-doc section to README.md
+#### change since d5910143
+- npm publish 2017.1.6
+- fix npm-postinstall on bare-bone linux systems
 - none
 
 #### this package requires
@@ -196,7 +196,7 @@ instruction
         "start": "export NODE_BINARY=./lib.electron.js && export PORT=${PORT:-8080} && export npm_config_mode_auto_restart=1 && utility2 shRun shIstanbulCover test.js",
         "test": "rm -fr external && npm run postinstall && ./lib.electron.js --version && NODE_BINARY=./lib.electron.js utility2 test test.js"
     },
-    "version": "2017.1.5"
+    "version": "2017.1.6"
 }
 ```
 
