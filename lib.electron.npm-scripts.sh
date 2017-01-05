@@ -1,6 +1,6 @@
 #!/bin/sh
 
-shNpmPostinstall() {(set -e
+postinstall() {(set -e
 # this function will run npm postinstall
     export PATH="$(pwd):$PATH"
     VERSION=v1.3.13

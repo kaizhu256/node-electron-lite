@@ -1,38 +1,53 @@
 {
-    "package.json": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "bin": { "electron": "lib.electron.js" },
-    "description": "this zero-dependency package will download and install the electron-browser v1.3.13 from https://github.com/electron/electron/releases",
+    "bin": {
+        "electron": "lib.electron.js"
+    },
+    "description": "this zero-dependency package will download and install the electron-v1.3.13 prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom", "atom-shell",
+        "atom",
+        "atom-shell",
         "browser",
         "capture",
-        "electron", "electron-prebuilt",
-        "headless", "headless-browser",
-        "light", "lightweight", "lite",
-        "minimal",
-        "scrape", "scraper", "screen", "screen-capture", "screencapture", "screenshot",
-        "web", "web-scrape", "web-scraper"
+        "electron",
+        "electron-prebuilt",
+        "headless",
+        "headless-browser",
+        "scrape",
+        "scraper",
+        "screen",
+        "screen-capture",
+        "screencapture",
+        "screenshot",
+        "web",
+        "web-scrape",
+        "web-scraper"
     ],
     "license": "MIT",
     "main": "lib.electron",
     "name": "electron-lite",
-    "os": ["darwin", "linux"],
+    "nameAlias": "electron-lite",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
-        "postinstall": "./lib.electron.sh shNpmPostinstall",
-        "test": "rm -fr external && npm run postinstall && ./lib.electron.js --version && utility2 test test.js"
-
-
-
-
+        "heroku-postbuild": "npm install 'kaizhu256/node-utility2#alpha' && utility2 shRun shDeployHeroku",
+        "postinstall": "if [ -f lib.electron.npm-scripts.sh ]; then ./lib.electron.npm-scripts.sh postinstall; fi",
+        "start": "export NODE_BINARY=./lib.electron.js && export PORT=${PORT:-8080} && export npm_config_mode_auto_restart=1 && utility2 shRun shIstanbulCover test.js",
+        "test": "rm -fr external && npm run postinstall && ./lib.electron.js --version && NODE_BINARY=./lib.electron.js utility2 test test.js"
     },
-    "version": "2016.12.28"
+    "version": "2017.1.5"
 }

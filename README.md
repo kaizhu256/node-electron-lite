@@ -1,8 +1,8 @@
 electron-lite
 =============
-this zero-dependency package will download and install the electron-browser v1.3.13 from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron-v1.3.13 prebuilt-binary from https://github.com/electron/electron/releases
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![istanbul coverage](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
@@ -11,28 +11,30 @@ this zero-dependency package will download and install the electron-browser v1.3
 
 
 # screen-capture
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
 
 
 
 # documentation
+#### api-doc
+- [https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/doc.api.html](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/doc.api.html)
+
+[![api-doc](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/screen-capture.docApiCreate.browser._2Fhome_2Ftravis_2Fbuild_2Fkaizhu256_2Fnode-electron-lite_2Ftmp_2Fbuild_2Fdoc.api.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/doc.api.html)
+
 #### todo
 - upgrade to electron v1.4.x when stable
 - none
 
-#### change since cbde6ce6
-- npm publish 2016.12.28
-- update download-url
-- rename file cli.js -> lib.electron.js
-- rename file index.sh -> lib.electron.sh
-- rename file unzip -> busybox
+#### change since dd36d358
+- npm publish 2017.1.5
+- add api-doc section to README.md
 - none
 
 #### this package requires
 - darwin or linux os
 
 #### additional info
-- includes external linux busybox binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
+- includes external busybox binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
 
 
 
@@ -41,6 +43,8 @@ this zero-dependency package will download and install the electron-browser v1.3
 
 | git-branch : | [master](https://github.com/kaizhu256/node-electron-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-lite/tree/alpha)|
 |--:|:--|:--|:--|
+| test-report : | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.html)|
+| coverage : | [![istanbul coverage](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.html/index.html) | [![istanbul coverage](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.html/index.html) | [![istanbul coverage](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.html/index.html)|
 | build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..alpha..travis-ci.org)|
 
 #### master branch
@@ -59,7 +63,7 @@ this zero-dependency package will download and install the electron-browser v1.3
 
 
 # quickstart screen-capture example
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
 
 #### to run this example, follow the instruction in the script below
 - example.js
@@ -76,17 +80,20 @@ instruction
             printf '{"main":"example.js","name":"undefined","version":"0.0.1"}' > \
             package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
-    3. view screencapture ./screen-capture.testExampleJs.browser.png
+    3. view screencapture /tmp/screen-capture.testExampleJs.browser..png
 */
 
+/* istanbul instrument in package electron-lite */
 /*jslint
+    bitwise: true,
     browser: true,
     maxerr: 8,
     maxlen: 96,
     node: true,
+    nomen: true,
+    regexp: true,
     stupid: true
 */
-
 (function () {
     'use strict';
     var options, modeNext, onNext;
@@ -116,7 +123,7 @@ instruction
         case 4:
             // save screen-capture
             require('fs').writeFileSync(
-                'screen-capture.testExampleJs.browser.png',
+                '/tmp/screen-capture.testExampleJs.browser..png',
                 data.toPng()
             );
             // exit
@@ -129,52 +136,67 @@ instruction
 ```
 
 #### output from electron
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser.png)
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
 
 #### output from shell
-[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.svg)
 
 
 
 # package.json
 ```json
 {
-    "package.json": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "bin": { "electron": "lib.electron.js" },
-    "description": "{{packageJson.description}}",
+    "bin": {
+        "electron": "lib.electron.js"
+    },
+    "description": "this zero-dependency package will download and install the electron-v1.3.13 prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom", "atom-shell",
+        "atom",
+        "atom-shell",
         "browser",
         "capture",
-        "electron", "electron-prebuilt",
-        "headless", "headless-browser",
-        "light", "lightweight", "lite",
-        "minimal",
-        "scrape", "scraper", "screen", "screen-capture", "screencapture", "screenshot",
-        "web", "web-scrape", "web-scraper"
+        "electron",
+        "electron-prebuilt",
+        "headless",
+        "headless-browser",
+        "scrape",
+        "scraper",
+        "screen",
+        "screen-capture",
+        "screencapture",
+        "screenshot",
+        "web",
+        "web-scrape",
+        "web-scraper"
     ],
     "license": "MIT",
     "main": "lib.electron",
     "name": "electron-lite",
-    "os": ["darwin", "linux"],
+    "nameAlias": "electron-lite",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
         "build-ci": "utility2 shRun shReadmeBuild",
-        "postinstall": "./lib.electron.sh shNpmPostinstall",
-        "test": "\
-rm -fr external && \
-npm run postinstall && \
-./lib.electron.js --version && \
-utility2 test test.js"
+        "heroku-postbuild": "npm install 'kaizhu256/node-utility2#alpha' && utility2 shRun shDeployHeroku",
+        "postinstall": "if [ -f lib.electron.npm-scripts.sh ]; then ./lib.electron.npm-scripts.sh postinstall; fi",
+        "start": "export NODE_BINARY=./lib.electron.js && export PORT=${PORT:-8080} && export npm_config_mode_auto_restart=1 && utility2 shRun shIstanbulCover test.js",
+        "test": "rm -fr external && npm run postinstall && ./lib.electron.js --version && NODE_BINARY=./lib.electron.js utility2 test test.js"
     },
-    "version": "2016.12.28"
+    "version": "2017.1.5"
 }
 ```
 
@@ -194,11 +216,13 @@ utility2 test test.js"
 
 shBuildCiTestPre() {(set -e
 # this function will run the pre-test build
+    # install electron-lite
+    ln -s ../../lib.electron.js node_modules/.bin/electron
     # test example.js
     (export MODE_BUILD=testExampleJs &&
         shRunScreenCapture shReadmeTestJs example.js) || return $?
     # save screen-capture
-    cp /tmp/app/screen-capture.*.png "$npm_config_dir_build" || return $?
+    cp /tmp/screen-capture.*.png "$npm_config_dir_build" || return $?
     # test published-package
     (export MODE_BUILD=npmTestPublished &&
         shRunScreenCapture shNpmTestPublished) || return $?
