@@ -5,6 +5,7 @@
 *~
 .*
 core
+data
 electron-lite
 example.js
 external

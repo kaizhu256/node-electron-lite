@@ -1,4 +1,4 @@
-/* istanbul instrument in package electron-lite */
+/* istanbul instrument in package electron */
 /*jslint
     bitwise: true,
     browser: true,
@@ -38,27 +38,43 @@
 
     // run node js-env code - function
     case 'node':
-        local.testCase_build_doc = function (options, onError) {
+        local.testCase_buildApidoc_default = function (options, onError) {
         /*
-         * this function will test build's doc handling-behavior
+         * this function will test buildApidoc's default handling-behavior-behavior
          */
-            options = { moduleDict: {
-                'electron-lite': {
-                    exampleFileList: [],
-                    exports: require('electron')
-                }
-            } };
-            local.buildDoc(options, onError);
+            options = { moduleDict: { electron: require('electron') } };
+            local.buildApidoc(options, onError);
         };
 
-        local.testCase_build_readme = function (options, onError) {
+        local.testCase_buildApp_default = function (options, onError) {
         /*
-         * this function will test build's readme handling-behavior
+         * this function will test buildApp's default handling-behavior-behavior
+         */
+            local.testCase_buildReadme_default(options, local.onErrorDefault);
+            onError();
+        };
+
+        local.testCase_buildReadme_default = function (options, onError) {
+        /*
+         * this function will test buildReadme's default handling-behavior-behavior
          */
             options = {};
-            options.readmeFile = local.fs.readFileSync('README.md', 'utf8');
-            options.readmeTemplate = local.templateReadme;
-            local.buildReadmeElectronLite(options, onError);
+            options.customize = function () {
+                // search-and-replace - customize readmeTo
+                [
+                    // customize demo
+                    (/\n\[!\[package-listing\][\S\s]*?\n# documentation\n/),
+                    // customize test-server
+                    (/\n\| git-branch : \|[\S\s]*?\n\| test-report : \|/),
+                    // customize quickstart
+                    (/\n# quickstart[\S\s]*?\n# package.json\n/)
+                ].forEach(function (rgx) {
+                    options.readmeFrom.replace(rgx, function (match0) {
+                        options.readmeTo = options.readmeTo.replace(rgx, match0);
+                    });
+                });
+            };
+            local.buildReadme(options, onError);
         };
         break;
     }
@@ -70,8 +86,6 @@
     case 'node':
         // run test-server
         local.testRunServer(local);
-        // start the repl-debugger
-        local.replStart();
         break;
     }
 }());

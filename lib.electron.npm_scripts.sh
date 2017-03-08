@@ -3,7 +3,7 @@
 postinstall() {(set -e
 # this function will run npm postinstall
     export PATH="$(pwd):$PATH"
-    VERSION=v1.3.13
+    VERSION=v1.4.15
     FILE_BASE="electron-$VERSION-linux-x64.zip"
     FILE_BIN=external/electron
     FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
@@ -28,9 +28,9 @@ postinstall() {(set -e
             # download file
             else
                 printf "downloading $FILE_URL to /tmp/$FILE_BASE ...\n"
-                curl -#L -o "$FILE_TMP" "$FILE_URL"
+                curl -#Lo "$FILE_TMP" "$FILE_URL"
             fi
-            chmod 755 "$FILE_TMP"
+            chmod 644 "$FILE_TMP"
             # mv file to prevent race-condition
             mv "$FILE_TMP" "/tmp/$FILE_BASE" 2>/dev/null || true
         fi
