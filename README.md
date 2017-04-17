@@ -1,17 +1,16 @@
-electron-lite
-=============
-this zero-dependency package will download and install the electron-v1.4.15 prebuilt-binary from https://github.com/electron/electron/releases
+# electron-lite
+this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![istanbul-coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
-[![package-listing](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLsTree.svg)](https://github.com/kaizhu256/node-electron-lite)
+[![npmPackageListing](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.npmPackageListing.svg)](https://github.com/kaizhu256/node-electron-lite)
 
 
 
 # screen-capture
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
+![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
 
 
 
@@ -19,15 +18,15 @@ this zero-dependency package will download and install the electron-v1.4.15 preb
 #### apidoc
 - [https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
-[![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.buildApidoc.browser._2Fhome_2Ftravis_2Fbuild_2Fkaizhu256_2Fnode-electron-lite_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
 - upgrade to electron v1.6.x when stable
 - none
 
-#### change since 51f2a4ef
-- npm publish 2017.3.7
-- upgrade to electron v1.4.15
+#### changelog for v2017.4.16
+- npm publish 2017.4.16
+- upgrade to electron v1.4.16
 - none
 
 #### this package requires
@@ -63,7 +62,7 @@ this zero-dependency package will download and install the electron-v1.4.15 preb
 
 
 # quickstart screen-capture example
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
+![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
 
 #### to run this example, follow the instruction in the script below
 - example.js
@@ -71,16 +70,16 @@ this zero-dependency package will download and install the electron-v1.4.15 preb
 /*
 example.js
 
-this electron script will screen-capture the webpage http://electron.atom.io
+this electron script will screenCapture the webpage http://electron.atom.io
 
 instruction
     1. save this script as example.js
     2. run the shell command:
-        $ npm install "kaizhu256/node-electron-lite#alpha" && \
+        $ npm install electron-lite && \
             printf '{"main":"example.js","name":"undefined","version":"0.0.1"}' > \
             package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
-    3. view screencapture /tmp/screen-capture.testExampleJs.browser..png
+    3. view screencapture /tmp/screenCapture.testExampleJs.browser..png
 */
 
 /* istanbul instrument in package electron */
@@ -117,13 +116,13 @@ instruction
             options.browserWindow.loadURL('http://electron.atom.io');
             break;
         case 3:
-            // screen-capture webpage
+            // screenCapture webpage
             options.browserWindow.capturePage(options, onNext);
             break;
         case 4:
-            // save screen-capture
+            // save screenCapture
             require('fs').writeFileSync(
-                '/tmp/screen-capture.testExampleJs.browser..png',
+                '/tmp/screenCapture.testExampleJs.browser..png',
                 data.toPng()
             );
             // exit
@@ -131,15 +130,18 @@ instruction
             break;
         }
     };
-    onNext();
+    // coverage-hack
+    (function () {
+        return;
+    }(!process.env.npm_config_mode_auto_restart && onNext()));
 }());
 ```
 
 #### output from browser
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.browser..png)
+![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
 
 #### output from shell
-![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.testExampleJs.svg)
+![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.svg)
 
 
 
@@ -150,7 +152,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron-v1.4.15 prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -162,14 +164,11 @@ instruction
         "atom",
         "atom-shell",
         "browser",
-        "capture",
         "electron",
         "electron-prebuilt",
-        "headless",
         "headless-browser",
         "scrape",
         "scraper",
-        "screen",
         "screen-capture",
         "screencapture",
         "screenshot",
@@ -181,12 +180,13 @@ instruction
     "main": "lib.electron.js",
     "name": "electron-lite",
     "nameAlias": "electron",
+    "nameAliasDeprecate": "electron_lite",
+    "nameAliasPublish": "electron-prebuilt-lite",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
         "linux"
     ],
-    "readmeParse": "1",
     "repository": {
         "type": "git",
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
@@ -194,20 +194,19 @@ instruction
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install 'kaizhu256/node-utility2#alpha' && utility2 shDeployHeroku",
-        "postinstall": "if [ -f lib.electron.npm_scripts.sh ]; then ./lib.electron.npm_scripts.sh postinstall; fi",
-        "publish-alias": "VERSION=$(npm info $npm_package_name version); for ALIAS in electron_lite; do utility2 shNpmPublishAs . $ALIAS $VERSION; utility2 shNpmTestPublished $ALIAS || exit $?; done",
-        "start": "export NODE_BINARY=./lib.electron.js && export PORT=${PORT:-8080} && export npm_config_mode_auto_restart=1 && utility2 start",
-        "test": "rm -fr external && npm run postinstall && ./lib.electron.js --version && NODE_BINARY=./lib.electron.js utility2 test test.js"
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
+        "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.3.7"
+    "version": "2017.4.16"
 }
 ```
 
 
 
 # changelog of last 50 commits
-[![screen-capture](https://kaizhu256.github.io/node-electron-lite/build/screen-capture.gitLog.svg)](https://github.com/kaizhu256/node-electron-lite/commits)
+[![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.gitLog.svg)](https://github.com/kaizhu256/node-electron-lite/commits)
 
 
 
@@ -218,29 +217,22 @@ instruction
 
 # this shell script will run the build for this package
 
-shBuildCiInternalPost() {(set -e
+shBuildCiPost() {(set -e
     shReadmeBuildLinkVerify
 )}
 
-shBuildCiInternalPre() {(set -e
-    ln -s ../../lib.electron.js node_modules/.bin/electron
+shBuildCiPre() {(set -e
+    ln -s ../../lib.electron.js node_modules/.bin/electron || true
     shReadmeTest example.js
-    # save screen-capture
-    cp /tmp/screen-capture.*.png "$npm_config_dir_build"
+    # save screenCapture
+    cp /tmp/screenCapture.*.png "$npm_config_dir_build"
     shReadmeTest example.sh
     shNpmTestPublished
 )}
 
-shBuildCiPost() {(set -e
-    return
-)}
-
-shBuildCiPre() {(set -e
-    return
-)}
-
-# init env
-eval $(utility2 source) && shBuildCi
+# run shBuildCi
+eval $(utility2 source)
+shBuildCi
 ```
 
 

@@ -28,9 +28,11 @@
         case 'node':
             local = (local.global.utility2_rollup || require('utility2'))
                 .requireExampleJsFromReadme();
-            local.global.local = local;
             break;
         }
+        // export local
+        local.global.local = local;
+        local.electron = require('electron');
     }());
     switch (local.modeJs) {
 
@@ -60,17 +62,17 @@
          */
             options = {};
             options.customize = function () {
-                // search-and-replace - customize readmeTo
+                // search-and-replace - customize dataTo
                 [
                     // customize demo
-                    (/\n\[!\[package-listing\][\S\s]*?\n# documentation\n/),
+                    (/\n\[!\[npmPackageListing\][\S\s]*?\n# documentation\n/),
                     // customize test-server
                     (/\n\| git-branch : \|[\S\s]*?\n\| test-report : \|/),
                     // customize quickstart
                     (/\n# quickstart[\S\s]*?\n# package.json\n/)
                 ].forEach(function (rgx) {
-                    options.readmeFrom.replace(rgx, function (match0) {
-                        options.readmeTo = options.readmeTo.replace(rgx, match0);
+                    options.dataFrom.replace(rgx, function (match0) {
+                        options.dataTo = options.dataTo.replace(rgx, match0);
                     });
                 });
             };
