@@ -12,27 +12,19 @@
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom",
         "atom-shell",
-        "browser",
         "electron",
         "electron-prebuilt",
         "headless-browser",
-        "scrape",
-        "scraper",
         "screen-capture",
-        "screencapture",
         "screenshot",
-        "web",
-        "web-scrape",
         "web-scraper"
     ],
     "license": "MIT",
     "main": "lib.electron.js",
     "name": "electron-lite",
     "nameAlias": "electron",
-    "nameAliasDeprecate": "electron_lite",
-    "nameAliasPublish": "electron-prebuilt-lite",
+    "nameAliasDeprecate": "electron-prebuilt-lite",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
@@ -50,5 +42,5 @@
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.4.16"
+    "version": "2017.5.29"
 }

@@ -15,7 +15,7 @@
 
 
 
-    // run shared js-env code - pre-init
+    // run shared js-env code - init-before
     (function () {
         // init local
         local = {};
@@ -27,10 +27,10 @@
         // re-init local from example.js
         case 'node':
             local = (local.global.utility2_rollup || require('utility2'))
-                .requireExampleJsFromReadme();
+                .requireReadme();
             break;
         }
-        // export local
+        // init exports
         local.global.local = local;
         local.electron = require('electron');
     }());
@@ -61,22 +61,14 @@
          * this function will test buildReadme's default handling-behavior-behavior
          */
             options = {};
-            options.customize = function () {
-                // search-and-replace - customize dataTo
-                [
-                    // customize demo
-                    (/\n\[!\[npmPackageListing\][\S\s]*?\n# documentation\n/),
-                    // customize test-server
-                    (/\n\| git-branch : \|[\S\s]*?\n\| test-report : \|/),
-                    // customize quickstart
-                    (/\n# quickstart[\S\s]*?\n# package.json\n/)
-                ].forEach(function (rgx) {
-                    options.dataFrom.replace(rgx, function (match0) {
-                        options.dataTo = options.dataTo.replace(rgx, match0);
-                    });
-                });
-            };
             local.buildReadme(options, onError);
+        };
+
+        local.testCase_webpage_default = function (options, onError) {
+        /*
+         * this function will test webpage's default handling-behavior
+         */
+            setTimeout(onError, 10000, options);
         };
         break;
     }
@@ -84,7 +76,7 @@
 
 
 
-    // run node js-env code - post-init
+    // run node js-env code - init-after
     case 'node':
         // run test-server
         local.testRunServer(local);

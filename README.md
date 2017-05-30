@@ -1,16 +1,39 @@
 # electron-lite
 this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![istanbul-coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-utility2/build/coverage.badge.svg)](https://kaizhu256.github.io/node-utility2/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
-[![npmPackageListing](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.npmPackageListing.svg)](https://github.com/kaizhu256/node-electron-lite)
+[![build commit status](https://kaizhu256.github.io/node-electron-lite/build/build.badge.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
+
+| git-branch : | [master](https://github.com/kaizhu256/node-electron-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-lite/tree/alpha)|
+|--:|:--|:--|:--|
+| test-report : | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.html)|
+| coverage : | [![coverage](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.html/index.html)|
+| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..alpha..travis-ci.org)|
+
+[![npmPackageListing](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmPackageListing.svg)](https://github.com/kaizhu256/node-electron-lite)
+
+![npmPackageDependencyTree](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmPackageDependencyTree.svg)
 
 
 
-# screen-capture
-![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
+# table of contents
+1. [cdn download](#cdn-download)
+1. [documentation](#documentation)
+1. [quickstart screenshot example](#quickstart-screenshot-example)
+1. [all screenshots](#all-screenshots)
+1. [package.json](#packagejson)
+1. [changelog of last 50 commits](#changelog-of-last-50-commits)
+1. [internal build script](#internal-build-script)
+1. [misc](#misc)
+
+
+
+# cdn download
+- [https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-linux-x64.zip)
 
 
 
@@ -18,15 +41,18 @@ this zero-dependency package will download and install the electron-v1.4.16 preb
 #### apidoc
 - [https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
-[![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
 - upgrade to electron v1.6.x when stable
 - none
 
-#### changelog for v2017.4.16
-- npm publish 2017.4.16
-- upgrade to electron v1.4.16
+#### changelog for v2017.5.29
+- npm publish 2017.5.29
+- add README section 'all screenshots'
+- add README section 'quickstart standalone app'
+- auto-create README section 'table of contents'
+- rename README section 'quickstart web example' -> 'quickstart example.js'
 - none
 
 #### this package requires
@@ -37,40 +63,16 @@ this zero-dependency package will download and install the electron-v1.4.16 preb
 
 
 
-# build status [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
-[![build commit status](https://kaizhu256.github.io/node-electron-lite/build/build.badge.svg)](https://travis-ci.org/kaizhu256/node-electron-lite)
-
-| git-branch : | [master](https://github.com/kaizhu256/node-electron-lite/tree/master) | [beta](https://github.com/kaizhu256/node-electron-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-electron-lite/tree/alpha)|
-|--:|:--|:--|:--|
-| test-report : | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/test-report.html)|
-| coverage : | [![istanbul-coverage](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..master..travis-ci.org/coverage.html/index.html) | [![istanbul-coverage](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/coverage.html/index.html) | [![istanbul-coverage](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build..alpha..travis-ci.org/coverage.html/index.html)|
-| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-electron-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-electron-lite/tree/gh-pages/build..alpha..travis-ci.org)|
-
-#### master branch
-- stable branch
-- HEAD should be tagged, npm-published package
-
-#### beta branch
-- semi-stable branch
-- HEAD should be latest, npm-published package
-
-#### alpha branch
-- unstable branch
-- HEAD is arbitrary
-- commit history may be rewritten
-
-
-
-# quickstart screen-capture example
-![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
+# quickstart screenshot example
+![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.browser..png)
 
 #### to run this example, follow the instruction in the script below
-- example.js
+- [example.js](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/example.js)
 ```javascript
 /*
 example.js
 
-this electron script will screenCapture the webpage http://electron.atom.io
+this electron script will screenshot the webpage http://electron.atom.io
 
 instruction
     1. save this script as example.js
@@ -79,7 +81,7 @@ instruction
             printf '{"main":"example.js","name":"undefined","version":"0.0.1"}' > \
             package.json && \
             ./node_modules/.bin/electron . --disable-overlay-scrollbar --enable-logging
-    3. view screencapture /tmp/screenCapture.testExampleJs.browser..png
+    3. view screenshot /tmp/screenshot.testExampleJs.browser..png
 */
 
 /* istanbul instrument in package electron */
@@ -101,6 +103,10 @@ instruction
         modeNext += 1;
         switch (modeNext) {
         case 1:
+            /* istanbul ignore next */
+            if (process.env.npm_config_mode_auto_restart) {
+                return;
+            }
             // wait for electron to init
             require('electron').app.once('ready', onNext);
             break;
@@ -116,13 +122,13 @@ instruction
             options.browserWindow.loadURL('http://electron.atom.io');
             break;
         case 3:
-            // screenCapture webpage
+            // screenshot webpage
             options.browserWindow.capturePage(options, onNext);
             break;
         case 4:
-            // save screenCapture
+            // screenshot
             require('fs').writeFileSync(
-                '/tmp/screenCapture.testExampleJs.browser..png',
+                '/tmp/screenshot.testExampleJs.browser..png',
                 data.toPng()
             );
             // exit
@@ -130,18 +136,33 @@ instruction
             break;
         }
     };
-    // coverage-hack
-    (function () {
-        return;
-    }(!process.env.npm_config_mode_auto_restart && onNext()));
+    onNext();
 }());
 ```
 
 #### output from browser
-![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.browser..png)
+![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.browser..png)
 
 #### output from shell
-![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.testExampleJs.svg)
+![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.svg)
+
+
+
+# all screenshots
+1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
+
+1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
+
+1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
+
+1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)
 
 
 
@@ -161,27 +182,19 @@ instruction
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom",
         "atom-shell",
-        "browser",
         "electron",
         "electron-prebuilt",
         "headless-browser",
-        "scrape",
-        "scraper",
         "screen-capture",
-        "screencapture",
         "screenshot",
-        "web",
-        "web-scrape",
         "web-scraper"
     ],
     "license": "MIT",
     "main": "lib.electron.js",
     "name": "electron-lite",
     "nameAlias": "electron",
-    "nameAliasDeprecate": "electron_lite",
-    "nameAliasPublish": "electron-prebuilt-lite",
+    "nameAliasDeprecate": "electron-prebuilt-lite",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
@@ -199,35 +212,34 @@ instruction
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.4.16"
+    "version": "2017.5.29"
 }
 ```
 
 
 
 # changelog of last 50 commits
-[![screenCapture](https://kaizhu256.github.io/node-electron-lite/build/screenCapture.gitLog.svg)](https://github.com/kaizhu256/node-electron-lite/commits)
+[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.gitLog.svg)](https://github.com/kaizhu256/node-electron-lite/commits)
 
 
 
-# internal build-script
+# internal build script
 - build_ci.sh
 ```shell
 # build_ci.sh
 
 # this shell script will run the build for this package
 
-shBuildCiPost() {(set -e
-    shReadmeBuildLinkVerify
+shBuildCiAfter() {(set -e
+    shReadmeTest example.sh
 )}
 
-shBuildCiPre() {(set -e
+shBuildCiBefore() {(set -e
     ln -s ../../lib.electron.js node_modules/.bin/electron || true
-    shReadmeTest example.js
-    # save screenCapture
-    cp /tmp/screenCapture.*.png "$npm_config_dir_build"
-    shReadmeTest example.sh
     shNpmTestPublished
+    shReadmeTest example.js
+    # screenshot
+    cp /tmp/screenshot.*.png "$npm_config_dir_build"
 )}
 
 # run shBuildCi
