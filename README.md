@@ -1,6 +1,8 @@
 # electron-lite
 this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases
 
+![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.browser..png)
+
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
@@ -53,9 +55,9 @@ this zero-dependency package will download and install the electron-v1.6.11 preb
 - upgrade to electron v1.7.x when stable
 - none
 
-#### changelog for v2017.7.15
-- npm publish 2017.7.15
-- upgrade to electron v1.6.11
+#### changelog for v2017.7.16
+- npm publish 2017.7.16
+- re-include screenshot in top-section of README.md
 - none
 
 #### this package requires
@@ -207,7 +209,7 @@ instruction
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.7.15"
+    "version": "2017.7.16"
 }
 ```
 
