@@ -3,7 +3,8 @@
 postinstall() {(set -e
 # this function will run npm postinstall
     export PATH="$(pwd):$PATH"
-    VERSION=v1.4.16
+    # install electron
+    VERSION=v1.6.11
     FILE_BASE="electron-$VERSION-linux-x64.zip"
     FILE_BIN=external/electron
     FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
@@ -16,8 +17,19 @@ postinstall() {(set -e
         UNZIP=unzip
         ;;
     esac
-    if [ ! -s "$FILE_BIN" ]
+    # init external/electron
+    mkdir -p external && rm -f external/electron
+    for DIR in /bin /usr/bin /usr/local/bin
+    do
+        if [ "$($DIR/electron --version 2>/dev/null || true)" = "$VERSION" ]
+        then
+            ln -fs "$DIR/electron" external/electron
+            break
+        fi
+    done
+    if [ ! -f external/electron ]
     then
+        # install file
         if [ ! -f "/tmp/$FILE_BASE" ]
         then
             FILE_TMP="$(mktemp "/tmp/$FILE_BASE.XXXXXXXX")"
@@ -35,8 +47,9 @@ postinstall() {(set -e
             mv "$FILE_TMP" "/tmp/$FILE_BASE" 2>/dev/null || true
         fi
         # unzip file
-        mkdir -p external
         $UNZIP -d external -oq "/tmp/$FILE_BASE"
+        # init external/electron
+        [ -f external/electron ] || ln -fs "$PWD/$FILE_BIN" external/electron
     fi
 )}
 

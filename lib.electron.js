@@ -15,10 +15,9 @@
     if (module !== require.main) {
         return;
     }
-    require('child_process').spawn(__dirname + (process.platform === 'darwin'
-        ? '/external/Electron.app/Contents/MacOS/Electron'
-        : '/external/electron'), process.argv.slice(2), { stdio: [0, 1, 2] })
-        .on('exit', function (exitCode) {
-            process.exit(exitCode);
-        });
+    require('child_process').spawn(__dirname + '/external/electron', process.argv.slice(2), {
+        stdio: [0, 1, 2]
+    }).on('exit', function (exitCode) {
+        process.exit(exitCode);
+    });
 }());

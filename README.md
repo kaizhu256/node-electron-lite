@@ -1,7 +1,7 @@
 # electron-lite
-this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-utility2/build/coverage.badge.svg)](https://kaizhu256.github.io/node-utility2/build/coverage.html/index.html)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
@@ -21,9 +21,10 @@ this zero-dependency package will download and install the electron-v1.4.16 preb
 
 # table of contents
 1. [cdn download](#cdn-download)
+1. [live demo](#live-demo)
 1. [documentation](#documentation)
 1. [quickstart screenshot example](#quickstart-screenshot-example)
-1. [all screenshots](#all-screenshots)
+1. [extra screenshots](#extra-screenshots)
 1. [package.json](#packagejson)
 1. [changelog of last 50 commits](#changelog-of-last-50-commits)
 1. [internal build script](#internal-build-script)
@@ -32,8 +33,13 @@ this zero-dependency package will download and install the electron-v1.4.16 preb
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.4.16/electron-v1.4.16-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-linux-x64.zip)
+
+
+
+# live demo
+- none
 
 
 
@@ -44,15 +50,12 @@ this zero-dependency package will download and install the electron-v1.4.16 preb
 [![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
-- upgrade to electron v1.6.x when stable
+- upgrade to electron v1.7.x when stable
 - none
 
-#### changelog for v2017.5.29
-- npm publish 2017.5.29
-- add README section 'all screenshots'
-- add README section 'quickstart standalone app'
-- auto-create README section 'table of contents'
-- rename README section 'quickstart web example' -> 'quickstart example.js'
+#### changelog for v2017.7.15
+- npm publish 2017.7.15
+- upgrade to electron v1.6.11
 - none
 
 #### this package requires
@@ -148,7 +151,7 @@ instruction
 
 
 
-# all screenshots
+# extra screenshots
 1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
 [![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
 
@@ -157,12 +160,6 @@ instruction
 
 1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
 [![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
-
-1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTest.browser.%252F.png)
-
-1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmTestPublished.browser.%252F.png)
 
 
 
@@ -173,7 +170,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -182,7 +179,6 @@ instruction
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom-shell",
         "electron",
         "electron-prebuilt",
         "headless-browser",
@@ -194,7 +190,6 @@ instruction
     "main": "lib.electron.js",
     "name": "electron-lite",
     "nameAlias": "electron",
-    "nameAliasDeprecate": "electron-prebuilt-lite",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
@@ -212,7 +207,7 @@ instruction
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.5.29"
+    "version": "2017.7.15"
 }
 ```
 
@@ -231,6 +226,7 @@ instruction
 # this shell script will run the build for this package
 
 shBuildCiAfter() {(set -e
+    # shDeployCustom
     shReadmeTest example.sh
 )}
 

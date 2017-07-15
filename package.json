@@ -3,7 +3,7 @@
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron-v1.4.16 prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -12,7 +12,6 @@
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
-        "atom-shell",
         "electron",
         "electron-prebuilt",
         "headless-browser",
@@ -24,7 +23,6 @@
     "main": "lib.electron.js",
     "name": "electron-lite",
     "nameAlias": "electron",
-    "nameAliasDeprecate": "electron-prebuilt-lite",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
@@ -42,5 +40,5 @@
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.5.29"
+    "version": "2017.7.15"
 }
