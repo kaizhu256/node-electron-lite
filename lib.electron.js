@@ -12,10 +12,15 @@
 (function () {
     'use strict';
     module.exports.__dirname = __dirname;
+    module.exports.__filename = (process.platform === 'darwin' &&
+        require('fs').existsSync(__dirname + '/external/Electron.app/Contents/MacOS/Electron')
+    // bug-workaround - darwin does not like symlink
+    ? __dirname + '/external/Electron.app/Contents/MacOS/Electron'
+    : __dirname + '/external/electron');
     if (module !== require.main) {
         return;
     }
-    require('child_process').spawn(__dirname + '/external/electron', process.argv.slice(2), {
+    require('child_process').spawn(module.exports.__filename, process.argv.slice(2), {
         stdio: [0, 1, 2]
     }).on('exit', function (exitCode) {
         process.exit(exitCode);

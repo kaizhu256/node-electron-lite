@@ -35,10 +35,10 @@
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.7.16"
+    "version": "2017.8.30"
 }

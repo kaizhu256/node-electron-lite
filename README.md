@@ -55,9 +55,10 @@ this zero-dependency package will download and install the electron-v1.6.11 preb
 - upgrade to electron v1.7.x when stable
 - none
 
-#### changelog for v2017.7.16
-- npm publish 2017.7.16
-- re-include screenshot in top-section of README.md
+#### changelog for v2017.8.30
+- npm publish 2017.8.30
+- add version override flag during install npm_config_electron_version
+- fix symlink bug in macOs
 - none
 
 #### this package requires
@@ -77,7 +78,7 @@ this zero-dependency package will download and install the electron-v1.6.11 preb
 /*
 example.js
 
-this electron script will screenshot the webpage http://electron.atom.io
+this electron script will screenshot the webpage https://electron.atom.io
 
 instruction
     1. save this script as example.js
@@ -124,7 +125,7 @@ instruction
             // goto next step when webpage is loaded
             options.browserWindow.webContents.once('did-stop-loading', onNext);
             // open url
-            options.browserWindow.loadURL('http://electron.atom.io');
+            options.browserWindow.loadURL('https://electron.atom.io');
             break;
         case 3:
             // screenshot webpage
@@ -204,12 +205,12 @@ instruction
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.7.16"
+    "version": "2017.8.30"
 }
 ```
 
