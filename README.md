@@ -1,9 +1,14 @@
 # electron-lite
-this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v1.6.14) prebuilt-binary from https://github.com/electron/electron/releases
+
+# live demo
+- none
 
 ![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.browser..png)
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
+
+
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html) [![snyk.io vulnerabilities](https://snyk.io/test/github/kaizhu256/node-electron-lite/badge.svg)](https://snyk.io/test/github/kaizhu256/node-electron-lite)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
@@ -23,7 +28,6 @@ this zero-dependency package will download and install the electron-v1.6.11 preb
 
 # table of contents
 1. [cdn download](#cdn-download)
-1. [live demo](#live-demo)
 1. [documentation](#documentation)
 1. [quickstart screenshot example](#quickstart-screenshot-example)
 1. [extra screenshots](#extra-screenshots)
@@ -35,30 +39,28 @@ this zero-dependency package will download and install the electron-v1.6.11 preb
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.11/electron-v1.6.11-linux-x64.zip)
-
-
-
-# live demo
-- none
+- [https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-linux-x64.zip)
 
 
 
 # documentation
-#### apidoc
+#### cli help
+![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.npmPackageCliHelp.svg)
+
+#### api doc
 - [https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 [![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
-- upgrade to electron v1.7.x when stable
+- upgrade to electron v1.8.x when stable
 - none
 
-#### changelog for v2017.8.30
-- npm publish 2017.8.30
-- add version override flag during install npm_config_electron_version
-- fix symlink bug in macOs
+#### changelog for v2017.10.2
+- npm publish 2017.10.2
+- upgrade to electron v1.6.14
+- add cli-help section in README.md
 - none
 
 #### this package requires
@@ -137,6 +139,7 @@ instruction
                 '/tmp/screenshot.testExampleJs.browser..png',
                 data.toPng()
             );
+            console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
             // exit
             process.exit(0);
             break;
@@ -173,7 +176,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron-v1.6.11 prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v1.6.14) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -183,16 +186,14 @@ instruction
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
         "electron",
-        "electron-prebuilt",
         "headless-browser",
-        "screen-capture",
         "screenshot",
         "web-scraper"
     ],
     "license": "MIT",
     "main": "lib.electron.js",
     "name": "electron-lite",
-    "nameAlias": "electron",
+    "nameLib": "electron",
     "nameOriginal": "electron-lite",
     "os": [
         "darwin",
@@ -205,12 +206,12 @@ instruction
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
+        "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.8.30"
+    "version": "2017.10.2"
 }
 ```
 

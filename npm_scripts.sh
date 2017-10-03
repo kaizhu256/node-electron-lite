@@ -4,6 +4,7 @@ postinstall() {(set -e
 # this function will run npm postinstall
     export PATH="$(pwd):$PATH"
     # install electron
+    # v0.24.0
     # v0.25.1
     # v0.26.1
     # v0.27.1
@@ -25,7 +26,7 @@ postinstall() {(set -e
     # v1.5.1
     # v1.6.1
     # v1.7.1
-    VERSION="${npm_config_electron_version:-v1.6.11}"
+    VERSION="${npm_config_electron_version:-v1.6.14}"
     FILE_BASE="electron-$VERSION-linux-x64.zip"
     FILE_BIN=external/electron
     FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"

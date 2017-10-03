@@ -18,21 +18,10 @@
     // run shared js-env code - init-before
     (function () {
         // init local
-        local = {};
-        // init modeJs
-        local.modeJs = 'node';
-        // init global
-        local.global = global;
-        switch (local.modeJs) {
-        // re-init local from example.js
-        case 'node':
-            local = (local.global.utility2_rollup || require('utility2'))
-                .requireReadme();
-            break;
-        }
-        // init exports
+        local = require('utility2').requireReadme();
         local.global.local = local;
-        local.electron = require('electron');
+        // init test
+        local.testRunInit(local);
     }());
     switch (local.modeJs) {
 
@@ -53,33 +42,30 @@
          * this function will test buildApp's default handling-behavior-behavior
          */
             local.testCase_buildReadme_default(options, local.onErrorDefault);
-            onError();
+            local.testCase_buildTest_default(options, local.onErrorThrow);
+            onError(null, options);
         };
 
-        local.testCase_buildReadme_default = function (options, onError) {
+        local.testCase_buildLib_default = function (options, onError) {
         /*
-         * this function will test buildReadme's default handling-behavior-behavior
+         * this function will test buildLib's default handling-behavior-behavior
          */
-            options = {};
-            local.buildReadme(options, onError);
+            onError(null, options);
+        };
+
+        local.testCase_buildTest_default = function (options, onError) {
+        /*
+         * this function will test buildTest's default handling-behavior
+         */
+            onError(null, options);
         };
 
         local.testCase_webpage_default = function (options, onError) {
         /*
          * this function will test webpage's default handling-behavior
          */
-            setTimeout(onError, 10000, options);
+            onError(null, options);
         };
-        break;
-    }
-    switch (local.modeJs) {
-
-
-
-    // run node js-env code - init-after
-    case 'node':
-        // run test-server
-        local.testRunServer(local);
         break;
     }
 }());
