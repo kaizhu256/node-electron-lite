@@ -1,7 +1,7 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v1.6.14) prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v1.6.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
 
-# live demo
+# live web demo
 - none
 
 ![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.testExampleJs.browser..png)
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v1.6.14) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.14/electron-v1.6.14-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-linux-x64.zip)
 
 
 
@@ -57,10 +57,9 @@ this zero-dependency package will download and install the electron (v1.6.14) pr
 - upgrade to electron v1.8.x when stable
 - none
 
-#### changelog for v2017.10.2
-- npm publish 2017.10.2
-- upgrade to electron v1.6.14
-- add cli-help section in README.md
+#### changelog for v2017.11.15
+- npm publish 2017.11.15
+- minor upgrade to electron v1.6.15
 - none
 
 #### this package requires
@@ -176,7 +175,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v1.6.14) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v1.6.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -193,6 +192,7 @@ instruction
     "license": "MIT",
     "main": "lib.electron.js",
     "name": "electron-lite",
+    "nameAliasPublish": "electron-scrape",
     "nameLib": "electron",
     "nameOriginal": "electron-lite",
     "os": [
@@ -211,7 +211,7 @@ instruction
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.10.2"
+    "version": "2017.11.15"
 }
 ```
 
