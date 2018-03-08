@@ -60,6 +60,15 @@
             onError(null, options);
         };
 
+        local.testCase_exampleJs_exit = function (options, onError) {
+        /*
+         * this function will test example.js's exit handling-behavior
+         */
+            process.exit = function () {
+                onError(null, options);
+            };
+        };
+
         local.testCase_webpage_default = function (options, onError) {
         /*
          * this function will test webpage's default handling-behavior

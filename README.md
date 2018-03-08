@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v1.6.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
+this zero-dependency package will download and install the electron (v1.7.12) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
 
 # live web demo
 - none
@@ -8,7 +8,7 @@ this zero-dependency package will download and install the electron (v1.6.15) pr
 
 
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html) [![snyk.io vulnerabilities](https://snyk.io/test/github/kaizhu256/node-electron-lite/badge.svg)](https://snyk.io/test/github/kaizhu256/node-electron-lite)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-electron-lite.svg)](https://travis-ci.org/kaizhu256/node-electron-lite) [![coverage](https://kaizhu256.github.io/node-electron-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-electron-lite/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/electron-lite.png?downloads=true)](https://www.npmjs.com/package/electron-lite)
 
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v1.6.15) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.6.15/electron-v1.6.15-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-linux-x64.zip)
 
 
 
@@ -57,9 +57,9 @@ this zero-dependency package will download and install the electron (v1.6.15) pr
 - upgrade to electron v1.8.x when stable
 - none
 
-#### changelog for v2017.11.15
-- npm publish 2017.11.15
-- minor upgrade to electron v1.6.15
+#### changelog for v2018.3.7
+- npm publish v2018.3.7
+- upgrade to electron v1.7.12
 - none
 
 #### this package requires
@@ -175,7 +175,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v1.6.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
+    "description": "this zero-dependency package will download and install the electron (v1.7.12) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -204,14 +204,17 @@ instruction
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
+        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawCreate",
+        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawFetch",
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
         "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
-        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "nameAliasPublish": "",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2017.11.15"
+    "version": "2018.3.7"
 }
 ```
 
@@ -230,7 +233,9 @@ instruction
 # this shell script will run the build for this package
 
 shBuildCiAfter() {(set -e
-    # shDeployCustom
+    shDeployCustom
+    # shDeployGithub
+    # shDeployHeroku
     shReadmeTest example.sh
 )}
 
