@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v1.7.12) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
+this zero-dependency package will download and install the electron (v1.7.13) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v1.7.12) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.12/electron-v1.7.12-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.13/electron-v1.7.13-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.13/electron-v1.7.13-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.13/electron-v1.7.13-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.13/electron-v1.7.13-linux-x64.zip)
 
 
 
@@ -57,9 +57,9 @@ this zero-dependency package will download and install the electron (v1.7.12) pr
 - upgrade to electron v1.8.x when stable
 - none
 
-#### changelog for v2018.3.7
-- npm publish v2018.3.7
-- upgrade to electron v1.7.12
+#### changelog for v2018.3.28
+- npm publish v2018.3.28
+- minor update to electron v1.7.13
 - none
 
 #### this package requires
@@ -95,8 +95,8 @@ instruction
 /*jslint
     bitwise: true,
     browser: true,
-    maxerr: 8,
-    maxlen: 96,
+    maxerr: 4,
+    maxlen: 100,
     node: true,
     nomen: true,
     regexp: true,
@@ -105,7 +105,6 @@ instruction
 (function () {
     'use strict';
     var options, modeNext, onNext;
-    modeNext = 0;
     onNext = function (data) {
         modeNext += 1;
         switch (modeNext) {
@@ -144,6 +143,7 @@ instruction
             break;
         }
     };
+    modeNext = 0;
     onNext();
 }());
 ```
@@ -175,7 +175,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v1.7.12) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
+    "description": "this zero-dependency package will download and install the electron (v1.7.13) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -209,12 +209,11 @@ instruction
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
         "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
-        "nameAliasPublish": "",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",
         "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
         "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
     },
-    "version": "2018.3.7"
+    "version": "2018.3.28"
 }
 ```
 
