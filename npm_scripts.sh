@@ -1,7 +1,7 @@
 #!/bin/sh
 # jslint-utility2
 
-shNpmScriptPostinstall() {(set -e
+shNpmScriptPostinstall () {(set -e
 # this function will provide the business-logic for $ npm run postinstall
     export PATH="$(pwd):$PATH"
     # install electron
@@ -27,7 +27,8 @@ shNpmScriptPostinstall() {(set -e
     # v1.5.1
     # v1.6.1
     # v1.7.1
-    VERSION="${npm_config_electron_version:-v1.7.13}"
+    # v1.8.1
+    VERSION="${npm_config_electron_version:-v1.7.14}"
     FILE_BASE="electron-$VERSION-linux-x64.zip"
     FILE_BIN=external/electron
     FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"

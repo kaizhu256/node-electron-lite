@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,

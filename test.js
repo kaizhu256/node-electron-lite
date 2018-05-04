@@ -1,4 +1,5 @@
 /* istanbul instrument in package electron */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
@@ -37,15 +38,6 @@
             local.buildApidoc(options, onError);
         };
 
-        local.testCase_buildApp_default = function (options, onError) {
-        /*
-         * this function will test buildApp's default handling-behavior-behavior
-         */
-            local.testCase_buildReadme_default(options, local.onErrorDefault);
-            local.testCase_buildTest_default(options, local.onErrorThrow);
-            onError(null, options);
-        };
-
         local.testCase_buildLib_default = function (options, onError) {
         /*
          * this function will test buildLib's default handling-behavior-behavior
@@ -73,6 +65,10 @@
         /*
          * this function will test webpage's default handling-behavior
          */
+            onError(null, options);
+        };
+
+        local.utility2.buildApp = function (options, onError) {
             onError(null, options);
         };
         break;
