@@ -9,6 +9,7 @@ data
 electron-lite
 example.js
 external
+package-lock.json
 node_modules
 tmp
 utility2

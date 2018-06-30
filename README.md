@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v1.7.14) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
+this zero-dependency package will download and install the electron (v1.7.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v1.7.14) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.7.14/electron-v1.7.14-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.14/electron-v1.7.14-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.7.14/electron-v1.7.14-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.14/electron-v1.7.14-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-linux-x64.zip)
 
 
 
@@ -57,9 +57,11 @@ this zero-dependency package will download and install the electron (v1.7.14) pr
 - upgrade to electron v1.8.x when stable
 - none
 
-#### changelog 2018.5.4
-- npm publish 2018.5.4
-- minor update to electron v1.7.14
+#### changelog 2018.6.30
+- npm publish 2018.6.30
+- minor update to electron v1.7.15
+- fix example.js for electron v2.0.x
+- consolidate npm-scripts into file npm_scripts.sh
 - none
 
 #### this package requires
@@ -135,7 +137,7 @@ instruction
             // screenshot
             require('fs').writeFileSync(
                 '/tmp/screenshot.testExampleJs.browser..png',
-                data.toPng()
+                data.toPNG()
             );
             console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
             // exit
@@ -175,7 +177,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v1.7.14) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
+    "description": "this zero-dependency package will download and install the electron (v1.7.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -204,16 +206,15 @@ instruction
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
-        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawCreate",
-        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawFetch",
-        "build-ci": "utility2 shReadmeTest build_ci.sh",
-        "env": "env",
-        "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha --prefix . && utility2 shDeployHeroku",
-        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",
-        "start": "NODE_BINARY=./lib.electron.js PORT=${PORT:-8080} utility2 start test.js",
-        "test": "set -e; rm -fr external; npm run postinstall; ./lib.electron.js --version; export NODE_BINARY=./lib.electron.js; utility2 test test.js"
+        "build-ci": "./npm_scripts.sh",
+        "eval": "./npm_scripts.sh",
+        "heroku-postbuild": "./npm_scripts.sh",
+        "postinstall": "./npm_scripts.sh",
+        "start": "./npm_scripts.sh",
+        "test": "./npm_scripts.sh",
+        "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.5.4"
+    "version": "2018.6.30"
 }
 ```
 

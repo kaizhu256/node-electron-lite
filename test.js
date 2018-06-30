@@ -24,17 +24,24 @@
         // init test
         local.testRunInit(local);
     }());
-    switch (local.modeJs) {
 
 
 
     // run node js-env code - function
-    case 'node':
+    (function () {
+        // init electron
+        local.electron = require('electron');
+
         local.testCase_buildApidoc_default = function (options, onError) {
         /*
          * this function will test buildApidoc's default handling-behavior-behavior
          */
-            options = { moduleDict: { electron: require('electron') } };
+            /* istanbul ignore next */
+            if (process.env.npm_config_mode_test_case === 'testCase_buildApidoc_default') {
+                local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;
+                local.electron.WebContents = local.electron.webContents.create().constructor;
+            }
+            options = { moduleDict: { electron: local.electron } };
             local.buildApidoc(options, onError);
         };
 
@@ -71,6 +78,5 @@
         local.utility2.buildApp = function (options, onError) {
             onError(null, options);
         };
-        break;
-    }
+    }());
 }());

@@ -12,9 +12,10 @@
 */
 (function () {
     'use strict';
-    module.exports.__dirname = __dirname;
-    module.exports.__filename =
-        (process.platform === 'darwin' &&
+    var local;
+    local = module.exports;
+    local.__dirname = __dirname;
+    local.__filename = (process.platform === 'darwin' &&
         require('fs').existsSync(__dirname + '/external/Electron.app/Contents/MacOS/Electron')
         // bug-workaround - darwin does not like symlink
         ? __dirname + '/external/Electron.app/Contents/MacOS/Electron'
@@ -22,9 +23,18 @@
     if (module !== require.main) {
         return;
     }
-    require('child_process').spawn(module.exports.__filename, process.argv.slice(2), {
-        stdio: [0, 1, 2]
-    }).on('exit', function (exitCode) {
-        process.exit(exitCode);
-    });
+    local.child = require('child_process').spawn(
+        local.__filename,
+        process.argv.slice(2),
+        { stdio: [0, 1, 2] }
+    );
+    local.child.on('exit', process.exit);
+    // bug-workaround - force electron v1.8.x and higher to exit after running --help command
+    if ((/^--help$|^-h$/).test(process.argv[2])) {
+        local.processStdoutWrite = process.stdout.write;
+        process.stdout.write = function () {
+            local.processStdoutWrite.apply(process.stdout, arguments);
+            local.child.kill();
+        };
+    }
 }());
