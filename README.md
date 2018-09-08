@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v1.7.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo
+this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v1.7.15) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-darwin-x64.zip](https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-linux-x64.zip](https://github.com/electron/electron/releases/download/v1.7.15/electron-v1.7.15-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-linux-x64.zip)
 
 
 
@@ -54,21 +54,25 @@ this zero-dependency package will download and install the electron (v1.7.15) pr
 [![apidoc](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-electron-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
-- upgrade to electron v1.8.x when stable
+- add npm-script shell-function shNpmPostinstallAll
+- upgrade to electron v3.0.x when stable
 - none
 
-#### changelog 2018.6.30
-- npm publish 2018.6.30
-- minor update to electron v1.7.15
-- fix example.js for electron v2.0.x
-- consolidate npm-scripts into file npm_scripts.sh
+#### changelog 2018.9.8
+- npm publish 2018.9.8
+- upgrade to electron v2.0.8
+- rename file busybox -> busybox-i486
+- add file releases.txt
+- add npm-script shell-functions shNpmReleasesFetch, shNpmReleasesMinorVersions, shNpmReleasesParse
+- revamp bootstrap-mechanism before running tests
+- fix stdout bug
 - none
 
 #### this package requires
 - darwin or linux os
 
 #### additional info
-- includes external busybox binary from https://busybox.net/downloads/binaries/1.21.1/busybox-i486
+- includes external busybox binary from https://busybox.net/downloads/binaries/1.21.1/
 
 
 
@@ -116,18 +120,34 @@ instruction
                 return;
             }
             // wait for electron to init
-            require('electron').app.once('ready', onNext);
+            try {
+                require('app').on('ready', onNext);
+            } catch (errorCaught) {
+                require('electron').app.once('ready', onNext);
+            }
             break;
         case 2:
             // init options
             options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
             // init browserWindow;
-            options.BrowserWindow = require('electron').BrowserWindow;
+            try {
+                options.BrowserWindow = require('browser-window');
+            } catch (errorCaught) {
+                options.BrowserWindow = require('electron').BrowserWindow;
+            }
             options.browserWindow = new options.BrowserWindow(options);
             // goto next step when webpage is loaded
-            options.browserWindow.webContents.once('did-stop-loading', onNext);
+            /* istanbul ignore next */
+            try {
+                options.browserWindow.webContents.once('did-stop-loading', onNext);
+            } catch (errorCaught) {
+                setTimeout(onNext, 10000);
+            }
             // open url
-            options.browserWindow.loadURL('https://electron.atom.io');
+            (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
+                options.browserWindow,
+                'https://electron.atom.io'
+            );
             break;
         case 3:
             // screenshot webpage
@@ -135,10 +155,16 @@ instruction
             break;
         case 4:
             // screenshot
-            require('fs').writeFileSync(
-                '/tmp/screenshot.testExampleJs.browser..png',
-                data.toPNG()
-            );
+            /* istanbul ignore next */
+            try {
+                data = data.toPng();
+            } catch (errorCaught) {
+                try {
+                    data = data.toPNG();
+                } catch (ignore) {
+                }
+            }
+            require('fs').writeFileSync('/tmp/screenshot.testExampleJs.browser..png', data);
             console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
             // exit
             process.exit(0);
@@ -177,7 +203,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v1.7.15) prebuilt-binary from https://github.com/electron/electron/releases, with a working web-demo",
+    "description": "this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -207,6 +233,7 @@ instruction
     },
     "scripts": {
         "build-ci": "./npm_scripts.sh",
+        "env": "env",
         "eval": "./npm_scripts.sh",
         "heroku-postbuild": "./npm_scripts.sh",
         "postinstall": "./npm_scripts.sh",
@@ -214,7 +241,7 @@ instruction
         "test": "./npm_scripts.sh",
         "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.6.30"
+    "version": "2018.9.8"
 }
 ```
 

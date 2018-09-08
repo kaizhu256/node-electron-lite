@@ -1,52 +1,34 @@
 #!/bin/sh
 # jslint-utility2
 
-shMain() {(set -e
+shMain () {(set -e
 # this function will run the main program
-    # run command custom
+    printf "running command 'npm run $*' ...\n" 1>&2
+    ARG1="$1"
+    # run command - custom
     case "$1" in
+    # npm postinstall --electron-version=v1.0
     postinstall)
-        export PATH="$(pwd):$PATH"
-        # install electron
-        # v0.24.0
-        # v0.25.1
-        # v0.26.1
-        # v0.27.1
-        # v0.28.1
-        # v0.29.1
-        # v0.30.1
-        # v0.31.1
-        # v0.32.1
-        # v0.33.1
-        # v0.34.1
-        # v0.35.1
-        # v0.36.1
-        # v0.37.1
-        # v1.0.1
-        # v1.1.1
-        # v1.2.1
-        # v1.3.1
-        # v1.4.1
-        # v1.5.1
-        # v1.6.1
-        # v1.7.1
-        # v1.8.1
-        # v2.0.1
-        VERSION="${npm_config_electron_version:-v1.7.15}"
-        FILE_BASE="electron-$VERSION-linux-x64.zip"
+        VERSION="${npm_config_electron_version:-v2.0.8}"
+        FILE_URL="$(cat releases.txt | grep -m 1 -F "$VERSION." ||
+            cat releases.txt | grep -m 1 -F "$VERSION")"
+        FILE_BASE="$(printf "$FILE_URL" | sed -e "s/.*\///")"
         FILE_BIN=external/electron
-        FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
-        UNZIP="./busybox unzip"
+        UNZIP="./busybox-i486 unzip"
         case "$(uname)" in
         Darwin)
-            FILE_BASE="electron-$VERSION-darwin-x64.zip"
+            FILE_BASE="$(printf "$FILE_BASE" | sed -e "s/linux/darwin/")"
             FILE_BIN=external/Electron.app/Contents/MacOS/Electron
-            FILE_URL="https://github.com/electron/electron/releases/download/$VERSION/$FILE_BASE"
+            if (printf "$FILE_BASE" | grep -q -E "atom")
+            then
+                FILE_BIN=external/Atom.app/Contents/MacOS/Atom
+            fi
+            FILE_URL="$(printf "$FILE_URL" | sed -e "s/linux/darwin/")"
             UNZIP=unzip
             ;;
         esac
         # init external/electron
-        mkdir -p external && rm -f external/electron
+        rm -fr external && mkdir -p external
         for DIR in /bin /usr/bin /usr/local/bin
         do
             if [ "$($DIR/electron --version 2>/dev/null || true)" = "$VERSION" ]
@@ -68,7 +50,7 @@ shMain() {(set -e
                 # download file
                 else
                     printf "downloading $FILE_URL to /tmp/$FILE_BASE ...\n"
-                    curl -#Lo "$FILE_TMP" "$FILE_URL"
+                    curl -#Lfo "$FILE_TMP" "$FILE_URL"
                 fi
                 chmod 644 "$FILE_TMP"
                 # mv file to prevent race-condition
@@ -87,9 +69,8 @@ shMain() {(set -e
         export NODE_BINARY=./lib.electron.js
         ;;
     esac
-
-    # run command default
-    case "$1" in
+    # run command - default
+    case "$ARG1" in
     build-ci)
         if [ "$npm_package_nameLib" = utility2 ]
         then
@@ -149,10 +130,42 @@ shMain() {(set -e
         utility2 "$@"
         ;;
     esac
+    printf "... finished running command 'npm run $*'\n" 1>&2
 )}
 
-# run command
-eval shMain "$npm_lifecycle_event" "$(node -e "
+shNpmReleasesFetch () {(set -e
+# this function will fetch the list of all electron-releases
+# example usage:
+# npm run eval shNpmReleasesFetch
+    if [ "$GITHUB_TOKEN" ]
+    then
+        AUTHORIZATION="Authorization: token $GITHUB_TOKEN"
+    fi
+    PAGE=0
+    rm -f .releases.txt
+    (
+    while true
+    do
+        PAGE="$((PAGE+1))"
+        printf "curl \
+https://api.github.com/repos/electron/electron/releases?page=$PAGE&per_page=100\n" | \
+            tee -a .releases.txt
+        curl -#Lf -H "$AUTHORIZATION" \
+"https://api.github.com/repos/electron/electron/releases?page=$PAGE&per_page=100" | \
+        grep -o -E "https:.*\.zip" >> .releases.txt
+        if [ "$?" != 0 ]
+        then
+            break
+        fi
+    done
+    ) || true
+)}
+
+shNpmReleasesMinorVersions () {(set -e
+# this function will print latest minor-releases of electron to stdout
+# example usage:
+# npm run eval shNpmReleasesMinorVersions
+        node -e '
 // <script>
 /* jslint-utility2 */
 /*jslint
@@ -165,10 +178,35 @@ eval shMain "$npm_lifecycle_event" "$(node -e "
     regexp: true,
     stupid: true
 */
-'use strict';
-console.log(
-    JSON.parse(process.env.npm_config_argv).original.join(' ').replace((/^(?:run )?\S+ /), '')
-);
+"use strict";
+var dict;
+dict = {};
+require("fs").readFileSync("releases.txt", "utf8").replace((
+    /(v\d+?\.\d+?)\.\d.*?\//g
+), function (match0, match1) {
+    switch (dict[match1] || match1) {
+    case "v0.3":
+    case "v0.4":
+    case true:
+        return;
+    }
+    dict[match1] = true;
+    console.log(match0.slice(0, -1));
+});
 // </script>
-"
-)"
+'
+)}
+
+shNpmReleasesParse () {(set -e
+# this function will parse the list of all electron-releases
+# example usage:
+# npm run eval shNpmReleasesParse
+    cat .releases.txt |
+        grep -E "https:.*(electron-|atom-shell).*\.zip" | \
+        grep -E "(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
+)}
+
+# run command
+shMain "$npm_lifecycle_event" "$(node -e "console.log(
+    JSON.parse(process.env.npm_config_argv).original.join(' ').replace((/^(?:run )?\S+ /), '')
+)")"
