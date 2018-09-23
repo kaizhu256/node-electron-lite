@@ -52,9 +52,9 @@
 
         href="https://github.com/kaizhu256/node-electron-lite"
 
-    >electron-lite (2018.9.8)</a>
+    >electron-lite (2018.9.23)</a>
 </h1>
-<h4>this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases</h4>
+<h4>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h4>
 <div class="apidocSectionDiv"><a
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
@@ -9120,220 +9120,21 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">() =&gt; {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- [IncrementalMarking] Step %s %zu bytes (%zu) in %.1f
- in v8 in task [IncrementalMarking] Restarting (new grey objects)
- shared bailout Worklist %s: %d
-   [%s]: %d
- size &gt; maximum function size: %zu expected magic word %02x %02x %02x %02x, found %02x %02x %02x %02x expected version %02x %
-02x %02x %02x, found %02x %02x %02x %02x Invalid code section length Invalid function length (0) not enough code section bytes not
- all code section bytes were used expected %s extra bits in varint ../../v8/src/wasm/decoder.h 0 &lt; len reading %d bytes would
- underflow/overflow expected %d bytes, fell off end V8.Builtin_HandleApiCall V8.Builtin_HandleApiCallAsFunction ../../v8/src/builtins
-/builtins-api.cc constructor-&gt;shared()-&gt;IsApiFunction() handler-&gt;IsCallHandlerInfo() call non-function V8.Builtin_HandleApiCallAsConstructor
- call ../../v8/src/compiler/osr.cc (osr_normal_entry) != nullptr (osr_loop_entry) != nullptr !osr_loop osr_loop 0 != live_input_count
- -- Graph after OSR duplication --  ../../v8/src/compiler/all-nodes.h only_inputs_ ../../v8/src/heap/embedder-tracing.cc cached_wrappers_to_trace_
-.empty() ../../v8/src/execution.cc AllowJavascriptExecution::IsAllowed(isolate) [Running deserialized script : %s ]
- ../../v8/src/heap/spaces.cc CodeRange commit_size &lt;= requested_size - 2 * MemoryAllocator::CodePageGuardSize() 0 == concurrent_unmapping_tasks_active_
- delayed_regular_chunks_.empty() Code page is too large. MemoryChunk !last_chunk_.IsReserved() last_chunk_.IsReserved() filler-&
-gt;IsFiller() Shrinking page %p: end %p -&gt; %p
- filler-&gt;address() + filler-&gt;Size() == area_end() to_remove != current_page_ FreeList[%p, top=%p, %d]  %p -&gt;  null
- limit() &gt;= top() size == static_cast&lt;int&gt;(end - start) LargeObjectChunk ../../v8/src/base/platform/platform.h InVM(free_start
-, size) ../../v8/src/heap/heap.h !object-&gt;IsSmi() v8:ProfEvntProc native V8Runtime CpuProfiler::StartProfiling ../../v8/src/locked
--queue-inl.h head_ != nullptr n != nullptr check-maps-depth # ? index out of bounds ../../v8/src/wasm/wasm-module.cc instance_count
- &gt;= 0 JSObject::cast(compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;value()) == *module_obj (prev == nullptr &amp;&amp; !current_instance
--&gt;has_weak_prev_instance()) || current_instance-&gt;ptr_to_weak_prev_instance()-&gt;value() == prev current_instance-&gt;ptr_to_weak_wasm_module
-()-&gt;value() == *module_obj current_instance-&gt;ptr_to_weak_owning_instance() -&gt;value() -&gt;IsWasmInstanceObject() found_instances
- &lt;= instance_count found_instances == instance_count compiled_module-&gt;has_weak_wasm_module() compiled_module-&gt;ptr_to_weak_wasm_module
-()-&gt;value() == *module_obj !compiled_module-&gt;has_weak_prev_instance() !compiled_module-&gt;has_weak_next_instance() !compiled_module
--&gt;has_weak_owning_instance() compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;cleared() module name kind function table memory
- global out of memory allocating custom section data Wasm decoding failed Wasm code generation disallowed in this context WasmCompile
- WasmLazyCompile !thrower.<span class="apidocCodeKeywordSpan">error</span>() ../../v8/src/wasm/wasm-module.cc:1021 !maybe.FromMaybe
-(false) implies isolate-&gt;has_scheduled_exception() call index %s: %s @+%u ../../v8/src/property-descriptor.cc result.IsJust() &
-amp;&amp; result.FromJust() Any None Class( ../../v8/src/compiler/verifier.cc input_count == node-&gt;InputCount() frame_state-&
-gt;opcode() == IrOpcode::kFrameState || (node-&gt;opcode() == IrOpcode::kFrameState &amp;&amp; frame_state-&gt;opcode() == IrOpcode
-::kStart) value node-&gt;opcode() == IrOpcode::kParameter || node-&gt;opcode() == IrOpcode::kProjection || value-&gt;op()-&gt;ValueOutputCount
-() &lt;= 1 context effect control (discovered_if_success) == nullptr (discovered_if_exception) == nullptr #%d:%s should be followed
- by IfSuccess/IfException, but is only followed by single #%d:%s 2 == total_number_of_control_uses 0 == input_count node-&gt;op()-&
-gt;ValueOutputCount() == 0 node-&gt;op()-&gt;EffectOutputCount() == 0 node-&gt;op()-&gt;ControlOutputCount() == 0 IrOpcode::IsGraphTerminator
-(input-&gt;opcode()) use-&gt;opcode() == IrOpcode::kIfTrue || use-&gt;opcode() == IrOpcode::kIfFalse 1 == count_true 1 == count_false
- IrOpcode::kBranch == NodeProperties::GetControlInput(node, 0)-&gt;opcode() !input-&gt;op()-&gt;HasProperty(Operator::kNoThrow) 
-OpParameter&lt;int32_t&gt;(use-&gt;op()) != OpParameter&lt;int32_t&gt;(user-&gt;op()) Switch #%d illegally used by #%d:%s 1 == count_default
- node-&gt;op()-&gt;ControlOutputCount() == count_case + count_default IrOpcode::kSwitch == NodeProperties::GetControlInput(node)-&
-gt;opcode() control_count == input_count IrOpcode::kEnd == use-&gt;opcode() 1 == control_count 1 == effect_count 2 == input_count
- IrOpcode::kLoop == NodeProperties::GetControlInput(node)-&gt;opcode() 1 == input_count IrOpcode::kStart == start-&gt;opcode() -
-1 &lt;= index index + 1 &lt; start-&gt;op()-&gt;ValueOutputCount() input-&gt;op()-&gt;ValueOutputCount() &gt; index 0 == effect_count
- 0 == control_count 3 == value_count value_count == control-&gt;op()-&gt;ControlInputCount() input_count == 1 + value_count 0 ==
-value_count effect_count == control-&gt;op()-&gt;ControlInputCount() input_count == 1 + effect_count 2 == control_count IrOpcode
-::kLoop == loop-&gt;opcode() IrOpcode::kLoopExit == loop_exit-&gt;opcode() NodeProperties::GetType(val)-&gt;Is(NodeProperties::GetType
-(node)) 5 == value_count 6 == input_count NodeProperties::GetValueInput(node, i)-&gt;opcode() == IrOpcode::kStateValues || NodeProperties
-::GetValueInput(node, i)-&gt;opcode() == IrOpcode::kTypedStateValues PropertyAccessOf(node-&gt;op()).feedback().IsValid() NamedAccessOf
-(node-&gt;op()).feedback().IsValid() LoadGlobalParametersOf(node-&gt;op()).feedback().IsValid() StoreGlobalParametersOf(node-&gt
-;op()).feedback().IsValid() StoreNamedOwnParametersOf(node-&gt;op()).feedback().IsValid() (graph-&gt;start()) != nullptr (graph-&
-gt;end()) != nullptr ../../v8/src/compiler/verifier.cc:1494 Node #%d:%s has duplicate projections #%d and #%d ../../v8/src/compiler
-/verifier.cc:1585 count &gt;= rpo_order-&gt;size() (*b) == schedule-&gt;GetBlockById((*b)-&gt;id()) predecessor-&gt;rpo_number() &
-gt;= 0 predecessor == schedule-&gt;GetBlockById(predecessor-&gt;id()) successor-&gt;rpo_number() &gt;= 0 successor == schedule-&
-gt;GetBlockById(successor-&gt;id()) start == rpo_order-&gt;at(0) static_cast&lt;int&gt;(b) == block-&gt;rpo_number() (dom) == nullptr
- (dom) != nullptr dom-&gt;rpo_number() &lt; block-&gt;rpo_number() block-&gt;rpo_number() &gt;= 0 block == rpo_order-&gt;at(block
--&gt;rpo_number()) marked[rpo_order-&gt;at(b)-&gt;id().ToSize()] Block B%d is not dominated by B%d Block B%d is not immediately
-dominated by B%d control-&gt;opcode() == IrOpcode::kMerge || control-&gt;opcode() == IrOpcode::kLoop (*b) == schedule-&gt;block(
-control) block == schedule-&gt;block(control) GraphError: node #  does not produce   output used by node # TypeError: node #  type
-   is not   should never have a type (input @ ) type   must intersect  Node #%d:%s in B%d is not dominated by input@%d #%d:%s Node
- #%d:%s in B%d is not dominated by control input #%d:%s ../../v8/src/interpreter/bytecode-array-builder.cc index &lt; locals_count
-() GetTypeofModeFromSlotKind(feedback_vector_spec()-&gt;GetKind(slot)) == typeof_mode GetLanguageModeFromSlotKind(feedback_vector_spec
-()-&gt;GetKind(slot)) == language_mode FeedbackSlotKind::kStoreOwnNamed == feedback_vector_spec()-&gt;GetKind(slot) AlreadyBoolean
- ConvertToBoolean SYMBOL == type_ ../../v8/src/wasm/function-body-decoder.cc:2124 ../../v8/src/wasm/function-body-decoder.cc:2132
- ../../v8/src/wasm/function-body-decoder.cc:2173 // signature:  // locals:  0x  0x // body:                                                                      // @    //
-depth=  // entries=    // sig #  // function # local decls count local count local count too large invalid local type function body
- end &lt; start unterminated control structure function body must end with &quot;end&quot; opcode. wasm-decode %s (%0.3f ms)
+this.loadState_ = LoadState.LOADING;
+this.pendingScriptingMessages_ = [];
+this.setPlugin(plugin);
 
- ok failed Opcode not supported for asmjs modules Invalid opcode (enable with --experimental-wasm-eh) Prototype still not functional
-: %s catch does not match any try catch already present for try with catch else does not match any if else does not match an if 
-else already present for if end does not match any if, try, or block end of if expected empty stack non-void one-armed if missing
- catch in try trailing code after function end improper branch in br_table inconsistent arity in br_table target %d (previous was
- %u, this one %u) type error in br_table target %d operand %d (previous expected %s, this one %s) immutable global #%u cannot be
- assigned grow_memory is not supported for asmjs modules Invalid opcode (enable with --experimental-wasm-simd) simd index Atomics
- are allowed only in AsmJs modules Invalid opcode (enable with --experimental-wasm-threads) atomic index Invalid opcode Beyond end
- of code %s[%d] expected type %s, found %s of type %s &lt;end&gt; local index expected %u elements on the stack for fallthru to @%
-d type error in merge[%zu] (expected %s, got %s) invalid local index: %u expected %d elements on the stack for fallthru to @%d %
-s found empty stack invalid break depth: %u expected at least %u values on the stack for br to @%d, found %d invalid table count
- (&gt; max function size): %u branch table entry immi32 immi64 immf32 immf64 global index invalid global index: %u alignment invalid
- alignment; expected maximum alignment is %u, actual alignment is %u offset memory instruction with no memory memory index expected
- memory index 0, found %u invalid function index: %u function table has to exist to execute call_indirect invalid signature index
-: #%u invalid simd opcode lane invalid lane index shift invalid shift amount shuffle invalid shuffle mask simd_index invalid SIMD
- opcode ../../v8/src/wasm/function-body-decoder.cc Complete(pc, operand) unimplemented opcode: %x (%s) i32 i64 f32 f64 s128 &lt;
-stmt&gt; &lt;var&gt; &lt;unknown&gt; kExprUnreachable kExprNop kExprBlock kExprLoop kExprIf kExprElse kExprTry kExprCatch kExprThrow
- kExprRethrow kExprCatchAll kExprEnd kExprBr kExprBrIf kExprBrTable kExprReturn kExprCallFunction kExprCallIndirect kExprDrop kExprSelect
- kExprGetLocal kExprSetLocal kExprTeeLocal kExprGetGlobal kExprSetGlobal kExprI32Const kExprI64Const kExprF32Const kExprF64Const
- kExprI32Eqz kExprI32Eq kExprI32Ne kExprI32LtS kExprI32LtU kExprI32GtS kExprI32GtU kExprI32LeS kExprI32LeU kExprI32GeS kExprI32GeU
- kExprI64Eqz kExprI64Eq kExprI64Ne kExprI64LtS kExprI64LtU kExprI64GtS kExprI64GtU kExprI64LeS kExprI64LeU kExprI64GeS kExprI64GeU
- kExprF32Eq kExprF32Ne kExprF32Lt kExprF32Gt kExprF32Le kExprF32Ge kExprF64Eq kExprF64Ne kExprF64Lt kExprF64Gt kExprF64Le kExprF64Ge
- kExprI32Clz kExprI32Ctz kExprI32Popcnt kExprI32Add kExprI32Sub kExprI32Mul kExprI32DivS kExprI32DivU kExprI32RemS kExprI32RemU 
-kExprI32And kExprI32Ior kExprI32Xor kExprI32Shl kExprI32ShrS kExprI32ShrU kExprI32Rol kExprI32Ror kExprI64Clz kExprI64Ctz kExprI64Popcnt
- kExprI64Add kExprI64Sub kExprI64Mul kExprI64DivS kExprI64DivU kExprI64RemS kExprI64RemU kExprI64And kExprI64Ior kExprI64Xor kExprI64Shl
- kExprI64ShrS kExprI64ShrU kExprI64Rol kExprI64Ror kExprF32Abs kExprF32Neg kExprF32Ceil kExprF32Floor kExprF32Trunc kExprF32NearestInt
- kExprF32Sqrt kExprF32Add kExprF32Sub kExprF32Mul kExprF32Div kExprF32Min kExprF32Max kExprF32CopySign kExprF64Abs kExprF64Neg kExprF64Ceil
- kExprF64Floor kExprF64Trunc kExprF64NearestInt kExprF64Sqrt kExprF64Add kExprF64Sub kExprF64Mul kExprF64Div kExprF64Min kExprF64Max
- kExprF64CopySign kExprI32ConvertI64 kExprI32SConvertF32 kExprI32UConvertF32 kExprI32SConvertF64 kExprI32UConvertF64 kExprI64SConvertI32
- kExprI64UConvertI32 kExprI64SConvertF32 kExprI64UConvertF32 kExprI64SConvertF64 kExprI64UConvertF64 kExprF32SConvertI32 kExprF32UConvertI32
- kExprF32SConvertI64 kExprF32UConvertI64 kExprF32ConvertF64 kExprF64SConvertI32 kExprF64UConvertI32 kExprF64SConvertI64 kExprF64UConvertI64
- kExprF64ConvertF32 kExprI32ReinterpretF32 kExprI64ReinterpretF64 kExprF32ReinterpretI32 kExprF64ReinterpretI64 kExprI32StoreMem
- kExprI64StoreMem kExprF32StoreMem kExprF64StoreMem kExprI32StoreMem8 kExprI32StoreMem16 kExprI64StoreMem8 kExprI64StoreMem16 kExprI64StoreMem32
- kExprI32LoadMem kExprI64LoadMem kExprF32LoadMem kExprF64LoadMem kExprI32LoadMem8S kExprI32LoadMem8U kExprI32LoadMem16S kExprI32LoadMem16U
- kExprI64LoadMem8S kExprI64LoadMem8U kExprI64LoadMem16S kExprI64LoadMem16U kExprI64LoadMem32S kExprI64LoadMem32U kExprMemorySize
- kExprGrowMemory kExprF64Acos kExprF64Asin kExprF64Atan kExprF64Cos kExprF64Sin kExprF64Tan kExprF64Exp kExprF64Log kExprF64Atan2
- kExprF64Pow kExprF64Mod kExprI32AsmjsDivS kExprI32AsmjsDivU kExprI32AsmjsRemS kExprI32AsmjsRemU kExprI32AsmjsLoadMem8S kExprI32AsmjsLoadMem8U
- kExprI32AsmjsLoadMem16S kExprI32AsmjsLoadMem16U kExprI32AsmjsLoadMem kExprF32AsmjsLoadMem kExprF64AsmjsLoadMem kExprI32AsmjsStoreMem8
- kExprI32AsmjsStoreMem16 kExprI32AsmjsStoreMem kExprF32AsmjsStoreMem kExprF64AsmjsStoreMem kExprI32AsmjsSConvertF32 kExprI32AsmjsUConvertF32
- kExprI32AsmjsSConvertF64 kExprI32AsmjsUConvertF64 Unknown break depth function index signature index table index expected table
- index 0, found %u block type invalid block arity &gt; 1 invalid block type block arity table count ../../v8/src/wasm/function-body
--decoder-impl.h decode_local_type(types[index], &amp;result) NaN -Infinity Infinity 0 0. ../../v8/src/conversions.cc &apos;.&apos
-; == buffer[fraction_cursor] v (= S) (R) (S) (1) (-) [constant: [immediate: [stack: [fp_stack: |R |E |- |b |w8 |w16 |w32 |w64 |f32
- |f64 |s128 |ts |tp |t (x) ; ArchCallCodeObject ArchTailCallCodeObjectFromJSFunction ArchTailCallCodeObject ArchCallJSFunction ArchTailCallJSFunctionFromJSFunction
- ArchTailCallAddress ArchPrepareCallCFunction ArchCallCFunction ArchPrepareTailCall ArchJmp ArchLookupSwitch ArchTableSwitch ArchNop
- ArchDebugBreak ArchComment ArchThrowTerminator ArchDeoptimize ArchRet ArchStackPointer ArchFramePointer ArchParentFramePointer 
-ArchTruncateDoubleToI ArchStoreWithWriteBarrier CheckedLoadInt8 CheckedLoadUint8 CheckedLoadInt16 CheckedLoadUint16 CheckedLoadWord32
- CheckedLoadWord64 CheckedLoadFloat32 CheckedLoadFloat64 CheckedStoreWord8 CheckedStoreWord16 CheckedStoreWord32 CheckedStoreWord64
- CheckedStoreFloat32 CheckedStoreFloat64 ArchStackSlot AtomicLoadInt8 AtomicLoadUint8 AtomicLoadInt16 AtomicLoadUint16 AtomicLoadWord32
- AtomicStoreWord8 AtomicStoreWord16 AtomicStoreWord32 AtomicExchangeInt8 AtomicExchangeUint8 AtomicExchangeInt16 AtomicExchangeUint16
- AtomicExchangeWord32 AtomicCompareExchangeInt8 AtomicCompareExchangeUint8 AtomicCompareExchangeInt16 AtomicCompareExchangeUint16
- AtomicCompareExchangeWord32 AtomicAddInt8 AtomicAddUint8 AtomicAddInt16 AtomicAddUint16 AtomicAddWord32 AtomicSubInt8 AtomicSubUint8
- AtomicSubInt16 AtomicSubUint16 AtomicSubWord32 AtomicAndInt8 AtomicAndUint8 AtomicAndInt16 AtomicAndUint16 AtomicAndWord32 AtomicOrInt8
- AtomicOrUint8 AtomicOrInt16 AtomicOrUint16 AtomicOrWord32 AtomicXorInt8 AtomicXorUint8 AtomicXorInt16 AtomicXorUint16 AtomicXorWord32
- Ieee754Float64Acos Ieee754Float64Acosh Ieee754Float64Asin Ieee754Float64Asinh Ieee754Float64Atan Ieee754Float64Atanh Ieee754Float64Atan2
- Ieee754Float64Cbrt Ieee754Float64Cos Ieee754Float64Cosh Ieee754Float64Exp Ieee754Float64Expm1 Ieee754Float64Log Ieee754Float64Log1p
- Ieee754Float64Log10 Ieee754Float64Log2 Ieee754Float64Pow Ieee754Float64Sin Ieee754Float64Sinh Ieee754Float64Tan Ieee754Float64Tanh
- X64Add X64Add32 X64And X64And32 X64Cmp X64Cmp32 X64Cmp16 X64Cmp8 X64Test X64Test32 X64Test16 X64Test8 X64Or X64Or32 X64Xor X64Xor32
- X64Sub X64Sub32 X64Imul X64Imul32 X64ImulHigh32 X64UmulHigh32 X64Idiv X64Idiv32 X64Udiv X64Udiv32 X64Not X64Not32 X64Neg X64Neg32
- X64Shl X64Shl32 X64Shr X64Shr32 X64Sar X64Sar32 X64Ror X64Ror32 X64Lzcnt X64Lzcnt32 X64Tzcnt X64Tzcnt32 X64Popcnt X64Popcnt32 SSEFloat32Cmp
- SSEFloat32Add SSEFloat32Sub SSEFloat32Mul SSEFloat32Div SSEFloat32Abs SSEFloat32Neg SSEFloat32Sqrt SSEFloat32ToFloat64 SSEFloat32ToInt32
- SSEFloat32ToUint32 SSEFloat32Round SSEFloat64Cmp SSEFloat64Add SSEFloat64Sub SSEFloat64Mul SSEFloat64Div SSEFloat64Mod SSEFloat64Abs
- SSEFloat64Neg SSEFloat64Sqrt SSEFloat64Round SSEFloat32Max SSEFloat64Max SSEFloat32Min SSEFloat64Min SSEFloat64ToFloat32 SSEFloat64ToInt32
- SSEFloat64ToUint32 SSEFloat32ToInt64 SSEFloat64ToInt64 SSEFloat32ToUint64 SSEFloat64ToUint64 SSEInt32ToFloat64 SSEInt32ToFloat32
- SSEInt64ToFloat32 SSEInt64ToFloat64 SSEUint64ToFloat32 SSEUint64ToFloat64 SSEUint32ToFloat64 SSEUint32ToFloat32 SSEFloat64ExtractLowWord32
- SSEFloat64ExtractHighWord32 SSEFloat64InsertLowWord32 SSEFloat64InsertHighWord32 SSEFloat64LoadLowWord32 SSEFloat64SilenceNaN AVXFloat32Cmp
- AVXFloat32Add AVXFloat32Sub AVXFloat32Mul AVXFloat32Div AVXFloat64Cmp AVXFloat64Add AVXFloat64Sub AVXFloat64Mul AVXFloat64Div AVXFloat64Abs
- AVXFloat64Neg AVXFloat32Abs AVXFloat32Neg X64Movsxbl X64Movzxbl X64Movsxbq X64Movzxbq X64Movb X64Movsxwl X64Movzxwl X64Movsxwq 
-X64Movzxwq X64Movw X64Movl X64Movsxlq X64Movq X64Movsd X64Movss X64Movdqu X64BitcastFI X64BitcastDL X64BitcastIF X64BitcastLD X64Lea32
- X64Lea X64Dec32 X64Inc32 X64Push X64Poke X64StackCheck X64I32x4Splat X64I32x4ExtractLane X64I32x4ReplaceLane X64I32x4Neg X64I32x4Shl
- X64I32x4ShrS X64I32x4Add X64I32x4AddHoriz X64I32x4Sub X64I32x4Mul X64I32x4MinS X64I32x4MaxS X64I32x4Eq X64I32x4Ne X64I32x4GtS X64I32x4GeS
- X64I32x4ShrU X64I32x4MinU X64I32x4MaxU X64I32x4GtU X64I32x4GeU X64I16x8Splat X64I16x8ExtractLane X64I16x8ReplaceLane X64I16x8Neg
- X64I16x8Shl X64I16x8ShrS X64I16x8Add X64I16x8AddSaturateS X64I16x8AddHoriz X64I16x8Sub X64I16x8SubSaturateS X64I16x8Mul X64I16x8MinS
- X64I16x8MaxS X64I16x8Eq X64I16x8Ne X64I16x8GtS X64I16x8GeS X64I16x8ShrU X64I16x8AddSaturateU X64I16x8SubSaturateU X64I16x8MinU 
-X64I16x8MaxU X64I16x8GtU X64I16x8GeU X64I8x16Splat X64I8x16ExtractLane X64I8x16ReplaceLane X64I8x16Neg X64I8x16Add X64I8x16AddSaturateS
- X64I8x16Sub X64I8x16SubSaturateS X64I8x16MinS X64I8x16MaxS X64I8x16Eq X64I8x16Ne X64I8x16GtS X64I8x16GeS X64I8x16AddSaturateU X64I8x16SubSaturateU
- X64I8x16MinU X64I8x16MaxU X64I8x16GtU X64I8x16GeU X64S128And X64S128Or X64S128Xor X64S128Not X64S128Select X64S128Zero MR MRI MR1
- MR2 MR4 MR8 MR1I MR2I MR4I MR8I M1 M2 M4 M8 M1I M2I M4I M8I Root branch deoptimize set trap equal not equal signed less than signed
- greater than or equal signed less than or equal signed greater than unsigned less than unsigned greater than or equal unsigned
-less than or equal unsigned greater than less than or unordered (FP) greater than or equal (FP) less than or equal (FP) greater
-than or unordered (FP) less than (FP) greater than, equal or unordered (FP) less than, equal or unordered (FP) greater than (FP) 
-unordered equal unordered not equal overflow not overflow positive or zero negative gap  ( )  
-           ) =   :   &amp;&amp;   if  l f RPO B : AO#  (deferred)  (no frame)  (construct frame)  (deconstruct frame)  loop blocks
-: [   instructions: [  predecessors:  B      phi:   =  v %5d     ../../v8/src/compiler/instruction.cc successor-&gt;PredecessorCount
-() == 1 &amp;&amp; successor-&gt;predecessors()[0] == block-&gt;rpo_number() InstructionBlockAt(successor_id)-&gt;IsDeferred() InstructionBlockAt
-(predecessor_id)-&gt;IsDeferred() !definitions.Contains(vreg) virtual_register != InstructionOperand::kInvalidVirtualRegister block
--&gt;rpo_number() == rpo IMM# CST# : v args_count:  get  RegExp:  set  ../../v8/src/interpreter/bytecode-array-writer.cc current_offset
- &gt;= label-&gt;offset() current_offset &lt;= static_cast&lt;size_t&gt;(kMaxUInt32) vector::_M_range_insert V8.Builtin_MathHypot
- V8.Builtin_ArrayPush V8.Builtin_ArrayPop V8.Builtin_ArrayShift V8.Builtin_ArrayUnshift V8.Builtin_ArraySlice V8.Builtin_ArraySplice
- V8.Builtin_ArrayConcat Array.prototype.concat ../../v8/src/prototype.h !handle_.is_null() Negative31 Null Undefined Boolean Unsigned30
- MinusZero Symbol EmptyString InternalizedNonEmptySeqString InternalizedNonSeqString OtherNonSeqString OtherSeqString OtherCallable
- OtherObject OtherUndetectable CallableProxy OtherProxy Function BoundFunction Hole OtherInternal ExternalPointer Array Signed31
- Signed32 Signed32OrMinusZero Signed32OrMinusZeroOrNaN Negative32 Unsigned31 Unsigned32 Unsigned32OrMinusZero Unsigned32OrMinusZeroOrNaN
- Integral32 Integral32OrMinusZero Integral32OrMinusZeroOrNaN PlainNumber OrderedNumber MinusZeroOrNaN Number InternalizedSeqString
- InternalizedString OtherString SeqString NonSeqString NonEmptyString String UniqueName Name InternalizedStringOrNull BooleanOrNumber
- BooleanOrNullOrNumber BooleanOrNullOrUndefined Oddball NullOrNumber NullOrUndefined Undetectable NumberOrHole NumberOrOddball NumberOrString
- NumberOrUndefined PlainPrimitive Primitive OtherUndetectableOrUndefined Proxy ArrayOrOtherObject ArrayOrProxy DetectableCallable
- Callable NonCallable NonCallableOrNull DetectableObject DetectableReceiver DetectableReceiverOrNull Object Receiver ReceiverOrUndefined
- ReceiverOrNullOrUndefined SymbolOrReceiver StringOrReceiver Unique Internal NonInternal NonNumber OtherUnsigned31 OtherUnsigned32
- OtherSigned32 OtherNumber HeapConstant( OtherNumberConstant( Range( ../../v8/src/compiler/types.h IsOtherNumberConstant(value) 
-untagged base tagged base Uint8 Int8 Uint16 Int16 Uint32 Int32 Float32 Float64 Uint8Clamped [+ allow-return-hole never-return-hole
- check-for-minus-zero dont-check-for-minus-zero ArrayObject | DoubleElements HoleyElements fast-transition from   to  slow-transition
- from  SignedSmall CheckMaps MaybeGrowFastElements ArgumentsLength Allocate LoadField StoreField LoadElement StoreElement LoadTypedElement
- StoreTypedElement TransitionAndStoreElement NoWriteBarrier MapWriteBarrier PointerWriteBarrier FullWriteBarrier NotTenured Tenured
- BooleanNot NumberEqual NumberLessThan NumberLessThanOrEqual NumberAdd NumberSubtract NumberMultiply NumberDivide NumberModulus 
-NumberBitwiseOr NumberBitwiseXor NumberBitwiseAnd NumberShiftLeft NumberShiftRight NumberShiftRightLogical NumberImul NumberAbs 
-NumberClz32 NumberCeil NumberFloor NumberFround NumberAcos NumberAcosh NumberAsin NumberAsinh NumberAtan NumberAtan2 NumberAtanh
- NumberCbrt NumberCos NumberCosh NumberExp NumberExpm1 NumberLog NumberLog1p NumberLog10 NumberLog2 NumberMax NumberMin NumberPow
- NumberRound NumberSign NumberSin NumberSinh NumberSqrt NumberTan NumberTanh NumberTrunc NumberToBoolean NumberToInt32 NumberToUint32
- NumberToUint8Clamped NumberSilenceNaN StringCharAt SeqStringCharCodeAt StringFromCharCode PlainPrimitiveToNumber PlainPrimitiveToWord32
- PlainPrimitiveToFloat64 ChangeTaggedSignedToInt32 ChangeTaggedToInt32 ChangeTaggedToUint32 ChangeTaggedToFloat64 ChangeTaggedToTaggedSigned
- ChangeFloat64ToTaggedPointer ChangeInt31ToTaggedSigned ChangeInt32ToTagged ChangeUint32ToTagged ChangeTaggedToBit ChangeBitToTagged
- TruncateTaggedToBit TruncateTaggedPointerToBit TruncateTaggedToWord32 TruncateTaggedToFloat64 ObjectIsDetectableCallable ObjectIsNaN
- ObjectIsNonCallable ObjectIsNumber ObjectIsReceiver ObjectIsSmi ObjectIsString ObjectIsSymbol ObjectIsUndetectable ConvertTaggedHoleToUndefined
- ReferenceEqual CheckBounds CheckHeapObject CheckIf CheckInternalizedString CheckNumber CheckReceiver CheckSmi CheckString CheckSeqString
- CheckNonEmptyString CheckSymbol CheckNotTaggedHole CheckedInt32Add CheckedInt32Sub CheckedInt32Div CheckedInt32Mod CheckedUint32Div
- CheckedUint32Mod CheckedUint32ToInt32 CheckedUint32ToTaggedSigned CheckedInt32ToTaggedSigned CheckedTaggedSignedToInt32 CheckedTaggedToTaggedSigned
- CheckedTaggedToTaggedPointer UTF16 UTF32 ArrayBufferWasNeutered LookupHashStorageIndex LoadHashMapValue ArgumentsFrame NewUnmappedArgumentsElements
- ChangeFloat64ToTagged CheckedInt32Mul CheckedFloat64ToInt32 CheckedTaggedToInt32 CheckedTaggedToFloat64 CheckedTruncateTaggedToWord32
- CheckFloat64Hole EnsureWritableFastElements SpeculativeNumberAdd SpeculativeNumberSubtract SpeculativeNumberMultiply SpeculativeNumberDivide
- SpeculativeNumberModulus SpeculativeNumberBitwiseAnd SpeculativeNumberBitwiseOr SpeculativeNumberBitwiseXor SpeculativeNumberShiftLeft
- SpeculativeNumberShiftRight SpeculativeNumberShiftRightLogical SpeculativeNumberEqual SpeculativeNumberLessThan SpeculativeNumberLessThanOrEqual
- SpeculativeToNumber LoadBuffer StoreBuffer rest length not rest length fast-map  double-map (program) (idle) (garbage collector
-) (unresolved function) (root) startTime disabled-by-default-v8.cpu_profiler Profile data cpuProfile nodes samples timeDeltas ProfileChunk
- endTime callFrame functionName url scriptId lineNumber columnNumber parent no reason deoptReason Code JS Addr :r s i t js-call ../../
-v8/src/compiler/linkage.cc incoming_-&gt;IsJSFunctionCall() V8.Builtin_ReflectDefineProperty Reflect.defineProperty V8.Builtin_ReflectDeleteProperty
- Reflect.deleteProperty V8.Builtin_ReflectGet Reflect.get V8.Builtin_ReflectGetOwnPropertyDescriptor Reflect.getOwnPropertyDescriptor
- V8.Builtin_ReflectGetPrototypeOf Reflect.getPrototypeOf V8.Builtin_ReflectHas Reflect.has V8.Builtin_ReflectIsExtensible Reflect
-.isExtensible V8.Builtin_ReflectOwnKeys Reflect.ownKeys V8.Builtin_ReflectPreventExtensions Reflect.preventExtensions V8.Builtin_ReflectSet
- Reflect.set V8.Builtin_ReflectSetPrototypeOf Reflect.setPrototypeOf &quot;: \t \n \&quot; \u%04X invalid table size [object Unknown] ../../v8/src/objects.cc success JSObject::CreateDataProperty(&amp;it, prop_value, Object::THROW_ON_ERROR) .FromJust() &lt;Very long string[%u]&gt; &lt;Invalid String&gt; &lt;String[%u]:  &lt;String[%u]\:  \r &lt;JSArray[%u]&gt; &lt;JSBoundFunction  (BoundTargetFunction %p)&gt; &lt;JSWeakMap&gt; &lt;JSWeakSet&gt; &lt;JSRegExp &lt;JSFunction  &lt;JSFunction  &lt;  (sfi = %p) &lt;JSGenerator&gt; &lt;JS AsyncGenerator&gt; !!!INVALID CONSTRUCTOR!!! !!!INVALID SHARED ON CONSTRUCTOR!!! &lt;GlobalObject   %smap = %p deprecated- &lt;RemoteObject&gt; &lt;JS%sObject Global   value =  [reconfiguring] {symbol  } kData ACCESSORS , attrs:  [generalizing] c -&gt; } ( +  maps ) [ [migrating to slow]
- [migrating] :%s-&gt;%s  {symbol %p} elements_kind[%i-&gt;%i] !!!INVALID POINTER!!! !!!INVALID MAP!!! &lt;Map( )&gt; &lt;FixedArray
-[ ]&gt; &lt;FixedDoubleArray[ &lt;ByteArray[ &lt;BytecodeArray[ &lt;TransitionArray[ &lt;PropertyArray[ &lt;FreeSpace[ &lt;FixedUint8Array
-[ &lt;FixedInt8Array[ &lt;FixedUint16Array[ &lt;FixedInt16Array[ &lt;FixedUint32Array[ &lt;FixedInt32Array[ &lt;FixedFloat32Array
-[ &lt;FixedFloat64Array[ &lt;FixedUint8ClampedArray[ &lt;SharedFunctionInfo  &lt;SharedFunctionInfo&gt; &lt;JSMessageObject&gt; &
-lt;AccessorInfo&gt; &lt;AccessorPair&gt; &lt;AccessCheckInfo&gt; &lt;InterceptorInfo&gt; &lt;FunctionTemplateInfo&gt; &lt;ObjectTemplateInfo
-&gt; &lt;AllocationSite&gt; &lt;AllocationMemento&gt; &lt;Script&gt; &lt;AliasedArgumentsEntry&gt; &lt;PromiseResolveThenableJobInfo
-&gt; &lt;PromiseReactionJobInfo&gt; &lt;DebugInfo&gt; &lt;StackFrameInfo&gt; &lt;PrototypeInfo&gt; &lt;Tuple2&gt; &lt;Tuple3&gt; &
-lt;ContextExtension&gt; &lt;Module&gt; &lt;ModuleInfoEntry&gt; &lt;AsyncGeneratorRequest&gt; &lt;PreParsedScopeData&gt; &lt;Code
-  &lt;undefined&gt; &lt;the_hole&gt; &lt;null&gt; &lt;true&gt; &lt;false&gt; &lt;Odd Oddball:  &lt;Number  &lt;MutableNumber  &lt
-;JSProxy&gt; &lt;Foreign&gt; &lt;Cell value=  &lt;PropertyCell name=  value= &lt;WeakCell value=  &lt;Other heap object ( receiver
--&gt;IsJSFunction() d h x Moving prototype_info %p from map %p to map %p.
- new_map-&gt;is_dictionary_map() ForceSetPrototype ../../v8/src/objects.cc:4343 field type generalization typed elements write elements
- write LookupIterator::ACCESS_CHECK != it.state() AddDataProperty(&amp;it, value, attributes, THROW_ON_ERROR, CERTAINLY_NOT_STORE_FROM_KEYED
-) .IsJust() k-&gt;IsUniqueName() AddDataProperty(&amp;it, handle(hash, isolate), NONE, THROW_ON_ERROR, CERTAINLY_NOT_STORE_FROM_KEYED
-) .IsJust() Object.defineProperty success.FromJust() Object.defineProperties status.FromJust() old_len_desc.value()-&gt;ToArrayLength
-(&amp;old_len) uint32_v-&gt;ToArrayLength(output) a-&gt;length()-&gt;ToArrayLength(&amp;actual_new_len) PreventExtensions GetPropertyAttributes
-(&amp;it).IsJust() ImmutablePrototype maybe_name.ToHandle(&amp;name) CopyAsElementsKind MapCreate GenAll_AttributesMismatchProtoMap
- [WeakFixedArray: storing at index %d ]
- [WeakFixedArray: searching for free slot]
- [WeakFixedArray: growing to size %d ]
+window.addEventListener(&apos;message&apos;, event =&gt; {
+  if (event.origin != &apos;chrome://pdf-viewer&apos; &amp;&amp;
+      event.origin != &apos;chrome://print&apos;) {
+    console.<span class="apidocCodeKeywordSpan">error</span>(
+        &apos;Received message that was not from the extension: &apos; + event);
+    return;
+  }
+  switch (event.data.type) {
+    case &apos;viewport&apos;:
+      /**
+       * @type {{
 ...</pre></li>
     </ul>
 
