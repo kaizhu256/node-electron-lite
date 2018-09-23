@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-09-23T18:25:36.878Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-09-23T18:30:13.552Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
 <tspan x="10" y="122">d/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 39149</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 51476</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -30,22 +30,22 @@
 
 <tspan x="10" y="266">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="282">| test-report - buildApp - node - linux v8.9.3 - 2018-09-23T18:25:37.367Z</tspan>
+<tspan x="10" y="282">| test-report - buildApp - node - linux v8.9.3 - 2018-09-23T18:30:14.028Z</tspan>
 
-<tspan x="10" y="298">|      54 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="298">|      41 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="314">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="330">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="346">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:24:46.989Z</tspan>
+<tspan x="10" y="346">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:29:24.079Z</tspan>
 
-<tspan x="10" y="362">|      13 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="362">|      58 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="378">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="394">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T18:24:29.466Z</tspan>
+<tspan x="10" y="394">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T18:29:06.631Z</tspan>
 
-<tspan x="10" y="410">|   23175 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="410">|   22973 ms            0 failed        9 passed      |</tspan>
 
 <tspan x="10" y="426">-------------------------------------------------------</tspan>
 
@@ -64,7 +64,7 @@
 
 <tspan x="10" y="554"></tspan>
 
-<tspan x="10" y="570">[MODE_BUILD=buildApp] - 2018-09-23T18:25:38.895Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="570">[MODE_BUILD=buildApp] - 2018-09-23T18:30:15.559Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

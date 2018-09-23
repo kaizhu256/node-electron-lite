@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-09-23T18:25:19.283Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-09-23T18:29:56.262Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 61297</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 60868</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -64,15 +64,15 @@
 <tspan x="10" y="554">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="570">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="586">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:24:46.989Z</tspan>
+<tspan x="10" y="586">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:29:24.079Z</tspan>
 
-<tspan x="10" y="602">|      13 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="602">|      58 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="618">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="634">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T18:24:29.466Z</tspan>
+<tspan x="10" y="634">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T18:29:06.631Z</tspan>
 
-<tspan x="10" y="650">|   23175 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="650">|   22973 ms            0 failed        9 passed      |</tspan>
 
 <tspan x="10" y="666">-------------------------------------------------------</tspan>
 
@@ -91,7 +91,7 @@
 
 <tspan x="10" y="794"></tspan>
 
-<tspan x="10" y="810">[MODE_BUILD=buildApidoc] - 2018-09-23T18:25:21.641Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="810">[MODE_BUILD=buildApidoc] - 2018-09-23T18:29:58.589Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
