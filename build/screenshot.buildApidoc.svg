@@ -1,9 +1,9 @@
-<svg height="958" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="958" fill="#555" width="720"></rect>
+<svg height="830" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="830" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-09-23T16:58:47.013Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-09-23T18:25:19.283Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 57043</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 61297</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -64,48 +64,34 @@
 <tspan x="10" y="554">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="570">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="586">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T16:58:14.802Z</tspan>
+<tspan x="10" y="586">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:24:46.989Z</tspan>
 
-<tspan x="10" y="602">|      12 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="602">|      13 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="618">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="634">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T16:57:57.516Z</tspan>
+<tspan x="10" y="634">| test-report - npmTest - node - linux v8.9.3 - 2018-09-23T18:24:29.466Z</tspan>
 
-<tspan x="10" y="650">|   22751 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="650">|   23175 ms            0 failed        9 passed      |</tspan>
 
 <tspan x="10" y="666">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="682">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="698">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.8 Safari/537.36 - 2018-09-23T16:57:03.\</tspan>
-<tspan x="10" y="714">567Z</tspan>
+<tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="730">|       8 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="698">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="714">tml</tspan>
 
-<tspan x="10" y="746">-------------------------------------------------------</tspan>
+<tspan x="10" y="730"></tspan>
 
-<tspan x="10" y="762">| test-report - npmTestPublished - node - linux v8.9.3 - 2018-09-23T16:56:45.299Z</tspan>
+<tspan x="10" y="746"></tspan>
 
-<tspan x="10" y="778">|   23775 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="762">buildApidoc - 0 failed tests</tspan>
 
-<tspan x="10" y="794">-------------------------------------------------------</tspan>
+<tspan x="10" y="778"></tspan>
 
-<tspan x="10" y="810"></tspan>
+<tspan x="10" y="794"></tspan>
 
-<tspan x="10" y="826">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
-<tspan x="10" y="842">tml</tspan>
-
-<tspan x="10" y="858"></tspan>
-
-<tspan x="10" y="874"></tspan>
-
-<tspan x="10" y="890">buildApidoc - 0 failed tests</tspan>
-
-<tspan x="10" y="906"></tspan>
-
-<tspan x="10" y="922"></tspan>
-
-<tspan x="10" y="938">[MODE_BUILD=buildApidoc] - 2018-09-23T16:58:49.394Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="810">[MODE_BUILD=buildApidoc] - 2018-09-23T18:25:21.641Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
