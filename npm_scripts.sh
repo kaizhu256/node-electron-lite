@@ -9,7 +9,7 @@ shMain () {(set -e
     case "$1" in
     # npm postinstall --electron-version=v1.0
     postinstall)
-        VERSION="${npm_config_electron_version:-v2.0.8}"
+        VERSION="${npm_config_electron_version:-v2.0.10}"
         FILE_URL="$(cat releases.txt | grep -m 1 -F "$VERSION." ||
             cat releases.txt | grep -m 1 -F "$VERSION")"
         FILE_BASE="$(printf "$FILE_URL" | sed -e "s/.*\///")"
@@ -19,14 +19,14 @@ shMain () {(set -e
         Darwin)
             FILE_BASE="$(printf "$FILE_BASE" | sed -e "s/linux/darwin/")"
             FILE_BIN=external/Electron.app/Contents/MacOS/Electron
-            if (printf "$FILE_BASE" | grep -q -E "atom")
-            then
-                FILE_BIN=external/Atom.app/Contents/MacOS/Atom
-            fi
             FILE_URL="$(printf "$FILE_URL" | sed -e "s/linux/darwin/")"
             UNZIP=unzip
             ;;
         esac
+        if (printf "$FILE_BASE" | grep -q -E "atom")
+        then
+            FILE_BIN="$(printf "$FILE_BIN" | sed -e "s/Electron/Atom/g" -e "s/electron/atom/g")"
+        fi
         # init external/electron
         rm -fr external && mkdir -p external
         for DIR in /bin /usr/bin /usr/local/bin
@@ -59,7 +59,10 @@ shMain () {(set -e
             # unzip file
             $UNZIP -d external -oq "/tmp/$FILE_BASE"
             # init external/electron
-            [ -f external/electron ] || ln -fs "$PWD/$FILE_BIN" external/electron
+            if [ ! -f external/electron ]
+            then
+                ln -fs "$PWD/$FILE_BIN" external/electron
+            fi
         fi
         ;;
     start)
@@ -197,10 +200,10 @@ require("fs").readFileSync("releases.txt", "utf8").replace((
 '
 )}
 
-shNpmReleasesParse () {(set -e
+shNpmReleasesProcess () {(set -e
 # this function will parse the list of all electron-releases
 # example usage:
-# npm run eval shNpmReleasesParse
+# npm run eval shNpmReleasesProcess
     cat .releases.txt |
         grep -E "https:.*(electron-|atom-shell).*\.zip" | \
         grep -E "(linux|linux-x64|atom-shell)\.zip" | tee releases.txt

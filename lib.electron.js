@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /*
- * lib.electron.js (2018.9.8)
+ * lib.electron.js (2018.9.23)
  * https://github.com/kaizhu256/node-electron-lite
- * this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases
+ * this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases
  *
  */
 
@@ -116,11 +116,17 @@
         if (local.isBrowser || module !== require.main || process.versions.electron) {
             return;
         }
-        local.__filename = (process.platform === 'darwin' &&
-            local.fs.existsSync(__dirname + '/external/Electron.app/Contents/MacOS/Electron')
-            // bug-workaround - darwin does not like symlink
-            ? __dirname + '/external/Electron.app/Contents/MacOS/Electron'
-            : __dirname + '/external/electron');
+        [
+            process.platform === 'darwin' && __dirname + '/external/Atom.app/Contents/MacOS/Atom',
+            process.platform === 'darwin'
+                && __dirname + '/external/Electron.app/Contents/MacOS/Electron',
+            __dirname + '/external/electron'
+        ].some(function (file) {
+            if (file && local.fs.existsSync(file)) {
+                local.__filename = file;
+                return true;
+            }
+        });
         // run electron in child_process
         local.child = local.child_process.spawn(
             local.__filename,

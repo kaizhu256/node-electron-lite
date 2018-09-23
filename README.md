@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v2.0.8) pre
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-linux-x64.zip)
 
 
 
@@ -58,14 +58,10 @@ this zero-dependency package will download and install the electron (v2.0.8) pre
 - upgrade to electron v3.0.x when stable
 - none
 
-#### changelog 2018.9.8
-- npm publish 2018.9.8
-- upgrade to electron v2.0.8
-- rename file busybox -> busybox-i486
-- add file releases.txt
-- add npm-script shell-functions shNpmReleasesFetch, shNpmReleasesMinorVersions, shNpmReleasesParse
-- revamp bootstrap-mechanism before running tests
-- fix stdout bug
+#### changelog 2018.9.23
+- npm publish 2018.9.23
+- minor update to v2.0.10
+- update file releases.txt
 - none
 
 #### this package requires
@@ -203,7 +199,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
@@ -241,7 +237,7 @@ instruction
         "test": "./npm_scripts.sh",
         "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.9.8"
+    "version": "2018.9.23"
 }
 ```
 

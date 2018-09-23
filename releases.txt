@@ -1,3 +1,11 @@
+https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0/electron-v3.0.0-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0-beta.13/electron-v3.0.0-beta.13-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0-beta.12/electron-v3.0.0-beta.12-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0-beta.11/electron-v3.0.0-beta.11-linux-x64.zip
+https://github.com/electron/electron/releases/download/v2.0.9/electron-v2.0.9-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0-beta.10/electron-v3.0.0-beta.10-linux-x64.zip
+https://github.com/electron/electron/releases/download/v3.0.0-beta.9/electron-v3.0.0-beta.9-linux-x64.zip
 https://github.com/electron/electron/releases/download/v3.0.0-beta.8/electron-v3.0.0-beta.8-linux-x64.zip
 https://github.com/electron/electron/releases/download/v3.0.0-beta.7/electron-v3.0.0-beta.7-linux-x64.zip
 https://github.com/electron/electron/releases/download/v2.0.8/electron-v2.0.8-linux-x64.zip
