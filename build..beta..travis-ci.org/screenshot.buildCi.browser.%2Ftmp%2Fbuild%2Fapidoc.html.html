@@ -48,9 +48,9 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/kaizhu256/node-electron-lite">electron-lite (2018.9.8)</a>
+    <a href="https://github.com/kaizhu256/node-electron-lite">electron-lite (2018.9.23)</a>
 </h1>
-<h4>this zero-dependency package will download and install the electron (v2.0.8) prebuilt-binary from https://github.com/electron/electron/releases</h4>
+<h4>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.electron">module electron</a><ol>
@@ -9113,220 +9113,21 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">() =&gt; {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-[IncrementalMarking] Step %s %zu bytes (%zu) in %.1f
-in v8in task[IncrementalMarking] Restarting (new grey objects)
-sharedbailoutWorklist %s: %d
-  [%s]: %d
-size &gt; maximum function size: %zuexpected magic word %02x %02x %02x %02x, found %02x %02x %02x %02xexpected version %02x %
-02x %02x %02x, found %02x %02x %02x %02xInvalid code section lengthInvalid function length (0)not enough code section bytesnot
- all code section bytes were usedexpected %sextra bits in varint../../v8/src/wasm/decoder.h0 &lt; lenreading %d bytes would
- underflow/overflowexpected %d bytes, fell off endV8.Builtin_HandleApiCallV8.Builtin_HandleApiCallAsFunction../../v8/src/builtins
-/builtins-api.ccconstructor-&gt;shared()-&gt;IsApiFunction()handler-&gt;IsCallHandlerInfo()call non-functionV8.Builtin_HandleApiCallAsConstructor
-call../../v8/src/compiler/osr.cc(osr_normal_entry) != nullptr(osr_loop_entry) != nullptr!osr_looposr_loop0 != live_input_count
--- Graph after OSR duplication -- ../../v8/src/compiler/all-nodes.honly_inputs_../../v8/src/heap/embedder-tracing.cccached_wrappers_to_trace_
-.empty()../../v8/src/execution.ccAllowJavascriptExecution::IsAllowed(isolate)[Running deserialized script: %s]
-../../v8/src/heap/spaces.ccCodeRangecommit_size &lt;= requested_size - 2 * MemoryAllocator::CodePageGuardSize()0 == concurrent_unmapping_tasks_active_
-delayed_regular_chunks_.empty()Code page is too large.MemoryChunk!last_chunk_.IsReserved()last_chunk_.IsReserved()filler-&amp;
-gt;IsFiller()Shrinking page %p: end %p -&gt; %p
-filler-&gt;address() + filler-&gt;Size() == area_end()to_remove != current_page_FreeList[%p, top=%p, %d] %p -&gt; null
-limit() &gt;= top()size == static_cast&lt;int&gt;(end - start)LargeObjectChunk../../v8/src/base/platform/platform.hInVM(free_start
-, size)../../v8/src/heap/heap.h!object-&gt;IsSmi()v8:ProfEvntProcnative V8RuntimeCpuProfiler::StartProfiling../../v8/src/locked
--queue-inl.hhead_ != nullptrn != nullptrcheck-maps-depth#?index out of bounds../../v8/src/wasm/wasm-module.ccinstance_count
- &gt;= 0JSObject::cast(compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;value()) == *module_obj(prev == nullptr &amp;&amp; !current_instance
--&gt;has_weak_prev_instance()) || current_instance-&gt;ptr_to_weak_prev_instance()-&gt;value() == prevcurrent_instance-&gt;ptr_to_weak_wasm_module
-()-&gt;value() == *module_objcurrent_instance-&gt;ptr_to_weak_owning_instance() -&gt;value() -&gt;IsWasmInstanceObject()found_instances
- &lt;= instance_countfound_instances == instance_countcompiled_module-&gt;has_weak_wasm_module()compiled_module-&gt;ptr_to_weak_wasm_module
-()-&gt;value() == *module_obj!compiled_module-&gt;has_weak_prev_instance()!compiled_module-&gt;has_weak_next_instance()!compiled_module
--&gt;has_weak_owning_instance()compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;cleared()modulenamekindfunctiontablememory
-globalout of memory allocating custom section dataWasm decoding failedWasm code generation disallowed in this contextWasmCompile
-WasmLazyCompile!thrower.<span class="apidocCodeKeywordSpan">error</span>()../../v8/src/wasm/wasm-module.cc:1021!maybe.FromMaybe
-(false) implies isolate-&gt;has_scheduled_exception()call index%s: %s @+%u../../v8/src/property-descriptor.ccresult.IsJust() &amp;
-amp;&amp; result.FromJust()AnyNoneClass(../../v8/src/compiler/verifier.ccinput_count == node-&gt;InputCount()frame_state-&amp;
-gt;opcode() == IrOpcode::kFrameState || (node-&gt;opcode() == IrOpcode::kFrameState &amp;&amp; frame_state-&gt;opcode() == IrOpcode
-::kStart)valuenode-&gt;opcode() == IrOpcode::kParameter || node-&gt;opcode() == IrOpcode::kProjection || value-&gt;op()-&gt;ValueOutputCount
-() &lt;= 1contexteffectcontrol(discovered_if_success) == nullptr(discovered_if_exception) == nullptr#%d:%s should be followed
- by IfSuccess/IfException, but is only followed by single #%d:%s2 == total_number_of_control_uses0 == input_countnode-&gt;op()-&amp;
-gt;ValueOutputCount() == 0node-&gt;op()-&gt;EffectOutputCount() == 0node-&gt;op()-&gt;ControlOutputCount() == 0IrOpcode::IsGraphTerminator
-(input-&gt;opcode())use-&gt;opcode() == IrOpcode::kIfTrue || use-&gt;opcode() == IrOpcode::kIfFalse1 == count_true1 == count_false
-IrOpcode::kBranch == NodeProperties::GetControlInput(node, 0)-&gt;opcode()!input-&gt;op()-&gt;HasProperty(Operator::kNoThrow)
-OpParameter&lt;int32_t&gt;(use-&gt;op()) != OpParameter&lt;int32_t&gt;(user-&gt;op())Switch #%d illegally used by #%d:%s1 == count_default
-node-&gt;op()-&gt;ControlOutputCount() == count_case + count_defaultIrOpcode::kSwitch == NodeProperties::GetControlInput(node)-&amp;
-gt;opcode()control_count == input_countIrOpcode::kEnd == use-&gt;opcode()1 == control_count1 == effect_count2 == input_count
-IrOpcode::kLoop == NodeProperties::GetControlInput(node)-&gt;opcode()1 == input_countIrOpcode::kStart == start-&gt;opcode()-
-1 &lt;= indexindex + 1 &lt; start-&gt;op()-&gt;ValueOutputCount()input-&gt;op()-&gt;ValueOutputCount() &gt; index0 == effect_count
-0 == control_count3 == value_countvalue_count == control-&gt;op()-&gt;ControlInputCount()input_count == 1 + value_count0 ==
-value_counteffect_count == control-&gt;op()-&gt;ControlInputCount()input_count == 1 + effect_count2 == control_countIrOpcode
-::kLoop == loop-&gt;opcode()IrOpcode::kLoopExit == loop_exit-&gt;opcode()NodeProperties::GetType(val)-&gt;Is(NodeProperties::GetType
-(node))5 == value_count6 == input_countNodeProperties::GetValueInput(node, i)-&gt;opcode() == IrOpcode::kStateValues || NodeProperties
-::GetValueInput(node, i)-&gt;opcode() == IrOpcode::kTypedStateValuesPropertyAccessOf(node-&gt;op()).feedback().IsValid()NamedAccessOf
-(node-&gt;op()).feedback().IsValid()LoadGlobalParametersOf(node-&gt;op()).feedback().IsValid()StoreGlobalParametersOf(node-&gt;
-;op()).feedback().IsValid()StoreNamedOwnParametersOf(node-&gt;op()).feedback().IsValid()(graph-&gt;start()) != nullptr(graph-&amp;
-gt;end()) != nullptr../../v8/src/compiler/verifier.cc:1494Node #%d:%s has duplicate projections #%d and #%d../../v8/src/compiler
-/verifier.cc:1585count &gt;= rpo_order-&gt;size()(*b) == schedule-&gt;GetBlockById((*b)-&gt;id())predecessor-&gt;rpo_number() &amp;
-gt;= 0predecessor == schedule-&gt;GetBlockById(predecessor-&gt;id())successor-&gt;rpo_number() &gt;= 0successor == schedule-&amp;
-gt;GetBlockById(successor-&gt;id())start == rpo_order-&gt;at(0)static_cast&lt;int&gt;(b) == block-&gt;rpo_number()(dom) == nullptr
-(dom) != nullptrdom-&gt;rpo_number() &lt; block-&gt;rpo_number()block-&gt;rpo_number() &gt;= 0block == rpo_order-&gt;at(block
--&gt;rpo_number())marked[rpo_order-&gt;at(b)-&gt;id().ToSize()]Block B%d is not dominated by B%dBlock B%d is not immediately
-dominated by B%dcontrol-&gt;opcode() == IrOpcode::kMerge || control-&gt;opcode() == IrOpcode::kLoop(*b) == schedule-&gt;block(
-control)block == schedule-&gt;block(control)GraphError: node # does not produce  output used by node #TypeError: node # type
-  is not  should never have a type(input @) type  must intersect Node #%d:%s in B%d is not dominated by input@%d #%d:%sNode
- #%d:%s in B%d is not dominated by control input #%d:%s../../v8/src/interpreter/bytecode-array-builder.ccindex &lt; locals_count
-()GetTypeofModeFromSlotKind(feedback_vector_spec()-&gt;GetKind(slot)) == typeof_modeGetLanguageModeFromSlotKind(feedback_vector_spec
-()-&gt;GetKind(slot)) == language_modeFeedbackSlotKind::kStoreOwnNamed == feedback_vector_spec()-&gt;GetKind(slot)AlreadyBoolean
-ConvertToBooleanSYMBOL == type_../../v8/src/wasm/function-body-decoder.cc:2124../../v8/src/wasm/function-body-decoder.cc:2132
-../../v8/src/wasm/function-body-decoder.cc:2173// signature: // locals: 0x 0x// body:                                                                    // @   //
-depth= // entries=   // sig # // function #local decls countlocal countlocal count too largeinvalid local typefunction body
- end &lt; startunterminated control structurefunction body must end with "end" opcode.wasm-decode %s (%0.3f ms)
+this.loadState_ = LoadState.LOADING;
+this.pendingScriptingMessages_ = [];
+this.setPlugin(plugin);
 
-okfailedOpcode not supported for asmjs modulesInvalid opcode (enable with --experimental-wasm-eh)Prototype still not functional
-: %scatch does not match any trycatch already present for try with catchelse does not match any ifelse does not match an if
-else already present for ifend does not match any if, try, or blockend of if expected empty stacknon-void one-armed ifmissing
- catch in trytrailing code after function endimproper branch in br_tableinconsistent arity in br_table target %d (previous was
- %u, this one %u)type error in br_table target %d operand %d (previous expected %s, this one %s)immutable global #%u cannot be
- assignedgrow_memory is not supported for asmjs modulesInvalid opcode (enable with --experimental-wasm-simd)simd indexAtomics
- are allowed only in AsmJs modulesInvalid opcode (enable with --experimental-wasm-threads)atomic indexInvalid opcodeBeyond end
- of code%s[%d] expected type %s, found %s of type %s&lt;end&gt;local indexexpected %u elements on the stack for fallthru to @%
-dtype error in merge[%zu] (expected %s, got %s)invalid local index: %uexpected %d elements on the stack for fallthru to @%d%
-s found empty stackinvalid break depth: %uexpected at least %u values on the stack for br to @%d, found %dinvalid table count
- (&gt; max function size): %ubranch table entryimmi32immi64immf32immf64global indexinvalid global index: %ualignmentinvalid
- alignment; expected maximum alignment is %u, actual alignment is %uoffsetmemory instruction with no memorymemory indexexpected
- memory index 0, found %uinvalid function index: %ufunction table has to exist to execute call_indirectinvalid signature index
-: #%uinvalid simd opcodelaneinvalid lane indexshiftinvalid shift amountshuffleinvalid shuffle masksimd_indexinvalid SIMD
- opcode../../v8/src/wasm/function-body-decoder.ccComplete(pc, operand)unimplemented opcode: %x (%s)i32i64f32f64s128&lt;
-stmt&gt;&lt;var&gt;&lt;unknown&gt;kExprUnreachablekExprNopkExprBlockkExprLoopkExprIfkExprElsekExprTrykExprCatchkExprThrow
-kExprRethrowkExprCatchAllkExprEndkExprBrkExprBrIfkExprBrTablekExprReturnkExprCallFunctionkExprCallIndirectkExprDropkExprSelect
-kExprGetLocalkExprSetLocalkExprTeeLocalkExprGetGlobalkExprSetGlobalkExprI32ConstkExprI64ConstkExprF32ConstkExprF64Const
-kExprI32EqzkExprI32EqkExprI32NekExprI32LtSkExprI32LtUkExprI32GtSkExprI32GtUkExprI32LeSkExprI32LeUkExprI32GeSkExprI32GeU
-kExprI64EqzkExprI64EqkExprI64NekExprI64LtSkExprI64LtUkExprI64GtSkExprI64GtUkExprI64LeSkExprI64LeUkExprI64GeSkExprI64GeU
-kExprF32EqkExprF32NekExprF32LtkExprF32GtkExprF32LekExprF32GekExprF64EqkExprF64NekExprF64LtkExprF64GtkExprF64LekExprF64Ge
-kExprI32ClzkExprI32CtzkExprI32PopcntkExprI32AddkExprI32SubkExprI32MulkExprI32DivSkExprI32DivUkExprI32RemSkExprI32RemU
-kExprI32AndkExprI32IorkExprI32XorkExprI32ShlkExprI32ShrSkExprI32ShrUkExprI32RolkExprI32RorkExprI64ClzkExprI64CtzkExprI64Popcnt
-kExprI64AddkExprI64SubkExprI64MulkExprI64DivSkExprI64DivUkExprI64RemSkExprI64RemUkExprI64AndkExprI64IorkExprI64XorkExprI64Shl
-kExprI64ShrSkExprI64ShrUkExprI64RolkExprI64RorkExprF32AbskExprF32NegkExprF32CeilkExprF32FloorkExprF32TrunckExprF32NearestInt
-kExprF32SqrtkExprF32AddkExprF32SubkExprF32MulkExprF32DivkExprF32MinkExprF32MaxkExprF32CopySignkExprF64AbskExprF64NegkExprF64Ceil
-kExprF64FloorkExprF64TrunckExprF64NearestIntkExprF64SqrtkExprF64AddkExprF64SubkExprF64MulkExprF64DivkExprF64MinkExprF64Max
-kExprF64CopySignkExprI32ConvertI64kExprI32SConvertF32kExprI32UConvertF32kExprI32SConvertF64kExprI32UConvertF64kExprI64SConvertI32
-kExprI64UConvertI32kExprI64SConvertF32kExprI64UConvertF32kExprI64SConvertF64kExprI64UConvertF64kExprF32SConvertI32kExprF32UConvertI32
-kExprF32SConvertI64kExprF32UConvertI64kExprF32ConvertF64kExprF64SConvertI32kExprF64UConvertI32kExprF64SConvertI64kExprF64UConvertI64
-kExprF64ConvertF32kExprI32ReinterpretF32kExprI64ReinterpretF64kExprF32ReinterpretI32kExprF64ReinterpretI64kExprI32StoreMem
-kExprI64StoreMemkExprF32StoreMemkExprF64StoreMemkExprI32StoreMem8kExprI32StoreMem16kExprI64StoreMem8kExprI64StoreMem16kExprI64StoreMem32
-kExprI32LoadMemkExprI64LoadMemkExprF32LoadMemkExprF64LoadMemkExprI32LoadMem8SkExprI32LoadMem8UkExprI32LoadMem16SkExprI32LoadMem16U
-kExprI64LoadMem8SkExprI64LoadMem8UkExprI64LoadMem16SkExprI64LoadMem16UkExprI64LoadMem32SkExprI64LoadMem32UkExprMemorySize
-kExprGrowMemorykExprF64AcoskExprF64AsinkExprF64AtankExprF64CoskExprF64SinkExprF64TankExprF64ExpkExprF64LogkExprF64Atan2
-kExprF64PowkExprF64ModkExprI32AsmjsDivSkExprI32AsmjsDivUkExprI32AsmjsRemSkExprI32AsmjsRemUkExprI32AsmjsLoadMem8SkExprI32AsmjsLoadMem8U
-kExprI32AsmjsLoadMem16SkExprI32AsmjsLoadMem16UkExprI32AsmjsLoadMemkExprF32AsmjsLoadMemkExprF64AsmjsLoadMemkExprI32AsmjsStoreMem8
-kExprI32AsmjsStoreMem16kExprI32AsmjsStoreMemkExprF32AsmjsStoreMemkExprF64AsmjsStoreMemkExprI32AsmjsSConvertF32kExprI32AsmjsUConvertF32
-kExprI32AsmjsSConvertF64kExprI32AsmjsUConvertF64Unknownbreak depthfunction indexsignature indextable indexexpected table
- index 0, found %ublock typeinvalid block arity &gt; 1invalid block typeblock aritytable count../../v8/src/wasm/function-body
--decoder-impl.hdecode_local_type(types[index], &amp;result)NaN-InfinityInfinity00.../../v8/src/conversions.cc'.&amp;apos
-; == buffer[fraction_cursor]v(=S)(R)(S)(1)(-)[constant:[immediate:[stack:[fp_stack:|R|E|-|b|w8|w16|w32|w64|f32
-|f64|s128|ts|tp|t(x);ArchCallCodeObjectArchTailCallCodeObjectFromJSFunctionArchTailCallCodeObjectArchCallJSFunctionArchTailCallJSFunctionFromJSFunction
-ArchTailCallAddressArchPrepareCallCFunctionArchCallCFunctionArchPrepareTailCallArchJmpArchLookupSwitchArchTableSwitchArchNop
-ArchDebugBreakArchCommentArchThrowTerminatorArchDeoptimizeArchRetArchStackPointerArchFramePointerArchParentFramePointer
-ArchTruncateDoubleToIArchStoreWithWriteBarrierCheckedLoadInt8CheckedLoadUint8CheckedLoadInt16CheckedLoadUint16CheckedLoadWord32
-CheckedLoadWord64CheckedLoadFloat32CheckedLoadFloat64CheckedStoreWord8CheckedStoreWord16CheckedStoreWord32CheckedStoreWord64
-CheckedStoreFloat32CheckedStoreFloat64ArchStackSlotAtomicLoadInt8AtomicLoadUint8AtomicLoadInt16AtomicLoadUint16AtomicLoadWord32
-AtomicStoreWord8AtomicStoreWord16AtomicStoreWord32AtomicExchangeInt8AtomicExchangeUint8AtomicExchangeInt16AtomicExchangeUint16
-AtomicExchangeWord32AtomicCompareExchangeInt8AtomicCompareExchangeUint8AtomicCompareExchangeInt16AtomicCompareExchangeUint16
-AtomicCompareExchangeWord32AtomicAddInt8AtomicAddUint8AtomicAddInt16AtomicAddUint16AtomicAddWord32AtomicSubInt8AtomicSubUint8
-AtomicSubInt16AtomicSubUint16AtomicSubWord32AtomicAndInt8AtomicAndUint8AtomicAndInt16AtomicAndUint16AtomicAndWord32AtomicOrInt8
-AtomicOrUint8AtomicOrInt16AtomicOrUint16AtomicOrWord32AtomicXorInt8AtomicXorUint8AtomicXorInt16AtomicXorUint16AtomicXorWord32
-Ieee754Float64AcosIeee754Float64AcoshIeee754Float64AsinIeee754Float64AsinhIeee754Float64AtanIeee754Float64AtanhIeee754Float64Atan2
-Ieee754Float64CbrtIeee754Float64CosIeee754Float64CoshIeee754Float64ExpIeee754Float64Expm1Ieee754Float64LogIeee754Float64Log1p
-Ieee754Float64Log10Ieee754Float64Log2Ieee754Float64PowIeee754Float64SinIeee754Float64SinhIeee754Float64TanIeee754Float64Tanh
-X64AddX64Add32X64AndX64And32X64CmpX64Cmp32X64Cmp16X64Cmp8X64TestX64Test32X64Test16X64Test8X64OrX64Or32X64XorX64Xor32
-X64SubX64Sub32X64ImulX64Imul32X64ImulHigh32X64UmulHigh32X64IdivX64Idiv32X64UdivX64Udiv32X64NotX64Not32X64NegX64Neg32
-X64ShlX64Shl32X64ShrX64Shr32X64SarX64Sar32X64RorX64Ror32X64LzcntX64Lzcnt32X64TzcntX64Tzcnt32X64PopcntX64Popcnt32SSEFloat32Cmp
-SSEFloat32AddSSEFloat32SubSSEFloat32MulSSEFloat32DivSSEFloat32AbsSSEFloat32NegSSEFloat32SqrtSSEFloat32ToFloat64SSEFloat32ToInt32
-SSEFloat32ToUint32SSEFloat32RoundSSEFloat64CmpSSEFloat64AddSSEFloat64SubSSEFloat64MulSSEFloat64DivSSEFloat64ModSSEFloat64Abs
-SSEFloat64NegSSEFloat64SqrtSSEFloat64RoundSSEFloat32MaxSSEFloat64MaxSSEFloat32MinSSEFloat64MinSSEFloat64ToFloat32SSEFloat64ToInt32
-SSEFloat64ToUint32SSEFloat32ToInt64SSEFloat64ToInt64SSEFloat32ToUint64SSEFloat64ToUint64SSEInt32ToFloat64SSEInt32ToFloat32
-SSEInt64ToFloat32SSEInt64ToFloat64SSEUint64ToFloat32SSEUint64ToFloat64SSEUint32ToFloat64SSEUint32ToFloat32SSEFloat64ExtractLowWord32
-SSEFloat64ExtractHighWord32SSEFloat64InsertLowWord32SSEFloat64InsertHighWord32SSEFloat64LoadLowWord32SSEFloat64SilenceNaNAVXFloat32Cmp
-AVXFloat32AddAVXFloat32SubAVXFloat32MulAVXFloat32DivAVXFloat64CmpAVXFloat64AddAVXFloat64SubAVXFloat64MulAVXFloat64DivAVXFloat64Abs
-AVXFloat64NegAVXFloat32AbsAVXFloat32NegX64MovsxblX64MovzxblX64MovsxbqX64MovzxbqX64MovbX64MovsxwlX64MovzxwlX64Movsxwq
-X64MovzxwqX64MovwX64MovlX64MovsxlqX64MovqX64MovsdX64MovssX64MovdquX64BitcastFIX64BitcastDLX64BitcastIFX64BitcastLDX64Lea32
-X64LeaX64Dec32X64Inc32X64PushX64PokeX64StackCheckX64I32x4SplatX64I32x4ExtractLaneX64I32x4ReplaceLaneX64I32x4NegX64I32x4Shl
-X64I32x4ShrSX64I32x4AddX64I32x4AddHorizX64I32x4SubX64I32x4MulX64I32x4MinSX64I32x4MaxSX64I32x4EqX64I32x4NeX64I32x4GtSX64I32x4GeS
-X64I32x4ShrUX64I32x4MinUX64I32x4MaxUX64I32x4GtUX64I32x4GeUX64I16x8SplatX64I16x8ExtractLaneX64I16x8ReplaceLaneX64I16x8Neg
-X64I16x8ShlX64I16x8ShrSX64I16x8AddX64I16x8AddSaturateSX64I16x8AddHorizX64I16x8SubX64I16x8SubSaturateSX64I16x8MulX64I16x8MinS
-X64I16x8MaxSX64I16x8EqX64I16x8NeX64I16x8GtSX64I16x8GeSX64I16x8ShrUX64I16x8AddSaturateUX64I16x8SubSaturateUX64I16x8MinU
-X64I16x8MaxUX64I16x8GtUX64I16x8GeUX64I8x16SplatX64I8x16ExtractLaneX64I8x16ReplaceLaneX64I8x16NegX64I8x16AddX64I8x16AddSaturateS
-X64I8x16SubX64I8x16SubSaturateSX64I8x16MinSX64I8x16MaxSX64I8x16EqX64I8x16NeX64I8x16GtSX64I8x16GeSX64I8x16AddSaturateUX64I8x16SubSaturateU
-X64I8x16MinUX64I8x16MaxUX64I8x16GtUX64I8x16GeUX64S128AndX64S128OrX64S128XorX64S128NotX64S128SelectX64S128ZeroMRMRIMR1
-MR2MR4MR8MR1IMR2IMR4IMR8IM1M2M4M8M1IM2IM4IM8IRootbranchdeoptimizesettrapequalnot equalsigned less thansigned
- greater than or equalsigned less than or equalsigned greater thanunsigned less thanunsigned greater than or equalunsigned
-less than or equalunsigned greater thanless than or unordered (FP)greater than or equal (FP)less than or equal (FP)greater
-than or unordered (FP)less than (FP)greater than, equal or unordered (FP)less than, equal or unordered (FP)greater than (FP)
-unordered equalunordered not equaloverflownot overflowpositive or zeronegativegap () 
-          ) =  :  &amp;&amp;  if lfRPOB: AO# (deferred) (no frame) (construct frame) (deconstruct frame) loop blocks
-: [  instructions: [ predecessors: B     phi:  = v%5d   ../../v8/src/compiler/instruction.ccsuccessor-&gt;PredecessorCount
-() == 1 &amp;&amp; successor-&gt;predecessors()[0] == block-&gt;rpo_number()InstructionBlockAt(successor_id)-&gt;IsDeferred()InstructionBlockAt
-(predecessor_id)-&gt;IsDeferred()!definitions.Contains(vreg)virtual_register != InstructionOperand::kInvalidVirtualRegisterblock
--&gt;rpo_number() == rpoIMM#CST#: vargs_count: get RegExp: set ../../v8/src/interpreter/bytecode-array-writer.cccurrent_offset
- &gt;= label-&gt;offset()current_offset &lt;= static_cast&lt;size_t&gt;(kMaxUInt32)vector::_M_range_insertV8.Builtin_MathHypot
-V8.Builtin_ArrayPushV8.Builtin_ArrayPopV8.Builtin_ArrayShiftV8.Builtin_ArrayUnshiftV8.Builtin_ArraySliceV8.Builtin_ArraySplice
-V8.Builtin_ArrayConcatArray.prototype.concat../../v8/src/prototype.h!handle_.is_null()Negative31NullUndefinedBooleanUnsigned30
-MinusZeroSymbolEmptyStringInternalizedNonEmptySeqStringInternalizedNonSeqStringOtherNonSeqStringOtherSeqStringOtherCallable
-OtherObjectOtherUndetectableCallableProxyOtherProxyFunctionBoundFunctionHoleOtherInternalExternalPointerArraySigned31
-Signed32Signed32OrMinusZeroSigned32OrMinusZeroOrNaNNegative32Unsigned31Unsigned32Unsigned32OrMinusZeroUnsigned32OrMinusZeroOrNaN
-Integral32Integral32OrMinusZeroIntegral32OrMinusZeroOrNaNPlainNumberOrderedNumberMinusZeroOrNaNNumberInternalizedSeqString
-InternalizedStringOtherStringSeqStringNonSeqStringNonEmptyStringStringUniqueNameNameInternalizedStringOrNullBooleanOrNumber
-BooleanOrNullOrNumberBooleanOrNullOrUndefinedOddballNullOrNumberNullOrUndefinedUndetectableNumberOrHoleNumberOrOddballNumberOrString
-NumberOrUndefinedPlainPrimitivePrimitiveOtherUndetectableOrUndefinedProxyArrayOrOtherObjectArrayOrProxyDetectableCallable
-CallableNonCallableNonCallableOrNullDetectableObjectDetectableReceiverDetectableReceiverOrNullObjectReceiverReceiverOrUndefined
-ReceiverOrNullOrUndefinedSymbolOrReceiverStringOrReceiverUniqueInternalNonInternalNonNumberOtherUnsigned31OtherUnsigned32
-OtherSigned32OtherNumberHeapConstant(OtherNumberConstant(Range(../../v8/src/compiler/types.hIsOtherNumberConstant(value)
-untagged basetagged baseUint8Int8Uint16Int16Uint32Int32Float32Float64Uint8Clamped[+allow-return-holenever-return-hole
-check-for-minus-zerodont-check-for-minus-zeroArrayObject|DoubleElementsHoleyElementsfast-transition from  to slow-transition
- from SignedSmallCheckMapsMaybeGrowFastElementsArgumentsLengthAllocateLoadFieldStoreFieldLoadElementStoreElementLoadTypedElement
-StoreTypedElementTransitionAndStoreElementNoWriteBarrierMapWriteBarrierPointerWriteBarrierFullWriteBarrierNotTenuredTenured
-BooleanNotNumberEqualNumberLessThanNumberLessThanOrEqualNumberAddNumberSubtractNumberMultiplyNumberDivideNumberModulus
-NumberBitwiseOrNumberBitwiseXorNumberBitwiseAndNumberShiftLeftNumberShiftRightNumberShiftRightLogicalNumberImulNumberAbs
-NumberClz32NumberCeilNumberFloorNumberFroundNumberAcosNumberAcoshNumberAsinNumberAsinhNumberAtanNumberAtan2NumberAtanh
-NumberCbrtNumberCosNumberCoshNumberExpNumberExpm1NumberLogNumberLog1pNumberLog10NumberLog2NumberMaxNumberMinNumberPow
-NumberRoundNumberSignNumberSinNumberSinhNumberSqrtNumberTanNumberTanhNumberTruncNumberToBooleanNumberToInt32NumberToUint32
-NumberToUint8ClampedNumberSilenceNaNStringCharAtSeqStringCharCodeAtStringFromCharCodePlainPrimitiveToNumberPlainPrimitiveToWord32
-PlainPrimitiveToFloat64ChangeTaggedSignedToInt32ChangeTaggedToInt32ChangeTaggedToUint32ChangeTaggedToFloat64ChangeTaggedToTaggedSigned
-ChangeFloat64ToTaggedPointerChangeInt31ToTaggedSignedChangeInt32ToTaggedChangeUint32ToTaggedChangeTaggedToBitChangeBitToTagged
-TruncateTaggedToBitTruncateTaggedPointerToBitTruncateTaggedToWord32TruncateTaggedToFloat64ObjectIsDetectableCallableObjectIsNaN
-ObjectIsNonCallableObjectIsNumberObjectIsReceiverObjectIsSmiObjectIsStringObjectIsSymbolObjectIsUndetectableConvertTaggedHoleToUndefined
-ReferenceEqualCheckBoundsCheckHeapObjectCheckIfCheckInternalizedStringCheckNumberCheckReceiverCheckSmiCheckStringCheckSeqString
-CheckNonEmptyStringCheckSymbolCheckNotTaggedHoleCheckedInt32AddCheckedInt32SubCheckedInt32DivCheckedInt32ModCheckedUint32Div
-CheckedUint32ModCheckedUint32ToInt32CheckedUint32ToTaggedSignedCheckedInt32ToTaggedSignedCheckedTaggedSignedToInt32CheckedTaggedToTaggedSigned
-CheckedTaggedToTaggedPointerUTF16UTF32ArrayBufferWasNeuteredLookupHashStorageIndexLoadHashMapValueArgumentsFrameNewUnmappedArgumentsElements
-ChangeFloat64ToTaggedCheckedInt32MulCheckedFloat64ToInt32CheckedTaggedToInt32CheckedTaggedToFloat64CheckedTruncateTaggedToWord32
-CheckFloat64HoleEnsureWritableFastElementsSpeculativeNumberAddSpeculativeNumberSubtractSpeculativeNumberMultiplySpeculativeNumberDivide
-SpeculativeNumberModulusSpeculativeNumberBitwiseAndSpeculativeNumberBitwiseOrSpeculativeNumberBitwiseXorSpeculativeNumberShiftLeft
-SpeculativeNumberShiftRightSpeculativeNumberShiftRightLogicalSpeculativeNumberEqualSpeculativeNumberLessThanSpeculativeNumberLessThanOrEqual
-SpeculativeToNumberLoadBufferStoreBufferrest lengthnot rest lengthfast-map double-map(program)(idle)(garbage collector
-)(unresolved function)(root)startTimedisabled-by-default-v8.cpu_profilerProfiledatacpuProfilenodessamplestimeDeltasProfileChunk
-endTimecallFramefunctionNameurlscriptIdlineNumbercolumnNumberparentno reasondeoptReasonCodeJSAddr:rsitjs-call../../
-v8/src/compiler/linkage.ccincoming_-&gt;IsJSFunctionCall()V8.Builtin_ReflectDefinePropertyReflect.definePropertyV8.Builtin_ReflectDeleteProperty
-Reflect.deletePropertyV8.Builtin_ReflectGetReflect.getV8.Builtin_ReflectGetOwnPropertyDescriptorReflect.getOwnPropertyDescriptor
-V8.Builtin_ReflectGetPrototypeOfReflect.getPrototypeOfV8.Builtin_ReflectHasReflect.hasV8.Builtin_ReflectIsExtensibleReflect
-.isExtensibleV8.Builtin_ReflectOwnKeysReflect.ownKeysV8.Builtin_ReflectPreventExtensionsReflect.preventExtensionsV8.Builtin_ReflectSet
-Reflect.setV8.Builtin_ReflectSetPrototypeOfReflect.setPrototypeOf":\t\n\"\u%04Xinvalid table size[object Unknown]../../v8/src/objects.ccsuccessJSObject::CreateDataProperty(&amp;it, prop_value, Object::THROW_ON_ERROR) .FromJust()&lt;Very long string[%u]&gt;&lt;Invalid String&gt;&lt;String[%u]: &lt;String[%u]\: \r&lt;JSArray[%u]&gt;&lt;JSBoundFunction (BoundTargetFunction %p)&gt;&lt;JSWeakMap&gt;&lt;JSWeakSet&gt;&lt;JSRegExp&lt;JSFunction &lt;JSFunction &lt; (sfi = %p)&lt;JSGenerator&gt;&lt;JS AsyncGenerator&gt;!!!INVALID CONSTRUCTOR!!!!!!INVALID SHARED ON CONSTRUCTOR!!!&lt;GlobalObject  %smap = %pdeprecated-&lt;RemoteObject&gt;&lt;JS%sObjectGlobal  value = [reconfiguring]{symbol }kDataACCESSORS, attrs: [generalizing]c-&gt;} (+ maps) [[migrating to slow]
-[migrating]:%s-&gt;%s {symbol %p}elements_kind[%i-&gt;%i]!!!INVALID POINTER!!!!!!INVALID MAP!!!&lt;Map()&gt;&lt;FixedArray
-[]&gt;&lt;FixedDoubleArray[&lt;ByteArray[&lt;BytecodeArray[&lt;TransitionArray[&lt;PropertyArray[&lt;FreeSpace[&lt;FixedUint8Array
-[&lt;FixedInt8Array[&lt;FixedUint16Array[&lt;FixedInt16Array[&lt;FixedUint32Array[&lt;FixedInt32Array[&lt;FixedFloat32Array
-[&lt;FixedFloat64Array[&lt;FixedUint8ClampedArray[&lt;SharedFunctionInfo &lt;SharedFunctionInfo&gt;&lt;JSMessageObject&gt;&amp;
-lt;AccessorInfo&gt;&lt;AccessorPair&gt;&lt;AccessCheckInfo&gt;&lt;InterceptorInfo&gt;&lt;FunctionTemplateInfo&gt;&lt;ObjectTemplateInfo
-&gt;&lt;AllocationSite&gt;&lt;AllocationMemento&gt;&lt;Script&gt;&lt;AliasedArgumentsEntry&gt;&lt;PromiseResolveThenableJobInfo
-&gt;&lt;PromiseReactionJobInfo&gt;&lt;DebugInfo&gt;&lt;StackFrameInfo&gt;&lt;PrototypeInfo&gt;&lt;Tuple2&gt;&lt;Tuple3&gt;&amp;
-lt;ContextExtension&gt;&lt;Module&gt;&lt;ModuleInfoEntry&gt;&lt;AsyncGeneratorRequest&gt;&lt;PreParsedScopeData&gt;&lt;Code
- &lt;undefined&gt;&lt;the_hole&gt;&lt;null&gt;&lt;true&gt;&lt;false&gt;&lt;Odd Oddball: &lt;Number &lt;MutableNumber &lt;
-;JSProxy&gt;&lt;Foreign&gt;&lt;Cell value= &lt;PropertyCell name= value=&lt;WeakCell value= &lt;Other heap object (receiver
--&gt;IsJSFunction()dhxMoving prototype_info %p from map %p to map %p.
-new_map-&gt;is_dictionary_map()ForceSetPrototype../../v8/src/objects.cc:4343field type generalizationtyped elements writeelements
- writeLookupIterator::ACCESS_CHECK != it.state()AddDataProperty(&amp;it, value, attributes, THROW_ON_ERROR, CERTAINLY_NOT_STORE_FROM_KEYED
-) .IsJust()k-&gt;IsUniqueName()AddDataProperty(&amp;it, handle(hash, isolate), NONE, THROW_ON_ERROR, CERTAINLY_NOT_STORE_FROM_KEYED
-) .IsJust()Object.definePropertysuccess.FromJust()Object.definePropertiesstatus.FromJust()old_len_desc.value()-&gt;ToArrayLength
-(&amp;old_len)uint32_v-&gt;ToArrayLength(output)a-&gt;length()-&gt;ToArrayLength(&amp;actual_new_len)PreventExtensionsGetPropertyAttributes
-(&amp;it).IsJust()ImmutablePrototypemaybe_name.ToHandle(&amp;name)CopyAsElementsKindMapCreateGenAll_AttributesMismatchProtoMap
-[WeakFixedArray: storing at index %d ]
-[WeakFixedArray: searching for free slot]
-[WeakFixedArray: growing to size %d ]
+window.addEventListener('message', event =&gt; {
+  if (event.origin != 'chrome://pdf-viewer' &amp;&amp;
+      event.origin != 'chrome://print') {
+    console.<span class="apidocCodeKeywordSpan">error</span>(
+        'Received message that was not from the extension: ' + event);
+    return;
+  }
+  switch (event.data.type) {
+    case 'viewport':
+      /**
+       * @type {{
 ...</pre></li>
     </ul>
 
