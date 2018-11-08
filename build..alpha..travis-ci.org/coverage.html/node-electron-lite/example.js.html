@@ -4,19 +4,19 @@
     <title>Code coverage report for node-electron-lite/example.js</title>
     <meta charset="utf-8">
 <style>
-/* jslint-utility2 */
+/* jslint utility2:true */
 /*csslint
     box-model: false,
     important: false,
     qualified-headings: false,
 */
-/* jslint-ignore-begin */
+/* csslint ignore:start */
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-/* jslint-ignore-end */
+/* csslint ignore:end */
 .x-istanbul {
     font-family: Helvetica Neue, Helvetica,Arial;
     font-size: 10pt;
@@ -247,7 +247,8 @@
         return;
     }
     window.domOnEventSelectAllWithinPre = function (event) {
-        var range, selection;
+        var range;
+        var selection;
         if (event &&
                 event.key === "a" &&
                 (event.ctrlKey || event.metaKey) &&
@@ -280,10 +281,10 @@
     </thead>
     <tbody>
         <td>branches: 1<br>statements: 2</td>
-        <td>100%<br>(33 / 33)</td>
+        <td>100%<br>(34 / 34)</td>
         <td>100%<br>(8 / 8)</td>
         <td>100%<br>(2 / 2)</td>
-        <td>100%<br>(33 / 33)</td>
+        <td>100%<br>(34 / 34)</td>
     </tbody>
     </table>
     <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-electron-lite/</a> &#187; example.js</div>
@@ -454,22 +455,7 @@
 162
 163
 164
-165
-166
-167
-168
-169
-170
-171
-172
-173</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+165</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -570,6 +556,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">5</span>
@@ -620,9 +608,6 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -729,20 +714,15 @@ instruction
     3. view screenshot /tmp/screenshot.testExampleJs.browser..png
 */
 &nbsp;
+&nbsp;
+&nbsp;
 /* istanbul instrument in package electron */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
 (function () {
-    'use strict';
-    var options, modeNext, onNext;
+    "use strict";
+    var modeNext;
+    var onNext;
+    var options;
     onNext = function (data) {
         modeNext += 1;
         switch (modeNext) {
@@ -753,32 +733,32 @@ instruction
             }
             // wait for electron to init
             try {
-                require('app').on('ready', onNext);
-            } catch (errorCaught) {
-                require('electron').app.once('ready', onNext);
+                require("app").on("ready", onNext);
+            } catch (ignore) {
+                require("electron").app.once("ready", onNext);
             }
             break;
         case 2:
             // init options
-            options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
             // init browserWindow;
             try {
-                options.BrowserWindow = require('browser-window');
-            } catch (errorCaught) {
-                options.BrowserWindow = require('electron').BrowserWindow;
+                options.BrowserWindow = require("browser-window");
+            } catch (ignore) {
+                options.BrowserWindow = require("electron").BrowserWindow;
             }
             options.browserWindow = new options.BrowserWindow(options);
             // goto next step when webpage is loaded
             /* istanbul ignore next */
             try {
-                options.browserWindow.webContents.once('did-stop-loading', onNext);
-            } catch (errorCaught) {
+                options.browserWindow.webContents.once("did-stop-loading", onNext);
+            } catch (ignore) {
 <span class="cstat-skip" title="statement not covered" >                setTimeout(onNext, 10000);</span>
             }
             // open url
             (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
                 options.browserWindow,
-                'https://electron.atom.io'
+                "https://electron.atom.io"
             );
             break;
         case 3:
@@ -790,14 +770,11 @@ instruction
             /* istanbul ignore next */
             try {
                 data = data.toPng();
-            } catch (errorCaught) {
-                try {
-                    data = data.toPNG();
-                } catch (ignore) {
-                }
+            } catch (ignore) {
+                data = data.toPNG();
             }
-            require('fs').writeFileSync('/tmp/screenshot.testExampleJs.browser..png', data);
-            console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
+            require("fs").writeFileSync("/tmp/screenshot.testExampleJs.browser..png", data);
+            console.log("created screenshot file /tmp/screenshot.testExampleJs.browser..png");
             // exit
             process.exit(0);
             break;
@@ -810,7 +787,7 @@ instruction
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun, 23 Sep 2018 18:29:30 GMT</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu, 08 Nov 2018 21:07:53 GMT</div>
 </div>
 </body>
 </html>

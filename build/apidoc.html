@@ -54,7 +54,7 @@
 
     >electron-lite (2018.9.23)</a>
 </h1>
-<h4>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h4>
+<h4>this zero-dependency package will download and install the electron (v2.0.13) prebuilt-binary from https://github.com/electron/electron/releases</h4>
 <div class="apidocSectionDiv"><a
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
@@ -242,6 +242,33 @@
     </ol></li>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.electron-lite">module electron-lite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.assertThrow">
+            function <span class="apidocSignatureSpan">electron-lite.</span>assertThrow
+            <span class="apidocSignatureSpan">(passed, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.identity">
+            function <span class="apidocSignatureSpan">electron-lite.</span>identity
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.nop">
+            function <span class="apidocSignatureSpan">electron-lite.</span>nop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -3275,19 +3302,19 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function BrowserWindow() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
 // init browserWindow;
 try {
-    options.BrowserWindow = require(&apos;browser-window&apos;);
-} catch (errorCaught) {
-    options.BrowserWindow = require(&apos;electron&apos;).BrowserWindow;
+    options.BrowserWindow = require(&quot;browser-window&quot;);
+} catch (ignore) {
+    options.BrowserWindow = require(&quot;electron&quot;).BrowserWindow;
 }
 options.browserWindow = new options.<span class="apidocCodeKeywordSpan">BrowserWindow</span>(options);
 // goto next step when webpage is loaded
 /* istanbul ignore next */
 try {
-    options.browserWindow.webContents.once(&apos;did-stop-loading&apos;, onNext);
-} catch (errorCaught) {
+    options.browserWindow.webContents.once(&quot;did-stop-loading&quot;, onNext);
+} catch (ignore) {
     setTimeout(onNext, 10000);
 }
 ...</pre></li>
@@ -3594,6 +3621,50 @@ try {
 <h1><a href="#apidoc.module.electron-lite" id="apidoc.module.electron-lite">module electron-lite</a></h1>
 
 
+    <h2>
+        <a href="#apidoc.element.electron-lite.assertThrow" id="apidoc.element.electron-lite.assertThrow">
+        function <span class="apidocSignatureSpan">electron-lite.</span>assertThrow
+        <span class="apidocSignatureSpan">(passed, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">assertThrow = function (passed, message){__cov_542182f09aa44.f[&apos;3&apos;]++;__cov_542182f09aa44.s[&apos;11&apos;]++;var error;__cov_542182f09aa44.s[&apos;12&apos;]++;if(
+passed){__cov_542182f09aa44.b[&apos;2&apos;][0]++;__cov_542182f09aa44.s[&apos;13&apos;]++;return;}else{__cov_542182f09aa44.b[&apos;2&apos;][1]++;}__cov_542182f09aa44
+.s[&apos;14&apos;]++;error=(__cov_542182f09aa44.b[&apos;4&apos;][0]++,message)&amp;&amp;(__cov_542182f09aa44.b[&apos;4&apos;][1]++,typeof message.message===&apos;string&apos;)&amp;&amp;(
+__cov_542182f09aa44.b[&apos;4&apos;][2]++,typeof message.stack===&apos;string&apos;)?(__cov_542182f09aa44.b[&apos;3&apos;][0]++,message):(__cov_542182f09aa44.
+b[&apos;3&apos;][1]++,new Error(typeof message===&apos;string&apos;?(__cov_542182f09aa44.b[&apos;5&apos;][0]++,message):(__cov_542182f09aa44.b[&apos;5&apos;][1]++,JSON.
+stringify(message,null,4))));__cov_542182f09aa44.s[&apos;15&apos;]++;throw error;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.identity" id="apidoc.element.electron-lite.identity">
+        function <span class="apidocSignatureSpan">electron-lite.</span>identity
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identity = function (value){__cov_542182f09aa44.f[&apos;4&apos;]++;__cov_542182f09aa44.s[&apos;17&apos;]++;return value;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.nop" id="apidoc.element.electron-lite.nop">
+        function <span class="apidocSignatureSpan">electron-lite.</span>nop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nop = function (){__cov_542182f09aa44.f[&apos;5&apos;]++;__cov_542182f09aa44.s[&apos;19&apos;]++;return;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
 
 
 
@@ -3747,19 +3818,19 @@ try {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function BrowserWindow() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
 // init browserWindow;
 try {
-    options.BrowserWindow = require(&apos;browser-window&apos;);
-} catch (errorCaught) {
-    options.BrowserWindow = require(&apos;electron&apos;).BrowserWindow;
+    options.BrowserWindow = require(&quot;browser-window&quot;);
+} catch (ignore) {
+    options.BrowserWindow = require(&quot;electron&quot;).BrowserWindow;
 }
 options.browserWindow = new options.<span class="apidocCodeKeywordSpan">BrowserWindow</span>(options);
 // goto next step when webpage is loaded
 /* istanbul ignore next */
 try {
-    options.browserWindow.webContents.once(&apos;did-stop-loading&apos;, onNext);
-} catch (errorCaught) {
+    options.browserWindow.webContents.once(&quot;did-stop-loading&quot;, onNext);
+} catch (ignore) {
     setTimeout(onNext, 10000);
 }
 ...</pre></li>
@@ -4041,6 +4112,21 @@ try {
       return
     }
 
+    if (webContents.getLastWebPreferences().nodeIntegration === true) {
+      const message =
+        &apos;Enabling Node.js integration in child windows opened with the &apos; +
+        &apos;&quot;nativeWindowOpen&quot; option will cause memory leaks, please turn off &apos; +
+        &apos;the &quot;nodeIntegration&quot; option.\\n&apos; +
+        &apos;See https://github.com/electron/electron/pull/15076 for more.&apos;
+      // console is only available after DOM is created.
+      const printWarning = () =&gt; this.webContents.executeJavaScript(`console.warn(&apos;${message}&apos;)`)
+      if (this.webContents.isDomReady()) {
+        printWarning()
+      } else {
+        this.webContents.once(&apos;dom-ready&apos;, printWarning)
+      }
+    }
+
     let {url, frameName} = urlFrameName
     v8Util.deleteHiddenValue(webContents, &apos;url-framename&apos;)
     const options = {
@@ -4081,27 +4167,7 @@ try {
   // have effect, if we do it later we might move focus in the page.
   //
   // Though this hack is only needed on macOS when the app is launched from
-  // Finder, we still do it on all platforms in case of other bugs we don&apos;t
-  // know.
-  this.webContents.once(&apos;load-url&apos;, function () {
-    this.focus()
-  })
-
-  // Redirect focus/blur event to app instance too.
-  this.on(&apos;blur&apos;, (event) =&gt; {
-    app.emit(&apos;browser-window-blur&apos;, event, this)
-  })
-  this.on(&apos;focus&apos;, (event) =&gt; {
-    app.emit(&apos;browser-window-focus&apos;, event, this)
-  })
-
-  // Subscribe to visibilityState changes and pass to renderer process.
-  let isVisible = this.isVisible() &amp;&amp; !this.isMinimized()
-  const visibilityChanged = () =&gt; {
-    const newState = this.isVisible() &amp;&amp; !this.isMinimized()
-    if (isVisible !== newState) {
-      isVisible = newState
-      const visibilitySt...</pre></li>
+  // Finder, we stil...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4200,7 +4266,7 @@ try {
     <li>example usage<pre class="apidocCodePre">...
     (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
         options.browserWindow,
-        &apos;https://electron.atom.io&apos;
+        &quot;https://electron.atom.io&quot;
     );
     break;
 case 3:
@@ -4212,7 +4278,7 @@ case 4:
     /* istanbul ignore next */
     try {
         data = data.toPng();
-    } catch (errorCaught) {
+    } catch (ignore) {
 ...</pre></li>
     </ul>
 
@@ -7602,20 +7668,20 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">write = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    local.child.on(&apos;exit&apos;, process.exit);
-    local.child.stdout.on(&apos;data&apos;, function (chunk, encoding, cb) {
-        // bug-workaround - force electron v1.8.x and higher to exit after running command
-        // --help|-h
-        switch (process.argv[2]) {
-        case &apos;--help&apos;:
-        case &apos;-h&apos;:
-            process.stdout.<span class="apidocCodeKeywordSpan">write</span>(chunk, encoding, cb);
-            local.child.kill();
-            break;
-        default:
-            process.stdout.write(chunk, encoding, cb);
-        }
-    });
+local.child.on(&quot;exit&quot;, process.exit);
+local.child.stdout.on(&quot;data&quot;, function (chunk, encoding, cb) {
+    // bug-workaround - force electron v1.8.x and higher to exit after running command
+    // --help|-h
+    switch (process.argv[2]) {
+    case &quot;--help&quot;:
+    case &quot;-h&quot;:
+        process.stdout.<span class="apidocCodeKeywordSpan">write</span>(chunk, encoding, cb);
+        local.child.kill();
+        break;
+    default:
+        process.stdout.write(chunk, encoding, cb);
+    }
+});
 }());
 ...</pre></li>
     </ul>
@@ -9120,21 +9186,224 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">() =&gt; {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-this.loadState_ = LoadState.LOADING;
-this.pendingScriptingMessages_ = [];
-this.setPlugin(plugin);
+ SUCCESS FAILED ../../v8/src/parsing/parser.cc:2709   [%s]: %i-%i %.*s
+ log_ V8.PreParse disabled-by-default-v8.runtime_stats V8.RuntimeStats runtime-call-stats BranchElimination V8.Builtin_ReflectDefineProperty
+ Reflect.defineProperty V8.Builtin_ReflectDeleteProperty Reflect.deleteProperty V8.Builtin_ReflectGet Reflect.get V8.Builtin_ReflectGetOwnPropertyDescriptor
+ Reflect.getOwnPropertyDescriptor V8.Builtin_ReflectGetPrototypeOf Reflect.getPrototypeOf V8.Builtin_ReflectHas Reflect.has V8.Builtin_ReflectIsExtensible
+ Reflect.isExtensible V8.Builtin_ReflectOwnKeys Reflect.ownKeys V8.Builtin_ReflectPreventExtensions Reflect.preventExtensions V8
+.Builtin_ReflectSet Reflect.set V8.Builtin_ReflectSetPrototypeOf Reflect.setPrototypeOf CEQ: Pre-visit of #%d:%s
+ CEQ: Mid-visit of #%d:%s
+   Assigned class number is %zu
+ CEQ: Post-visit of #%d:%s
+ CEQ: Backedge from #%d:%s to #%d:%s
+   BList erased: {%d-&gt;%d}
+   BList:  {%d-&gt;%d}  list::_M_check_equal_allocators # ../../v8/src/wasm/wasm-module.cc instance_count &gt;= 0 JSObject::cast
+(compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;value()) == *module_obj (prev == nullptr &amp;&amp; !current_instance-&gt;has_weak_prev_instance
+()) || current_instance-&gt;ptr_to_weak_prev_instance()-&gt;value() == prev current_instance-&gt;ptr_to_weak_wasm_module()-&gt;value
+() == *module_obj current_instance-&gt;ptr_to_weak_owning_instance() -&gt;value() -&gt;IsWasmInstanceObject() found_instances &lt
+;= instance_count found_instances == instance_count compiled_module-&gt;has_weak_wasm_module() compiled_module-&gt;ptr_to_weak_wasm_module
+()-&gt;value() == *module_obj !compiled_module-&gt;has_weak_prev_instance() !compiled_module-&gt;has_weak_next_instance() !compiled_module
+-&gt;has_weak_owning_instance() compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;cleared() kind table memory global out of memory
+ allocating custom section data Wasm code generation disallowed in this context WasmCompile WasmLazyCompile !thrower.<span class
+="apidocCodeKeywordSpan">error</span>() ../../v8/src/wasm/wasm-module.cc:1021 call index NaN -Infinity Infinity 0 0. ../../v8/src
+/conversions.cc &apos;.&apos; == buffer[fraction_cursor] V8.Runtime_Runtime_CreateJSGeneratorObject ../../v8/src/runtime/runtime
+-generator.cc IsResumableFunction(function-&gt;shared()-&gt;kind()) V8.Runtime_Runtime_GeneratorClose V8.Runtime_Runtime_GeneratorGetFunction
+ args[0]-&gt;IsJSGeneratorObject() V8.Runtime_Runtime_GeneratorGetReceiver V8.Runtime_Runtime_GeneratorGetContext V8.Runtime_Runtime_GeneratorGetInputOrDebugPos
+ V8.Runtime_Runtime_AsyncGeneratorResolve V8.Runtime_Runtime_AsyncGeneratorReject V8.Runtime_Runtime_GeneratorGetResumeMode V8.Runtime_Runtime_GeneratorGetContinuation
+ V8.Runtime_Runtime_GeneratorGetSourcePosition ../../v8/src/assembler.cc expected_size_ == assembler_-&gt;pc_offset() - start_offset_
+ .entry&gt; JSBuiltinReducer [enforcing Ignition for %s because: %s
+ ../../v8/src/feedback-vector-inl.h FeedbackVectorSpec::kTypeProfileSlotIndex == FeedbackVector::GetIndex(slot) ../../v8/src/heap
+/embedder-tracing.cc cached_wrappers_to_trace_.empty() ../../v8/src/compiler/x64/instruction-selector-x64.cc MachineSemantic::kInt32
+ == left_type.semantic() V8.Builtin_DataViewConstructor DataView V8.Builtin_DataViewConstructor_ConstructStub V8.Builtin_DataViewPrototypeGetBuffer
+ get DataView.prototype.buffer V8.Builtin_DataViewPrototypeGetByteLength get DataView.prototype.byteLength V8.Builtin_DataViewPrototypeGetByteOffset
+ get DataView.prototype.byteOffset V8.Builtin_DataViewPrototypeGetInt8 DataView.prototype.getInt8 V8.Builtin_DataViewPrototypeGetUint8
+ DataView.prototype.getUint8 V8.Builtin_DataViewPrototypeGetInt16 DataView.prototype.getInt16 V8.Builtin_DataViewPrototypeGetUint16
+ DataView.prototype.getUint16 V8.Builtin_DataViewPrototypeGetInt32 DataView.prototype.getInt32 V8.Builtin_DataViewPrototypeGetUint32
+ DataView.prototype.getUint32 V8.Builtin_DataViewPrototypeGetFloat32 DataView.prototype.getFloat32 V8.Builtin_DataViewPrototypeGetFloat64
+ DataView.prototype.getFloat64 V8.Builtin_DataViewPrototypeSetInt8 DataView.prototype.setInt8 V8.Builtin_DataViewPrototypeSetUint8
+ DataView.prototype.setUint8 V8.Builtin_DataViewPrototypeSetInt16 DataView.prototype.setInt16 V8.Builtin_DataViewPrototypeSetUint16
+ DataView.prototype.setUint16 V8.Builtin_DataViewPrototypeSetInt32 DataView.prototype.setInt32 V8.Builtin_DataViewPrototypeSetUint32
+ DataView.prototype.setUint32 V8.Builtin_DataViewPrototypeSetFloat32 DataView.prototype.setFloat32 V8.Builtin_DataViewPrototypeSetFloat64
+ DataView.prototype.setFloat64 %p noreg noxmmreg rax rcx rdx rbx rsp rbp rsi rdi r8 r9 r10 r11 r12 r13 r14 r15 al cl dl bl spl bpl
+ sil dil r8l r9l r10l r11l r12l r13l r14l r15l xmm0 xmm1 xmm2 xmm3 xmm4 xmm5 xmm6 xmm7 xmm8 xmm9 xmm10 xmm11 xmm12 xmm13 xmm14 xmm15
+ Unknown external reference %p.
+ 6.1.534.41 native function getV8Statistics(); global_handles memory_allocated maps_normalized maps_created elements_transitions
+ props_to_dictionary elements_to_dictionary alive_after_last_gc objs_since_last_young objs_since_last_full string_table_capacity
+ number_of_symbols script_wrappers inlined_copied_elements arguments_adaptors compilation_cache_hits compilation_cache_misses total_eval_size
+ total_load_size total_parse_size total_preparse_skipped total_compile_size total_full_codegen_source_size contexts_created_from_scratch
+ contexts_created_by_snapshot pc_to_code pc_to_code_cached store_buffer_overflows code_stubs total_stubs_code_size total_compiled_code_size
+ gc_compactor_caused_by_request gc_compactor_caused_by_promoted_data gc_compactor_caused_by_oldspace_exhaustion gc_last_resort_from_js
+ gc_last_resort_from_handles ic_keyed_load_generic_smi ic_keyed_load_generic_symbol ic_keyed_load_generic_slow ic_named_load_global_stub
+ ic_store_normal_miss ic_store_normal_hit ic_binary_op_miss ic_compare_miss ic_call_miss ic_keyed_call_miss ic_store_miss ic_keyed_store_miss
+ cow_arrays_converted constructed_objects constructed_objects_runtime negative_lookups negative_lookups_miss megamorphic_stub_cache_probes
+ megamorphic_stub_cache_misses megamorphic_stub_cache_updates enum_cache_hits enum_cache_misses fast_new_closure_total string_add_runtime
+ string_add_native string_add_runtime_ext_to_one_byte sub_string_runtime sub_string_native string_compare_native string_compare_runtime
+ regexp_entry_runtime regexp_entry_native number_to_string_native number_to_string_runtime math_exp_runtime math_log_runtime math_pow_runtime
+ stack_interrupts runtime_profiler_ticks runtime_calls bounds_checks_eliminated bounds_checks_hoisted soft_deopts_requested soft_deopts_inserted
+ soft_deopts_executed write_barriers_dynamic write_barriers_static new_space_bytes_available new_space_bytes_committed new_space_bytes_used
+ old_space_bytes_available old_space_bytes_committed old_space_bytes_used code_space_bytes_available code_space_bytes_committed 
+code_space_bytes_used map_space_bytes_available map_space_bytes_committed map_space_bytes_used lo_space_bytes_available lo_space_bytes_committed
+ lo_space_bytes_used total_baseline_code_size total_baseline_compile_count count_of_INTERNALIZED_STRING_TYPE size_of_INTERNALIZED_STRING_TYPE
+ count_of_EXTERNAL_INTERNALIZED_STRING_TYPE size_of_EXTERNAL_INTERNALIZED_STRING_TYPE count_of_ONE_BYTE_INTERNALIZED_STRING_TYPE
+ size_of_ONE_BYTE_INTERNALIZED_STRING_TYPE count_of_EXTERNAL_ONE_BYTE_INTERNALIZED_STRING_TYPE size_of_EXTERNAL_ONE_BYTE_INTERNALIZED_STRING_TYPE
+ count_of_EXTERNAL_INTERNALIZED_STRING_WITH_ONE_BYTE_DATA_TYPE size_of_EXTERNAL_INTERNALIZED_STRING_WITH_ONE_BYTE_DATA_TYPE count_of_SHORT_EXTERNAL_INTERNALIZED_STRING_TYPE
+ size_of_SHORT_EXTERNAL_INTERNALIZED_STRING_TYPE count_of_SHORT_EXTERNAL_ONE_BYTE_INTERNALIZED_STRING_TYPE size_of_SHORT_EXTERNAL_ONE_BYTE_INTERNALIZED_STRING_TYPE
+ count_of_SHORT_EXTERNAL_INTERNALIZED_STRING_WITH_ONE_BYTE_DATA_TYPE size_of_SHORT_EXTERNAL_INTERNALIZED_STRING_WITH_ONE_BYTE_DATA_TYPE
+ count_of_STRING_TYPE size_of_STRING_TYPE count_of_CONS_STRING_TYPE size_of_CONS_STRING_TYPE count_of_EXTERNAL_STRING_TYPE size_of_EXTERNAL_STRING_TYPE
+ count_of_SLICED_STRING_TYPE size_of_SLICED_STRING_TYPE count_of_THIN_STRING_TYPE size_of_THIN_STRING_TYPE count_of_ONE_BYTE_STRING_TYPE
+ size_of_ONE_BYTE_STRING_TYPE count_of_CONS_ONE_BYTE_STRING_TYPE size_of_CONS_ONE_BYTE_STRING_TYPE count_of_EXTERNAL_ONE_BYTE_STRING_TYPE
+ size_of_EXTERNAL_ONE_BYTE_STRING_TYPE count_of_SLICED_ONE_BYTE_STRING_TYPE size_of_SLICED_ONE_BYTE_STRING_TYPE count_of_THIN_ONE_BYTE_STRING_TYPE
+ size_of_THIN_ONE_BYTE_STRING_TYPE count_of_EXTERNAL_STRING_WITH_ONE_BYTE_DATA_TYPE size_of_EXTERNAL_STRING_WITH_ONE_BYTE_DATA_TYPE
+ count_of_SHORT_EXTERNAL_STRING_TYPE size_of_SHORT_EXTERNAL_STRING_TYPE count_of_SHORT_EXTERNAL_ONE_BYTE_STRING_TYPE size_of_SHORT_EXTERNAL_ONE_BYTE_STRING_TYPE
+ count_of_SHORT_EXTERNAL_STRING_WITH_ONE_BYTE_DATA_TYPE size_of_SHORT_EXTERNAL_STRING_WITH_ONE_BYTE_DATA_TYPE count_of_SYMBOL_TYPE
+ size_of_SYMBOL_TYPE count_of_HEAP_NUMBER_TYPE size_of_HEAP_NUMBER_TYPE count_of_ODDBALL_TYPE size_of_ODDBALL_TYPE count_of_MAP_TYPE
+ size_of_MAP_TYPE count_of_CODE_TYPE size_of_CODE_TYPE count_of_MUTABLE_HEAP_NUMBER_TYPE size_of_MUTABLE_HEAP_NUMBER_TYPE count_of_FOREIGN_TYPE
+ size_of_FOREIGN_TYPE count_of_BYTE_ARRAY_TYPE size_of_BYTE_ARRAY_TYPE count_of_BYTECODE_ARRAY_TYPE size_of_BYTECODE_ARRAY_TYPE 
+count_of_FREE_SPACE_TYPE size_of_FREE_SPACE_TYPE count_of_FIXED_INT8_ARRAY_TYPE size_of_FIXED_INT8_ARRAY_TYPE count_of_FIXED_UINT8_ARRAY_TYPE
+ size_of_FIXED_UINT8_ARRAY_TYPE count_of_FIXED_INT16_ARRAY_TYPE size_of_FIXED_INT16_ARRAY_TYPE count_of_FIXED_UINT16_ARRAY_TYPE 
+size_of_FIXED_UINT16_ARRAY_TYPE count_of_FIXED_INT32_ARRAY_TYPE size_of_FIXED_INT32_ARRAY_TYPE count_of_FIXED_UINT32_ARRAY_TYPE 
+size_of_FIXED_UINT32_ARRAY_TYPE count_of_FIXED_FLOAT32_ARRAY_TYPE size_of_FIXED_FLOAT32_ARRAY_TYPE count_of_FIXED_FLOAT64_ARRAY_TYPE
+ size_of_FIXED_FLOAT64_ARRAY_TYPE count_of_FIXED_UINT8_CLAMPED_ARRAY_TYPE size_of_FIXED_UINT8_CLAMPED_ARRAY_TYPE count_of_FIXED_DOUBLE_ARRAY_TYPE
+ size_of_FIXED_DOUBLE_ARRAY_TYPE count_of_FILLER_TYPE size_of_FILLER_TYPE count_of_ACCESSOR_INFO_TYPE size_of_ACCESSOR_INFO_TYPE
+ count_of_ACCESSOR_PAIR_TYPE size_of_ACCESSOR_PAIR_TYPE count_of_ACCESS_CHECK_INFO_TYPE size_of_ACCESS_CHECK_INFO_TYPE count_of_INTERCEPTOR_INFO_TYPE
+ size_of_INTERCEPTOR_INFO_TYPE count_of_FUNCTION_TEMPLATE_INFO_TYPE size_of_FUNCTION_TEMPLATE_INFO_TYPE count_of_OBJECT_TEMPLATE_INFO_TYPE
+ size_of_OBJECT_TEMPLATE_INFO_TYPE count_of_ALLOCATION_SITE_TYPE size_of_ALLOCATION_SITE_TYPE count_of_ALLOCATION_MEMENTO_TYPE size_of_ALLOCATION_MEMENTO_TYPE
+ count_of_SCRIPT_TYPE size_of_SCRIPT_TYPE count_of_ALIASED_ARGUMENTS_ENTRY_TYPE size_of_ALIASED_ARGUMENTS_ENTRY_TYPE count_of_PROMISE_RESOLVE_THENABLE_JOB_INFO_TYPE
+ size_of_PROMISE_RESOLVE_THENABLE_JOB_INFO_TYPE count_of_PROMISE_REACTION_JOB_INFO_TYPE size_of_PROMISE_REACTION_JOB_INFO_TYPE count_of_DEBUG_INFO_TYPE
+ size_of_DEBUG_INFO_TYPE count_of_STACK_FRAME_INFO_TYPE size_of_STACK_FRAME_INFO_TYPE count_of_PROTOTYPE_INFO_TYPE size_of_PROTOTYPE_INFO_TYPE
+ count_of_TUPLE2_TYPE size_of_TUPLE2_TYPE count_of_TUPLE3_TYPE size_of_TUPLE3_TYPE count_of_CONTEXT_EXTENSION_TYPE size_of_CONTEXT_EXTENSION_TYPE
+ count_of_MODULE_TYPE size_of_MODULE_TYPE count_of_MODULE_INFO_ENTRY_TYPE size_of_MODULE_INFO_ENTRY_TYPE count_of_ASYNC_GENERATOR_REQUEST_TYPE
+ size_of_ASYNC_GENERATOR_REQUEST_TYPE count_of_PREPARSED_SCOPE_DATA_TYPE size_of_PREPARSED_SCOPE_DATA_TYPE count_of_FIXED_ARRAY_TYPE
+ size_of_FIXED_ARRAY_TYPE count_of_PROPERTY_ARRAY_TYPE size_of_PROPERTY_ARRAY_TYPE count_of_TRANSITION_ARRAY_TYPE size_of_TRANSITION_ARRAY_TYPE
+ count_of_SHARED_FUNCTION_INFO_TYPE size_of_SHARED_FUNCTION_INFO_TYPE count_of_CELL_TYPE size_of_CELL_TYPE count_of_WEAK_CELL_TYPE
+ size_of_WEAK_CELL_TYPE count_of_PROPERTY_CELL_TYPE size_of_PROPERTY_CELL_TYPE count_of_SMALL_ORDERED_HASH_MAP_TYPE size_of_SMALL_ORDERED_HASH_MAP_TYPE
+ count_of_SMALL_ORDERED_HASH_SET_TYPE size_of_SMALL_ORDERED_HASH_SET_TYPE count_of_JS_PROXY_TYPE size_of_JS_PROXY_TYPE count_of_JS_GLOBAL_OBJECT_TYPE
+ size_of_JS_GLOBAL_OBJECT_TYPE count_of_JS_GLOBAL_PROXY_TYPE size_of_JS_GLOBAL_PROXY_TYPE count_of_JS_SPECIAL_API_OBJECT_TYPE size_of_JS_SPECIAL_API_OBJECT_TYPE
+ count_of_JS_VALUE_TYPE size_of_JS_VALUE_TYPE count_of_JS_MESSAGE_OBJECT_TYPE size_of_JS_MESSAGE_OBJECT_TYPE count_of_JS_DATE_TYPE
+ size_of_JS_DATE_TYPE count_of_JS_API_OBJECT_TYPE size_of_JS_API_OBJECT_TYPE count_of_JS_OBJECT_TYPE size_of_JS_OBJECT_TYPE count_of_JS_ARGUMENTS_TYPE
+ size_of_JS_ARGUMENTS_TYPE count_of_JS_CONTEXT_EXTENSION_OBJECT_TYPE size_of_JS_CONTEXT_EXTENSION_OBJECT_TYPE count_of_JS_GENERATOR_OBJECT_TYPE
+ size_of_JS_GENERATOR_OBJECT_TYPE count_of_JS_ASYNC_GENERATOR_OBJECT_TYPE size_of_JS_ASYNC_GENERATOR_OBJECT_TYPE count_of_JS_MODULE_NAMESPACE_TYPE
+ size_of_JS_MODULE_NAMESPACE_TYPE count_of_JS_ARRAY_TYPE size_of_JS_ARRAY_TYPE count_of_JS_ARRAY_BUFFER_TYPE size_of_JS_ARRAY_BUFFER_TYPE
+ count_of_JS_TYPED_ARRAY_TYPE size_of_JS_TYPED_ARRAY_TYPE count_of_JS_DATA_VIEW_TYPE size_of_JS_DATA_VIEW_TYPE count_of_JS_SET_TYPE
+ size_of_JS_SET_TYPE count_of_JS_MAP_TYPE size_of_JS_MAP_TYPE count_of_JS_SET_KEY_VALUE_ITERATOR_TYPE size_of_JS_SET_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_SET_VALUE_ITERATOR_TYPE size_of_JS_SET_VALUE_ITERATOR_TYPE count_of_JS_MAP_KEY_ITERATOR_TYPE size_of_JS_MAP_KEY_ITERATOR_TYPE
+ count_of_JS_MAP_KEY_VALUE_ITERATOR_TYPE size_of_JS_MAP_KEY_VALUE_ITERATOR_TYPE count_of_JS_MAP_VALUE_ITERATOR_TYPE size_of_JS_MAP_VALUE_ITERATOR_TYPE
+ count_of_JS_WEAK_MAP_TYPE size_of_JS_WEAK_MAP_TYPE count_of_JS_WEAK_SET_TYPE size_of_JS_WEAK_SET_TYPE count_of_JS_PROMISE_CAPABILITY_TYPE
+ size_of_JS_PROMISE_CAPABILITY_TYPE count_of_JS_PROMISE_TYPE size_of_JS_PROMISE_TYPE count_of_JS_REGEXP_TYPE size_of_JS_REGEXP_TYPE
+ count_of_JS_ERROR_TYPE size_of_JS_ERROR_TYPE count_of_JS_ASYNC_FROM_SYNC_ITERATOR_TYPE size_of_JS_ASYNC_FROM_SYNC_ITERATOR_TYPE
+ count_of_JS_STRING_ITERATOR_TYPE size_of_JS_STRING_ITERATOR_TYPE count_of_JS_TYPED_ARRAY_KEY_ITERATOR_TYPE size_of_JS_TYPED_ARRAY_KEY_ITERATOR_TYPE
+ count_of_JS_FAST_ARRAY_KEY_ITERATOR_TYPE size_of_JS_FAST_ARRAY_KEY_ITERATOR_TYPE count_of_JS_GENERIC_ARRAY_KEY_ITERATOR_TYPE size_of_JS_GENERIC_ARRAY_KEY_ITERATOR_TYPE
+ count_of_JS_UINT8_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_UINT8_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_INT8_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ size_of_JS_INT8_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_UINT16_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_UINT16_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_INT16_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_INT16_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_UINT32_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ size_of_JS_UINT32_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_INT32_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_INT32_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_FLOAT32_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_FLOAT32_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_FLOAT64_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ size_of_JS_FLOAT64_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_UINT8_CLAMPED_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_UINT8_CLAMPED_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_FAST_SMI_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_FAST_SMI_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_FAST_HOLEY_SMI_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ size_of_JS_FAST_HOLEY_SMI_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_FAST_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_FAST_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_FAST_HOLEY_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_FAST_HOLEY_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_FAST_DOUBLE_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ size_of_JS_FAST_DOUBLE_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_FAST_HOLEY_DOUBLE_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_FAST_HOLEY_DOUBLE_ARRAY_KEY_VALUE_ITERATOR_TYPE
+ count_of_JS_GENERIC_ARRAY_KEY_VALUE_ITERATOR_TYPE size_of_JS_GENERIC_ARRAY_KEY_VALUE_ITERATOR_TYPE count_of_JS_UINT8_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_UINT8_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_INT8_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_INT8_ARRAY_VALUE_ITERATOR_TYPE
+ count_of_JS_UINT16_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_UINT16_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_INT16_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_INT16_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_UINT32_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_UINT32_ARRAY_VALUE_ITERATOR_TYPE
+ count_of_JS_INT32_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_INT32_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FLOAT32_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_FLOAT32_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FLOAT64_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_FLOAT64_ARRAY_VALUE_ITERATOR_TYPE
+ count_of_JS_UINT8_CLAMPED_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_UINT8_CLAMPED_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FAST_SMI_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_FAST_SMI_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FAST_HOLEY_SMI_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_FAST_HOLEY_SMI_ARRAY_VALUE_ITERATOR_TYPE
+ count_of_JS_FAST_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_FAST_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FAST_HOLEY_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_FAST_HOLEY_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_FAST_DOUBLE_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_FAST_DOUBLE_ARRAY_VALUE_ITERATOR_TYPE
+ count_of_JS_FAST_HOLEY_DOUBLE_ARRAY_VALUE_ITERATOR_TYPE size_of_JS_FAST_HOLEY_DOUBLE_ARRAY_VALUE_ITERATOR_TYPE count_of_JS_GENERIC_ARRAY_VALUE_ITERATOR_TYPE
+ size_of_JS_GENERIC_ARRAY_VALUE_ITERATOR_TYPE count_of_WASM_INSTANCE_TYPE size_of_WASM_INSTANCE_TYPE count_of_WASM_MEMORY_TYPE size_of_WASM_MEMORY_TYPE
+ count_of_WASM_MODULE_TYPE size_of_WASM_MODULE_TYPE count_of_WASM_TABLE_TYPE size_of_WASM_TABLE_TYPE count_of_JS_BOUND_FUNCTION_TYPE
+ size_of_JS_BOUND_FUNCTION_TYPE count_of_JS_FUNCTION_TYPE size_of_JS_FUNCTION_TYPE count_of_CODE_TYPE_FUNCTION size_of_CODE_TYPE_FUNCTION
+ count_of_CODE_TYPE_OPTIMIZED_FUNCTION size_of_CODE_TYPE_OPTIMIZED_FUNCTION count_of_CODE_TYPE_BYTECODE_HANDLER size_of_CODE_TYPE_BYTECODE_HANDLER
+ count_of_CODE_TYPE_STUB size_of_CODE_TYPE_STUB count_of_CODE_TYPE_HANDLER size_of_CODE_TYPE_HANDLER count_of_CODE_TYPE_BUILTIN 
+size_of_CODE_TYPE_BUILTIN count_of_CODE_TYPE_REGEXP size_of_CODE_TYPE_REGEXP count_of_CODE_TYPE_WASM_FUNCTION size_of_CODE_TYPE_WASM_FUNCTION
+ count_of_CODE_TYPE_WASM_TO_JS_FUNCTION size_of_CODE_TYPE_WASM_TO_JS_FUNCTION count_of_CODE_TYPE_JS_TO_WASM_FUNCTION size_of_CODE_TYPE_JS_TO_WASM_FUNCTION
+ count_of_CODE_TYPE_WASM_INTERPRETER_ENTRY size_of_CODE_TYPE_WASM_INTERPRETER_ENTRY count_of_CODE_TYPE_LOAD_IC size_of_CODE_TYPE_LOAD_IC
+ count_of_CODE_TYPE_LOAD_GLOBAL_IC size_of_CODE_TYPE_LOAD_GLOBAL_IC count_of_CODE_TYPE_KEYED_LOAD_IC size_of_CODE_TYPE_KEYED_LOAD_IC
+ count_of_CODE_TYPE_STORE_IC size_of_CODE_TYPE_STORE_IC count_of_CODE_TYPE_STORE_GLOBAL_IC size_of_CODE_TYPE_STORE_GLOBAL_IC count_of_CODE_TYPE_KEYED_STORE_IC
+ size_of_CODE_TYPE_KEYED_STORE_IC count_of_CODE_TYPE_COMPARE_IC size_of_CODE_TYPE_COMPARE_IC count_of_FIXED_ARRAY_BYTECODE_ARRAY_CONSTANT_POOL_SUB_TYPE
+ size_of_FIXED_ARRAY_BYTECODE_ARRAY_CONSTANT_POOL_SUB_TYPE count_of_FIXED_ARRAY_BYTECODE_ARRAY_HANDLER_TABLE_SUB_TYPE size_of_FIXED_ARRAY_BYTECODE_ARRAY_HANDLER_TABLE_SUB_TYPE
+ count_of_FIXED_ARRAY_CODE_STUBS_TABLE_SUB_TYPE size_of_FIXED_ARRAY_CODE_STUBS_TABLE_SUB_TYPE count_of_FIXED_ARRAY_COMPILATION_CACHE_TABLE_SUB_TYPE
+ size_of_FIXED_ARRAY_COMPILATION_CACHE_TABLE_SUB_TYPE count_of_FIXED_ARRAY_CONTEXT_SUB_TYPE size_of_FIXED_ARRAY_CONTEXT_SUB_TYPE
+ count_of_FIXED_ARRAY_COPY_ON_WRITE_SUB_TYPE size_of_FIXED_ARRAY_COPY_ON_WRITE_SUB_TYPE count_of_FIXED_ARRAY_DEOPTIMIZATION_DATA_SUB_TYPE
+ size_of_FIXED_ARRAY_DEOPTIMIZATION_DATA_SUB_TYPE count_of_FIXED_ARRAY_DESCRIPTOR_ARRAY_SUB_TYPE size_of_FIXED_ARRAY_DESCRIPTOR_ARRAY_SUB_TYPE
+ count_of_FIXED_ARRAY_EMBEDDED_OBJECT_SUB_TYPE size_of_FIXED_ARRAY_EMBEDDED_OBJECT_SUB_TYPE count_of_FIXED_ARRAY_ENUM_CACHE_SUB_TYPE
+ size_of_FIXED_ARRAY_ENUM_CACHE_SUB_TYPE count_of_FIXED_ARRAY_ENUM_INDICES_CACHE_SUB_TYPE size_of_FIXED_ARRAY_ENUM_INDICES_CACHE_SUB_TYPE
+ count_of_FIXED_ARRAY_DEPENDENT_CODE_SUB_TYPE size_of_FIXED_ARRAY_DEPENDENT_CODE_SUB_TYPE count_of_FIXED_ARRAY_DICTIONARY_ELEMENTS_SUB_TYPE
+ size_of_FIXED_ARRAY_DICTIONARY_ELEMENTS_SUB_TYPE count_of_FIXED_ARRAY_DICTIONARY_PROPERTIES_SUB_TYPE size_of_FIXED_ARRAY_DICTIONARY_PROPERTIES_SUB_TYPE
+ count_of_FIXED_ARRAY_EMPTY_PROPERTIES_DICTIONARY_SUB_TYPE size_of_FIXED_ARRAY_EMPTY_PROPERTIES_DICTIONARY_SUB_TYPE count_of_FIXED_ARRAY_PACKED_ELEMENTS_SUB_TYPE
+ size_of_FIXED_ARRAY_PACKED_ELEMENTS_SUB_TYPE count_of_FIXED_ARRAY_FAST_PROPERTIES_SUB_TYPE size_of_FIXED_ARRAY_FAST_PROPERTIES_SUB_TYPE
+ count_of_FIXED_ARRAY_FAST_TEMPLATE_INSTANTIATIONS_CACHE_SUB_TYPE size_of_FIXED_ARRAY_FAST_TEMPLATE_INSTANTIATIONS_CACHE_SUB_TYPE
+ count_of_FIXED_ARRAY_HANDLER_TABLE_SUB_TYPE size_of_FIXED_ARRAY_HANDLER_TABLE_SUB_TYPE count_of_FIXED_ARRAY_JS_COLLECTION_SUB_TYPE
+ size_of_FIXED_ARRAY_JS_COLLECTION_SUB_TYPE count_of_FIXED_ARRAY_JS_WEAK_COLLECTION_SUB_TYPE size_of_FIXED_ARRAY_JS_WEAK_COLLECTION_SUB_TYPE
+ count_of_FIXED_ARRAY_MAP_CODE_CACHE_SUB_TYPE size_of_FIXED_ARRAY_MAP_CODE_CACHE_SUB_TYPE count_of_FIXED_ARRAY_NOSCRIPT_SHARED_FUNCTION_INFOS_SUB_TYPE
+ size_of_FIXED_ARRAY_NOSCRIPT_SHARED_FUNCTION_INFOS_SUB_TYPE count_of_FIXED_ARRAY_NUMBER_STRING_CACHE_SUB_TYPE size_of_FIXED_ARRAY_NUMBER_STRING_CACHE_SUB_TYPE
+ count_of_FIXED_ARRAY_OBJECT_TO_CODE_SUB_TYPE size_of_FIXED_ARRAY_OBJECT_TO_CODE_SUB_TYPE count_of_FIXED_ARRAY_OPTIMIZED_CODE_LITERALS_SUB_TYPE
+ size_of_FIXED_ARRAY_OPTIMIZED_CODE_LITERALS_SUB_TYPE count_of_FIXED_ARRAY_OPTIMIZED_CODE_MAP_SUB_TYPE size_of_FIXED_ARRAY_OPTIMIZED_CODE_MAP_SUB_TYPE
+ count_of_FIXED_ARRAY_PROTOTYPE_USERS_SUB_TYPE size_of_FIXED_ARRAY_PROTOTYPE_USERS_SUB_TYPE count_of_FIXED_ARRAY_REGEXP_MULTIPLE_CACHE_SUB_TYPE
+ size_of_FIXED_ARRAY_REGEXP_MULTIPLE_CACHE_SUB_TYPE count_of_FIXED_ARRAY_RETAINED_MAPS_SUB_TYPE size_of_FIXED_ARRAY_RETAINED_MAPS_SUB_TYPE
+ count_of_FIXED_ARRAY_SCOPE_INFO_SUB_TYPE size_of_FIXED_ARRAY_SCOPE_INFO_SUB_TYPE count_of_FIXED_ARRAY_SCRIPT_LIST_SUB_TYPE size_of_FIXED_ARRAY_SCRIPT_LIST_SUB_TYPE
+ count_of_FIXED_ARRAY_SERIALIZED_TEMPLATES_SUB_TYPE size_of_FIXED_ARRAY_SERIALIZED_TEMPLATES_SUB_TYPE count_of_FIXED_ARRAY_SHARED_FUNCTION_INFOS_SUB_TYPE
+ size_of_FIXED_ARRAY_SHARED_FUNCTION_INFOS_SUB_TYPE count_of_FIXED_ARRAY_SINGLE_CHARACTER_STRING_CACHE_SUB_TYPE size_of_FIXED_ARRAY_SINGLE_CHARACTER_STRING_CACHE_SUB_TYPE
+ count_of_FIXED_ARRAY_SLOW_TEMPLATE_INSTANTIATIONS_CACHE_SUB_TYPE size_of_FIXED_ARRAY_SLOW_TEMPLATE_INSTANTIATIONS_CACHE_SUB_TYPE
+ count_of_FIXED_ARRAY_STRING_SPLIT_CACHE_SUB_TYPE size_of_FIXED_ARRAY_STRING_SPLIT_CACHE_SUB_TYPE count_of_FIXED_ARRAY_STRING_TABLE_SUB_TYPE
+ size_of_FIXED_ARRAY_STRING_TABLE_SUB_TYPE count_of_FIXED_ARRAY_TEMPLATE_INFO_SUB_TYPE size_of_FIXED_ARRAY_TEMPLATE_INFO_SUB_TYPE
+ count_of_FIXED_ARRAY_FEEDBACK_VECTOR_SUB_TYPE size_of_FIXED_ARRAY_FEEDBACK_VECTOR_SUB_TYPE count_of_FIXED_ARRAY_FEEDBACK_METADATA_SUB_TYPE
+ size_of_FIXED_ARRAY_FEEDBACK_METADATA_SUB_TYPE count_of_FIXED_ARRAY_WEAK_NEW_SPACE_OBJECT_TO_CODE_SUB_TYPE size_of_FIXED_ARRAY_WEAK_NEW_SPACE_OBJECT_TO_CODE_SUB_TYPE
+ total_committed_bytes new_space_live_bytes new_space_available_bytes new_space_commited_bytes old_space_live_bytes old_space_available_bytes
+ old_space_commited_bytes code_space_live_bytes code_space_available_bytes code_space_commited_bytes lo_space_live_bytes lo_space_available_bytes
+ lo_space_commited_bytes amount_of_external_allocated_memory reloc_info_total_size source_position_table_total_size TypedOptimization
+ V8.Builtin_TypedArrayPrototypeBuffer get %TypedArray%.prototype.buffer V8.Builtin_TypedArrayPrototypeCopyWithin %TypedArray%.prototype
+.copyWithin V8.Builtin_TypedArrayPrototypeFill %TypedArray%.prototype.fill V8.Builtin_TypedArrayPrototypeIncludes %TypedArray%.prototype
+.includes V8.Builtin_TypedArrayPrototypeIndexOf %TypedArray%.prototype.indexOf V8.Builtin_TypedArrayPrototypeLastIndexOf %TypedArray
+%.prototype.lastIndexOf V8.Builtin_TypedArrayPrototypeReverse %TypedArray%.prototype.reverse V8.Builtin_TypedArrayPrototypeSlice
+ %TypedArray%.prototype.slice () {} Bootstrapping EmptyObjectPrototype slow_object_with_object_prototype_map [Symbol.iterator] GeneratorFunction
+ next GeneratorFunction with name GeneratorFunction with home object GeneratorFunction with name and home object [Symbol.asyncIterator
+] Async-from-Sync Iterator AsyncGeneratorFunction AsyncGenerator AsyncGeneratorFunction with name AsyncGeneratorFunction with home
+ object AsyncGeneratorFunction with name and home object AsyncFunction AsyncFunction with name AsyncFunction with home object AsyncFunction
+ with name and home object callable Proxy constructor Proxy getOwnPropertyDescriptor getOwnPropertyNames getOwnPropertySymbols is
+ preventExtensions seal defineProperties freeze getPrototypeOf setPrototypeOf isExtensible isFrozen isSealed keys __defineGetter__
+ __defineSetter__ hasOwnProperty __lookupGetter__ __lookupSetter__ isPrototypeOf propertyIsEnumerable valueOf [Symbol.hasInstance
+] Array isArray concat pop push shift unshift slice splice includes indexOf entries values forEach filter map every some reduce 
+reduceRight toExponential toFixed toPrecision toString toLocaleString isFinite isInteger isNaN isSafeInteger parseFloat parseInt
+ MAX_VALUE MIN_VALUE NEGATIVE_INFINITY POSITIVE_INFINITY MAX_SAFE_INTEGER MIN_SAFE_INTEGER EPSILON fromCharCode fromCodePoint charAt
+ charCodeAt endsWith lastIndexOf localeCompare normalize replace split substr substring startsWith trim trimLeft trimRight toLowerCase
+ toUpperCase String Iterator StringIterator keyFor hasInstance isConcatSpreadable iterator match search species toPrimitive toStringTag
+ unscopables Date now parse UTC toDateString toTimeString toISOString toUTCString toGMTString getDate setDate getDay getFullYear
+ setFullYear getHours setHours getMilliseconds setMilliseconds getMinutes setMinutes getMonth setMonth getSeconds setSeconds getTime
+ setTime getTimezoneOffset getUTCDate setUTCDate getUTCDay getUTCFullYear setUTCFullYear getUTCHours setUTCHours getUTCMilliseconds
+ setUTCMilliseconds getUTCMinutes setUTCMinutes getUTCMonth setUTCMonth getUTCSeconds setUTCSeconds getYear setYear toJSON toLocaleDateString
+ toLocaleTimeString Promise all race resolve reject RegExp test [Symbol.match] [Symbol.replace] [Symbol.search] [Symbol.split] $
+_ lastMatch $&amp; lastParen $+ leftContext $` rightContext $&apos; $1 $2 $3 $4 $5 $6 $7 $8 $9 JSON stringify acosh asinh atanh 
+cbrt expm1 cosh hypot log1p log2 log10 random round sign sinh tanh trunc console debug error info warn dir dirxml group groupCollapsed
+ groupEnd clear count assert markTimeline profile profileEnd timeline timelineEnd time timeEnd timeStamp context Object Intl DateTimeFormat
+ NumberFormat Collator v8BreakIterator ArrayBuffer arrayBufferConstructor_DoNotInitialize SharedArrayBuffer load store add sub and
+ or xor exchange compareExchange isLockFree wait wake TypedArray copyWithin fill reverse Uint8ClampedArray typedArrayConstructByLength
+ typedArrayConstructByArrayBuffer typedArrayConstructByArrayLike getInt8 setInt8 getUint8 setUint8 getInt16 setInt16 getUint16 setUint16
+ getInt32 setInt32 getUint32 setUint32 getFloat32 setFloat32 getFloat64 setFloat64 Map has size Set WeakMap WeakSet Proxy Reflect
+ IsConstructor FastAliasedArguments SlowAliasedArguments context_extension ../../v8/src/bootstrapper.cc JSObject::SetPrototype(result
+, typed_array_function, false, Object::DONT_THROW) .FromJust() JSObject::SetPrototype(prototype, typed_array_prototype, false, Object
+::DONT_THROW) .FromJust() async_iterator_symbol iterator_symbol intl_fallback_symbol match_symbol replace_symbol search_symbol species_symbol
+ split_symbol to_primitive_symbol unscopables_symbol has_instance_symbol is_concat_spreadable_symbol to_string_tag_symbol IteratorPrototype
+ GeneratorFunctionPrototype Set Iterator SetIterator Map Iterator MapIterator Script CallSite getColumnNumber getEvalOrigin getFileName
+ getFunction getFunctionName getLineNumber getMethodName getPosition getScriptNameOrSourceURL getThis getTypeName isConstructor 
+isEval isNative isToplevel Atomics asyncIterator formatToParts InternalArray utils container for native scripts InternalPackedArray
+ createPromise resolvePromise isPromise PostNatives decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Smi
+::ToInt(length) == 0 proto-&gt;HasSmiOrObjectElements() Array.prototype findIndex join Date.prototype Function.prototype apply bind
+ call assign create Object.prototype RegExp.prototype exec String.prototype codePointAt repeat raw Number.prototype Map.prototype
+ Set.prototype WeakMap.prototype WeakSet.prototype stackTraceLimit v8/free-buffer v8/gc v8/externalize v8/statistics v8/trigger-
+failure v8/ignition-statistics v8::Context::New() Cannot find required extension Circular extension dependency Error installing
+extension &apos;%s&apos;.
+ [Initializing context from scratch took %0.3f ms]
+ native function freeBuffer(); gc native function %s(); captureStackTrace JSReceiver::SetPrototype(error_fun, global_error, false
+, Object::THROW_ON_ERROR) .FromMaybe(false) JSReceiver::SetPrototype(prototype, handle(global_error-&gt;prototype(), isolate), false
+, Object::THROW_ON_ERROR) .FromMaybe(false) Aborting on stack overflow Regular expression too large Unterminated group Unmatched
+ &apos;)&apos; Nothing to repeat Invalid group Too many captures \ at end of pattern Invalid property name Invalid escape Invalid decimal escape Invalid unicode escape Lone quantifier brackets numbers out of order in {} quantifier Incomplete quantifier Invalid quantifier Invalid Unicode escape sequence Invalid capture group name Duplicate capture group name Invalid named reference Invalid named capture referenced N Y Invalid class escape Invalid property name in character class Unterminated character class Invalid character class Range out of order in character class ASCII Assigned Unassigned Code JS Addr :r f js-call ../../v8/src/compiler/linkage.cc incoming_-&gt;IsJSFunctionCall() ../../v8/src/wasm/wasm-objects.cc:225 ../../v8/src/wasm/wasm-objects.cc old_buffer-&gt;byte_length()-&gt;ToUint32(&amp;old_size) result.ok() (result.val) != nullptr ../../v8/src/wasm/wasm-objects.cc:870 &lt;WASM UNNAMED&gt; ../../v8/src/wasm/wasm-objects.cc:1327 ../../v8/src/wasm/wasm-objects.cc:304 V8.Builtin_BooleanConstructor V8.Builtin_BooleanConstructor_ConstructStub ../../v8/src/compiler/js-typed-lowering.cc k &lt; (sizeof(ArraySizeHelper(shifted_int32_ranges_))) JSTypedLowering ../../v8/src/compiler/wasm-compiler.cc Unsupported opcode #%d:%s %context ../../v8/src/compiler/wasm-compiler.cc:3780 -- Graph after change lowering --  js-to-wasm js-to-wasm#%d ../../v8/src/compiler/wasm-compiler.cc:3857 wasm-to-js wasm-to-js#%d ../../v8/src/compiler/wasm-compiler.cc:3943 -- Wasm to interpreter graph --  wasm-to-interpreter#%d wasm-to-interpreter Compilation failed:  Compiling wasm function %d:&apos;%.*s&apos;
 
-window.addEventListener(&apos;message&apos;, event =&gt; {
-  if (event.origin != &apos;chrome://pdf-viewer&apos; &amp;&amp;
-      event.origin != &apos;chrome://print&apos;) {
-    console.<span class="apidocCodeKeywordSpan">error</span>(
-        &apos;Received message that was not from the extension: &apos; + event);
-    return;
-  }
-  switch (event.data.type) {
-    case &apos;viewport&apos;:
-      /**
-       * @type {{
+ Compiling wasm function %d:&lt;unnamed&gt;
 ...</pre></li>
     </ul>
 
@@ -9155,17 +9424,17 @@ window.addEventListener(&apos;message&apos;, event =&gt; {
     <li>description and source-code<pre class="apidocCodePre">createEmpty = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     try {
-        local.electron = require(&apos;electron&apos;);
-    } catch (errorCaught) {
+        local.electron = require(&quot;electron&quot;);
+    } catch (ignore) {
         onError(null, options);
         return;
     }
-    if (process.env.npm_config_mode_test_case === &apos;testCase_buildApidoc_default&apos;) {
+    if (process.env.npm_config_mode_test_case === &quot;testCase_buildApidoc_default&quot;) {
         local.electron.NativeImage = local.electron.nativeImage.<span class="apidocCodeKeywordSpan">createEmpty</span>().constructor
 ;
         local.electron.WebContents = local.electron.webContents.create().constructor;
     }
-    options = { moduleDict: { electron: local.electron } };
+    options = {moduleDict: {electron: local.electron}};
     local.buildApidoc(options, onError);
 };
 
@@ -9532,16 +9801,16 @@ local.testCase_buildApp_default = function (options, onError) {
   return binding.create(options)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        local.electron = require(&apos;electron&apos;);
-    } catch (errorCaught) {
+        local.electron = require(&quot;electron&quot;);
+    } catch (ignore) {
         onError(null, options);
         return;
     }
-    if (process.env.npm_config_mode_test_case === &apos;testCase_buildApidoc_default&apos;) {
+    if (process.env.npm_config_mode_test_case === &quot;testCase_buildApidoc_default&quot;) {
         local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;
         local.electron.WebContents = local.electron.webContents.<span class="apidocCodeKeywordSpan">create</span>().constructor;
     }
-    options = { moduleDict: { electron: local.electron } };
+    options = {moduleDict: {electron: local.electron}};
     local.buildApidoc(options, onError);
 };
 

@@ -2,19 +2,19 @@
     <title>Code coverage report for node-electron-lite/test.js</title>
     <meta charset="utf-8">
 <style>
-/* jslint-utility2 */
+/* jslint utility2:true */
 /*csslint
     box-model: false,
     important: false,
     qualified-headings: false,
 */
-/* jslint-ignore-begin */
+/* csslint ignore:start */
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-/* jslint-ignore-end */
+/* csslint ignore:end */
 .x-istanbul {
     font-family: Helvetica Neue, Helvetica,Arial;
     font-size: 10pt;
@@ -245,7 +245,8 @@
         return;
     }
     window.domOnEventSelectAllWithinPre = function (event) {
-        var range, selection;
+        var range;
+        var selection;
         if (event &&
                 event.key === "a" &&
                 (event.ctrlKey || event.metaKey) &&
@@ -277,11 +278,11 @@
     </tr>
     </thead>
     <tbody>
-        <tr><td>branches: 1<br>statements: 4</td>
-        <td>100%<br>(38 / 38)</td>
-        <td>100%<br>(16 / 16)</td>
-        <td>100%<br>(7 / 7)</td>
-        <td>100%<br>(38 / 38)</td>
+        <tr><td>branches: 11<br>statements: 18<br>functions: 4</td>
+        <td>100%<br>(63 / 63)</td>
+        <td>100%<br>(26 / 26)</td>
+        <td>100%<br>(13 / 13)</td>
+        <td>100%<br>(63 / 63)</td>
     </tr></tbody>
     </table>
     <div class="path"><a href="../index.html">All files</a> » <a href="index.html">node-electron-lite/</a> » test.js</div>
@@ -384,12 +385,88 @@
 94
 95
 96
-97</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -402,58 +479,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -461,12 +527,58 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -475,112 +587,193 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js" tabindex="0">/* istanbul instrument in package electron */
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
+/* istanbul ignore next */
+/* jslint utility2:true */
+(function (globalThis) {
+    "use strict";
     var local;
-&nbsp;
-&nbsp;
-&nbsp;
-    // run shared js-env code - init-before
+    // init globalThis
     (function () {
-        // init local
-        local = {};
-        // init isBrowser
-        local.isBrowser = typeof window === "object" &amp;&amp;
-            typeof window.XMLHttpRequest === "function" &amp;&amp;
-            window.document &amp;&amp;
-            typeof window.document.querySelectorAll === "function";
-        // init global
-        local.global = local.isBrowser
-            ? window
-            : global;
-        // re-init local
-        local = local.global.local = (local.global.utility2 ||
-            require('utility2')).requireReadme();
-        // init test
-        local.testRunDefault(local);
+        try {
+            globalThis = Function("return this")(); // jslint ignore:line
+        } catch (ignore) {
+        }
     }());
+    globalThis.globalThis = globalThis;
+    // init local
+    local = {};
+    // init isBrowser
+    local.isBrowser = (
+        typeof window === "object"
+        &amp;&amp; window === globalThis
+        &amp;&amp; typeof window.XMLHttpRequest === "function"
+        &amp;&amp; window.document
+        &amp;&amp; typeof window.document.querySelectorAll === "function"
+    );
+    globalThis.globalLocal = local;
+    // init function
+    local.assertThrow = <span class="fstat-skip" title="function not covered">function (passed, message) {</span>
+    /*
+     * this function will throw the error &lt;message&gt; if &lt;passed&gt; is falsy
+     */
+<span class="cstat-skip" title="statement not covered">        var error;</span>
+<span class="cstat-skip" title="statement not covered">        if (passed) {</span>
+<span class="cstat-skip" title="statement not covered">            return;</span>
+        }
+<span class="cstat-skip" title="statement not covered">        error = (</span>
+            // ternary-operator
+            (
+                message
+                &amp;&amp; typeof message.message === "string"
+                &amp;&amp; typeof message.stack === "string"
+            )
+            // if message is an error-object, then leave it as is
+            ? message
+            : new Error(
+                typeof message === "string"
+                // if message is a string, then leave it as is
+                ? message
+                // else JSON.stringify message
+                : JSON.stringify(message, null, 4)
+            )
+        );
+<span class="cstat-skip" title="statement not covered">        throw error;</span>
+    };
+    local.identity = <span class="fstat-skip" title="function not covered">function (value) {</span>
+    /*
+     * this function will return &lt;value&gt;
+     */
+<span class="cstat-skip" title="statement not covered">        return value;</span>
+    };
+    local.nop = <span class="fstat-skip" title="function not covered">function () {</span>
+    /*
+     * this function will do nothing
+     */
+<span class="cstat-skip" title="statement not covered">        return;</span>
+    };
+    // init debug_inline
+    local.consoleError = console.error;
+    globalThis["debug\u0049nline"] = globalThis["debug\u0049nline"] || <span class="fstat-skip" title="function not covered"><span class="branch-1 cbranch-skip" title="branch not covered">function () {</span></span>
+    /*
+     * this function will both print arguments to stderr and return arguments[0]
+     */
+<span class="cstat-skip" title="statement not covered">        var argList;</span>
+<span class="cstat-skip" title="statement not covered">        argList = Array.from(arguments); </span>// jslint ignore:line
+        // debug arguments
+<span class="cstat-skip" title="statement not covered">        globalThis["debug\u0049nlineArguments"] = argList;</span>
+<span class="cstat-skip" title="statement not covered">        local.consoleError("\n\ndebug\u0049nline");</span>
+<span class="cstat-skip" title="statement not covered">        local.consoleError.apply(console, argList);</span>
+<span class="cstat-skip" title="statement not covered">        local.consoleError("\n");</span>
+        // return arg0 for inspection
+<span class="cstat-skip" title="statement not covered">        return argList[0];</span>
+    };
+}(this));
 &nbsp;
 &nbsp;
 &nbsp;
-    // run shared js-env code - function
-    (function () {
-        /* istanbul ignore next */
-        local.testCase_buildApidoc_default = function (options, onError) {
-        /*
-         * this function will test buildApidoc's default handling-behavior-behavior
-         */
-            if (local.isBrowser) {
-                onError(null, options);
-                return;
-            }
-            try {
-                local.electron = require('electron');
-            } catch (errorCaught) {
-<span class="cstat-skip" title="statement not covered">                onError(null, options);</span>
-<span class="cstat-skip" title="statement not covered">                return;</span>
-            }
-            <span class="skip-if-branch" title="if path not taken">I</span>if (process.env.npm_config_mode_test_case === 'testCase_buildApidoc_default') {
-<span class="cstat-skip" title="statement not covered">                local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;</span>
-<span class="cstat-skip" title="statement not covered">                local.electron.WebContents = local.electron.webContents.create().constructor;</span>
-            }
-            options = { moduleDict: { electron: local.electron } };
-            local.buildApidoc(options, onError);
-        };
+(function (local) {
+"use strict";
 &nbsp;
-        local.testCase_buildApp_default = function (options, onError) {
-        /*
-         * this function will test buildApp's default handling-behavior
-         */
-            if (local.isBrowser) {
-                onError(null, options);
-                return;
-            }
-            local.testCase_buildReadme_default(options, local.onErrorThrow);
-            local.testCase_buildLib_default(options, local.onErrorThrow);
-            local.testCase_buildTest_default(options, local.onErrorThrow);
-            onError(null, options);
-        };
 &nbsp;
-        local.testCase_exampleJs_exit = function (options, onError) {
-        /*
-         * this function will test example.js's exit handling-behavior
-         */
-            if (local.isBrowser) {
-                onError(null, options);
-                return;
-            }
-            options = process.exit;
-            process.exit = function () {
-                process.exit = options;
-                onError(null, options);
-            };
-        };
-    }());
+&nbsp;
+// run shared js-env code - init-before
+(function () {
+// init local
+local = (globalThis.utility2 || require("utility2")).requireReadme();
+globalThis.local = local;
+// init test
+local.testRunDefault(local);
+}());
+&nbsp;
+&nbsp;
+&nbsp;
+// run shared js-env code - function
+(function () {
+/* istanbul ignore next */
+local.testCase_buildApidoc_default = function (options, onError) {
+/*
+ * this function will test buildApidoc's default handling-behavior-behavior
+ */
+    if (local.isBrowser) {
+        onError(null, options);
+        return;
+    }
+    try {
+        local.electron = require("electron");
+    } catch (ignore) {
+<span class="cstat-skip" title="statement not covered">        onError(null, options);</span>
+<span class="cstat-skip" title="statement not covered">        return;</span>
+    }
+    <span class="skip-if-branch" title="if path not taken">I</span>if (process.env.npm_config_mode_test_case === "testCase_buildApidoc_default") {
+<span class="cstat-skip" title="statement not covered">        local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;</span>
+<span class="cstat-skip" title="statement not covered">        local.electron.WebContents = local.electron.webContents.create().constructor;</span>
+    }
+    options = {moduleDict: {electron: local.electron}};
+    local.buildApidoc(options, onError);
+};
+&nbsp;
+local.testCase_buildApp_default = function (options, onError) {
+/*
+ * this function will test buildApp's default handling-behavior
+ */
+    if (local.isBrowser) {
+        onError(null, options);
+        return;
+    }
+    local.testCase_buildReadme_default(options, local.onErrorThrow);
+    local.testCase_buildLib_default(options, local.onErrorThrow);
+    local.testCase_buildTest_default(options, local.onErrorThrow);
+    onError(null, options);
+};
+&nbsp;
+local.testCase_exampleJs_exit = function (options, onError) {
+/*
+ * this function will test example.js's exit handling-behavior
+ */
+    if (local.isBrowser) {
+        onError(null, options);
+        return;
+    }
+    options = process.exit;
+    process.exit = function () {
+        process.exit = options;
+        onError(null, options);
+    };
+};
+}());
+&nbsp;
+&nbsp;
+&nbsp;
 }());
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun, 23 Sep 2018 18:36:25 GMT</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu, 08 Nov 2018 21:07:53 GMT</div>
 </div>
 
 

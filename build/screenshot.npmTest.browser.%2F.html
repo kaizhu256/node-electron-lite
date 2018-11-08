@@ -4,16 +4,16 @@
 <!-- "assets.utility2.template.html" -->
 <title>electron-lite (2018.9.23)</title>
 <style>
-/* jslint-utility2 */
+/* jslint utility2:true */
 /*csslint
 */
-/* jslint-ignore-begin */
+/* csslint ignore:start */
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-/* jslint-ignore-end */
+/* csslint ignore:end */
 @keyframes uiAnimateShake {
     0%, 50% {
         transform: translateX(10px);
@@ -130,17 +130,7 @@ textarea {
 <a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
 <input class="zeroPixel" id="dbImportInput1" type="file">
 <script>
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
 // init domOnEventWindowOnloadTimeElapsed
 (function () {
 /*
@@ -153,22 +143,28 @@ textarea {
     window.domOnEventWindowOnloadTimeElapsed = Date.now() + 100;
     window.addEventListener("load", function () {
         setTimeout(function () {
-            window.domOnEventWindowOnloadTimeElapsed = Date.now() -
-                window.domOnEventWindowOnloadTimeElapsed;
-            console.error("domOnEventWindowOnloadTimeElapsed = " +
-                window.domOnEventWindowOnloadTimeElapsed);
+            window.domOnEventWindowOnloadTimeElapsed = (
+                Date.now()
+                - window.domOnEventWindowOnloadTimeElapsed
+            );
+            console.error(
+                "domOnEventWindowOnloadTimeElapsed = " + window.domOnEventWindowOnloadTimeElapsed
+            );
         }, 100);
     });
 }());
+
+
+
 // init timerIntervalAjaxProgressUpdate
 (function () {
 /*
  * this function will increment the ajax-progress-bar until the webpage has loaded
  */
     "use strict";
-    var ajaxProgressDiv1,
-        ajaxProgressState,
-        ajaxProgressUpdate;
+    var ajaxProgressDiv1;
+    var ajaxProgressState;
+    var ajaxProgressUpdate;
     if (window.timerIntervalAjaxProgressUpdate || !document.querySelector("#ajaxProgressDiv1")) {
         return;
     }
@@ -177,15 +173,17 @@ textarea {
         ajaxProgressDiv1.style.width = "25%";
     });
     ajaxProgressState = 0;
-    ajaxProgressUpdate = (window.local &&
-        window.local.ajaxProgressUpdate) || function () {
+    ajaxProgressUpdate = (
+        window.local
+        && window.local.ajaxProgressUpdate
+    ) || function () {
         ajaxProgressDiv1.style.width = "100%";
         setTimeout(function () {
             ajaxProgressDiv1.style.background = "transparent";
             setTimeout(function () {
                 ajaxProgressDiv1.style.width = "0%";
             }, 500);
-        }, 1500);
+        }, 1000);
     };
     window.timerIntervalAjaxProgressUpdate = setInterval(function () {
         ajaxProgressState += 1;
@@ -199,6 +197,9 @@ textarea {
         ajaxProgressUpdate();
     });
 }());
+
+
+
 // init domOnEventSelectAllWithinPre
 (function () {
 /*
@@ -210,11 +211,14 @@ textarea {
         return;
     }
     window.domOnEventSelectAllWithinPre = function (event) {
-        var range, selection;
-        if (event &&
-                event.key === "a" &&
-                (event.ctrlKey || event.metaKey) &&
-                event.target.closest("pre")) {
+        var range;
+        var selection;
+        if (
+            event
+            && event.key === "a"
+            && (event.ctrlKey || event.metaKey)
+            && event.target.closest("pre")
+        ) {
             range = document.createRange();
             range.selectNodeContents(event.target.closest("pre"));
             selection = window.getSelection();
@@ -235,10 +239,10 @@ textarea {
     </a>
 
 </h1>
-<h3>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h3>
+<h3>this zero-dependency package will download and install the electron (v2.0.13) prebuilt-binary from https://github.com/electron/electron/releases</h3>
 
 <a class="button" download="" href="assets.app.js">download standalone app</a><br>
-<button class="button onclick onreset" id="testRunButton1">run internal test</button><br>
+<button class="button eventDelegateClick onreset" data-event="testRunBrowser" id="testRunButton1">run internal test</button><br>
 <div class="uiAnimateSlide" id="testReportDiv1" style="max-height: 100%;">
 
 
@@ -247,16 +251,16 @@ textarea {
 <!-- "" -->
 <title>test-report</title>
 <style>
-/* jslint-utility2 */
+/* jslint utility2:true */
 /*csslint
 */
-/* jslint-ignore-begin */
+/* csslint ignore:start */
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
-/* jslint-ignore-end */
+/* csslint ignore:end */
 @keyframes uiAnimateShake {
     0%, 50% {
         transform: translateX(10px);
@@ -365,7 +369,7 @@ textarea {
     padding: 0;
     width: 0;
 }
-/* jslint-utility2 */
+/* jslint utility2:true */
 /*csslint
 */
 .testReportDiv img {
@@ -422,17 +426,7 @@ textarea {
 <a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
 <input class="zeroPixel" id="dbImportInput1" type="file">
 <script>
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
 // init domOnEventWindowOnloadTimeElapsed
 (function () {
 /*
@@ -445,22 +439,28 @@ textarea {
     window.domOnEventWindowOnloadTimeElapsed = Date.now() + 100;
     window.addEventListener("load", function () {
         setTimeout(function () {
-            window.domOnEventWindowOnloadTimeElapsed = Date.now() -
-                window.domOnEventWindowOnloadTimeElapsed;
-            console.error("domOnEventWindowOnloadTimeElapsed = " +
-                window.domOnEventWindowOnloadTimeElapsed);
+            window.domOnEventWindowOnloadTimeElapsed = (
+                Date.now()
+                - window.domOnEventWindowOnloadTimeElapsed
+            );
+            console.error(
+                "domOnEventWindowOnloadTimeElapsed = " + window.domOnEventWindowOnloadTimeElapsed
+            );
         }, 100);
     });
 }());
+
+
+
 // init timerIntervalAjaxProgressUpdate
 (function () {
 /*
  * this function will increment the ajax-progress-bar until the webpage has loaded
  */
     "use strict";
-    var ajaxProgressDiv1,
-        ajaxProgressState,
-        ajaxProgressUpdate;
+    var ajaxProgressDiv1;
+    var ajaxProgressState;
+    var ajaxProgressUpdate;
     if (window.timerIntervalAjaxProgressUpdate || !document.querySelector("#ajaxProgressDiv1")) {
         return;
     }
@@ -469,15 +469,17 @@ textarea {
         ajaxProgressDiv1.style.width = "25%";
     });
     ajaxProgressState = 0;
-    ajaxProgressUpdate = (window.local &&
-        window.local.ajaxProgressUpdate) || function () {
+    ajaxProgressUpdate = (
+        window.local
+        && window.local.ajaxProgressUpdate
+    ) || function () {
         ajaxProgressDiv1.style.width = "100%";
         setTimeout(function () {
             ajaxProgressDiv1.style.background = "transparent";
             setTimeout(function () {
                 ajaxProgressDiv1.style.width = "0%";
             }, 500);
-        }, 1500);
+        }, 1000);
     };
     window.timerIntervalAjaxProgressUpdate = setInterval(function () {
         ajaxProgressState += 1;
@@ -491,6 +493,9 @@ textarea {
         ajaxProgressUpdate();
     });
 }());
+
+
+
 // init domOnEventSelectAllWithinPre
 (function () {
 /*
@@ -502,11 +507,14 @@ textarea {
         return;
     }
     window.domOnEventSelectAllWithinPre = function (event) {
-        var range, selection;
-        if (event &&
-                event.key === "a" &&
-                (event.ctrlKey || event.metaKey) &&
-                event.target.closest("pre")) {
+        var range;
+        var selection;
+        if (
+            event
+            && event.key === "a"
+            && (event.ctrlKey || event.metaKey)
+            && event.target.closest("pre")
+        ) {
             range = document.createRange();
             range.selectNodeContents(event.target.closest("pre"));
             selection = window.getSelection();
@@ -529,7 +537,7 @@ textarea {
 <h4>
     <span>version</span>-
         2018.9.23<br>
-    <span>test date</span>- 2018-09-23T18:36:19.742Z<br>
+    <span>test date</span>- 2018-11-08T21:07:47.283Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -545,7 +553,7 @@ textarea {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1005 ms</td>
+    <td>1025 ms</td>
     <td class="testPassed">0</td>
     <td>4</td>
     <td>0</td>
@@ -555,10 +563,10 @@ textarea {
 
 <div class="platform">
 <h4>
-    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:36:19.119Z<br>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.13 Safari/537.36 - 2018-11-08T21:07:46.581Z<br>
     
     
-    <span>time-elapsed</span>- 1005 ms<br>
+    <span>time-elapsed</span>- 1025 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -581,21 +589,21 @@ textarea {
 
 <tr>
     <td>2</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApp_default</td>
 </tr>
 
 <tr>
     <td>3</td>
-    <td>5 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_exampleJs_exit</td>
 </tr>
 
 <tr>
     <td>4</td>
-    <td>0 ms</td>
+    <td>2 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_nop_default</td>
 </tr>
