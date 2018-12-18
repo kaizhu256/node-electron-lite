@@ -1,0 +1,1445 @@
+<svg height="14350" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="14350" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2018-04-07T01:24:41.070Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
+<tspan x="10" y="58">e_modules/electron-lite</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="106"></tspan>
+
+<tspan x="10" y="122">covering $ /tmp/npmTestPublished/node_modules/electron-lite/external/electron /tmp/npmTestPublis\</tspan>
+<tspan x="10" y="138">hed/node_modules/electron-lite/test.js</tspan>
+
+<tspan x="10" y="154">&gt; Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="170">server listening on http-port 8081</tspan>
+
+<tspan x="10" y="186">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/package.json</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/busybox</tspan>
+
+<tspan x="10" y="218">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js</tspan>
+
+<tspan x="10" y="234">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/LICENSE</tspan>
+
+<tspan x="10" y="250">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/npm_scripts.sh</tspan>
+
+<tspan x="10" y="266">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/package.json</tspan>
+
+<tspan x="10" y="282">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/package-lock.json</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/README.md</tspan>
+
+<tspan x="10" y="314">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/test.js</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/blink_image\</tspan>
+<tspan x="10" y="346">_resources_200_percent.pak</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/content_res\</tspan>
+<tspan x="10" y="378">ources_200_percent.pak</tspan>
+
+<tspan x="10" y="394">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/content_she\</tspan>
+<tspan x="10" y="410">ll.pak</tspan>
+
+<tspan x="10" y="426">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/electron</tspan>
+
+<tspan x="10" y="442">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/icudtl.dat</tspan>
+
+<tspan x="10" y="458">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/libffmpeg.s\</tspan>
+<tspan x="10" y="474">o</tspan>
+
+<tspan x="10" y="490">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/libnode.so</tspan>
+
+<tspan x="10" y="506">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/LICENSE</tspan>
+
+<tspan x="10" y="522">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/LICENSES.ch\</tspan>
+<tspan x="10" y="538">romium.html</tspan>
+
+<tspan x="10" y="554">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/natives_blo\</tspan>
+<tspan x="10" y="570">b.bin</tspan>
+
+<tspan x="10" y="586">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/pdf_viewer_\</tspan>
+<tspan x="10" y="602">resources.pak</tspan>
+
+<tspan x="10" y="618">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/snapshot_bl\</tspan>
+<tspan x="10" y="634">ob.bin</tspan>
+
+<tspan x="10" y="650">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/ui_resource\</tspan>
+<tspan x="10" y="666">s_200_percent.pak</tspan>
+
+<tspan x="10" y="682">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/version</tspan>
+
+<tspan x="10" y="698">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/views_resou\</tspan>
+<tspan x="10" y="714">rces_200_percent.pak</tspan>
+
+<tspan x="10" y="730">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/am.\</tspan>
+<tspan x="10" y="746">pak</tspan>
+
+<tspan x="10" y="762">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ar.\</tspan>
+<tspan x="10" y="778">pak</tspan>
+
+<tspan x="10" y="794">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/bg.\</tspan>
+<tspan x="10" y="810">pak</tspan>
+
+<tspan x="10" y="826">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/bn.\</tspan>
+<tspan x="10" y="842">pak</tspan>
+
+<tspan x="10" y="858">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ca.\</tspan>
+<tspan x="10" y="874">pak</tspan>
+
+<tspan x="10" y="890">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/cs.\</tspan>
+<tspan x="10" y="906">pak</tspan>
+
+<tspan x="10" y="922">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/da.\</tspan>
+<tspan x="10" y="938">pak</tspan>
+
+<tspan x="10" y="954">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/de.\</tspan>
+<tspan x="10" y="970">pak</tspan>
+
+<tspan x="10" y="986">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/el.\</tspan>
+<tspan x="10" y="1002">pak</tspan>
+
+<tspan x="10" y="1018">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/en-\</tspan>
+<tspan x="10" y="1034">GB.pak</tspan>
+
+<tspan x="10" y="1050">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/en-\</tspan>
+<tspan x="10" y="1066">US.pak</tspan>
+
+<tspan x="10" y="1082">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/es-\</tspan>
+<tspan x="10" y="1098">419.pak</tspan>
+
+<tspan x="10" y="1114">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/es.\</tspan>
+<tspan x="10" y="1130">pak</tspan>
+
+<tspan x="10" y="1146">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/et.\</tspan>
+<tspan x="10" y="1162">pak</tspan>
+
+<tspan x="10" y="1178">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/fak\</tspan>
+<tspan x="10" y="1194">e-bidi.pak</tspan>
+
+<tspan x="10" y="1210">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/fa.\</tspan>
+<tspan x="10" y="1226">pak</tspan>
+
+<tspan x="10" y="1242">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/fil\</tspan>
+<tspan x="10" y="1258">.pak</tspan>
+
+<tspan x="10" y="1274">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/fi.\</tspan>
+<tspan x="10" y="1290">pak</tspan>
+
+<tspan x="10" y="1306">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/fr.\</tspan>
+<tspan x="10" y="1322">pak</tspan>
+
+<tspan x="10" y="1338">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/gu.\</tspan>
+<tspan x="10" y="1354">pak</tspan>
+
+<tspan x="10" y="1370">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/he.\</tspan>
+<tspan x="10" y="1386">pak</tspan>
+
+<tspan x="10" y="1402">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/hi.\</tspan>
+<tspan x="10" y="1418">pak</tspan>
+
+<tspan x="10" y="1434">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/hr.\</tspan>
+<tspan x="10" y="1450">pak</tspan>
+
+<tspan x="10" y="1466">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/hu.\</tspan>
+<tspan x="10" y="1482">pak</tspan>
+
+<tspan x="10" y="1498">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/id.\</tspan>
+<tspan x="10" y="1514">pak</tspan>
+
+<tspan x="10" y="1530">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/it.\</tspan>
+<tspan x="10" y="1546">pak</tspan>
+
+<tspan x="10" y="1562">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ja.\</tspan>
+<tspan x="10" y="1578">pak</tspan>
+
+<tspan x="10" y="1594">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/kn.\</tspan>
+<tspan x="10" y="1610">pak</tspan>
+
+<tspan x="10" y="1626">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ko.\</tspan>
+<tspan x="10" y="1642">pak</tspan>
+
+<tspan x="10" y="1658">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/lt.\</tspan>
+<tspan x="10" y="1674">pak</tspan>
+
+<tspan x="10" y="1690">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/lv.\</tspan>
+<tspan x="10" y="1706">pak</tspan>
+
+<tspan x="10" y="1722">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ml.\</tspan>
+<tspan x="10" y="1738">pak</tspan>
+
+<tspan x="10" y="1754">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/mr.\</tspan>
+<tspan x="10" y="1770">pak</tspan>
+
+<tspan x="10" y="1786">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ms.\</tspan>
+<tspan x="10" y="1802">pak</tspan>
+
+<tspan x="10" y="1818">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/nb.\</tspan>
+<tspan x="10" y="1834">pak</tspan>
+
+<tspan x="10" y="1850">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/nl.\</tspan>
+<tspan x="10" y="1866">pak</tspan>
+
+<tspan x="10" y="1882">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/pl.\</tspan>
+<tspan x="10" y="1898">pak</tspan>
+
+<tspan x="10" y="1914">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/pt-\</tspan>
+<tspan x="10" y="1930">BR.pak</tspan>
+
+<tspan x="10" y="1946">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/pt-\</tspan>
+<tspan x="10" y="1962">PT.pak</tspan>
+
+<tspan x="10" y="1978">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ro.\</tspan>
+<tspan x="10" y="1994">pak</tspan>
+
+<tspan x="10" y="2010">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ru.\</tspan>
+<tspan x="10" y="2026">pak</tspan>
+
+<tspan x="10" y="2042">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/sk.\</tspan>
+<tspan x="10" y="2058">pak</tspan>
+
+<tspan x="10" y="2074">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/sl.\</tspan>
+<tspan x="10" y="2090">pak</tspan>
+
+<tspan x="10" y="2106">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/sr.\</tspan>
+<tspan x="10" y="2122">pak</tspan>
+
+<tspan x="10" y="2138">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/sv.\</tspan>
+<tspan x="10" y="2154">pak</tspan>
+
+<tspan x="10" y="2170">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/sw.\</tspan>
+<tspan x="10" y="2186">pak</tspan>
+
+<tspan x="10" y="2202">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/ta.\</tspan>
+<tspan x="10" y="2218">pak</tspan>
+
+<tspan x="10" y="2234">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/te.\</tspan>
+<tspan x="10" y="2250">pak</tspan>
+
+<tspan x="10" y="2266">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/th.\</tspan>
+<tspan x="10" y="2282">pak</tspan>
+
+<tspan x="10" y="2298">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/tr.\</tspan>
+<tspan x="10" y="2314">pak</tspan>
+
+<tspan x="10" y="2330">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/uk.\</tspan>
+<tspan x="10" y="2346">pak</tspan>
+
+<tspan x="10" y="2362">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/vi.\</tspan>
+<tspan x="10" y="2378">pak</tspan>
+
+<tspan x="10" y="2394">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/zh-\</tspan>
+<tspan x="10" y="2410">CN.pak</tspan>
+
+<tspan x="10" y="2426">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/locales/zh-\</tspan>
+<tspan x="10" y="2442">TW.pak</tspan>
+
+<tspan x="10" y="2458">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/resources/d\</tspan>
+<tspan x="10" y="2474">efault_app.asar</tspan>
+
+<tspan x="10" y="2490">{ Error: ENOENT,  not found in /tmp/npmTestPublished/node_modules/electron-lite/external/resourc\</tspan>
+<tspan x="10" y="2506">es/default_app.asar</tspan>
+
+<tspan x="10" y="2522">    at notFoundError (ELECTRON_ASAR.js:115:19)</tspan>
+
+<tspan x="10" y="2538">    at Object.fs.readFileSync (ELECTRON_ASAR.js:513:9)</tspan>
+
+<tspan x="10" y="2554">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:683:\</tspan>
+<tspan x="10" y="2570">34</tspan>
+
+<tspan x="10" y="2586">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="2602">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="2618">    at readExample (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.a\</tspan>
+<tspan x="10" y="2634">pidoc.js:677:23)</tspan>
+
+<tspan x="10" y="2650">    at Array.map (native)</tspan>
+
+<tspan x="10" y="2666">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="2682">utility2/lib.apidoc.js:797:30)</tspan>
+
+<tspan x="10" y="2698">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="2714">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="2730">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="2746">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="2762">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="2778">82:30 code: 'ENOENT', errno: -2 }</tspan>
+
+<tspan x="10" y="2794">apidocCreate - readExample /tmp/npmTestPublished/node_modules/electron-lite/external/resources/e\</tspan>
+<tspan x="10" y="2810">lectron.asar</tspan>
+
+<tspan x="10" y="2826">{ Error: ENOENT,  not found in /tmp/npmTestPublished/node_modules/electron-lite/external/resourc\</tspan>
+<tspan x="10" y="2842">es/electron.asar</tspan>
+
+<tspan x="10" y="2858">    at notFoundError (ELECTRON_ASAR.js:115:19)</tspan>
+
+<tspan x="10" y="2874">    at Object.fs.readFileSync (ELECTRON_ASAR.js:513:9)</tspan>
+
+<tspan x="10" y="2890">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:683:\</tspan>
+<tspan x="10" y="2906">34</tspan>
+
+<tspan x="10" y="2922">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="2938">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="2954">    at readExample (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.a\</tspan>
+<tspan x="10" y="2970">pidoc.js:677:23)</tspan>
+
+<tspan x="10" y="2986">    at Array.map (native)</tspan>
+
+<tspan x="10" y="3002">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="3018">utility2/lib.apidoc.js:797:30)</tspan>
+
+<tspan x="10" y="3034">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="3050">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="3066">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="3082">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="3098">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="3114">82:30 code: 'ENOENT', errno: -2 }</tspan>
+
+<tspan x="10" y="3130">apidocCreate - requiring /tmp/npmTestPublished/node_modules/electron-lite ...</tspan>
+
+<tspan x="10" y="3146">apidocCreate - ... required /tmp/npmTestPublished/node_modules/electron-lite</tspan>
+
+<tspan x="10" y="3162">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3178">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="3194">84</tspan>
+
+<tspan x="10" y="3210">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="3226">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3242">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="3258">31</tspan>
+
+<tspan x="10" y="3274">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3290">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="3306">53</tspan>
+
+<tspan x="10" y="3322">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3338">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="3354">48</tspan>
+
+<tspan x="10" y="3370">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3386">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="3402">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="3418">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="3434">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="3450">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3466">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="3482">84</tspan>
+
+<tspan x="10" y="3498">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="3514">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3530">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="3546">31</tspan>
+
+<tspan x="10" y="3562">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3578">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="3594">53</tspan>
+
+<tspan x="10" y="3610">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3626">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="3642">48</tspan>
+
+<tspan x="10" y="3658">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3674">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="3690">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="3706">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="3722">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="3738">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3754">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="3770">84</tspan>
+
+<tspan x="10" y="3786">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="3802">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3818">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="3834">31</tspan>
+
+<tspan x="10" y="3850">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3866">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="3882">53</tspan>
+
+<tspan x="10" y="3898">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3914">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="3930">48</tspan>
+
+<tspan x="10" y="3946">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3962">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="3978">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="3994">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="4010">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4026">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4042">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="4058">84</tspan>
+
+<tspan x="10" y="4074">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="4090">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4106">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="4122">31</tspan>
+
+<tspan x="10" y="4138">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4154">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="4170">53</tspan>
+
+<tspan x="10" y="4186">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4202">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="4218">48</tspan>
+
+<tspan x="10" y="4234">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4250">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="4266">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4282">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="4298">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4314">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4330">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="4346">84</tspan>
+
+<tspan x="10" y="4362">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="4378">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4394">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="4410">31</tspan>
+
+<tspan x="10" y="4426">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4442">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="4458">53</tspan>
+
+<tspan x="10" y="4474">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4490">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="4506">48</tspan>
+
+<tspan x="10" y="4522">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4538">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="4554">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4570">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="4586">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4602">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4618">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="4634">84</tspan>
+
+<tspan x="10" y="4650">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="4666">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4682">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="4698">31</tspan>
+
+<tspan x="10" y="4714">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4730">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="4746">53</tspan>
+
+<tspan x="10" y="4762">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4778">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="4794">48</tspan>
+
+<tspan x="10" y="4810">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4826">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="4842">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4858">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="4874">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4890">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4906">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="4922">84</tspan>
+
+<tspan x="10" y="4938">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="4954">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4970">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="4986">31</tspan>
+
+<tspan x="10" y="5002">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5018">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="5034">53</tspan>
+
+<tspan x="10" y="5050">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5066">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="5082">48</tspan>
+
+<tspan x="10" y="5098">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5114">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="5130">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5146">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="5162">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5178">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5194">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="5210">84</tspan>
+
+<tspan x="10" y="5226">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="5242">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5258">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="5274">31</tspan>
+
+<tspan x="10" y="5290">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5306">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="5322">53</tspan>
+
+<tspan x="10" y="5338">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5354">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="5370">48</tspan>
+
+<tspan x="10" y="5386">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5402">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="5418">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5434">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="5450">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5466">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5482">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="5498">84</tspan>
+
+<tspan x="10" y="5514">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="5530">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5546">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="5562">31</tspan>
+
+<tspan x="10" y="5578">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5594">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="5610">53</tspan>
+
+<tspan x="10" y="5626">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5642">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="5658">48</tspan>
+
+<tspan x="10" y="5674">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5690">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="5706">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5722">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="5738">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5754">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5770">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="5786">84</tspan>
+
+<tspan x="10" y="5802">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="5818">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5834">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="5850">31</tspan>
+
+<tspan x="10" y="5866">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5882">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="5898">53</tspan>
+
+<tspan x="10" y="5914">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5930">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="5946">48</tspan>
+
+<tspan x="10" y="5962">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5978">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="5994">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6010">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="6026">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6042">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6058">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="6074">84</tspan>
+
+<tspan x="10" y="6090">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="6106">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6122">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="6138">31</tspan>
+
+<tspan x="10" y="6154">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6170">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="6186">53</tspan>
+
+<tspan x="10" y="6202">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6218">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="6234">48</tspan>
+
+<tspan x="10" y="6250">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6266">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="6282">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6298">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="6314">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6330">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6346">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="6362">84</tspan>
+
+<tspan x="10" y="6378">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="6394">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6410">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="6426">31</tspan>
+
+<tspan x="10" y="6442">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6458">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="6474">53</tspan>
+
+<tspan x="10" y="6490">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6506">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="6522">48</tspan>
+
+<tspan x="10" y="6538">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6554">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="6570">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6586">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="6602">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6618">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6634">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="6650">84</tspan>
+
+<tspan x="10" y="6666">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="6682">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6698">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="6714">31</tspan>
+
+<tspan x="10" y="6730">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6746">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="6762">53</tspan>
+
+<tspan x="10" y="6778">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6794">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="6810">48</tspan>
+
+<tspan x="10" y="6826">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6842">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="6858">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6874">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="6890">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6906">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6922">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="6938">84</tspan>
+
+<tspan x="10" y="6954">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="6970">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6986">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="7002">31</tspan>
+
+<tspan x="10" y="7018">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7034">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="7050">53</tspan>
+
+<tspan x="10" y="7066">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7082">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="7098">48</tspan>
+
+<tspan x="10" y="7114">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7130">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="7146">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7162">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="7178">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7194">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7210">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="7226">84</tspan>
+
+<tspan x="10" y="7242">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="7258">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7274">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="7290">31</tspan>
+
+<tspan x="10" y="7306">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7322">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="7338">53</tspan>
+
+<tspan x="10" y="7354">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7370">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="7386">48</tspan>
+
+<tspan x="10" y="7402">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7418">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="7434">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7450">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="7466">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7482">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7498">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="7514">84</tspan>
+
+<tspan x="10" y="7530">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="7546">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7562">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="7578">31</tspan>
+
+<tspan x="10" y="7594">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7610">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="7626">53</tspan>
+
+<tspan x="10" y="7642">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7658">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="7674">48</tspan>
+
+<tspan x="10" y="7690">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7706">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="7722">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7738">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="7754">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7770">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7786">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="7802">84</tspan>
+
+<tspan x="10" y="7818">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="7834">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7850">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="7866">31</tspan>
+
+<tspan x="10" y="7882">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7898">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="7914">53</tspan>
+
+<tspan x="10" y="7930">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7946">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="7962">48</tspan>
+
+<tspan x="10" y="7978">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7994">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="8010">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8026">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="8042">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8058">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8074">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="8090">84</tspan>
+
+<tspan x="10" y="8106">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="8122">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8138">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="8154">31</tspan>
+
+<tspan x="10" y="8170">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8186">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="8202">53</tspan>
+
+<tspan x="10" y="8218">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8234">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="8250">48</tspan>
+
+<tspan x="10" y="8266">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8282">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="8298">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8314">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="8330">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8346">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8362">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="8378">84</tspan>
+
+<tspan x="10" y="8394">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="8410">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8426">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="8442">31</tspan>
+
+<tspan x="10" y="8458">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8474">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="8490">53</tspan>
+
+<tspan x="10" y="8506">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8522">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="8538">48</tspan>
+
+<tspan x="10" y="8554">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8570">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="8586">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8602">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="8618">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8634">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8650">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="8666">84</tspan>
+
+<tspan x="10" y="8682">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="8698">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8714">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="8730">31</tspan>
+
+<tspan x="10" y="8746">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8762">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="8778">53</tspan>
+
+<tspan x="10" y="8794">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8810">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="8826">48</tspan>
+
+<tspan x="10" y="8842">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8858">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="8874">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8890">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="8906">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8922">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8938">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="8954">84</tspan>
+
+<tspan x="10" y="8970">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="8986">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9002">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="9018">31</tspan>
+
+<tspan x="10" y="9034">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9050">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="9066">53</tspan>
+
+<tspan x="10" y="9082">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9098">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="9114">48</tspan>
+
+<tspan x="10" y="9130">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9146">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="9162">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9178">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="9194">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9210">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9226">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="9242">84</tspan>
+
+<tspan x="10" y="9258">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="9274">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9290">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="9306">31</tspan>
+
+<tspan x="10" y="9322">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9338">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="9354">53</tspan>
+
+<tspan x="10" y="9370">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9386">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="9402">48</tspan>
+
+<tspan x="10" y="9418">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9434">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="9450">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9466">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="9482">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9498">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9514">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="9530">84</tspan>
+
+<tspan x="10" y="9546">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="9562">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9578">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="9594">31</tspan>
+
+<tspan x="10" y="9610">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9626">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="9642">53</tspan>
+
+<tspan x="10" y="9658">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9674">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="9690">48</tspan>
+
+<tspan x="10" y="9706">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9722">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="9738">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9754">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="9770">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9786">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9802">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:996:\</tspan>
+<tspan x="10" y="9818">84</tspan>
+
+<tspan x="10" y="9834">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="9850">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9866">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:995:\</tspan>
+<tspan x="10" y="9882">31</tspan>
+
+<tspan x="10" y="9898">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9914">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:993:\</tspan>
+<tspan x="10" y="9930">53</tspan>
+
+<tspan x="10" y="9946">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9962">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:989:\</tspan>
+<tspan x="10" y="9978">48</tspan>
+
+<tspan x="10" y="9994">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="10010">    at Object.local.apidocModuleDictAdd (/tmp/npmTestPublished/node_modules/electron-lite/node_m\</tspan>
+<tspan x="10" y="10026">odules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="10042">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="10058">utility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="10074">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10090">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="10106">48</tspan>
+
+<tspan x="10" y="10122">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="10138">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10154">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="10170">46</tspan>
+
+<tspan x="10" y="10186">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10202">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="10218">30</tspan>
+
+<tspan x="10" y="10234">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10250">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="10266">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10282">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10298">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10314">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="10330">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="10346">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="10362">82:30</tspan>
+
+<tspan x="10" y="10378">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10394">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="10410">48</tspan>
+
+<tspan x="10" y="10426">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="10442">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10458">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="10474">46</tspan>
+
+<tspan x="10" y="10490">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10506">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="10522">30</tspan>
+
+<tspan x="10" y="10538">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10554">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="10570">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10586">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10602">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10618">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="10634">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="10650">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="10666">82:30</tspan>
+
+<tspan x="10" y="10682">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10698">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="10714">48</tspan>
+
+<tspan x="10" y="10730">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="10746">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10762">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="10778">46</tspan>
+
+<tspan x="10" y="10794">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10810">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="10826">30</tspan>
+
+<tspan x="10" y="10842">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10858">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="10874">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10890">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10906">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10922">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="10938">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="10954">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="10970">82:30</tspan>
+
+<tspan x="10" y="10986">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11002">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="11018">48</tspan>
+
+<tspan x="10" y="11034">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="11050">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11066">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="11082">46</tspan>
+
+<tspan x="10" y="11098">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11114">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="11130">30</tspan>
+
+<tspan x="10" y="11146">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11162">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="11178">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11194">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11210">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11226">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="11242">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="11258">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="11274">82:30</tspan>
+
+<tspan x="10" y="11290">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11306">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="11322">48</tspan>
+
+<tspan x="10" y="11338">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="11354">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11370">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="11386">46</tspan>
+
+<tspan x="10" y="11402">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11418">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="11434">30</tspan>
+
+<tspan x="10" y="11450">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11466">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="11482">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11498">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11514">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11530">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="11546">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="11562">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="11578">82:30</tspan>
+
+<tspan x="10" y="11594">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11610">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="11626">48</tspan>
+
+<tspan x="10" y="11642">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="11658">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11674">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="11690">46</tspan>
+
+<tspan x="10" y="11706">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11722">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="11738">30</tspan>
+
+<tspan x="10" y="11754">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11770">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="11786">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11802">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11818">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11834">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="11850">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="11866">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="11882">82:30</tspan>
+
+<tspan x="10" y="11898">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11914">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="11930">48</tspan>
+
+<tspan x="10" y="11946">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="11962">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11978">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="11994">46</tspan>
+
+<tspan x="10" y="12010">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12026">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="12042">30</tspan>
+
+<tspan x="10" y="12058">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12074">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="12090">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12106">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12122">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12138">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="12154">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="12170">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="12186">82:30</tspan>
+
+<tspan x="10" y="12202">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12218">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="12234">48</tspan>
+
+<tspan x="10" y="12250">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="12266">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12282">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="12298">46</tspan>
+
+<tspan x="10" y="12314">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12330">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="12346">30</tspan>
+
+<tspan x="10" y="12362">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12378">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="12394">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12410">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12426">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12442">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="12458">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="12474">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="12490">82:30</tspan>
+
+<tspan x="10" y="12506">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12522">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="12538">48</tspan>
+
+<tspan x="10" y="12554">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="12570">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12586">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="12602">46</tspan>
+
+<tspan x="10" y="12618">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12634">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="12650">30</tspan>
+
+<tspan x="10" y="12666">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12682">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="12698">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12714">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12730">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12746">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="12762">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="12778">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="12794">82:30</tspan>
+
+<tspan x="10" y="12810">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12826">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="12842">48</tspan>
+
+<tspan x="10" y="12858">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="12874">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12890">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="12906">46</tspan>
+
+<tspan x="10" y="12922">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12938">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="12954">30</tspan>
+
+<tspan x="10" y="12970">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12986">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="13002">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13018">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13034">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13050">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="13066">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="13082">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="13098">82:30</tspan>
+
+<tspan x="10" y="13114">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="13130">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="13146">48</tspan>
+
+<tspan x="10" y="13162">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="13178">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="13194">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="13210">46</tspan>
+
+<tspan x="10" y="13226">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="13242">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="13258">30</tspan>
+
+<tspan x="10" y="13274">    at Array.map (native)</tspan>
+
+<tspan x="10" y="13290">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="13306">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13322">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13338">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13354">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="13370">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="13386">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="13402">82:30</tspan>
+
+<tspan x="10" y="13418">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="13434">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:960:\</tspan>
+<tspan x="10" y="13450">48</tspan>
+
+<tspan x="10" y="13466">    at Object.local.tryCatchOnError (/tmp/npmTestPublished/node_modules/electron-lite/node_modul\</tspan>
+<tspan x="10" y="13482">es/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="13498">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:956:\</tspan>
+<tspan x="10" y="13514">46</tspan>
+
+<tspan x="10" y="13530">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="13546">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.apidoc.js:955:\</tspan>
+<tspan x="10" y="13562">30</tspan>
+
+<tspan x="10" y="13578">    at Array.map (native)</tspan>
+
+<tspan x="10" y="13594">    at Object.local.apidocCreate (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/\</tspan>
+<tspan x="10" y="13610">utility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13626">    at Object.local.buildApidoc (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13642">tility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13658">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/tmp/npmTestPublished/node_mod\</tspan>
+<tspan x="10" y="13674">ules/electron-lite/test.js:8:706)</tspan>
+
+<tspan x="10" y="13690">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.utility2.js:68\</tspan>
+<tspan x="10" y="13706">82:30</tspan>
+
+<tspan x="10" y="13722">created apidoc file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="13738"></tspan>
+
+<tspan x="10" y="13754">[node test-case 1 of 9 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="13770">[node test-case 2 of 9 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="13786">[node test-case 3 of 9 passed] - testCase_buildCustomOrg_default</tspan>
+
+<tspan x="10" y="13802">[node test-case 4 of 9 passed] - testCase_buildLib_default</tspan>
+
+<tspan x="10" y="13818">[node test-case 5 of 9 passed] - testCase_buildReadme_default</tspan>
+
+<tspan x="10" y="13834">[node test-case 6 of 9 passed] - testCase_buildTest_default</tspan>
+
+<tspan x="10" y="13850">[node test-case 7 of 9 passed] - testCase_nop_default</tspan>
+
+<tspan x="10" y="13866">[node test-case 8 of 9 passed] - testCase_webpage_default</tspan>
+
+<tspan x="10" y="13882">(node:5502) DeprecationWarning: node --debug is deprecated. Please use node --inspect instead.</tspan>
+
+<tspan x="10" y="13898">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+
+<tspan x="10" y="13914">[node test-case 9 of 9 passed] - testCase_exampleJs_exit</tspan>
+
+<tspan x="10" y="13930">------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="13946">File              |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+
+<tspan x="10" y="13962">------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="13978">   electron-lite/ |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="13994">      example.js  |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="14010">      test.js     |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="14026">------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="14042">All files         |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="14058">------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="14074"></tspan>
+
+<tspan x="10" y="14090">created coverage file /tmp/npmTestPublished/node_modules/electron-lite/tmp/build/coverage.html/i\</tspan>
+<tspan x="10" y="14106">ndex.html</tspan>
+
+<tspan x="10" y="14122"></tspan>
+
+<tspan x="10" y="14138">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="14154">| test-report - npmTestPublished - node - linux v7.9.0 - 2018-04-07T01:24:41.636Z</tspan>
+
+<tspan x="10" y="14170">|   21135 ms            0 failed        9 passed      |</tspan>
+
+<tspan x="10" y="14186">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="14202"></tspan>
+
+<tspan x="10" y="14218">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="14234">tml</tspan>
+
+<tspan x="10" y="14250"></tspan>
+
+<tspan x="10" y="14266"></tspan>
+
+<tspan x="10" y="14282">npmTestPublished - 0 failed tests</tspan>
+
+<tspan x="10" y="14298"></tspan>
+
+<tspan x="10" y="14314"></tspan>
+
+<tspan x="10" y="14330">[MODE_BUILD=npmTestPublished] - 2018-04-07T01:25:04.972Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg height="222" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="222" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  package files</tspan>
+
+<tspan x="10" y="42"></tspan>
+
+<tspan x="10" y="58">  0.  2018-03-29 16:40:17 +0900   917993 bytes  .</tspan>
+
+<tspan x="10" y="74">  1.  2017-03-08 17:01:29 +0800       99 bytes  .gitignore</tspan>
+
+<tspan x="10" y="90">  2.  2017-10-03 20:55:13 +0800     1317 bytes  .travis.yml</tspan>
+
+<tspan x="10" y="106">  3.  2017-04-18 00:49:42 +0800     1120 bytes  LICENSE</tspan>
+
+<tspan x="10" y="122">  4.  2018-03-29 16:40:17 +0900    30964 bytes  README.md</tspan>
+
+<tspan x="10" y="138">  5.  2016-12-29 03:00:26 +0800   877456 bytes  busybox</tspan>
+
+<tspan x="10" y="154">  6.  2018-03-29 16:40:17 +0900      842 bytes  lib.electron.js</tspan>
+
+<tspan x="10" y="170">  7.  2018-03-29 16:40:17 +0900     2194 bytes  npm_scripts.sh</tspan>
+
+<tspan x="10" y="186">  8.  2018-03-29 16:40:17 +0900     1782 bytes  package.json</tspan>
+
+<tspan x="10" y="202">  9.  2018-03-29 16:40:17 +0900     2219 bytes  test.js</tspan>
+
+</text>
+</svg>
