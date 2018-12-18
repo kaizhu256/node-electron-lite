@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">  Electron 2.0.14 - Build cross platform desktop apps with JavaScript, HTML, and CSS</tspan>
+<tspan x="10" y="42">  Electron 2.0.15 - Build cross platform desktop apps with JavaScript, HTML, and CSS</tspan>
 
 <tspan x="10" y="58">  Usage: electron [options] [path]</tspan>
 
