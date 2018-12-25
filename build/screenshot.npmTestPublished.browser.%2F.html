@@ -169,11 +169,15 @@ textarea {
     var ajaxProgressUpdate;
     if (
         window.timerIntervalAjaxProgressUpdate
-        || !document.querySelector("#ajaxProgressDiv1")
+        || !document.querySelector(
+            "#ajaxProgressDiv1"
+        )
     ) {
         return;
     }
-    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    ajaxProgressDiv1 = document.querySelector(
+        "#ajaxProgressDiv1"
+    );
     setTimeout(function () {
         ajaxProgressDiv1.style.width = "25%";
     });
@@ -473,11 +477,15 @@ textarea {
     var ajaxProgressUpdate;
     if (
         window.timerIntervalAjaxProgressUpdate
-        || !document.querySelector("#ajaxProgressDiv1")
+        || !document.querySelector(
+            "#ajaxProgressDiv1"
+        )
     ) {
         return;
     }
-    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    ajaxProgressDiv1 = document.querySelector(
+        "#ajaxProgressDiv1"
+    );
     setTimeout(function () {
         ajaxProgressDiv1.style.width = "25%";
     });
@@ -553,7 +561,7 @@ textarea {
 <h4>
     <span>version</span>-
         2018.9.23<br>
-    <span>test date</span>- 2018-12-18T05:36:06.074Z<br>
+    <span>test date</span>- 2018-12-25T23:50:02.888Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -569,7 +577,7 @@ textarea {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1009 ms</td>
+    <td>1021 ms</td>
     <td class="testPassed">0</td>
     <td>4</td>
     <td>0</td>
@@ -579,12 +587,12 @@ textarea {
 
 <div class="platform">
 <h4>
-    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-12-18T05:36:05.337Z<br>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-12-25T23:50:02.178Z<br>
     
     
-    <span>onload-time</span>- 615 ms<br>
+    <span>onload-time</span>- 548 ms<br>
     
-    <span>time-elapsed</span>- 1009 ms<br>
+    <span>time-elapsed</span>- 1021 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -600,7 +608,7 @@ textarea {
 
 <tr>
     <td>1</td>
-    <td>4 ms</td>
+    <td>2 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
