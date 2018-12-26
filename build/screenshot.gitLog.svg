@@ -1,421 +1,421 @@
 <svg height="3374" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="3374" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">2018-12-25 17:51:36 -0600</tspan>
+<tspan x="10" y="26">2018-12-25 18:38:26 -0600</tspan>
 
-<tspan x="10" y="42">update.build</tspan>
+<tspan x="10" y="42">- add function local.objectAssignDefault</tspan>
 
 <tspan x="10" y="58"></tspan>
 
-<tspan x="10" y="74">2018-12-25 17:47:29 -0600</tspan>
+<tspan x="10" y="74">2018-12-25 17:51:36 -0600</tspan>
 
-<tspan x="10" y="90">- minor update to v2.0.16</tspan>
+<tspan x="10" y="90">update.build</tspan>
 
 <tspan x="10" y="106"></tspan>
 
-<tspan x="10" y="122">2018-12-17 23:33:49 -0600</tspan>
+<tspan x="10" y="122">2018-12-25 17:47:29 -0600</tspan>
 
-<tspan x="10" y="138">- minor update to v2.0.15</tspan>
+<tspan x="10" y="138">- minor update to v2.0.16</tspan>
 
 <tspan x="10" y="154"></tspan>
 
-<tspan x="10" y="170">2018-12-08 02:56:12 -0600</tspan>
+<tspan x="10" y="170">2018-12-17 23:33:49 -0600</tspan>
 
-<tspan x="10" y="186">- npm publish 2018.12.8</tspan>
+<tspan x="10" y="186">- minor update to v2.0.15</tspan>
 
-<tspan x="10" y="202">- minor update to v2.0.14</tspan>
+<tspan x="10" y="202"></tspan>
 
-<tspan x="10" y="218">- update file releases.txt</tspan>
+<tspan x="10" y="218">2018-12-08 02:56:12 -0600</tspan>
 
-<tspan x="10" y="234"></tspan>
+<tspan x="10" y="234">- npm publish 2018.12.8</tspan>
 
-<tspan x="10" y="250">2018-12-08 02:50:41 -0600</tspan>
+<tspan x="10" y="250">- minor update to v2.0.14</tspan>
 
-<tspan x="10" y="266">update.build</tspan>
+<tspan x="10" y="266">- update file releases.txt</tspan>
 
 <tspan x="10" y="282"></tspan>
 
-<tspan x="10" y="298">2018-11-09 05:46:27 +0800</tspan>
+<tspan x="10" y="298">2018-12-08 02:50:41 -0600</tspan>
 
 <tspan x="10" y="314">update.build</tspan>
 
 <tspan x="10" y="330"></tspan>
 
-<tspan x="10" y="346">2018-11-09 05:02:01 +0800</tspan>
+<tspan x="10" y="346">2018-11-09 05:46:27 +0800</tspan>
 
-<tspan x="10" y="362">- minor update to v2.0.13</tspan>
+<tspan x="10" y="362">update.build</tspan>
 
 <tspan x="10" y="378"></tspan>
 
-<tspan x="10" y="394">2018-11-09 04:58:22 +0800</tspan>
+<tspan x="10" y="394">2018-11-09 05:02:01 +0800</tspan>
 
-<tspan x="10" y="410">shNpmReleasesProcess</tspan>
+<tspan x="10" y="410">- minor update to v2.0.13</tspan>
 
 <tspan x="10" y="426"></tspan>
 
-<tspan x="10" y="442">2018-11-09 04:56:35 +0800</tspan>
+<tspan x="10" y="442">2018-11-09 04:58:22 +0800</tspan>
 
-<tspan x="10" y="458">autofix</tspan>
+<tspan x="10" y="458">shNpmReleasesProcess</tspan>
 
 <tspan x="10" y="474"></tspan>
 
-<tspan x="10" y="490">2018-11-09 04:47:31 +0800</tspan>
+<tspan x="10" y="490">2018-11-09 04:56:35 +0800</tspan>
 
 <tspan x="10" y="506">autofix</tspan>
 
 <tspan x="10" y="522"></tspan>
 
-<tspan x="10" y="538">2018-11-09 04:44:51 +0800</tspan>
+<tspan x="10" y="538">2018-11-09 04:47:31 +0800</tspan>
 
-<tspan x="10" y="554">slushy.buildApp</tspan>
+<tspan x="10" y="554">autofix</tspan>
 
 <tspan x="10" y="570"></tspan>
 
-<tspan x="10" y="586">2018-11-09 04:41:59 +0800</tspan>
+<tspan x="10" y="586">2018-11-09 04:44:51 +0800</tspan>
 
-<tspan x="10" y="602">cli</tspan>
+<tspan x="10" y="602">slushy.buildApp</tspan>
 
 <tspan x="10" y="618"></tspan>
 
-<tspan x="10" y="634">2018-11-09 04:28:01 +0800</tspan>
+<tspan x="10" y="634">2018-11-09 04:41:59 +0800</tspan>
 
-<tspan x="10" y="650">slushy</tspan>
+<tspan x="10" y="650">cli</tspan>
 
 <tspan x="10" y="666"></tspan>
 
-<tspan x="10" y="682">2018-09-24 01:12:42 +0700</tspan>
+<tspan x="10" y="682">2018-11-09 04:28:01 +0800</tspan>
 
-<tspan x="10" y="698">[npm publish] - npm publish 2018.9.23</tspan>
+<tspan x="10" y="698">slushy</tspan>
 
-<tspan x="10" y="714">- minor update to v2.0.10</tspan>
+<tspan x="10" y="714"></tspan>
 
-<tspan x="10" y="730">- update file releases.txt</tspan>
+<tspan x="10" y="730">2018-09-24 01:12:42 +0700</tspan>
 
-<tspan x="10" y="746"></tspan>
+<tspan x="10" y="746">[npm publish] - npm publish 2018.9.23</tspan>
 
-<tspan x="10" y="762">2018-09-08 21:21:56 +0700</tspan>
+<tspan x="10" y="762">- minor update to v2.0.10</tspan>
 
-<tspan x="10" y="778">[npm publish] - npm publish 2018.9.8</tspan>
+<tspan x="10" y="778">- update file releases.txt</tspan>
 
-<tspan x="10" y="794">- upgrade to electron v2.0.8</tspan>
+<tspan x="10" y="794"></tspan>
 
-<tspan x="10" y="810">- rename file busybox -&gt; busybox-i486</tspan>
+<tspan x="10" y="810">2018-09-08 21:21:56 +0700</tspan>
 
-<tspan x="10" y="826">- add file releases.txt</tspan>
+<tspan x="10" y="826">[npm publish] - npm publish 2018.9.8</tspan>
 
-<tspan x="10" y="842">- add npm-script shell-functions shNpmReleasesFetch, shNpmReleasesMinorVersions, shNpmReleasesPa\</tspan>
-<tspan x="10" y="858">rse</tspan>
+<tspan x="10" y="842">- upgrade to electron v2.0.8</tspan>
 
-<tspan x="10" y="874">- revamp bootstrap-mechanism before running tests</tspan>
+<tspan x="10" y="858">- rename file busybox -&gt; busybox-i486</tspan>
 
-<tspan x="10" y="890">- fix stdout bug</tspan>
+<tspan x="10" y="874">- add file releases.txt</tspan>
 
-<tspan x="10" y="906"></tspan>
+<tspan x="10" y="890">- add npm-script shell-functions shNpmReleasesFetch, shNpmReleasesMinorVersions, shNpmReleasesPa\</tspan>
+<tspan x="10" y="906">rse</tspan>
 
-<tspan x="10" y="922">2018-06-30 18:04:21 -0500</tspan>
+<tspan x="10" y="922">- revamp bootstrap-mechanism before running tests</tspan>
 
-<tspan x="10" y="938">[npm publish] - npm publish 2018.6.30</tspan>
+<tspan x="10" y="938">- fix stdout bug</tspan>
 
-<tspan x="10" y="954">- minor update to electron v1.7.15</tspan>
+<tspan x="10" y="954"></tspan>
 
-<tspan x="10" y="970">- fix example.js for electron v2.0.x</tspan>
+<tspan x="10" y="970">2018-06-30 18:04:21 -0500</tspan>
 
-<tspan x="10" y="986">- consolidate npm-scripts into file npm_scripts.sh</tspan>
+<tspan x="10" y="986">[npm publish] - npm publish 2018.6.30</tspan>
 
-<tspan x="10" y="1002"></tspan>
+<tspan x="10" y="1002">- minor update to electron v1.7.15</tspan>
 
-<tspan x="10" y="1018">2018-05-04 17:47:09 +0800</tspan>
+<tspan x="10" y="1018">- fix example.js for electron v2.0.x</tspan>
 
-<tspan x="10" y="1034">[npm publish] - npm publish 2018.5.4</tspan>
+<tspan x="10" y="1034">- consolidate npm-scripts into file npm_scripts.sh</tspan>
 
-<tspan x="10" y="1050">- minor update to electron v1.7.14</tspan>
+<tspan x="10" y="1050"></tspan>
 
-<tspan x="10" y="1066"></tspan>
+<tspan x="10" y="1066">2018-05-04 17:47:09 +0800</tspan>
 
-<tspan x="10" y="1082">2018-03-29 16:40:17 +0900</tspan>
+<tspan x="10" y="1082">[npm publish] - npm publish 2018.5.4</tspan>
 
-<tspan x="10" y="1098">[npm publish] - npm publish v2018.3.28</tspan>
+<tspan x="10" y="1098">- minor update to electron v1.7.14</tspan>
 
-<tspan x="10" y="1114">- minor update to electron v1.7.13</tspan>
+<tspan x="10" y="1114"></tspan>
 
-<tspan x="10" y="1130"></tspan>
+<tspan x="10" y="1130">2018-03-29 16:40:17 +0900</tspan>
 
-<tspan x="10" y="1146">2018-03-08 12:29:45 +0800</tspan>
+<tspan x="10" y="1146">[npm publish] - npm publish v2018.3.28</tspan>
 
-<tspan x="10" y="1162">[npm publish] - npm publish v2018.3.7</tspan>
+<tspan x="10" y="1162">- minor update to electron v1.7.13</tspan>
 
-<tspan x="10" y="1178">- upgrade to electron v1.7.12</tspan>
+<tspan x="10" y="1178"></tspan>
 
-<tspan x="10" y="1194"></tspan>
+<tspan x="10" y="1194">2018-03-08 12:29:45 +0800</tspan>
 
-<tspan x="10" y="1210">2017-11-16 21:51:09 +0800</tspan>
+<tspan x="10" y="1210">[npm publish] - npm publish v2018.3.7</tspan>
 
-<tspan x="10" y="1226">[npm publish] - npm publish 2017.11.15</tspan>
+<tspan x="10" y="1226">- upgrade to electron v1.7.12</tspan>
 
-<tspan x="10" y="1242">- minor upgrade to electron v1.6.15</tspan>
+<tspan x="10" y="1242"></tspan>
 
-<tspan x="10" y="1258"></tspan>
+<tspan x="10" y="1258">2017-11-16 21:51:09 +0800</tspan>
 
-<tspan x="10" y="1274">2017-10-03 20:55:13 +0800</tspan>
+<tspan x="10" y="1274">[npm publish] - npm publish 2017.11.15</tspan>
 
-<tspan x="10" y="1290">[npm publish] - npm publish 2017.10.2</tspan>
+<tspan x="10" y="1290">- minor upgrade to electron v1.6.15</tspan>
 
-<tspan x="10" y="1306">- upgrade to electron v1.6.14</tspan>
+<tspan x="10" y="1306"></tspan>
 
-<tspan x="10" y="1322">- add cli-help section in README.md</tspan>
+<tspan x="10" y="1322">2017-10-03 20:55:13 +0800</tspan>
 
-<tspan x="10" y="1338"></tspan>
+<tspan x="10" y="1338">[npm publish] - npm publish 2017.10.2</tspan>
 
-<tspan x="10" y="1354">2017-08-31 23:38:41 +0800</tspan>
+<tspan x="10" y="1354">- upgrade to electron v1.6.14</tspan>
 
-<tspan x="10" y="1370">[npm publish] - npm publish 2017.8.30</tspan>
+<tspan x="10" y="1370">- add cli-help section in README.md</tspan>
 
-<tspan x="10" y="1386">- add version override flag during install npm_config_electron_version</tspan>
+<tspan x="10" y="1386"></tspan>
 
-<tspan x="10" y="1402">- fix symlink bug in macOs</tspan>
+<tspan x="10" y="1402">2017-08-31 23:38:41 +0800</tspan>
 
-<tspan x="10" y="1418"></tspan>
+<tspan x="10" y="1418">[npm publish] - npm publish 2017.8.30</tspan>
 
-<tspan x="10" y="1434">2017-07-16 06:36:09 +0800</tspan>
+<tspan x="10" y="1434">- add version override flag during install npm_config_electron_version</tspan>
 
-<tspan x="10" y="1450">[npm publish] - npm publish 2017.7.16</tspan>
+<tspan x="10" y="1450">- fix symlink bug in macOs</tspan>
 
-<tspan x="10" y="1466">- re-include screenshot in top-section of README.md</tspan>
+<tspan x="10" y="1466"></tspan>
 
-<tspan x="10" y="1482"></tspan>
+<tspan x="10" y="1482">2017-07-16 06:36:09 +0800</tspan>
 
-<tspan x="10" y="1498">2017-07-16 02:56:45 +0800</tspan>
+<tspan x="10" y="1498">[npm publish] - npm publish 2017.7.16</tspan>
 
-<tspan x="10" y="1514">[npm publish] - npm publish 2017.7.15</tspan>
+<tspan x="10" y="1514">- re-include screenshot in top-section of README.md</tspan>
 
-<tspan x="10" y="1530">- upgrade to electron v1.6.11</tspan>
+<tspan x="10" y="1530"></tspan>
 
-<tspan x="10" y="1546"></tspan>
+<tspan x="10" y="1546">2017-07-16 02:56:45 +0800</tspan>
 
-<tspan x="10" y="1562">2017-05-30 16:50:17 +0800</tspan>
+<tspan x="10" y="1562">[npm publish] - npm publish 2017.7.15</tspan>
 
-<tspan x="10" y="1578">[npm publish] - npm publish 2017.5.29</tspan>
+<tspan x="10" y="1578">- upgrade to electron v1.6.11</tspan>
 
-<tspan x="10" y="1594">- add README section 'all screenshots'</tspan>
+<tspan x="10" y="1594"></tspan>
 
-<tspan x="10" y="1610">- add README section 'quickstart standalone app'</tspan>
+<tspan x="10" y="1610">2017-05-30 16:50:17 +0800</tspan>
 
-<tspan x="10" y="1626">- auto-create README section 'table of contents'</tspan>
+<tspan x="10" y="1626">[npm publish] - npm publish 2017.5.29</tspan>
 
-<tspan x="10" y="1642">- rename README section 'quickstart web example' -&gt; 'quickstart example.js'</tspan>
+<tspan x="10" y="1642">- add README section 'all screenshots'</tspan>
 
-<tspan x="10" y="1658"></tspan>
+<tspan x="10" y="1658">- add README section 'quickstart standalone app'</tspan>
 
-<tspan x="10" y="1674">2017-04-18 00:49:42 +0800</tspan>
+<tspan x="10" y="1674">- auto-create README section 'table of contents'</tspan>
 
-<tspan x="10" y="1690">- npm publish 2017.4.16</tspan>
+<tspan x="10" y="1690">- rename README section 'quickstart web example' -&gt; 'quickstart example.js'</tspan>
 
-<tspan x="10" y="1706">- upgrade to electron v1.4.16</tspan>
+<tspan x="10" y="1706"></tspan>
 
-<tspan x="10" y="1722"></tspan>
+<tspan x="10" y="1722">2017-04-18 00:49:42 +0800</tspan>
 
-<tspan x="10" y="1738">2017-03-08 17:01:29 +0800</tspan>
+<tspan x="10" y="1738">- npm publish 2017.4.16</tspan>
 
-<tspan x="10" y="1754">- npm publish 2017.3.7</tspan>
+<tspan x="10" y="1754">- upgrade to electron v1.4.16</tspan>
 
-<tspan x="10" y="1770">- upgrade to electron v1.4.15</tspan>
+<tspan x="10" y="1770"></tspan>
 
-<tspan x="10" y="1786"></tspan>
+<tspan x="10" y="1786">2017-03-08 17:01:29 +0800</tspan>
 
-<tspan x="10" y="1802">2017-01-05 18:29:17 +0800</tspan>
+<tspan x="10" y="1802">- npm publish 2017.3.7</tspan>
 
-<tspan x="10" y="1818">- npm publish 2017.1.6</tspan>
+<tspan x="10" y="1818">- upgrade to electron v1.4.15</tspan>
 
-<tspan x="10" y="1834">- fix npm-postinstall on bare-bone linux systems</tspan>
+<tspan x="10" y="1834"></tspan>
 
-<tspan x="10" y="1850"></tspan>
+<tspan x="10" y="1850">2017-01-05 18:29:17 +0800</tspan>
 
-<tspan x="10" y="1866">2017-01-05 17:49:15 +0800</tspan>
+<tspan x="10" y="1866">- npm publish 2017.1.6</tspan>
 
-<tspan x="10" y="1882">- npm publish 2017.1.5</tspan>
+<tspan x="10" y="1882">- fix npm-postinstall on bare-bone linux systems</tspan>
 
-<tspan x="10" y="1898">- add api-doc section to README.md</tspan>
+<tspan x="10" y="1898"></tspan>
 
-<tspan x="10" y="1914"></tspan>
+<tspan x="10" y="1914">2017-01-05 17:49:15 +0800</tspan>
 
-<tspan x="10" y="1930">2016-12-29 03:00:26 +0800</tspan>
+<tspan x="10" y="1930">- npm publish 2017.1.5</tspan>
 
-<tspan x="10" y="1946">- npm publish 2016.12.28</tspan>
+<tspan x="10" y="1946">- add api-doc section to README.md</tspan>
 
-<tspan x="10" y="1962">- update download-url</tspan>
+<tspan x="10" y="1962"></tspan>
 
-<tspan x="10" y="1978">- rename file cli.js -&gt; lib.electron.js</tspan>
+<tspan x="10" y="1978">2016-12-29 03:00:26 +0800</tspan>
 
-<tspan x="10" y="1994">- rename file index.sh -&gt; lib.electron.sh</tspan>
+<tspan x="10" y="1994">- npm publish 2016.12.28</tspan>
 
-<tspan x="10" y="2010">- rename file unzip -&gt; busybox</tspan>
+<tspan x="10" y="2010">- update download-url</tspan>
 
-<tspan x="10" y="2026"></tspan>
+<tspan x="10" y="2026">- rename file cli.js -&gt; lib.electron.js</tspan>
 
-<tspan x="10" y="2042">2016-12-13 22:10:29 +0800</tspan>
+<tspan x="10" y="2042">- rename file index.sh -&gt; lib.electron.sh</tspan>
 
-<tspan x="10" y="2058">- npm publish 2016.12.1</tspan>
+<tspan x="10" y="2058">- rename file unzip -&gt; busybox</tspan>
 
-<tspan x="10" y="2074">- upgrade to electron v1.3.13</tspan>
+<tspan x="10" y="2074"></tspan>
 
-<tspan x="10" y="2090"></tspan>
+<tspan x="10" y="2090">2016-12-13 22:10:29 +0800</tspan>
 
-<tspan x="10" y="2106">2016-10-31 23:51:25 +0800</tspan>
+<tspan x="10" y="2106">- npm publish 2016.12.1</tspan>
 
-<tspan x="10" y="2122">- npm publish 2016.9.1</tspan>
+<tspan x="10" y="2122">- upgrade to electron v1.3.13</tspan>
 
-<tspan x="10" y="2138">- upgrade to electron v1.3.8</tspan>
+<tspan x="10" y="2138"></tspan>
 
-<tspan x="10" y="2154"></tspan>
+<tspan x="10" y="2154">2016-10-31 23:51:25 +0800</tspan>
 
-<tspan x="10" y="2170">2016-09-28 16:35:37 +0800</tspan>
+<tspan x="10" y="2170">- npm publish 2016.9.1</tspan>
 
-<tspan x="10" y="2186">- npm publish 2016.8.1</tspan>
+<tspan x="10" y="2186">- upgrade to electron v1.3.8</tspan>
 
-<tspan x="10" y="2202">- upgrade to electron v1.3.7</tspan>
+<tspan x="10" y="2202"></tspan>
 
-<tspan x="10" y="2218"></tspan>
+<tspan x="10" y="2218">2016-09-28 16:35:37 +0800</tspan>
 
-<tspan x="10" y="2234">2016-08-07 21:46:38 +0200</tspan>
+<tspan x="10" y="2234">- npm publish 2016.8.1</tspan>
 
-<tspan x="10" y="2250">- npm publish 2016.7.2</tspan>
+<tspan x="10" y="2250">- upgrade to electron v1.3.7</tspan>
 
-<tspan x="10" y="2266">- update README.md</tspan>
+<tspan x="10" y="2266"></tspan>
 
-<tspan x="10" y="2282"></tspan>
+<tspan x="10" y="2282">2016-08-07 21:46:38 +0200</tspan>
 
-<tspan x="10" y="2298">2016-07-31 14:31:59 +0200</tspan>
+<tspan x="10" y="2298">- npm publish 2016.7.2</tspan>
 
-<tspan x="10" y="2314">- npm publish 2016.7.1</tspan>
+<tspan x="10" y="2314">- update README.md</tspan>
 
-<tspan x="10" y="2330">- upgrade to electron v1.2.8</tspan>
+<tspan x="10" y="2330"></tspan>
 
-<tspan x="10" y="2346"></tspan>
+<tspan x="10" y="2346">2016-07-31 14:31:59 +0200</tspan>
 
-<tspan x="10" y="2362">2016-06-09 04:43:05 +0300</tspan>
+<tspan x="10" y="2362">- npm publish 2016.7.1</tspan>
 
-<tspan x="10" y="2378">- npm publish 2016.5.1</tspan>
+<tspan x="10" y="2378">- upgrade to electron v1.2.8</tspan>
 
-<tspan x="10" y="2394">- upgrade to electron @ 1.1.3</tspan>
+<tspan x="10" y="2394"></tspan>
 
-<tspan x="10" y="2410"></tspan>
+<tspan x="10" y="2410">2016-06-09 04:43:05 +0300</tspan>
 
-<tspan x="10" y="2426">2016-05-23 18:51:01 +0300</tspan>
+<tspan x="10" y="2426">- npm publish 2016.5.1</tspan>
 
-<tspan x="10" y="2442">- npm publish 2016.4.3</tspan>
+<tspan x="10" y="2442">- upgrade to electron @ 1.1.3</tspan>
 
-<tspan x="10" y="2458">- fix missing README.md in published package</tspan>
+<tspan x="10" y="2458"></tspan>
 
-<tspan x="10" y="2474"></tspan>
+<tspan x="10" y="2474">2016-05-23 18:51:01 +0300</tspan>
 
-<tspan x="10" y="2490">2016-05-23 18:02:40 +0300</tspan>
+<tspan x="10" y="2490">- npm publish 2016.4.3</tspan>
 
-<tspan x="10" y="2506">- npm publish 2016.4.2</tspan>
+<tspan x="10" y="2506">- fix missing README.md in published package</tspan>
 
-<tspan x="10" y="2522">- upgrade to electron @ 1.0.2</tspan>
+<tspan x="10" y="2522"></tspan>
 
-<tspan x="10" y="2538"></tspan>
+<tspan x="10" y="2538">2016-05-23 18:02:40 +0300</tspan>
 
-<tspan x="10" y="2554">2016-04-21 01:03:37 +0300</tspan>
+<tspan x="10" y="2554">- npm publish 2016.4.2</tspan>
 
-<tspan x="10" y="2570">- npm publish 2016.3.3</tspan>
+<tspan x="10" y="2570">- upgrade to electron @ 1.0.2</tspan>
 
-<tspan x="10" y="2586">- fix race-condition for parallel npm install</tspan>
+<tspan x="10" y="2586"></tspan>
 
-<tspan x="10" y="2602"></tspan>
+<tspan x="10" y="2602">2016-04-21 01:03:37 +0300</tspan>
 
-<tspan x="10" y="2618">2016-04-20 16:14:19 +0300</tspan>
+<tspan x="10" y="2618">- npm publish 2016.3.3</tspan>
 
-<tspan x="10" y="2634">- npm publish 2016.3.2</tspan>
+<tspan x="10" y="2634">- fix race-condition for parallel npm install</tspan>
 
-<tspan x="10" y="2650">- add file cli.js</tspan>
+<tspan x="10" y="2650"></tspan>
 
-<tspan x="10" y="2666">- fix npm install</tspan>
+<tspan x="10" y="2666">2016-04-20 16:14:19 +0300</tspan>
 
-<tspan x="10" y="2682"></tspan>
+<tspan x="10" y="2682">- npm publish 2016.3.2</tspan>
 
-<tspan x="10" y="2698">2016-04-20 13:49:12 +0300</tspan>
+<tspan x="10" y="2698">- add file cli.js</tspan>
 
-<tspan x="10" y="2714">- npm publish 2016.3.1</tspan>
+<tspan x="10" y="2714">- fix npm install</tspan>
 
-<tspan x="10" y="2730">- upgrade to electron @ v0.36.12</tspan>
+<tspan x="10" y="2730"></tspan>
 
-<tspan x="10" y="2746"></tspan>
+<tspan x="10" y="2746">2016-04-20 13:49:12 +0300</tspan>
 
-<tspan x="10" y="2762">2016-02-29 22:29:34 +0800</tspan>
+<tspan x="10" y="2762">- npm publish 2016.3.1</tspan>
 
-<tspan x="10" y="2778">- npm publish 2015.12.4</tspan>
+<tspan x="10" y="2778">- upgrade to electron @ v0.36.12</tspan>
 
-<tspan x="10" y="2794">- upgrade to electron @ v0.35.6</tspan>
+<tspan x="10" y="2794"></tspan>
 
-<tspan x="10" y="2810"></tspan>
+<tspan x="10" y="2810">2016-02-29 22:29:34 +0800</tspan>
 
-<tspan x="10" y="2826">2015-12-28 15:31:59 +0800</tspan>
+<tspan x="10" y="2826">- npm publish 2015.12.4</tspan>
 
-<tspan x="10" y="2842">- npm publish 2015.12.3</tspan>
+<tspan x="10" y="2842">- upgrade to electron @ v0.35.6</tspan>
 
-<tspan x="10" y="2858">- remove linux unzip dependency by including busybox.unzip @ https://busybox.net/downloads/binar\</tspan>
-<tspan x="10" y="2874">ies/1.21.1/busybox-i486</tspan>
+<tspan x="10" y="2858"></tspan>
 
-<tspan x="10" y="2890"></tspan>
+<tspan x="10" y="2874">2015-12-28 15:31:59 +0800</tspan>
 
-<tspan x="10" y="2906">2015-12-06 12:37:28 +0800</tspan>
+<tspan x="10" y="2890">- npm publish 2015.12.3</tspan>
 
-<tspan x="10" y="2922">- npm publish 2015.11.2</tspan>
+<tspan x="10" y="2906">- remove linux unzip dependency by including busybox.unzip @ https://busybox.net/downloads/binar\</tspan>
+<tspan x="10" y="2922">ies/1.21.1/busybox-i486</tspan>
 
-<tspan x="10" y="2938">- upgrade to electron @ 0.35.4</tspan>
+<tspan x="10" y="2938"></tspan>
 
-<tspan x="10" y="2954"></tspan>
+<tspan x="10" y="2954">2015-12-06 12:37:28 +0800</tspan>
 
-<tspan x="10" y="2970">2015-11-28 23:13:16 +0800</tspan>
+<tspan x="10" y="2970">- npm publish 2015.11.2</tspan>
 
-<tspan x="10" y="2986">- npm publish 2015.11.1</tspan>
+<tspan x="10" y="2986">- upgrade to electron @ 0.35.4</tspan>
 
-<tspan x="10" y="3002">- update to electron @ 0.35.2</tspan>
+<tspan x="10" y="3002"></tspan>
 
-<tspan x="10" y="3018">- add file test.js</tspan>
+<tspan x="10" y="3018">2015-11-28 23:13:16 +0800</tspan>
 
-<tspan x="10" y="3034"></tspan>
+<tspan x="10" y="3034">- npm publish 2015.11.1</tspan>
 
-<tspan x="10" y="3050">2015-11-22 12:22:38 +0800</tspan>
+<tspan x="10" y="3050">- update to electron @ 0.35.2</tspan>
 
-<tspan x="10" y="3066">- npm publish 2015.10.5</tspan>
+<tspan x="10" y="3066">- add file test.js</tspan>
 
-<tspan x="10" y="3082">- change name from electron-prebuilt-lite to electron-lite</tspan>
+<tspan x="10" y="3082"></tspan>
 
-<tspan x="10" y="3098">- update devDependency with utility2 @ 2015.11.6</tspan>
+<tspan x="10" y="3098">2015-11-22 12:22:38 +0800</tspan>
 
-<tspan x="10" y="3114"></tspan>
+<tspan x="10" y="3114">- npm publish 2015.10.5</tspan>
 
-<tspan x="10" y="3130">2015-11-20 17:06:31 +0800</tspan>
+<tspan x="10" y="3130">- change name from electron-prebuilt-lite to electron-lite</tspan>
 
-<tspan x="10" y="3146">- npm publish 2015.10.4</tspan>
+<tspan x="10" y="3146">- update devDependency with utility2 @ 2015.11.6</tspan>
 
-<tspan x="10" y="3162">- update to electron @ 0.35.1</tspan>
+<tspan x="10" y="3162"></tspan>
 
-<tspan x="10" y="3178">- update devDependencty to utility2@2015.11.4</tspan>
+<tspan x="10" y="3178">2015-11-20 17:06:31 +0800</tspan>
 
-<tspan x="10" y="3194">- fix quickstart screen-capture example</tspan>
+<tspan x="10" y="3194">- npm publish 2015.10.4</tspan>
 
-<tspan x="10" y="3210"></tspan>
+<tspan x="10" y="3210">- update to electron @ 0.35.1</tspan>
 
-<tspan x="10" y="3226">2015-11-20 04:22:14 +0800</tspan>
+<tspan x="10" y="3226">- update devDependencty to utility2@2015.11.4</tspan>
 
-<tspan x="10" y="3242">- npm publish 2015.10.3</tspan>
+<tspan x="10" y="3242">- fix quickstart screen-capture example</tspan>
 
-<tspan x="10" y="3258">- fix linux build</tspan>
+<tspan x="10" y="3258"></tspan>
 
-<tspan x="10" y="3274"></tspan>
+<tspan x="10" y="3274">2015-11-20 04:22:14 +0800</tspan>
 
-<tspan x="10" y="3290">2015-11-20 04:19:26 +0800</tspan>
+<tspan x="10" y="3290">- npm publish 2015.10.3</tspan>
 
-<tspan x="10" y="3306">fix linux build</tspan>
+<tspan x="10" y="3306">- fix linux build</tspan>
 
 <tspan x="10" y="3322"></tspan>
 
-<tspan x="10" y="3338">2015-11-20 01:56:19 +0800</tspan>
+<tspan x="10" y="3338">2015-11-20 04:19:26 +0800</tspan>
 
-<tspan x="10" y="3354">- npm publish 2015.10.2</tspan>
+<tspan x="10" y="3354">fix linux build</tspan>
 
 </text>
 </svg>
