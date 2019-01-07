@@ -31,7 +31,7 @@
 
 <tspan x="10" y="250">+ electron-lite@2019.1.7</tspan>
 
-<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 3.004s</tspan>
+<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 2.846s</tspan>
 
 <tspan x="10" y="282">found 0 vulnerabilities</tspan>
 
@@ -39,17 +39,17 @@
 
 <tspan x="10" y="314">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="330">[6000:0107/070257.003609:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="330">[6066:0107/070457.435171:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="346"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="362">[6034:0107/070257.096974:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="362">[6100:0107/070457.528778:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="378">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="394">[6000:0107/070258.153268:INFO:CONSOLE(145)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
+<tspan x="10" y="394">[6066:0107/070458.521734:INFO:CONSOLE(145)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
 <tspan x="10" y="410">th Remote Content)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asa\</tspan>
 <tspan x="10" y="426">r/renderer/security-warnings.js (145)</tspan>
 
-<tspan x="10" y="442">[6000:0107/070258.159415:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="442">[6066:0107/070458.530325:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="458">ity-Policy)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asar/rende\</tspan>
 <tspan x="10" y="474">rer/security-warnings.js (188)</tspan>
 
