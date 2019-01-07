@@ -1,0 +1,1424 @@
+<svg height="14174" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="14174" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-04-07T01:25:53.031Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="58">ode-electron-lite</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="106"></tspan>
+
+<tspan x="10" y="122">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
+<tspan x="10" y="138">uild/test-report.json</tspan>
+
+<tspan x="10" y="154">&gt; Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="170">server listening on http-port 8081</tspan>
+
+<tspan x="10" y="186">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/busybox</tspan>
+
+<tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.gitignore</tspan>
+
+<tspan x="10" y="234">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
+
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/LICENSE</tspan>
+
+<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
+
+<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package-lock.json</tspan>
+
+<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
+
+<tspan x="10" y="346">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.travis.yml</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/blink_image_\</tspan>
+<tspan x="10" y="378">resources_200_percent.pak</tspan>
+
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_reso\</tspan>
+<tspan x="10" y="410">urces_200_percent.pak</tspan>
+
+<tspan x="10" y="426">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_shel\</tspan>
+<tspan x="10" y="442">l.pak</tspan>
+
+<tspan x="10" y="458">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/electron</tspan>
+
+<tspan x="10" y="474">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/icudtl.dat</tspan>
+
+<tspan x="10" y="490">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/libffmpeg.so</tspan>
+
+<tspan x="10" y="506">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/libnode.so</tspan>
+
+<tspan x="10" y="522">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/LICENSE</tspan>
+
+<tspan x="10" y="538">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/LICENSES.chr\</tspan>
+<tspan x="10" y="554">omium.html</tspan>
+
+<tspan x="10" y="570">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/natives_blob\</tspan>
+<tspan x="10" y="586">.bin</tspan>
+
+<tspan x="10" y="602">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/pdf_viewer_r\</tspan>
+<tspan x="10" y="618">esources.pak</tspan>
+
+<tspan x="10" y="634">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/snapshot_blo\</tspan>
+<tspan x="10" y="650">b.bin</tspan>
+
+<tspan x="10" y="666">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/ui_resources\</tspan>
+<tspan x="10" y="682">_200_percent.pak</tspan>
+
+<tspan x="10" y="698">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/version</tspan>
+
+<tspan x="10" y="714">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/views_resour\</tspan>
+<tspan x="10" y="730">ces_200_percent.pak</tspan>
+
+<tspan x="10" y="746">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/am.p\</tspan>
+<tspan x="10" y="762">ak</tspan>
+
+<tspan x="10" y="778">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ar.p\</tspan>
+<tspan x="10" y="794">ak</tspan>
+
+<tspan x="10" y="810">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/bg.p\</tspan>
+<tspan x="10" y="826">ak</tspan>
+
+<tspan x="10" y="842">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/bn.p\</tspan>
+<tspan x="10" y="858">ak</tspan>
+
+<tspan x="10" y="874">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ca.p\</tspan>
+<tspan x="10" y="890">ak</tspan>
+
+<tspan x="10" y="906">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/cs.p\</tspan>
+<tspan x="10" y="922">ak</tspan>
+
+<tspan x="10" y="938">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/da.p\</tspan>
+<tspan x="10" y="954">ak</tspan>
+
+<tspan x="10" y="970">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/de.p\</tspan>
+<tspan x="10" y="986">ak</tspan>
+
+<tspan x="10" y="1002">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/el.p\</tspan>
+<tspan x="10" y="1018">ak</tspan>
+
+<tspan x="10" y="1034">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/en-G\</tspan>
+<tspan x="10" y="1050">B.pak</tspan>
+
+<tspan x="10" y="1066">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/en-U\</tspan>
+<tspan x="10" y="1082">S.pak</tspan>
+
+<tspan x="10" y="1098">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/es-4\</tspan>
+<tspan x="10" y="1114">19.pak</tspan>
+
+<tspan x="10" y="1130">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/es.p\</tspan>
+<tspan x="10" y="1146">ak</tspan>
+
+<tspan x="10" y="1162">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/et.p\</tspan>
+<tspan x="10" y="1178">ak</tspan>
+
+<tspan x="10" y="1194">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/fake\</tspan>
+<tspan x="10" y="1210">-bidi.pak</tspan>
+
+<tspan x="10" y="1226">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/fa.p\</tspan>
+<tspan x="10" y="1242">ak</tspan>
+
+<tspan x="10" y="1258">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/fil.\</tspan>
+<tspan x="10" y="1274">pak</tspan>
+
+<tspan x="10" y="1290">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/fi.p\</tspan>
+<tspan x="10" y="1306">ak</tspan>
+
+<tspan x="10" y="1322">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/fr.p\</tspan>
+<tspan x="10" y="1338">ak</tspan>
+
+<tspan x="10" y="1354">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/gu.p\</tspan>
+<tspan x="10" y="1370">ak</tspan>
+
+<tspan x="10" y="1386">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/he.p\</tspan>
+<tspan x="10" y="1402">ak</tspan>
+
+<tspan x="10" y="1418">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/hi.p\</tspan>
+<tspan x="10" y="1434">ak</tspan>
+
+<tspan x="10" y="1450">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/hr.p\</tspan>
+<tspan x="10" y="1466">ak</tspan>
+
+<tspan x="10" y="1482">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/hu.p\</tspan>
+<tspan x="10" y="1498">ak</tspan>
+
+<tspan x="10" y="1514">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/id.p\</tspan>
+<tspan x="10" y="1530">ak</tspan>
+
+<tspan x="10" y="1546">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/it.p\</tspan>
+<tspan x="10" y="1562">ak</tspan>
+
+<tspan x="10" y="1578">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ja.p\</tspan>
+<tspan x="10" y="1594">ak</tspan>
+
+<tspan x="10" y="1610">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/kn.p\</tspan>
+<tspan x="10" y="1626">ak</tspan>
+
+<tspan x="10" y="1642">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ko.p\</tspan>
+<tspan x="10" y="1658">ak</tspan>
+
+<tspan x="10" y="1674">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/lt.p\</tspan>
+<tspan x="10" y="1690">ak</tspan>
+
+<tspan x="10" y="1706">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/lv.p\</tspan>
+<tspan x="10" y="1722">ak</tspan>
+
+<tspan x="10" y="1738">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ml.p\</tspan>
+<tspan x="10" y="1754">ak</tspan>
+
+<tspan x="10" y="1770">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/mr.p\</tspan>
+<tspan x="10" y="1786">ak</tspan>
+
+<tspan x="10" y="1802">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ms.p\</tspan>
+<tspan x="10" y="1818">ak</tspan>
+
+<tspan x="10" y="1834">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/nb.p\</tspan>
+<tspan x="10" y="1850">ak</tspan>
+
+<tspan x="10" y="1866">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/nl.p\</tspan>
+<tspan x="10" y="1882">ak</tspan>
+
+<tspan x="10" y="1898">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/pl.p\</tspan>
+<tspan x="10" y="1914">ak</tspan>
+
+<tspan x="10" y="1930">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/pt-B\</tspan>
+<tspan x="10" y="1946">R.pak</tspan>
+
+<tspan x="10" y="1962">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/pt-P\</tspan>
+<tspan x="10" y="1978">T.pak</tspan>
+
+<tspan x="10" y="1994">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ro.p\</tspan>
+<tspan x="10" y="2010">ak</tspan>
+
+<tspan x="10" y="2026">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ru.p\</tspan>
+<tspan x="10" y="2042">ak</tspan>
+
+<tspan x="10" y="2058">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/sk.p\</tspan>
+<tspan x="10" y="2074">ak</tspan>
+
+<tspan x="10" y="2090">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/sl.p\</tspan>
+<tspan x="10" y="2106">ak</tspan>
+
+<tspan x="10" y="2122">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/sr.p\</tspan>
+<tspan x="10" y="2138">ak</tspan>
+
+<tspan x="10" y="2154">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/sv.p\</tspan>
+<tspan x="10" y="2170">ak</tspan>
+
+<tspan x="10" y="2186">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/sw.p\</tspan>
+<tspan x="10" y="2202">ak</tspan>
+
+<tspan x="10" y="2218">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/ta.p\</tspan>
+<tspan x="10" y="2234">ak</tspan>
+
+<tspan x="10" y="2250">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/te.p\</tspan>
+<tspan x="10" y="2266">ak</tspan>
+
+<tspan x="10" y="2282">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/th.p\</tspan>
+<tspan x="10" y="2298">ak</tspan>
+
+<tspan x="10" y="2314">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/tr.p\</tspan>
+<tspan x="10" y="2330">ak</tspan>
+
+<tspan x="10" y="2346">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/uk.p\</tspan>
+<tspan x="10" y="2362">ak</tspan>
+
+<tspan x="10" y="2378">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/vi.p\</tspan>
+<tspan x="10" y="2394">ak</tspan>
+
+<tspan x="10" y="2410">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/zh-C\</tspan>
+<tspan x="10" y="2426">N.pak</tspan>
+
+<tspan x="10" y="2442">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/locales/zh-T\</tspan>
+<tspan x="10" y="2458">W.pak</tspan>
+
+<tspan x="10" y="2474">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/resources/de\</tspan>
+<tspan x="10" y="2490">fault_app.asar</tspan>
+
+<tspan x="10" y="2506">{ Error: ENOENT,  not found in /home/travis/build/kaizhu256/node-electron-lite/external/resource\</tspan>
+<tspan x="10" y="2522">s/default_app.asar</tspan>
+
+<tspan x="10" y="2538">    at notFoundError (ELECTRON_ASAR.js:115:19)</tspan>
+
+<tspan x="10" y="2554">    at Object.fs.readFileSync (ELECTRON_ASAR.js:513:9)</tspan>
+
+<tspan x="10" y="2570">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:683:3\</tspan>
+<tspan x="10" y="2586">4</tspan>
+
+<tspan x="10" y="2602">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="2618">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="2634">    at readExample (/home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.ap\</tspan>
+<tspan x="10" y="2650">idoc.js:677:23)</tspan>
+
+<tspan x="10" y="2666">    at Array.map (native)</tspan>
+
+<tspan x="10" y="2682">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="2698">tility2/lib.apidoc.js:797:30)</tspan>
+
+<tspan x="10" y="2714">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="2730">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="2746">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="2762">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="2778">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="2794">2:30 code: 'ENOENT', errno: -2 }</tspan>
+
+<tspan x="10" y="2810">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/resources/el\</tspan>
+<tspan x="10" y="2826">ectron.asar</tspan>
+
+<tspan x="10" y="2842">{ Error: ENOENT,  not found in /home/travis/build/kaizhu256/node-electron-lite/external/resource\</tspan>
+<tspan x="10" y="2858">s/electron.asar</tspan>
+
+<tspan x="10" y="2874">    at notFoundError (ELECTRON_ASAR.js:115:19)</tspan>
+
+<tspan x="10" y="2890">    at Object.fs.readFileSync (ELECTRON_ASAR.js:513:9)</tspan>
+
+<tspan x="10" y="2906">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:683:3\</tspan>
+<tspan x="10" y="2922">4</tspan>
+
+<tspan x="10" y="2938">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="2954">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="2970">    at readExample (/home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.ap\</tspan>
+<tspan x="10" y="2986">idoc.js:677:23)</tspan>
+
+<tspan x="10" y="3002">    at Array.map (native)</tspan>
+
+<tspan x="10" y="3018">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="3034">tility2/lib.apidoc.js:797:30)</tspan>
+
+<tspan x="10" y="3050">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="3066">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="3082">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="3098">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="3114">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="3130">2:30 code: 'ENOENT', errno: -2 }</tspan>
+
+<tspan x="10" y="3146">apidocCreate - requiring /home/travis/build/kaizhu256/node-electron-lite ...</tspan>
+
+<tspan x="10" y="3162">apidocCreate - ... required /home/travis/build/kaizhu256/node-electron-lite</tspan>
+
+<tspan x="10" y="3178">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3194">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="3210">4</tspan>
+
+<tspan x="10" y="3226">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="3242">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3258">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="3274">1</tspan>
+
+<tspan x="10" y="3290">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3306">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="3322">3</tspan>
+
+<tspan x="10" y="3338">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3354">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="3370">8</tspan>
+
+<tspan x="10" y="3386">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3402">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="3418">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="3434">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="3450">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="3466">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3482">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="3498">4</tspan>
+
+<tspan x="10" y="3514">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="3530">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3546">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="3562">1</tspan>
+
+<tspan x="10" y="3578">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3594">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="3610">3</tspan>
+
+<tspan x="10" y="3626">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3642">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="3658">8</tspan>
+
+<tspan x="10" y="3674">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3690">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="3706">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="3722">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="3738">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="3754">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="3770">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="3786">4</tspan>
+
+<tspan x="10" y="3802">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="3818">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="3834">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="3850">1</tspan>
+
+<tspan x="10" y="3866">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3882">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="3898">3</tspan>
+
+<tspan x="10" y="3914">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3930">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="3946">8</tspan>
+
+<tspan x="10" y="3962">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="3978">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="3994">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4010">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="4026">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4042">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4058">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="4074">4</tspan>
+
+<tspan x="10" y="4090">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="4106">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4122">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="4138">1</tspan>
+
+<tspan x="10" y="4154">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4170">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="4186">3</tspan>
+
+<tspan x="10" y="4202">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4218">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="4234">8</tspan>
+
+<tspan x="10" y="4250">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4266">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="4282">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4298">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="4314">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4330">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4346">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="4362">4</tspan>
+
+<tspan x="10" y="4378">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="4394">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4410">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="4426">1</tspan>
+
+<tspan x="10" y="4442">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4458">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="4474">3</tspan>
+
+<tspan x="10" y="4490">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4506">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="4522">8</tspan>
+
+<tspan x="10" y="4538">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4554">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="4570">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4586">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="4602">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4618">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4634">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="4650">4</tspan>
+
+<tspan x="10" y="4666">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="4682">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4698">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="4714">1</tspan>
+
+<tspan x="10" y="4730">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4746">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="4762">3</tspan>
+
+<tspan x="10" y="4778">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4794">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="4810">8</tspan>
+
+<tspan x="10" y="4826">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="4842">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="4858">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="4874">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="4890">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="4906">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="4922">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="4938">4</tspan>
+
+<tspan x="10" y="4954">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="4970">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="4986">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="5002">1</tspan>
+
+<tspan x="10" y="5018">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5034">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="5050">3</tspan>
+
+<tspan x="10" y="5066">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5082">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="5098">8</tspan>
+
+<tspan x="10" y="5114">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5130">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="5146">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5162">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="5178">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5194">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5210">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="5226">4</tspan>
+
+<tspan x="10" y="5242">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="5258">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5274">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="5290">1</tspan>
+
+<tspan x="10" y="5306">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5322">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="5338">3</tspan>
+
+<tspan x="10" y="5354">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5370">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="5386">8</tspan>
+
+<tspan x="10" y="5402">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5418">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="5434">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5450">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="5466">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5482">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5498">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="5514">4</tspan>
+
+<tspan x="10" y="5530">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="5546">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5562">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="5578">1</tspan>
+
+<tspan x="10" y="5594">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5610">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="5626">3</tspan>
+
+<tspan x="10" y="5642">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5658">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="5674">8</tspan>
+
+<tspan x="10" y="5690">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5706">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="5722">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="5738">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="5754">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="5770">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="5786">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="5802">4</tspan>
+
+<tspan x="10" y="5818">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="5834">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="5850">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="5866">1</tspan>
+
+<tspan x="10" y="5882">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5898">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="5914">3</tspan>
+
+<tspan x="10" y="5930">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5946">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="5962">8</tspan>
+
+<tspan x="10" y="5978">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="5994">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="6010">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6026">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="6042">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6058">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6074">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="6090">4</tspan>
+
+<tspan x="10" y="6106">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="6122">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6138">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="6154">1</tspan>
+
+<tspan x="10" y="6170">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6186">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="6202">3</tspan>
+
+<tspan x="10" y="6218">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6234">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="6250">8</tspan>
+
+<tspan x="10" y="6266">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6282">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="6298">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6314">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="6330">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6346">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6362">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="6378">4</tspan>
+
+<tspan x="10" y="6394">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="6410">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6426">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="6442">1</tspan>
+
+<tspan x="10" y="6458">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6474">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="6490">3</tspan>
+
+<tspan x="10" y="6506">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6522">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="6538">8</tspan>
+
+<tspan x="10" y="6554">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6570">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="6586">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6602">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="6618">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6634">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6650">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="6666">4</tspan>
+
+<tspan x="10" y="6682">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="6698">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="6714">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="6730">1</tspan>
+
+<tspan x="10" y="6746">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6762">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="6778">3</tspan>
+
+<tspan x="10" y="6794">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6810">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="6826">8</tspan>
+
+<tspan x="10" y="6842">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="6858">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="6874">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="6890">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="6906">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="6922">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="6938">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="6954">4</tspan>
+
+<tspan x="10" y="6970">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="6986">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7002">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="7018">1</tspan>
+
+<tspan x="10" y="7034">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7050">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="7066">3</tspan>
+
+<tspan x="10" y="7082">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7098">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="7114">8</tspan>
+
+<tspan x="10" y="7130">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7146">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="7162">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7178">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="7194">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7210">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7226">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="7242">4</tspan>
+
+<tspan x="10" y="7258">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="7274">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7290">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="7306">1</tspan>
+
+<tspan x="10" y="7322">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7338">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="7354">3</tspan>
+
+<tspan x="10" y="7370">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7386">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="7402">8</tspan>
+
+<tspan x="10" y="7418">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7434">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="7450">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7466">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="7482">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7498">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7514">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="7530">4</tspan>
+
+<tspan x="10" y="7546">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="7562">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7578">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="7594">1</tspan>
+
+<tspan x="10" y="7610">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7626">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="7642">3</tspan>
+
+<tspan x="10" y="7658">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7674">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="7690">8</tspan>
+
+<tspan x="10" y="7706">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7722">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="7738">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="7754">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="7770">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="7786">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="7802">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="7818">4</tspan>
+
+<tspan x="10" y="7834">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="7850">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="7866">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="7882">1</tspan>
+
+<tspan x="10" y="7898">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7914">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="7930">3</tspan>
+
+<tspan x="10" y="7946">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="7962">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="7978">8</tspan>
+
+<tspan x="10" y="7994">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8010">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="8026">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8042">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="8058">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8074">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8090">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="8106">4</tspan>
+
+<tspan x="10" y="8122">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="8138">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8154">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="8170">1</tspan>
+
+<tspan x="10" y="8186">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8202">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="8218">3</tspan>
+
+<tspan x="10" y="8234">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8250">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="8266">8</tspan>
+
+<tspan x="10" y="8282">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8298">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="8314">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8330">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="8346">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8362">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8378">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="8394">4</tspan>
+
+<tspan x="10" y="8410">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="8426">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8442">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="8458">1</tspan>
+
+<tspan x="10" y="8474">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8490">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="8506">3</tspan>
+
+<tspan x="10" y="8522">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8538">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="8554">8</tspan>
+
+<tspan x="10" y="8570">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8586">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="8602">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8618">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="8634">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8650">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8666">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="8682">4</tspan>
+
+<tspan x="10" y="8698">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="8714">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="8730">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="8746">1</tspan>
+
+<tspan x="10" y="8762">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8778">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="8794">3</tspan>
+
+<tspan x="10" y="8810">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8826">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="8842">8</tspan>
+
+<tspan x="10" y="8858">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="8874">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="8890">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="8906">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="8922">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="8938">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="8954">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="8970">4</tspan>
+
+<tspan x="10" y="8986">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="9002">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9018">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="9034">1</tspan>
+
+<tspan x="10" y="9050">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9066">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="9082">3</tspan>
+
+<tspan x="10" y="9098">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9114">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="9130">8</tspan>
+
+<tspan x="10" y="9146">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9162">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="9178">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9194">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="9210">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9226">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9242">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="9258">4</tspan>
+
+<tspan x="10" y="9274">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="9290">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9306">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="9322">1</tspan>
+
+<tspan x="10" y="9338">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9354">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="9370">3</tspan>
+
+<tspan x="10" y="9386">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9402">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="9418">8</tspan>
+
+<tspan x="10" y="9434">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9450">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="9466">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9482">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="9498">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9514">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9530">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="9546">4</tspan>
+
+<tspan x="10" y="9562">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="9578">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9594">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="9610">1</tspan>
+
+<tspan x="10" y="9626">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9642">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="9658">3</tspan>
+
+<tspan x="10" y="9674">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9690">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="9706">8</tspan>
+
+<tspan x="10" y="9722">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9738">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="9754">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="9770">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="9786">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="9802">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="9818">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:996:8\</tspan>
+<tspan x="10" y="9834">4</tspan>
+
+<tspan x="10" y="9850">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="9866">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="9882">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:995:3\</tspan>
+<tspan x="10" y="9898">1</tspan>
+
+<tspan x="10" y="9914">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9930">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:993:5\</tspan>
+<tspan x="10" y="9946">3</tspan>
+
+<tspan x="10" y="9962">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="9978">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:989:4\</tspan>
+<tspan x="10" y="9994">8</tspan>
+
+<tspan x="10" y="10010">    at Array.forEach (native)</tspan>
+
+<tspan x="10" y="10026">    at Object.local.apidocModuleDictAdd (/home/travis/build/kaizhu256/node-electron-lite/node_mo\</tspan>
+<tspan x="10" y="10042">dules/utility2/lib.apidoc.js:988:63)</tspan>
+
+<tspan x="10" y="10058">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10074">tility2/lib.apidoc.js:860:19)</tspan>
+
+<tspan x="10" y="10090">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10106">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="10122">8</tspan>
+
+<tspan x="10" y="10138">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="10154">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10170">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="10186">6</tspan>
+
+<tspan x="10" y="10202">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10218">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="10234">0</tspan>
+
+<tspan x="10" y="10250">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10266">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10282">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10298">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="10314">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10330">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="10346">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="10362">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="10378">2:30</tspan>
+
+<tspan x="10" y="10394">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10410">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="10426">8</tspan>
+
+<tspan x="10" y="10442">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="10458">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10474">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="10490">6</tspan>
+
+<tspan x="10" y="10506">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10522">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="10538">0</tspan>
+
+<tspan x="10" y="10554">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10570">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10586">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10602">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="10618">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10634">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="10650">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="10666">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="10682">2:30</tspan>
+
+<tspan x="10" y="10698">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="10714">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="10730">8</tspan>
+
+<tspan x="10" y="10746">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="10762">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="10778">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="10794">6</tspan>
+
+<tspan x="10" y="10810">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="10826">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="10842">0</tspan>
+
+<tspan x="10" y="10858">    at Array.map (native)</tspan>
+
+<tspan x="10" y="10874">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="10890">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="10906">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="10922">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="10938">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="10954">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="10970">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="10986">2:30</tspan>
+
+<tspan x="10" y="11002">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11018">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="11034">8</tspan>
+
+<tspan x="10" y="11050">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="11066">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11082">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="11098">6</tspan>
+
+<tspan x="10" y="11114">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11130">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="11146">0</tspan>
+
+<tspan x="10" y="11162">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11178">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11194">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11210">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="11226">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11242">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="11258">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="11274">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="11290">2:30</tspan>
+
+<tspan x="10" y="11306">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11322">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="11338">8</tspan>
+
+<tspan x="10" y="11354">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="11370">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11386">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="11402">6</tspan>
+
+<tspan x="10" y="11418">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11434">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="11450">0</tspan>
+
+<tspan x="10" y="11466">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11482">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11498">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11514">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="11530">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11546">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="11562">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="11578">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="11594">2:30</tspan>
+
+<tspan x="10" y="11610">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11626">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="11642">8</tspan>
+
+<tspan x="10" y="11658">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="11674">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11690">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="11706">6</tspan>
+
+<tspan x="10" y="11722">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="11738">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="11754">0</tspan>
+
+<tspan x="10" y="11770">    at Array.map (native)</tspan>
+
+<tspan x="10" y="11786">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="11802">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="11818">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="11834">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="11850">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="11866">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="11882">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="11898">2:30</tspan>
+
+<tspan x="10" y="11914">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="11930">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="11946">8</tspan>
+
+<tspan x="10" y="11962">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="11978">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="11994">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="12010">6</tspan>
+
+<tspan x="10" y="12026">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12042">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="12058">0</tspan>
+
+<tspan x="10" y="12074">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12090">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12106">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12122">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="12138">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12154">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="12170">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="12186">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="12202">2:30</tspan>
+
+<tspan x="10" y="12218">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12234">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="12250">8</tspan>
+
+<tspan x="10" y="12266">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="12282">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12298">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="12314">6</tspan>
+
+<tspan x="10" y="12330">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12346">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="12362">0</tspan>
+
+<tspan x="10" y="12378">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12394">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12410">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12426">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="12442">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12458">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="12474">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="12490">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="12506">2:30</tspan>
+
+<tspan x="10" y="12522">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12538">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="12554">8</tspan>
+
+<tspan x="10" y="12570">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="12586">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12602">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="12618">6</tspan>
+
+<tspan x="10" y="12634">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12650">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="12666">0</tspan>
+
+<tspan x="10" y="12682">    at Array.map (native)</tspan>
+
+<tspan x="10" y="12698">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="12714">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="12730">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="12746">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="12762">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="12778">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="12794">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="12810">2:30</tspan>
+
+<tspan x="10" y="12826">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="12842">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="12858">8</tspan>
+
+<tspan x="10" y="12874">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="12890">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="12906">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="12922">6</tspan>
+
+<tspan x="10" y="12938">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="12954">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="12970">0</tspan>
+
+<tspan x="10" y="12986">    at Array.map (native)</tspan>
+
+<tspan x="10" y="13002">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13018">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13034">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="13050">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13066">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="13082">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="13098">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="13114">2:30</tspan>
+
+<tspan x="10" y="13130">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="13146">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="13162">8</tspan>
+
+<tspan x="10" y="13178">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="13194">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="13210">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="13226">6</tspan>
+
+<tspan x="10" y="13242">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="13258">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="13274">0</tspan>
+
+<tspan x="10" y="13290">    at Array.map (native)</tspan>
+
+<tspan x="10" y="13306">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13322">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13338">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="13354">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13370">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="13386">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="13402">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="13418">2:30</tspan>
+
+<tspan x="10" y="13434">Error: Object has been destroyed</tspan>
+
+<tspan x="10" y="13450">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:960:4\</tspan>
+<tspan x="10" y="13466">8</tspan>
+
+<tspan x="10" y="13482">    at Object.local.tryCatchOnError (/home/travis/build/kaizhu256/node-electron-lite/node_module\</tspan>
+<tspan x="10" y="13498">s/utility2/lib.apidoc.js:483:26)</tspan>
+
+<tspan x="10" y="13514">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:956:4\</tspan>
+<tspan x="10" y="13530">6</tspan>
+
+<tspan x="10" y="13546">    at Array.filter (native)</tspan>
+
+<tspan x="10" y="13562">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.apidoc.js:955:3\</tspan>
+<tspan x="10" y="13578">0</tspan>
+
+<tspan x="10" y="13594">    at Array.map (native)</tspan>
+
+<tspan x="10" y="13610">    at Object.local.apidocCreate (/home/travis/build/kaizhu256/node-electron-lite/node_modules/u\</tspan>
+<tspan x="10" y="13626">tility2/lib.apidoc.js:944:18)</tspan>
+
+<tspan x="10" y="13642">    at Object.local.buildApidoc (/home/travis/build/kaizhu256/node-electron-lite/node_modules/ut\</tspan>
+<tspan x="10" y="13658">ility2/lib.utility2.js:3198:72)</tspan>
+
+<tspan x="10" y="13674">    at Object.local.testCase_buildApidoc_default [as onTestCase] (/home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="13690">ode-electron-lite/test.js:37:19)</tspan>
+
+<tspan x="10" y="13706">    at /home/travis/build/kaizhu256/node-electron-lite/node_modules/utility2/lib.utility2.js:688\</tspan>
+<tspan x="10" y="13722">2:30</tspan>
+
+<tspan x="10" y="13738">created apidoc file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="13754"></tspan>
+
+<tspan x="10" y="13770">[node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="13786">(node:6434) DeprecationWarning: node --debug is deprecated. Please use node --inspect instead.</tspan>
+
+<tspan x="10" y="13802"></tspan>
+
+<tspan x="10" y="13818">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
+<tspan x="10" y="13834">uild/test-report.json</tspan>
+
+<tspan x="10" y="13850"></tspan>
+
+<tspan x="10" y="13866">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="13882">| test-report - buildApidoc - node - linux v7.9.0 - 2018-04-07T01:25:53.495Z</tspan>
+
+<tspan x="10" y="13898">|   18705 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="13914">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="13930">| test-report - npmTest - node - linux v7.9.0 - 2018-04-07T01:25:28.830Z</tspan>
+
+<tspan x="10" y="13946">|   19155 ms            0 failed        9 passed      |</tspan>
+
+<tspan x="10" y="13962">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="13978">| test-report - npmTestPublished - node - linux v7.9.0 - 2018-04-07T01:24:41.636Z</tspan>
+
+<tspan x="10" y="13994">|   21135 ms            0 failed        9 passed      |</tspan>
+
+<tspan x="10" y="14010">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="14026"></tspan>
+
+<tspan x="10" y="14042">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="14058">tml</tspan>
+
+<tspan x="10" y="14074"></tspan>
+
+<tspan x="10" y="14090"></tspan>
+
+<tspan x="10" y="14106">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="14122"></tspan>
+
+<tspan x="10" y="14138"></tspan>
+
+<tspan x="10" y="14154">[MODE_BUILD=buildApidoc] - 2018-04-07T01:26:13.849Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>

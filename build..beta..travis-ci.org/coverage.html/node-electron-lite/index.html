@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" class="x-istanbul">
+<head>
+    <title>Code coverage report for node-electron-lite/</title>
+    <meta charset="utf-8">
+<style>
+/* jslint-utility2 */
+/*csslint
+    box-model: false,
+    important: false,
+    qualified-headings: false,
+*/
+/* jslint-ignore-begin */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/* jslint-ignore-end */
+.x-istanbul {
+    font-family: Helvetica Neue, Helvetica,Arial;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+.x-istanbul h1 {
+    font-size: large;
+}
+.x-istanbul pre {
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    tab-size: 2;
+}
+.x-istanbul .cbranch-no {
+    background: yellow !important;
+    color: #111;
+}
+.x-istanbul .cbranch-skip {
+    background: #ddd !important;
+    color: #111;
+}
+.x-istanbul .com {
+    color: #999 !important;
+}
+.x-istanbul .cover-empty,
+.x-istanbul .cover-fill {
+    background: white;
+    border: 1px solid #444;
+    display: inline-block;
+    height: 12px;
+}
+.x-istanbul .cover-empty {
+    background: white;
+    border-left: none;
+}
+.x-istanbul .cover-fill {
+    background: #ccc;
+    border-right: 1px solid #444;
+}
+.x-istanbul .cover-full {
+    border-right: none !important;
+}
+.x-istanbul .coverage {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0
+}
+.x-istanbul .coverage td {
+    color: #111;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.x-istanbul .coverage td .cline-any {
+    display: inline-block;
+    padding: 0 5px;
+    width: 60px;
+}
+.x-istanbul .coverage td .cline-neutral {
+    background: #eee;
+}
+.x-istanbul .coverage td .cline-no {
+    background: #fc8c84;
+}
+.x-istanbul .coverage td .cline-yes {
+    background: #b5d592;
+    color: #999;
+}
+.x-istanbul .coverage .line-count {
+    padding-right: 5px;
+    text-align: right;
+    width: 50px;
+}
+.x-istanbul .coverage .line-coverage {
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    color: #777 !important;
+    text-align: right;
+}
+.x-istanbul .coverage-summary {
+    padding: 20px;
+}
+.x-istanbul .coverage-summary table {
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%
+}
+.x-istanbul .coverage-summary td {
+    border: 1px solid #666;
+    margin: 0;
+    padding: 5px;
+    white-space: nowrap;
+}
+.x-istanbul .coverage-summary th {
+    margin: 0;
+    padding: 0 0 2px 0;
+}
+.x-istanbul .cstat-no {
+    background: #fc8c84;
+    color: #111;
+}
+.x-istanbul .cstat-skip {
+    background: #ddd;
+    color: #111;
+}
+.x-istanbul .cstat-yes {
+    color: #111;
+}
+.x-istanbul .entity,
+.x-istanbul .metric {
+    font-weight: bold;
+}
+.x-istanbul .footer,
+.x-istanbul .header {
+    background: #eee;
+    padding: 20px;
+}
+.x-istanbul .footer {
+    border-top: 1px solid #666;
+}
+.x-istanbul .fstat-no {
+    background: #ffc520;
+    color: #111 !important;
+}
+.x-istanbul .fstat-skip {
+    background: #ddd;
+    color: #111 !important;
+}
+.x-istanbul .header {
+    border-bottom: 1px solid #666;
+    top: 0;
+    width: 100%;
+}
+.x-istanbul .high {
+    background: #b5d592 !important;
+}
+.x-istanbul .ignore-none {
+    color: #999;
+    font-weight: normal;
+}
+.x-istanbul .low {
+    background: #fc8c84 !important;
+}
+.x-istanbul .medium {
+    background: #ffe87c !important;
+}
+.x-istanbul .meta {
+    text-align: center;
+}
+.x-istanbul .metric {
+    background: white;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: .3em;
+}
+.x-istanbul .missing-if-branch {
+    background: black;
+    color: yellow;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 4px;
+    position: relative;
+}
+.x-istanbul .missing-if-branch .typ,
+.x-istanbul .skip-if-branch .typ {
+    color: inherit !important;
+}
+.x-istanbul .prettyprint {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.x-istanbul .skip-if-branch {
+    background: #ccc;
+    color: white;
+    display: none;
+    margin-right: 10px;
+    padding: 0 4px;
+    position: relative;
+}
+/* validateLineSortedReset */
+.x-istanbul a {
+    color: #00d;
+    text-decoration: underline;
+}
+.x-istanbul pre {
+    overflow: visible;
+    white-space: pre
+}
+.x-istanbul .file div {
+    margin-bottom: 2px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+.x-istanbul .tableHeader {
+    border-collapse: collapse;
+    margin: 0 auto 10px auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+}
+.x-istanbul .tableHeader td {
+    background: #fff;
+    border: 1px solid #666;
+    padding: 5px;
+}
+.x-istanbul .tableHeader th {
+    padding: 0 0 2px 0;
+}
+</style>
+</head>
+<body class="x-istanbul">
+<script>
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (event) {
+        var range, selection;
+        if (event &&
+                event.key === "a" &&
+                (event.ctrlKey || event.metaKey) &&
+                event.target.closest("pre")) {
+            range = document.createRange();
+            range.selectNodeContents(event.target.closest("pre"));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            event.preventDefault();
+        }
+    };
+    document.addEventListener("keydown", window.domOnEventSelectAllWithinPre);
+}());
+</script>
+<div class="header high">
+    <h1 style="font-weight: bold;">
+        <a href="https://github.com/kaizhu256/node-electron-lite">electron-lite (2018.9.23)</a>
+    </h1>
+    <h1>Code coverage report for <span class="entity">node-electron-lite/</span></h1>
+    <table class="tableHeader">
+    <thead>
+    <tr>
+        <th>Ignored</th>
+        <th>Statements</th>
+        <th>Branches</th>
+        <th>Functions</th>
+        <th>Lines</th>
+    </tr>
+    </thead>
+    <tbody>
+        <td>branches: 22<br>statements: 24<br>functions: 3</td>
+        <td>100%<br>(136 / 136)</td>
+        <td>100%<br>(55 / 55)</td>
+        <td>100%<br>(16 / 16)</td>
+        <td>100%<br>(136 / 136)</td>
+    </tbody>
+    </table>
+    <div class="path"><a href="../index.html">All files</a> &#187; node-electron-lite/</div>
+</div>
+<div class="body">
+<div class="coverage-summary">
+<table>
+<thead>
+<tr>
+   <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
+   <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
+   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
+   <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
+   <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
+</tr>
+</thead>
+<tbody><tr>
+	<td class="file high" data-value="example.js"><a href="example.js.html"><div>example.js</div><span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width:0px;"></span></a></td>
+	<td data-value="100" class="pct high">100%<br>(33 / 33)</td>
+	<td data-value="100" class="pct high">100%<br>(8 / 8)</td>
+	<td data-value="100" class="pct high">100%<br>(2 / 2)</td>
+	<td data-value="100" class="pct high">100%<br>(33 / 33)</td>
+	</tr>
+
+<tr>
+	<td class="file high" data-value="lib.electron.js"><a href="lib.electron.js.html"><div>lib.electron.js</div><span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width:0px;"></span></a></td>
+	<td data-value="100" class="pct high">100%<br>(65 / 65)</td>
+	<td data-value="100" class="pct high">100%<br>(31 / 31)</td>
+	<td data-value="100" class="pct high">100%<br>(7 / 7)</td>
+	<td data-value="100" class="pct high">100%<br>(65 / 65)</td>
+	</tr>
+
+<tr>
+	<td class="file high" data-value="test.js"><a href="test.js.html"><div>test.js</div><span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width:0px;"></span></a></td>
+	<td data-value="100" class="pct high">100%<br>(38 / 38)</td>
+	<td data-value="100" class="pct high">100%<br>(16 / 16)</td>
+	<td data-value="100" class="pct high">100%<br>(7 / 7)</td>
+	<td data-value="100" class="pct high">100%<br>(38 / 38)</td>
+	</tr>
+
+</tbody>
+</table>
+</div></div>
+<div class="footer">
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun, 23 Sep 2018 18:36:25 GMT</div>
+</div>
+</body>
+</html>

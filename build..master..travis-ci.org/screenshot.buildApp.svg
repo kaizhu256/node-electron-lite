@@ -1,0 +1,69 @@
+<svg height="574" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="574" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-04-07T01:27:11.114Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="58">-electron-lite</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="106"></tspan>
+
+<tspan x="10" y="122">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
+<tspan x="10" y="138">d/test-report.json</tspan>
+
+<tspan x="10" y="154">&gt; Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="170">server listening on http-port 8081</tspan>
+
+<tspan x="10" y="186">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="202"></tspan>
+
+<tspan x="10" y="218">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
+<tspan x="10" y="234">d/test-report.json</tspan>
+
+<tspan x="10" y="250"></tspan>
+
+<tspan x="10" y="266">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="282">| test-report - buildApidoc - node - linux v7.9.0 - 2018-04-07T01:25:53.495Z</tspan>
+
+<tspan x="10" y="298">|   78131 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="314">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="330">| test-report - npmTest - node - linux v7.9.0 - 2018-04-07T01:25:28.830Z</tspan>
+
+<tspan x="10" y="346">|   19155 ms            0 failed        9 passed      |</tspan>
+
+<tspan x="10" y="362">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="378">| test-report - npmTestPublished - node - linux v7.9.0 - 2018-04-07T01:24:41.636Z</tspan>
+
+<tspan x="10" y="394">|   21135 ms            0 failed        9 passed      |</tspan>
+
+<tspan x="10" y="410">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="426"></tspan>
+
+<tspan x="10" y="442">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="458">tml</tspan>
+
+<tspan x="10" y="474"></tspan>
+
+<tspan x="10" y="490"></tspan>
+
+<tspan x="10" y="506">buildApp - 0 failed tests</tspan>
+
+<tspan x="10" y="522"></tspan>
+
+<tspan x="10" y="538"></tspan>
+
+<tspan x="10" y="554">[MODE_BUILD=buildApp] - 2018-04-07T01:27:13.252Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>

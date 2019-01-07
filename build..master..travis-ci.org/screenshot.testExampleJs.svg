@@ -1,0 +1,63 @@
+<svg height="558" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="558" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">&gt; electron-lite@2018.3.28 postinstall /tmp/app/node_modules/electron-lite</tspan>
+
+<tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90">npm WARN saveError ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+
+<tspan x="10" y="106">npm notice created a lockfile as package-lock.json. You should commit this file.</tspan>
+
+<tspan x="10" y="122">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+
+<tspan x="10" y="138">npm WARN app No description</tspan>
+
+<tspan x="10" y="154">npm WARN app No repository field.</tspan>
+
+<tspan x="10" y="170">npm WARN app No README data</tspan>
+
+<tspan x="10" y="186">npm WARN app No license field.</tspan>
+
+<tspan x="10" y="202"></tspan>
+
+<tspan x="10" y="218">+ electron-lite@2018.3.28</tspan>
+
+<tspan x="10" y="234">added 1 package in 2.037s</tspan>
+
+<tspan x="10" y="250">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="266">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="282">[5852:0407/012508.440036:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="298">ted</tspan>
+
+<tspan x="10" y="314">[5852:0407/012508.440170:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="330">ted</tspan>
+
+<tspan x="10" y="346">[5876:0407/012508.522204:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="362">hreads in process gpu-process. </tspan>
+
+<tspan x="10" y="378">[5852:0407/012508.550572:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="394">l.</tspan>
+
+<tspan x="10" y="410">[5852:0407/012508.553948:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="426">l.</tspan>
+
+<tspan x="10" y="442">[5852:0407/012508.555953:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="458">l.</tspan>
+
+<tspan x="10" y="474">[5852:0407/012508.557507:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="490">l.</tspan>
+
+<tspan x="10" y="506">[5852:0407/012508.559179:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="522">l.</tspan>
+
+<tspan x="10" y="538">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+
+</text>
+</svg>

@@ -1,0 +1,644 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- "assets.utility2.template.html" -->
+<title>electron-lite (2018.9.23)</title>
+<style>
+/* jslint-utility2 */
+/*csslint
+*/
+/* jslint-ignore-begin */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/* jslint-ignore-end */
+@keyframes uiAnimateShake {
+    0%, 50% {
+        transform: translateX(10px);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes uiAnimateSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a {
+    overflow-wrap: break-word;
+}
+body {
+    background: #eef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 40px;
+}
+body > div,
+body > form > div,
+body > form > input,
+body > form > pre,
+body > form > textarea,
+body > form > .button,
+body > input,
+body > pre,
+body > textarea,
+body > .button {
+    margin-bottom: 20px;
+}
+body > form > input,
+body > form > .button,
+body > input,
+body > .button {
+    width: 20rem;
+}
+body > form > textarea,
+body > textarea {
+    height: 10rem;
+    width: 100%;
+}
+body > textarea[readonly] {
+    background: #ddd;
+}
+code,
+pre,
+textarea {
+    font-family: Consolas, Menlo, monospace;
+    font-size: small;
+}
+pre {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+textarea {
+    overflow: auto;
+    white-space: pre;
+}
+.button {
+    background-color: #fff;
+    border: 1px solid;
+    border-bottom-color: rgb(186, 186, 186);
+    border-left-color: rgb(209, 209, 209);
+    border-radius: 4px;
+    border-right-color: rgb(209, 209, 209);
+    border-top-color: rgb(216, 216, 216);
+    color: #00d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 7px 3px 7px;
+    text-align: center;
+    text-decoration: underline;
+}
+.colorError {
+    color: #d00;
+}
+.uiAnimateShake {
+    animation-duration: 500ms;
+    animation-name: uiAnimateShake;
+}
+.uiAnimateSlide {
+    overflow-y: hidden;
+    transition: max-height ease-in 250ms, min-height ease-in 250ms, padding-bottom ease-in 250ms, padding-top ease-in 250ms;
+}
+.utility2FooterDiv {
+    text-align: center;
+}
+.zeroPixel {
+    border: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+</style>
+</head>
+<body>
+<div id="ajaxProgressDiv1" style="background: transparent; height: 2px; left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
+<div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
+<a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
+<input class="zeroPixel" id="dbImportInput1" type="file">
+<script>
+/* jslint-utility2 */
+/*jslint
+    bitwise: true,
+    browser: true,
+    maxerr: 4,
+    maxlen: 100,
+    node: true,
+    nomen: true,
+    regexp: true,
+    stupid: true
+*/
+// init domOnEventWindowOnloadTimeElapsed
+(function () {
+/*
+ * this function will measure and print the time-elapsed for window.onload
+ */
+    "use strict";
+    if (window.domOnEventWindowOnloadTimeElapsed) {
+        return;
+    }
+    window.domOnEventWindowOnloadTimeElapsed = Date.now() + 100;
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            window.domOnEventWindowOnloadTimeElapsed = Date.now() -
+                window.domOnEventWindowOnloadTimeElapsed;
+            console.error("domOnEventWindowOnloadTimeElapsed = " +
+                window.domOnEventWindowOnloadTimeElapsed);
+        }, 100);
+    });
+}());
+// init timerIntervalAjaxProgressUpdate
+(function () {
+/*
+ * this function will increment the ajax-progress-bar until the webpage has loaded
+ */
+    "use strict";
+    var ajaxProgressDiv1,
+        ajaxProgressState,
+        ajaxProgressUpdate;
+    if (window.timerIntervalAjaxProgressUpdate || !document.querySelector("#ajaxProgressDiv1")) {
+        return;
+    }
+    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    setTimeout(function () {
+        ajaxProgressDiv1.style.width = "25%";
+    });
+    ajaxProgressState = 0;
+    ajaxProgressUpdate = (window.local &&
+        window.local.ajaxProgressUpdate) || function () {
+        ajaxProgressDiv1.style.width = "100%";
+        setTimeout(function () {
+            ajaxProgressDiv1.style.background = "transparent";
+            setTimeout(function () {
+                ajaxProgressDiv1.style.width = "0%";
+            }, 500);
+        }, 1500);
+    };
+    window.timerIntervalAjaxProgressUpdate = setInterval(function () {
+        ajaxProgressState += 1;
+        ajaxProgressDiv1.style.width = Math.max(
+            100 - 75 * Math.exp(-0.125 * ajaxProgressState),
+            ajaxProgressDiv1.style.width.slice(0, -1) | 0
+        ) + "%";
+    }, 1000);
+    window.addEventListener("load", function () {
+        clearInterval(window.timerIntervalAjaxProgressUpdate);
+        ajaxProgressUpdate();
+    });
+}());
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (event) {
+        var range, selection;
+        if (event &&
+                event.key === "a" &&
+                (event.ctrlKey || event.metaKey) &&
+                event.target.closest("pre")) {
+            range = document.createRange();
+            range.selectNodeContents(event.target.closest("pre"));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            event.preventDefault();
+        }
+    };
+    document.addEventListener("keydown", window.domOnEventSelectAllWithinPre);
+}());
+</script>
+<h1>
+
+    <a href="https://github.com/kaizhu256/node-electron-lite" target="_blank">
+
+        electron-lite (2018.9.23)
+
+    </a>
+
+</h1>
+<h3>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h3>
+
+<a class="button" download="" href="assets.app.js">download standalone app</a><br>
+<button class="button onclick onreset" id="testRunButton1">run internal test</button><br>
+<div class="uiAnimateSlide" id="testReportDiv1" style="max-height: 100%;">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- "" -->
+<title>test-report</title>
+<style>
+/* jslint-utility2 */
+/*csslint
+*/
+/* jslint-ignore-begin */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/* jslint-ignore-end */
+@keyframes uiAnimateShake {
+    0%, 50% {
+        transform: translateX(10px);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes uiAnimateSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a {
+    overflow-wrap: break-word;
+}
+body {
+    background: #eef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 40px;
+}
+body > div,
+body > form > div,
+body > form > input,
+body > form > pre,
+body > form > textarea,
+body > form > .button,
+body > input,
+body > pre,
+body > textarea,
+body > .button {
+    margin-bottom: 20px;
+}
+body > form > input,
+body > form > .button,
+body > input,
+body > .button {
+    width: 20rem;
+}
+body > form > textarea,
+body > textarea {
+    height: 10rem;
+    width: 100%;
+}
+body > textarea[readonly] {
+    background: #ddd;
+}
+code,
+pre,
+textarea {
+    font-family: Consolas, Menlo, monospace;
+    font-size: small;
+}
+pre {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+textarea {
+    overflow: auto;
+    white-space: pre;
+}
+.button {
+    background-color: #fff;
+    border: 1px solid;
+    border-bottom-color: rgb(186, 186, 186);
+    border-left-color: rgb(209, 209, 209);
+    border-radius: 4px;
+    border-right-color: rgb(209, 209, 209);
+    border-top-color: rgb(216, 216, 216);
+    color: #00d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 7px 3px 7px;
+    text-align: center;
+    text-decoration: underline;
+}
+.colorError {
+    color: #d00;
+}
+.uiAnimateShake {
+    animation-duration: 500ms;
+    animation-name: uiAnimateShake;
+}
+.uiAnimateSlide {
+    overflow-y: hidden;
+    transition: max-height ease-in 250ms, min-height ease-in 250ms, padding-bottom ease-in 250ms, padding-top ease-in 250ms;
+}
+.utility2FooterDiv {
+    text-align: center;
+}
+.zeroPixel {
+    border: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+/* jslint-utility2 */
+/*csslint
+*/
+.testReportDiv img {
+    border: 1px solid black;
+    margin: 5px 0 5px 0;
+    max-height: 256px;
+    max-width: 512px;
+}
+.testReportDiv pre {
+    background: #fdd;
+    border-top: 1px solid black;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.testReportDiv span {
+    display: inline-block;
+    width: 120px;
+}
+.testReportDiv table {
+    border-top: 1px solid black;
+    text-align: left;
+    width: 100%;
+}
+.testReportDiv table > tbody > tr:nth-child(odd) {
+    background: #bfb;
+}
+.testReportDiv .displayNone {
+    display: none;
+}
+.testReportDiv .footer {
+    text-align: center;
+}
+.testReportDiv .platform {
+    background: #fff;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0 10px 10px 10px;
+    text-align: left;
+}
+.testReportDiv .summary {
+    background: #bfb;
+}
+.testReportDiv .testFailed {
+    background: #f99;
+}
+.testReportDiv .testPending {
+    background: #99f;
+}
+</style>
+
+
+<div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
+<div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
+<a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
+<input class="zeroPixel" id="dbImportInput1" type="file">
+<script>
+/* jslint-utility2 */
+/*jslint
+    bitwise: true,
+    browser: true,
+    maxerr: 4,
+    maxlen: 100,
+    node: true,
+    nomen: true,
+    regexp: true,
+    stupid: true
+*/
+// init domOnEventWindowOnloadTimeElapsed
+(function () {
+/*
+ * this function will measure and print the time-elapsed for window.onload
+ */
+    "use strict";
+    if (window.domOnEventWindowOnloadTimeElapsed) {
+        return;
+    }
+    window.domOnEventWindowOnloadTimeElapsed = Date.now() + 100;
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            window.domOnEventWindowOnloadTimeElapsed = Date.now() -
+                window.domOnEventWindowOnloadTimeElapsed;
+            console.error("domOnEventWindowOnloadTimeElapsed = " +
+                window.domOnEventWindowOnloadTimeElapsed);
+        }, 100);
+    });
+}());
+// init timerIntervalAjaxProgressUpdate
+(function () {
+/*
+ * this function will increment the ajax-progress-bar until the webpage has loaded
+ */
+    "use strict";
+    var ajaxProgressDiv1,
+        ajaxProgressState,
+        ajaxProgressUpdate;
+    if (window.timerIntervalAjaxProgressUpdate || !document.querySelector("#ajaxProgressDiv1")) {
+        return;
+    }
+    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    setTimeout(function () {
+        ajaxProgressDiv1.style.width = "25%";
+    });
+    ajaxProgressState = 0;
+    ajaxProgressUpdate = (window.local &&
+        window.local.ajaxProgressUpdate) || function () {
+        ajaxProgressDiv1.style.width = "100%";
+        setTimeout(function () {
+            ajaxProgressDiv1.style.background = "transparent";
+            setTimeout(function () {
+                ajaxProgressDiv1.style.width = "0%";
+            }, 500);
+        }, 1500);
+    };
+    window.timerIntervalAjaxProgressUpdate = setInterval(function () {
+        ajaxProgressState += 1;
+        ajaxProgressDiv1.style.width = Math.max(
+            100 - 75 * Math.exp(-0.125 * ajaxProgressState),
+            ajaxProgressDiv1.style.width.slice(0, -1) | 0
+        ) + "%";
+    }, 1000);
+    window.addEventListener("load", function () {
+        clearInterval(window.timerIntervalAjaxProgressUpdate);
+        ajaxProgressUpdate();
+    });
+}());
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (event) {
+        var range, selection;
+        if (event &&
+                event.key === "a" &&
+                (event.ctrlKey || event.metaKey) &&
+                event.target.closest("pre")) {
+            range = document.createRange();
+            range.selectNodeContents(event.target.closest("pre"));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            event.preventDefault();
+        }
+    };
+    document.addEventListener("keydown", window.domOnEventSelectAllWithinPre);
+}());
+</script>
+<div class="testReportDiv">
+<h1>test-report for
+    <a href="https://github.com/kaizhu256/node-electron-lite">
+        electron-lite (2018.9.23)
+    </a>
+</h1>
+<div class="platform summary">
+<h2>summary</h2>
+<h4>
+    <span>version</span>-
+        2018.9.23<br>
+    <span>test date</span>- 2018-09-23T18:35:09.123Z<br>
+    <span>commit info</span>-
+        
+        undefined<br>
+        
+</h4>
+<table>
+<thead>
+    <tr>
+        <th>total time-elapsed</th>
+        <th>total tests failed</th>
+        <th>total tests passed</th>
+        <th>total tests pending</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>1004 ms</td>
+    <td class="testPassed">0</td>
+    <td>4</td>
+    <td>0</td>
+</tr></tbody>
+</table>
+</div>
+
+<div class="platform">
+<h4>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-09-23T18:35:08.530Z<br>
+    
+    
+    <span>time-elapsed</span>- 1004 ms<br>
+    <span>tests failed</span>- 0<br>
+    <span>tests passed</span>- 4<br>
+    <span>tests pending</span>- 0<br>
+</h4>
+<table>
+<thead><tr>
+    <th>#</th>
+    <th>time-elapsed</th>
+    <th>status</th>
+    <th>test-case</th>
+</tr></thead>
+<tbody>
+
+<tr>
+    <td>1</td>
+    <td>0 ms</td>
+    <td class="testPassed">passed</td>
+    <td>testCase_buildApidoc_default</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>1 ms</td>
+    <td class="testPassed">passed</td>
+    <td>testCase_buildApp_default</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>0 ms</td>
+    <td class="testPassed">passed</td>
+    <td>testCase_exampleJs_exit</td>
+</tr>
+
+<tr>
+    <td>4</td>
+    <td>0 ms</td>
+    <td class="testPassed">passed</td>
+    <td>testCase_nop_default</td>
+</tr>
+
+</tbody>
+</table>
+<pre class="displayNone" tabindex="0">
+</pre>
+</div>
+
+<div class="footer">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<label>stderr and stdout</label>
+<textarea class="resettable" id="outputStdoutTextarea1" readonly=""></textarea>
+
+
+
+<script src="assets.utility2.rollup.js"></script>
+<script>window.utility2_onReadyBefore.counter += 1;</script>
+<script src="jsonp.utility2.stateInit?callback=window.utility2.stateInit"></script>
+<script src="assets.{{packageJson.nameLib}}.js"></script>
+<script src="assets.example.js"></script>
+<script src="assets.test.js"></script>
+<script>window.utility2_onReadyBefore();</script>
+
+
+
+<div class="utility2FooterDiv">
+    [ this app was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+
+
+</body></html>
