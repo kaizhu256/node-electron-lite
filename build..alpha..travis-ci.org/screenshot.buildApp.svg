@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-01-07T07:38:28.262Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-01-07T07:43:37.584Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,13 +13,13 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
 <tspan x="10" y="122">d/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 53969</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 55754</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
 <tspan x="10" y="170">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="186">testRunDefault - 21 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="186">testRunDefault - 23 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
 <tspan x="10" y="202"></tspan>
 
@@ -30,22 +30,22 @@
 
 <tspan x="10" y="266">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="282">| test-report - buildApp - node - linux v8.9.3 - 2019-01-07T07:38:28.722Z</tspan>
+<tspan x="10" y="282">| test-report - buildApp - node - linux v8.9.3 - 2019-01-07T07:43:38.068Z</tspan>
 
-<tspan x="10" y="298">|      22 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="298">|      27 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="314">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="330">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="346">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-01-07T07:37:32.736Z</tspan>
+<tspan x="10" y="346">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-01-07T07:42:41.388Z</tspan>
 
-<tspan x="10" y="362">|    1009 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="362">|    1006 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="378">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="394">| test-report - npmTest - node - linux v8.9.3 - 2019-01-07T07:37:14.685Z</tspan>
+<tspan x="10" y="394">| test-report - npmTest - node - linux v8.9.3 - 2019-01-07T07:42:22.966Z</tspan>
 
-<tspan x="10" y="410">|   23790 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="410">|   24091 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="426">-------------------------------------------------------</tspan>
 
@@ -64,7 +64,7 @@
 
 <tspan x="10" y="554"></tspan>
 
-<tspan x="10" y="570">[MODE_BUILD=buildApp] - 2019-01-07T07:38:30.187Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="570">[MODE_BUILD=buildApp] - 2019-01-07T07:43:39.565Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
