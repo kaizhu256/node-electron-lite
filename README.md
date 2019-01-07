@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v2.0.10) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.10/electron-v2.0.10-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-linux-x64.zip)
 
 
 
@@ -58,10 +58,9 @@ this zero-dependency package will download and install the electron (v2.0.10) pr
 - upgrade to electron v3.0.x when stable
 - none
 
-#### changelog 2018.9.23
-- npm publish 2018.9.23
-- minor update to v2.0.10
-- update file releases.txt
+#### changelog 2019.1.7
+- npm publish 2019.1.7
+- minor update to v2.0.16
 - none
 
 #### this package requires
@@ -93,20 +92,15 @@ instruction
     3. view screenshot /tmp/screenshot.testExampleJs.browser..png
 */
 
+
+
 /* istanbul instrument in package electron */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
 (function () {
-    'use strict';
-    var options, modeNext, onNext;
+    "use strict";
+    var modeNext;
+    var onNext;
+    var options;
     onNext = function (data) {
         modeNext += 1;
         switch (modeNext) {
@@ -117,32 +111,32 @@ instruction
             }
             // wait for electron to init
             try {
-                require('app').on('ready', onNext);
-            } catch (errorCaught) {
-                require('electron').app.once('ready', onNext);
+                require("app").on("ready", onNext);
+            } catch (ignore) {
+                require("electron").app.once("ready", onNext);
             }
             break;
         case 2:
             // init options
-            options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
             // init browserWindow;
             try {
-                options.BrowserWindow = require('browser-window');
-            } catch (errorCaught) {
-                options.BrowserWindow = require('electron').BrowserWindow;
+                options.BrowserWindow = require("browser-window");
+            } catch (ignore) {
+                options.BrowserWindow = require("electron").BrowserWindow;
             }
             options.browserWindow = new options.BrowserWindow(options);
             // goto next step when webpage is loaded
             /* istanbul ignore next */
             try {
-                options.browserWindow.webContents.once('did-stop-loading', onNext);
-            } catch (errorCaught) {
+                options.browserWindow.webContents.once("did-stop-loading", onNext);
+            } catch (ignore) {
                 setTimeout(onNext, 10000);
             }
             // open url
             (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
                 options.browserWindow,
-                'https://electron.atom.io'
+                "https://electron.atom.io"
             );
             break;
         case 3:
@@ -154,14 +148,11 @@ instruction
             /* istanbul ignore next */
             try {
                 data = data.toPng();
-            } catch (errorCaught) {
-                try {
-                    data = data.toPNG();
-                } catch (ignore) {
-                }
+            } catch (ignore) {
+                data = data.toPNG();
             }
-            require('fs').writeFileSync('/tmp/screenshot.testExampleJs.browser..png', data);
-            console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
+            require("fs").writeFileSync("/tmp/screenshot.testExampleJs.browser..png", data);
+            console.log("created screenshot file /tmp/screenshot.testExampleJs.browser..png");
             // exit
             process.exit(0);
             break;
@@ -192,6 +183,12 @@ instruction
 
 
 
+
+
+
+
+
+
 # package.json
 ```json
 {
@@ -199,12 +196,12 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
     "engines": {
-        "node": ">=4.0"
+        "node": ">=10.0"
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
@@ -237,7 +234,7 @@ instruction
         "test": "./npm_scripts.sh",
         "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.9.23"
+    "version": "2019.1.7"
 }
 ```
 

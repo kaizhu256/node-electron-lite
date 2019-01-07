@@ -3,12 +3,12 @@
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
     "engines": {
-        "node": ">=4.0"
+        "node": ">=10.0"
     },
     "homepage": "https://github.com/kaizhu256/node-electron-lite",
     "keywords": [
@@ -41,5 +41,5 @@
         "test": "./npm_scripts.sh",
         "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.9.23"
+    "version": "2019.1.7"
 }

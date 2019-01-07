@@ -1,5 +1,5 @@
 #!/bin/sh
-# jslint-utility2
+# jslint utility2:true
 
 shMain () {(set -e
 # this function will run the main program
@@ -9,7 +9,7 @@ shMain () {(set -e
     case "$1" in
     # npm postinstall --electron-version=v1.0
     postinstall)
-        VERSION="${npm_config_electron_version:-v2.0.10}"
+        VERSION="${npm_config_electron_version:-v2.0.16}"
         FILE_URL="$(cat releases.txt | grep -m 1 -F "$VERSION." ||
             cat releases.txt | grep -m 1 -F "$VERSION")"
         FILE_BASE="$(printf "$FILE_URL" | sed -e "s/.*\///")"
@@ -82,6 +82,10 @@ shMain () {(set -e
         fi
         utility2 shReadmeTest build_ci.sh
         ;;
+    eval)
+        shift
+        "$@"
+        ;;
     heroku-postbuild)
         if [ "$npm_package_nameLib" = utility2 ]
         then
@@ -90,10 +94,6 @@ shMain () {(set -e
         fi
         npm install kaizhu256/node-utility2#alpha --prefix .
         utility2 shDeployHeroku
-        ;;
-    eval)
-        shift
-        "$@"
         ;;
     start)
         export PORT=${PORT:-8080}
@@ -169,18 +169,8 @@ shNpmReleasesMinorVersions () {(set -e
 # example usage:
 # npm run eval shNpmReleasesMinorVersions
         node -e '
-// <script>
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
+(function () {
 "use strict";
 var dict;
 dict = {};
@@ -196,20 +186,20 @@ require("fs").readFileSync("releases.txt", "utf8").replace((
     dict[match1] = true;
     console.log(match0.slice(0, -1));
 });
-// </script>
+}());
 '
 )}
 
-shNpmReleasesProcess () {(set -e
+shNpmReleasesParse () {(set -e
 # this function will parse the list of all electron-releases
 # example usage:
-# npm run eval shNpmReleasesProcess
+# npm run eval shNpmReleasesParse
     cat .releases.txt |
         grep -E "https:.*(electron-|atom-shell).*\.zip" | \
         grep -E "(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
 )}
 
 # run command
-shMain "$npm_lifecycle_event" "$(node -e "console.log(
-    JSON.parse(process.env.npm_config_argv).original.join(' ').replace((/^(?:run )?\S+ /), '')
-)")"
+shMain "$npm_lifecycle_event" "$(node -e 'console.log(
+    JSON.parse(process.env.npm_config_argv).original.join(" ").replace((/^(?:run )?\S+ /), "")
+)')"
