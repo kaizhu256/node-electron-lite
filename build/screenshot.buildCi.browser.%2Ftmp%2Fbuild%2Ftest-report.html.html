@@ -177,7 +177,7 @@ textarea {
 <div id="ajaxProgressDiv1" style="background: transparent; height: 2px; left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
 <a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
-<input class="zeroPixel" id="dbImportInput1" type="file">
+<input class="zeroPixel" data-onevent="onEventDomDb" data-onevent-db="dbImportInput" type="file">
 <script>
 /* jslint utility2:true */
 // init domOnEventWindowOnloadTimeElapsed
@@ -201,6 +201,88 @@ textarea {
                 + window.domOnEventWindowOnloadTimeElapsed
             );
         }, 100);
+    });
+}());
+
+
+
+// init domOnEventDelegateDict
+(function () {
+/*
+ * this function will handle delegated dom-event
+ * example usage:
+ */
+    "use strict";
+    var timerTimeoutDict;
+    if (window.domOnEventDelegateDict) {
+        return;
+    }
+    window.domOnEventDelegateDict = {};
+    timerTimeoutDict = {};
+    window.domOnEventDelegateDict.domOnEventDelegate = function (event) {
+        event.targetOnEvent = event.target.closest(
+            "[data-onevent]"
+        );
+        if (!event.targetOnEvent) {
+            return;
+        }
+        // rate-limit keyboard-event
+        switch (event.type) {
+        case "keydown":
+        case "keyup":
+            if (timerTimeoutDict[event.type] !== true) {
+                timerTimeoutDict[event.type] = (
+                    timerTimeoutDict[event.type]
+                    || setTimeout(function () {
+                        timerTimeoutDict[event.type] = true;
+                        window.domOnEventDelegateDict.domOnEventDelegate(
+                            event
+                        );
+                    }, 50)
+                );
+                return;
+            }
+            timerTimeoutDict[event.type] = null;
+            // filter non-input keyboard-event
+            if (!event.target.closest(
+                "input, option, select, textarea"
+            )) {
+                return;
+            }
+            break;
+        }
+        switch (event.targetOnEvent.tagName) {
+        case "BUTTON":
+        case "FORM":
+            event.preventDefault();
+            break;
+        }
+        // reset output
+        if (event.targetOnEvent.dataset.oneventResetOutput) {
+            Array.from(document.querySelectorAll(
+                ".onevent-reset-output"
+            )).forEach(function (element) {
+                switch (element.tagName) {
+                case "INPUT":
+                case "TEXTAREA":
+                    element.value = "";
+                    break;
+                default:
+                    element.innerHTML = "";
+                }
+            });
+        }
+        event.stopPropagation();
+        window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
+            event
+        );
+    };
+    // init event-handling
+    ["change", "click", "keydown", "submit"].forEach(function (eventType) {
+        document.body.addEventListener(
+            eventType,
+            window.domOnEventDelegateDict.domOnEventDelegate
+        );
     });
 }());
 
@@ -275,16 +357,21 @@ textarea {
             event
             && event.key === "a"
             && (event.ctrlKey || event.metaKey)
-            && event.target.closest("pre")
+            && event.target.closest(
+                "pre"
+            )
         ) {
             range = document.createRange();
-            range.selectNodeContents(event.target.closest("pre"));
+            range.selectNodeContents(event.target.closest(
+                "pre"
+            ));
             selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
             event.preventDefault();
         }
     };
+    // init event-handling
     document.addEventListener(
         "keydown",
         window.domOnEventSelectAllWithinPre
@@ -302,7 +389,7 @@ textarea {
 <h4>
     <span>version</span>-
         2018.12.8<br>
-    <span>test date</span>- 2018-12-26T00:41:10.564Z<br>
+    <span>test date</span>- 2019-01-07T07:03:15.241Z<br>
     <span>commit info</span>-
         
         79dc44272b0da1eaa0420d3d6a842aa7c12bb815 - <br>
@@ -318,7 +405,7 @@ textarea {
     </tr>
 </thead>
 <tbody><tr>
-    <td>125689 ms</td>
+    <td>127639 ms</td>
     <td class="testPassed">0</td>
     <td>24</td>
     <td>0</td>
@@ -328,7 +415,7 @@ textarea {
 
 <div class="platform">
 <h4>
-    1. npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2018-12-26T00:41:28.137Z<br>
+    1. npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-01-07T07:03:33.479Z<br>
     
     <a href="screenshot.npmTest.browser.%252F.png">
         <img alt="screenshot.npmTest.browser.%252F.png" src="screenshot.npmTest.browser.%252F.png">
@@ -336,7 +423,7 @@ textarea {
     <br>
     
     
-    <span>time-elapsed</span>- 34093 ms<br>
+    <span>time-elapsed</span>- 33507 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -352,7 +439,7 @@ textarea {
 
 <tr>
     <td>1</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -366,7 +453,7 @@ textarea {
 
 <tr>
     <td>3</td>
-    <td>2 ms</td>
+    <td>6 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_exampleJs_exit</td>
 </tr>
@@ -386,10 +473,10 @@ textarea {
 
 <div class="platform">
 <h4>
-    2. npmTest - node - linux v8.9.3 - 2018-12-26T00:41:10.559Z<br>
+    2. npmTest - node - linux v8.9.3 - 2019-01-07T07:03:15.235Z<br>
     
     
-    <span>time-elapsed</span>- 51928 ms<br>
+    <span>time-elapsed</span>- 52288 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 8<br>
     <span>tests pending</span>- 0<br>
@@ -405,7 +492,7 @@ textarea {
 
 <tr>
     <td>5</td>
-    <td>16168 ms</td>
+    <td>16448 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -440,7 +527,7 @@ textarea {
 
 <tr>
     <td>10</td>
-    <td>2556 ms</td>
+    <td>2201 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_exampleJs_exit</td>
 </tr>
@@ -454,7 +541,7 @@ textarea {
 
 <tr>
     <td>12</td>
-    <td>6836 ms</td>
+    <td>7498 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_webpage_default</td>
 </tr>
@@ -467,7 +554,7 @@ textarea {
 
 <div class="platform">
 <h4>
-    3. npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-12-26T00:40:16.955Z<br>
+    3. npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2019-01-07T07:02:21.834Z<br>
     
     <a href="screenshot.npmTestPublished.browser.%252F.png">
         <img alt="screenshot.npmTestPublished.browser.%252F.png" src="screenshot.npmTestPublished.browser.%252F.png">
@@ -475,7 +562,7 @@ textarea {
     <br>
     
     
-    <span>time-elapsed</span>- 105262 ms<br>
+    <span>time-elapsed</span>- 105102 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -491,7 +578,7 @@ textarea {
 
 <tr>
     <td>13</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -512,7 +599,7 @@ textarea {
 
 <tr>
     <td>16</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_nop_default</td>
 </tr>
@@ -525,10 +612,10 @@ textarea {
 
 <div class="platform">
 <h4>
-    4. npmTestPublished - node - linux v8.9.3 - 2018-12-26T00:39:56.742Z<br>
+    4. npmTestPublished - node - linux v8.9.3 - 2019-01-07T07:01:59.797Z<br>
     
     
-    <span>time-elapsed</span>- 125689 ms<br>
+    <span>time-elapsed</span>- 127639 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 8<br>
     <span>tests pending</span>- 0<br>
@@ -544,42 +631,42 @@ textarea {
 
 <tr>
     <td>17</td>
-    <td>18536 ms</td>
+    <td>20072 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
 
 <tr>
     <td>18</td>
-    <td>11 ms</td>
+    <td>13 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApp_default</td>
 </tr>
 
 <tr>
     <td>19</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildLib_default</td>
 </tr>
 
 <tr>
     <td>20</td>
-    <td>6 ms</td>
+    <td>7 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildReadme_default</td>
 </tr>
 
 <tr>
     <td>21</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildTest_default</td>
 </tr>
 
 <tr>
     <td>22</td>
-    <td>2435 ms</td>
+    <td>2340 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_exampleJs_exit</td>
 </tr>
@@ -593,7 +680,7 @@ textarea {
 
 <tr>
     <td>24</td>
-    <td>7028 ms</td>
+    <td>7637 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_webpage_default</td>
 </tr>
