@@ -13,20 +13,15 @@ instruction
     3. view screenshot /tmp/screenshot.testExampleJs.browser..png
 */
 
+
+
 /* istanbul instrument in package electron */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
+/* jslint utility2:true */
 (function () {
-    'use strict';
-    var options, modeNext, onNext;
+    "use strict";
+    var modeNext;
+    var onNext;
+    var options;
     onNext = function (data) {
         modeNext += 1;
         switch (modeNext) {
@@ -37,32 +32,32 @@ instruction
             }
             // wait for electron to init
             try {
-                require('app').on('ready', onNext);
-            } catch (errorCaught) {
-                require('electron').app.once('ready', onNext);
+                require("app").on("ready", onNext);
+            } catch (ignore) {
+                require("electron").app.once("ready", onNext);
             }
             break;
         case 2:
             // init options
-            options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
             // init browserWindow;
             try {
-                options.BrowserWindow = require('browser-window');
-            } catch (errorCaught) {
-                options.BrowserWindow = require('electron').BrowserWindow;
+                options.BrowserWindow = require("browser-window");
+            } catch (ignore) {
+                options.BrowserWindow = require("electron").BrowserWindow;
             }
             options.browserWindow = new options.BrowserWindow(options);
             // goto next step when webpage is loaded
             /* istanbul ignore next */
             try {
-                options.browserWindow.webContents.once('did-stop-loading', onNext);
-            } catch (errorCaught) {
+                options.browserWindow.webContents.once("did-stop-loading", onNext);
+            } catch (ignore) {
                 setTimeout(onNext, 10000);
             }
             // open url
             (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
                 options.browserWindow,
-                'https://electron.atom.io'
+                "https://electron.atom.io"
             );
             break;
         case 3:
@@ -74,14 +69,11 @@ instruction
             /* istanbul ignore next */
             try {
                 data = data.toPng();
-            } catch (errorCaught) {
-                try {
-                    data = data.toPNG();
-                } catch (ignore) {
-                }
+            } catch (ignore) {
+                data = data.toPNG();
             }
-            require('fs').writeFileSync('/tmp/screenshot.testExampleJs.browser..png', data);
-            console.log('created screenshot file /tmp/screenshot.testExampleJs.browser..png');
+            require("fs").writeFileSync("/tmp/screenshot.testExampleJs.browser..png", data);
+            console.log("created screenshot file /tmp/screenshot.testExampleJs.browser..png");
             // exit
             process.exit(0);
             break;

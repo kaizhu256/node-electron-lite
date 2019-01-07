@@ -52,9 +52,9 @@
 
         href="https://github.com/kaizhu256/node-electron-lite"
 
-    >electron-lite (2018.9.23)</a>
+    >electron-lite (2019.1.7)</a>
 </h1>
-<h4>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h4>
+<h4>this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases</h4>
 <div class="apidocSectionDiv"><a
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
@@ -242,6 +242,51 @@
     </ol></li>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.electron-lite">module electron-lite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.assertThrow">
+            function <span class="apidocSignatureSpan">electron-lite.</span>assertThrow
+            <span class="apidocSignatureSpan">(passed, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.functionOrNop">
+            function <span class="apidocSignatureSpan">electron-lite.</span>functionOrNop
+            <span class="apidocSignatureSpan">(fnc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.identity">
+            function <span class="apidocSignatureSpan">electron-lite.</span>identity
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.nop">
+            function <span class="apidocSignatureSpan">electron-lite.</span>nop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-lite.objectAssignDefault">
+            function <span class="apidocSignatureSpan">electron-lite.</span>objectAssignDefault
+            <span class="apidocSignatureSpan">(target, source)</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -3275,19 +3320,19 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function BrowserWindow() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
 // init browserWindow;
 try {
-    options.BrowserWindow = require(&apos;browser-window&apos;);
-} catch (errorCaught) {
-    options.BrowserWindow = require(&apos;electron&apos;).BrowserWindow;
+    options.BrowserWindow = require(&quot;browser-window&quot;);
+} catch (ignore) {
+    options.BrowserWindow = require(&quot;electron&quot;).BrowserWindow;
 }
 options.browserWindow = new options.<span class="apidocCodeKeywordSpan">BrowserWindow</span>(options);
 // goto next step when webpage is loaded
 /* istanbul ignore next */
 try {
-    options.browserWindow.webContents.once(&apos;did-stop-loading&apos;, onNext);
-} catch (errorCaught) {
+    options.browserWindow.webContents.once(&quot;did-stop-loading&quot;, onNext);
+} catch (ignore) {
     setTimeout(onNext, 10000);
 }
 ...</pre></li>
@@ -3594,6 +3639,81 @@ try {
 <h1><a href="#apidoc.module.electron-lite" id="apidoc.module.electron-lite">module electron-lite</a></h1>
 
 
+    <h2>
+        <a href="#apidoc.element.electron-lite.assertThrow" id="apidoc.element.electron-lite.assertThrow">
+        function <span class="apidocSignatureSpan">electron-lite.</span>assertThrow
+        <span class="apidocSignatureSpan">(passed, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">assertThrow = function (passed, message){__cov_8230f44fc325c.f[&apos;4&apos;]++;__cov_8230f44fc325c.s[&apos;23&apos;]++;var error;__cov_8230f44fc325c.s[&apos;24&apos;]++;if(
+passed){__cov_8230f44fc325c.b[&apos;3&apos;][0]++;__cov_8230f44fc325c.s[&apos;25&apos;]++;return;}else{__cov_8230f44fc325c.b[&apos;3&apos;][1]++;}__cov_8230f44fc325c
+.s[&apos;26&apos;]++;error=(__cov_8230f44fc325c.b[&apos;5&apos;][0]++,message)&amp;&amp;(__cov_8230f44fc325c.b[&apos;5&apos;][1]++,typeof message.message===&apos;string&apos;)&amp;&amp;(
+__cov_8230f44fc325c.b[&apos;5&apos;][2]++,typeof message.stack===&apos;string&apos;)?(__cov_8230f44fc325c.b[&apos;4&apos;][0]++,message):(__cov_8230f44fc325c.
+b[&apos;4&apos;][1]++,new Error(typeof message===&apos;string&apos;?(__cov_8230f44fc325c.b[&apos;6&apos;][0]++,message):(__cov_8230f44fc325c.b[&apos;6&apos;][1]++,JSON.
+stringify(message,null,4))));__cov_8230f44fc325c.s[&apos;27&apos;]++;throw error;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.functionOrNop" id="apidoc.element.electron-lite.functionOrNop">
+        function <span class="apidocSignatureSpan">electron-lite.</span>functionOrNop
+        <span class="apidocSignatureSpan">(fnc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">functionOrNop = function (fnc){__cov_8230f44fc325c.f[&apos;5&apos;]++;__cov_8230f44fc325c.s[&apos;29&apos;]++;return(__cov_8230f44fc325c.b[&apos;7&apos;][0]++,fnc)||(__cov_8230f44fc325c
+.b[&apos;7&apos;][1]++,local.nop);}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.identity" id="apidoc.element.electron-lite.identity">
+        function <span class="apidocSignatureSpan">electron-lite.</span>identity
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identity = function (value){__cov_8230f44fc325c.f[&apos;6&apos;]++;__cov_8230f44fc325c.s[&apos;31&apos;]++;return value;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.nop" id="apidoc.element.electron-lite.nop">
+        function <span class="apidocSignatureSpan">electron-lite.</span>nop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nop = function (){__cov_8230f44fc325c.f[&apos;7&apos;]++;__cov_8230f44fc325c.s[&apos;33&apos;]++;return;}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-lite.objectAssignDefault" id="apidoc.element.electron-lite.objectAssignDefault">
+        function <span class="apidocSignatureSpan">electron-lite.</span>objectAssignDefault
+        <span class="apidocSignatureSpan">(target, source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">objectAssignDefault = function (target, source){__cov_8230f44fc325c.f[&apos;8&apos;]++;__cov_8230f44fc325c.s[&apos;35&apos;]++;Object.keys(source).forEach(function(key){__cov_8230f44fc325c
+.f[&apos;9&apos;]++;__cov_8230f44fc325c.s[&apos;36&apos;]++;if((__cov_8230f44fc325c.b[&apos;9&apos;][0]++,target[key]===null)||(__cov_8230f44fc325c.b[&apos;9&apos;][1]++,
+target[key]===undefined)||(__cov_8230f44fc325c.b[&apos;9&apos;][2]++,target[key]===&apos;&apos;)){__cov_8230f44fc325c.b[&apos;8&apos;][0]++;__cov_8230f44fc325c
+.s[&apos;37&apos;]++;target[key]=(__cov_8230f44fc325c.b[&apos;10&apos;][0]++,target[key])||(__cov_8230f44fc325c.b[&apos;10&apos;][1]++,source[key]);}else{__cov_8230f44fc325c
+.b[&apos;8&apos;][1]++;}});}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
 
 
 
@@ -3747,19 +3867,19 @@ try {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function BrowserWindow() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-options = { frame: false, height: 768, width: 1024, x: 0, y: 0 };
+options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
 // init browserWindow;
 try {
-    options.BrowserWindow = require(&apos;browser-window&apos;);
-} catch (errorCaught) {
-    options.BrowserWindow = require(&apos;electron&apos;).BrowserWindow;
+    options.BrowserWindow = require(&quot;browser-window&quot;);
+} catch (ignore) {
+    options.BrowserWindow = require(&quot;electron&quot;).BrowserWindow;
 }
 options.browserWindow = new options.<span class="apidocCodeKeywordSpan">BrowserWindow</span>(options);
 // goto next step when webpage is loaded
 /* istanbul ignore next */
 try {
-    options.browserWindow.webContents.once(&apos;did-stop-loading&apos;, onNext);
-} catch (errorCaught) {
+    options.browserWindow.webContents.once(&quot;did-stop-loading&quot;, onNext);
+} catch (ignore) {
     setTimeout(onNext, 10000);
 }
 ...</pre></li>
@@ -4041,6 +4161,21 @@ try {
       return
     }
 
+    if (webContents.getLastWebPreferences().nodeIntegration === true) {
+      const message =
+        &apos;Enabling Node.js integration in child windows opened with the &apos; +
+        &apos;&quot;nativeWindowOpen&quot; option will cause memory leaks, please turn off &apos; +
+        &apos;the &quot;nodeIntegration&quot; option.\\n&apos; +
+        &apos;See https://github.com/electron/electron/pull/15076 for more.&apos;
+      // console is only available after DOM is created.
+      const printWarning = () =&gt; this.webContents.executeJavaScript(`console.warn(&apos;${message}&apos;)`)
+      if (this.webContents.isDomReady()) {
+        printWarning()
+      } else {
+        this.webContents.once(&apos;dom-ready&apos;, printWarning)
+      }
+    }
+
     let {url, frameName} = urlFrameName
     v8Util.deleteHiddenValue(webContents, &apos;url-framename&apos;)
     const options = {
@@ -4081,27 +4216,7 @@ try {
   // have effect, if we do it later we might move focus in the page.
   //
   // Though this hack is only needed on macOS when the app is launched from
-  // Finder, we still do it on all platforms in case of other bugs we don&apos;t
-  // know.
-  this.webContents.once(&apos;load-url&apos;, function () {
-    this.focus()
-  })
-
-  // Redirect focus/blur event to app instance too.
-  this.on(&apos;blur&apos;, (event) =&gt; {
-    app.emit(&apos;browser-window-blur&apos;, event, this)
-  })
-  this.on(&apos;focus&apos;, (event) =&gt; {
-    app.emit(&apos;browser-window-focus&apos;, event, this)
-  })
-
-  // Subscribe to visibilityState changes and pass to renderer process.
-  let isVisible = this.isVisible() &amp;&amp; !this.isMinimized()
-  const visibilityChanged = () =&gt; {
-    const newState = this.isVisible() &amp;&amp; !this.isMinimized()
-    if (isVisible !== newState) {
-      isVisible = newState
-      const visibilitySt...</pre></li>
+  // Finder, we stil...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4200,7 +4315,7 @@ try {
     <li>example usage<pre class="apidocCodePre">...
     (options.browserWindow.loadUrl || options.browserWindow.loadURL).call(
         options.browserWindow,
-        &apos;https://electron.atom.io&apos;
+        &quot;https://electron.atom.io&quot;
     );
     break;
 case 3:
@@ -4212,7 +4327,7 @@ case 4:
     /* istanbul ignore next */
     try {
         data = data.toPng();
-    } catch (errorCaught) {
+    } catch (ignore) {
 ...</pre></li>
     </ul>
 
@@ -7602,20 +7717,20 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">write = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    local.child.on(&apos;exit&apos;, process.exit);
-    local.child.stdout.on(&apos;data&apos;, function (chunk, encoding, cb) {
-        // bug-workaround - force electron v1.8.x and higher to exit after running command
-        // --help|-h
-        switch (process.argv[2]) {
-        case &apos;--help&apos;:
-        case &apos;-h&apos;:
-            process.stdout.<span class="apidocCodeKeywordSpan">write</span>(chunk, encoding, cb);
-            local.child.kill();
-            break;
-        default:
-            process.stdout.write(chunk, encoding, cb);
-        }
-    });
+local.child.on(&quot;exit&quot;, process.exit);
+local.child.stdout.on(&quot;data&quot;, function (chunk, encoding, cb) {
+    // bug-workaround - force electron v1.8.x and higher to exit after running command
+    // --help|-h
+    switch (process.argv[2]) {
+    case &quot;--help&quot;:
+    case &quot;-h&quot;:
+        process.stdout.<span class="apidocCodeKeywordSpan">write</span>(chunk, encoding, cb);
+        local.child.kill();
+        break;
+    default:
+        process.stdout.write(chunk, encoding, cb);
+    }
+});
 }());
 ...</pre></li>
     </ul>
@@ -9120,21 +9235,154 @@ if (this.encounteredError_) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">() =&gt; {}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-this.loadState_ = LoadState.LOADING;
-this.pendingScriptingMessages_ = [];
-this.setPlugin(plugin);
+ ../../v8/src/compiler/wasm-compiler.cc:4141 ../../v8/src/compiler/wasm-compiler.cc:4163 wasm-compilation phase 1 ok: %u bytes, %
+0.3f ms decode, %zu nodes, %0.3f ms pipeline
+ Compiling wasm function #%d failed Compiling wasm function #%d:%.*s failed WASM_function wasm-code-generation ok: %u bytes, %0.
+3f ms code generation
+ %s#%d:%.*s:%.*s (wasm) ../../v8/src/wasm/wasm-module.h BoundsCheck(ref.offset(), ref.length()) ../../v8/src/handles.h (location_
+) != nullptr vector::_M_emplace_back_aux %s: %s @+%u V8.Builtin_GlobalDecodeURI V8.Builtin_GlobalDecodeURIComponent V8.Builtin_GlobalEncodeURI
+ V8.Builtin_GlobalEncodeURIComponent V8.Builtin_GlobalEscape V8.Builtin_GlobalUnescape V8.Builtin_GlobalEval ../../v8/src/compiler
+/code-assembler.cc descriptor.GetParameterCount() + 2 == (sizeof(ArraySizeHelper(nodes))) descriptor.GetParameterCount() + 1 == (
+sizeof(ArraySizeHelper(nodes))) { , &quot; : } vector::_M_fill_insert ../../v8/src/identity-map.cc !is_iterable() is_iterable() 
+address != heap_-&gt;not_mapped_symbol() &lt;context&gt; &lt;closure&gt; &lt;new.target&gt; &lt;this&gt; a r ../../v8/src/json-parser
+.cc:110 ../../v8/src/layout-descriptor-inl.h (!IsSmi() &amp;&amp; (*layout_word_index &lt; length())) || (IsSmi() &amp;&amp; (*layout_word_index
+ &lt; 1)) ../../v8/src/parsing/func-name-inferrer.cc names_stack_.length() &gt; 0 async names_stack_.last().name-&gt;IsOneByteEqualTo
+(&quot;async&quot;) done no action incremental step ; finalized marking full GC contexts_disposed=%d  contexts_disposal_rate=%f  
+size_of_objects=%zu  incremental_marking_stopped=%d  Malloced operator new AlignedAlloc ../../v8/src/debug/debug-scopes.cc isolate_
+-&gt;has_pending_exception() context_-&gt;IsNativeContext() !ScopeInfo::VariableIsSynthetic(name) JSContextSpecialization disabled
+-by-default-v8.compile V8.CompileFullCode full ../../v8/src/full-codegen/full-codegen.cc !expr-&gt;is_possibly_eval() 0 == scope
+-&gt;num_stack_slots() Full-Codegen ../../v8/src/x64/macro-assembler-x64.cc f-&gt;nargs &lt; 0 || f-&gt;nargs == num_arguments ../../
+v8/src/compiler/register-allocator-verifier.cc instr-&gt;InputCount() &gt; 0 kSameAsFirst != constraint.type_ InstructionOperand
+::kInvalidVirtualRegister != constraint.virtual_register_ kImmediate != constraint.type_ kExplicit != constraint.type_ kConstant
+ != constraint.type_ sequence()-&gt;instructions().size() == constraints()-&gt;size() instr == *instr_it operand_count == OperandCount
+(instr) op-&gt;IsUnallocated() ConstantOperand::cast(op)-&gt;virtual_register() == constraint-&gt;value_ value == constraint-&gt
+;value_ LocationOperand::cast(op)-&gt;register_code() == constraint-&gt;value_ LocationOperand::cast(op)-&gt;index() == constraint
+-&gt;value_ ElementSizeLog2Of(LocationOperand::cast(op)-&gt;representation()) == constraint-&gt;value_ map_for_moves_.empty() it
+ != map_.end() map_for_moves_.find(move-&gt;destination()) == map_for_moves_.end() pred_id &gt;= current_block_id block-&gt;IsLoopHeader
+() (pred_assessments) != nullptr ../../v8/src/compiler/register-allocator-verifier.cc:379 origin-&gt;PredecessorCount() &gt; 1 ||
+origin-&gt;phis().size() &gt; 0 origin-&gt;IsLoopHeader() found_contribution != pred_assessments-&gt;map().end() (old) != nullptr
+ iterator != current_assessments-&gt;map().end() assessments_.empty() outstanding_assessments_.empty() found_op != block_assessments
+-&gt;map().end() instr-&gt;GetParallelMove(inner_pos) == nullptr ../../v8/src/compiler/register-allocator-verifier.h map_.empty() (
+other) != nullptr it-&gt;second == vreg vector::reserve ../../v8/src/ast/ast-value-factory.cc StringToArrayIndex(&amp;stream, index
+) (string) != nullptr (new_string) != nullptr %s Out of memory: HashMap::Initialize V8.Builtin_StringFromCodePoint V8.Builtin_StringPrototypeEndsWith
+ String.prototype.endsWith V8.Builtin_StringPrototypeIncludes String.prototype.includes V8.Builtin_StringPrototypeLastIndexOf V8
+.Builtin_StringPrototypeLocaleCompare String.prototype.localeCompare V8.Builtin_StringPrototypeStartsWith String.prototype.startsWith
+ V8.Builtin_StringPrototypeTrim String.prototype.trim V8.Builtin_StringPrototypeTrimLeft String.prototype.trimLeft V8.Builtin_StringPrototypeTrimRight
+ String.prototype.trimRight Void Descriptor ContextOnly Descriptor Load Descriptor LoadWithVector Descriptor LoadField Descriptor
+ LoadICProtoArray Descriptor LoadGlobal Descriptor LoadGlobalWithVector Descriptor Store Descriptor StoreWithVector Descriptor StoreNamedTransition
+ Descriptor StoreTransition Descriptor VarArgFunction Descriptor FastNewClosure Descriptor FastNewFunctionContext Descriptor FastNewObject
+ Descriptor FastNewArguments Descriptor TypeConversion Descriptor TypeConversionStackParameter Descriptor Typeof Descriptor FastCloneRegExp
+ Descriptor FastCloneShallowArray Descriptor FastCloneShallowObject Descriptor CreateAllocationSite Descriptor CreateWeakCell Descriptor
+ CallFunction Descriptor CallIC Descriptor CallICTrampoline Descriptor CallVarargs Descriptor CallForwardVarargs Descriptor CallWithSpread
+ Descriptor CallWithArrayLike Descriptor CallConstruct Descriptor CallTrampoline Descriptor ConstructStub Descriptor ConstructVarargs
+ Descriptor ConstructForwardVarargs Descriptor ConstructWithSpread Descriptor ConstructWithArrayLike Descriptor ConstructTrampoline
+ Descriptor TransitionElementsKind Descriptor AllocateHeapNumber Descriptor Builtin Descriptor ArrayConstructor Descriptor IteratingArrayBuiltin
+ Descriptor ArrayNoArgumentConstructor Descriptor ArraySingleArgumentConstructor Descriptor ArrayNArgumentsConstructor Descriptor
+ Compare Descriptor BinaryOp Descriptor BinaryOpWithAllocationSite Descriptor BinaryOpWithVector Descriptor CountOp Descriptor StringAdd
+ Descriptor StringCharAt Descriptor StringCharCodeAt Descriptor StringCompare Descriptor StringConcat Descriptor SubString Descriptor
+ ForInPrepare Descriptor GetProperty Descriptor ArgumentAdaptor Descriptor ApiCallback Descriptor ApiGetter Descriptor MathPowTagged
+ Descriptor MathPowInteger Descriptor GrowArrayElements Descriptor NewArgumentsElements Descriptor InterpreterDispatch Descriptor
+ InterpreterPushArgsThenCall Descriptor InterpreterPushArgsThenConstruct Descriptor InterpreterPushArgsThenConstructArray Descriptor
+ InterpreterCEntry Descriptor ResumeGenerator Descriptor FrameDropperTrampoline Descriptor WasmRuntimeCall Descriptor HasProperty
+ Descriptor StringIndexOf Descriptor OrderedHashTableHealIndex Descriptor CopyFastSmiOrObjectElements Descriptor ResolveNativePromise
+ Descriptor RejectNativePromise Descriptor PerformNativePromiseThen Descriptor DeleteProperty Descriptor ArrayForEachLoopContinuation
+ Descriptor ArrayEveryLoopContinuation Descriptor ArraySomeLoopContinuation Descriptor ArrayFilterLoopContinuation Descriptor ArrayMapLoopContinuation
+ Descriptor ArrayReduceLoopContinuation Descriptor ArrayReduceRightLoopContinuation Descriptor CreateIterResultObject Descriptor
+ CreateGeneratorObject Descriptor MapLookupHashIndex Descriptor ForInFilter Descriptor ForInNext Descriptor PromiseHandleReject
+Descriptor RegExpExecAtom Descriptor RegExpPrototypeExecSlow Descriptor RegExpReplace Descriptor RegExpSplit Descriptor TypedArrayInitialize
+ Descriptor TypedArrayInitializeWithBuffer Descriptor WeakMapLookupHashIndex Descriptor AsyncGeneratorResolve Descriptor AsyncGeneratorReject
+ Descriptor AsyncGeneratorResumeNext Descriptor StringToLowerCaseIntl Descriptor NameDictionaryLookup NumberDictionaryLookup [ Assert
+: %s [ Assert CSA_ASSERT failed: %s [%s:%d]
+ CSA_ASSERT failed: %s
+ ] Assert IntPtrRoundUpToPowerOfTwo32 Allocate ../../v8/src/code-stub-assembler.cc flags == kNone || flags == kDoubleAlignment Disallow
+ pushing onto prototypes Disallow pushing onto arrays in dictionary named property mode BuildAppendJSArray: %s AllocateSeqOneByteString
+ AllocateSeqTwoByteString Allocating ConsString One-byte ConsString Two-byte ConsString Initialize NameDictionary Copy boilerplate
+ property dict InitializeJSObjectBody StoreFieldsNoWriteBarrier begin allocation of JSArray without elements begin allocation of
+ JSArray with elements write JSArray headers [ CopyFixedArrayElements ] CopyFixedArrayElements [ CopyPropertyArrayValues ] CopyPropertyArrayValues
+ CopyStringCharacters %s -&gt; %s ONE_BYTE_ENCODING TWO_BYTE_ENCODING TryGrowElementsCapacity [ GrowElementsCapacity ] GrowElementsCapacity
+ [Initialize AllocationMemento ] Boolean Number String Symbol (primitive_name) != nullptr ptr_kind == PTR_TO_DATA || ptr_kind ==
+PTR_TO_STRING Full string concatenate TryToName DescriptorLookupLinear DescriptorLookupBinary DescriptorArrayLookup TryHasOwnProperty
+ [ LoadPropertyFromFastObject if_inobject if_backing_store rebox_double ] LoadPropertyFromFastObject LoadPropertyFromNameDictionary
+ ] LoadPropertyFromNameDictionary [ LoadPropertyFromGlobalDictionary ] LoadPropertyFromGlobalDictionary TryGetOwnProperty Non-simple
+ map transition [ TrapAllocationMemento ] TrapAllocationMemento no slack tracking update allocation count initialize filler fields
+ (no finalize) initialize undefined fields (no finalize) initialize filler fields (finalize) initialize undefined fields (finalize
+) CodeStubArguments::ForEach vector::_M_range_check ../../v8/src/compiler/effect-control-linearizer.cc No frame state (zapped by
+ #%d: %s) TypedOptimization &lt;symbol&gt; %d Cannot peel loop %i. Loop exit without explicit mark: Node %i (%s) is inside loop,
+but its use %i (%s) is outside.
+ Peeling loop with header:  %i  
+ V8.Runtime_Runtime_Multiply V8.Runtime_Runtime_Divide V8.Runtime_Runtime_Modulus V8.Runtime_Runtime_Add V8.Runtime_Runtime_Subtract
+ V8.Runtime_Runtime_ShiftLeft V8.Runtime_Runtime_ShiftRight V8.Runtime_Runtime_ShiftRightLogical V8.Runtime_Runtime_BitwiseAnd V8
+.Runtime_Runtime_BitwiseOr V8.Runtime_Runtime_BitwiseXor V8.Runtime_Runtime_Equal V8.Runtime_Runtime_NotEqual V8.Runtime_Runtime_StrictEqual
+ V8.Runtime_Runtime_StrictNotEqual V8.Runtime_Runtime_LessThan V8.Runtime_Runtime_GreaterThan V8.Runtime_Runtime_LessThanOrEqual
+ V8.Runtime_Runtime_GreaterThanOrEqual V8.Runtime_Runtime_InstanceOf V8.Runtime_Runtime_WasmMemorySize ../../v8/src/runtime/runtime
+-wasm.cc (owning_instance) != nullptr V8.Runtime_Runtime_WasmGrowMemory args[0]-&gt;ToUint32(&amp;delta_pages) V8.Runtime_Runtime_ThrowWasmErrorFromTrapIf
+ V8.Runtime_Runtime_ThrowWasmError V8.Runtime_Runtime_ThrowWasmStackOverflow V8.Runtime_Runtime_WasmThrowTypeError V8.Runtime_Runtime_WasmThrow
+ V8.Runtime_Runtime_WasmGetCaughtExceptionValue exception-&gt;IsNumber() V8.Runtime_Runtime_SetThreadInWasm V8.Runtime_Runtime_ClearThreadInWasm
+ V8.Runtime_Runtime_WasmRunInterpreter args[0]-&gt;IsWasmInstanceObject() args[1]-&gt;IsNumber() !arg_buffer_obj-&gt;IsHeapObject
+() V8.Runtime_Runtime_WasmStackGuard V8.Runtime_Runtime_WasmCompileLazy ../../v8/src/ffi/ffi-compiler.cc 0 == embedder_fields B 
+Planning #  for future add to B Adding #  to B --- BLOCK id: --- BLOCK B  (deferred)  &lt;-  ,  id:  ---
+     :  Goto  -&gt;  # ? index out of bounds ../../v8/src/wasm/wasm-module.cc instance_count &gt;= 0 JSObject::cast(compiled_module
+-&gt;ptr_to_weak_wasm_module()-&gt;value()) == *module_obj (prev == nullptr &amp;&amp; !current_instance-&gt;has_weak_prev_instance
+()) || current_instance-&gt;ptr_to_weak_prev_instance()-&gt;value() == prev current_instance-&gt;ptr_to_weak_wasm_module()-&gt;value
+() == *module_obj current_instance-&gt;ptr_to_weak_owning_instance() -&gt;value() -&gt;IsWasmInstanceObject() found_instances &lt
+;= instance_count found_instances == instance_count compiled_module-&gt;has_weak_wasm_module() compiled_module-&gt;ptr_to_weak_wasm_module
+()-&gt;value() == *module_obj !compiled_module-&gt;has_weak_prev_instance() !compiled_module-&gt;has_weak_next_instance() !compiled_module
+-&gt;has_weak_owning_instance() compiled_module-&gt;ptr_to_weak_wasm_module()-&gt;cleared() name kind function table memory global
+ out of memory allocating custom section data Wasm decoding failed Wasm code generation disallowed in this context WasmCompile WasmLazyCompile
+ !thrower.<span class="apidocCodeKeywordSpan">error</span>() ../../v8/src/wasm/wasm-module.cc:1021 unknown !maybe.FromMaybe(false
+) implies isolate-&gt;has_scheduled_exception() call index expected %s extra bits in varint ../../v8/src/wasm/decoder.h 0 &lt; len
+ V8.Builtin_DateConstructor Invalid Date %s %s %02d %04d %02d:%02d:%02d GMT%c%02d%02d (%s) %s %s %02d %04d %02d:%02d:%02d GMT%c%
+02d%02d (%s) Sun Mon Tue Wed Thu Fri Sat Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec V8.Builtin_DateConstructor_ConstructStub
+ V8.Builtin_DateNow V8.Builtin_DateParse V8.Builtin_DateUTC V8.Builtin_DatePrototypeSetDate Date.prototype.setDate V8.Builtin_DatePrototypeSetFullYear
+ Date.prototype.setFullYear V8.Builtin_DatePrototypeSetHours Date.prototype.setHours V8.Builtin_DatePrototypeSetMilliseconds Date
+.prototype.setMilliseconds V8.Builtin_DatePrototypeSetMinutes Date.prototype.setMinutes V8.Builtin_DatePrototypeSetMonth Date.prototype
+.setMonth V8.Builtin_DatePrototypeSetSeconds Date.prototype.setSeconds V8.Builtin_DatePrototypeSetTime Date.prototype.setTime V8
+.Builtin_DatePrototypeSetUTCDate Date.prototype.setUTCDate V8.Builtin_DatePrototypeSetUTCFullYear Date.prototype.setUTCFullYear 
+V8.Builtin_DatePrototypeSetUTCHours Date.prototype.setUTCHours V8.Builtin_DatePrototypeSetUTCMilliseconds Date.prototype.setUTCMilliseconds
+ V8.Builtin_DatePrototypeSetUTCMinutes Date.prototype.setUTCMinutes V8.Builtin_DatePrototypeSetUTCMonth Date.prototype.setUTCMonth
+ V8.Builtin_DatePrototypeSetUTCSeconds Date.prototype.setUTCSeconds V8.Builtin_DatePrototypeToDateString Date.prototype.toDateString
+ V8.Builtin_DatePrototypeToISOString Date.prototype.toISOString %04d-%02d-%02dT%02d:%02d:%02d.%03dZ -%06d-%02d-%02dT%02d:%02d:%02d
+.%03dZ +%06d-%02d-%02dT%02d:%02d:%02d.%03dZ V8.Builtin_DatePrototypeToString Date.prototype.toString V8.Builtin_DatePrototypeToTimeString
+ Date.prototype.toTimeString V8.Builtin_DatePrototypeToUTCString Date.prototype.toUTCString %s, %02d %s %04d %02d:%02d:%02d GMT 
+V8.Builtin_DatePrototypeGetYear Date.prototype.getYear V8.Builtin_DatePrototypeSetYear Date.prototype.setYear V8.Builtin_DatePrototypeToJson
+ toISOString V8.Builtin_MathHypot 6.1.534.41 MachineOperatorReducer ../../v8/src/accessors.cc array-&gt;length()-&gt;ToArrayLength
+(&amp;actual_new_len) column_offset id line_offset type compilation_type context_data eval_from_script eval_from_script_position
+ eval_from_function_name arguments-&gt;IsJSObject() it.HasAccess() LookupIterator::ACCESSOR == it.state() V8.BackgroundCompile_PrepareToParse
+ V8.BackgroundCompile_Parse V8.BackgroundCompile_FinalizeParsing V8.BackgroundCompile_Analyze V8.BackgroundCompile_PrepareToCompile
+ V8.BackgroundCompile_Compile V8.BackgroundCompile_FinalizeCompiling CompilerDispatcherTracer: prepare_parsing=%.2lfms parsing=%.
+2lfms/kb finalize_parsing=%.2lfms analyze=%.2lfms prepare_compiling=%.2lfms compiling=%.2lfms/kb finalize_compiling=%.2lfms
+ symbol(hash  ../../v8/src/log.cc size != -1 (perf_output_handle_) != nullptr %lx %x %.*s
+ v8:Profiler profiler end profiler,&quot;begin&quot;,%d %s,&quot;%s&quot; %s,%d %s,%ld api,check-security shared-library,&quot;%
+s&quot;,0x%08lx,0x%08lx,%ld code-deopt,%d,%d, &lt;unknown&gt; ,%d,%d, &quot;lazy&quot;, &quot;soft&quot;, &quot;eager&quot;, current
+-time,%d timer-event-start,&quot;%s&quot;,%ld timer-event-end,&quot;%s&quot;,%ld api,%s,&quot;%s&quot;,&quot;%s&quot; api,%s,&quot
+;%s&quot;,symbol(hash %x) api,%s,&quot;%s&quot;,symbol(&quot;%s&quot; hash %x) api,%s,&quot;%s&quot;,%u api,%s,&quot;%s&quot; api
+,%s new,%s,%p,%u delete,%s,%p %s,%s,-2, %d, ,1,&quot;%s%s&quot; ,1,symbol(hash %x) ,1,symbol(&quot;%s%s&quot; hash %x) get  set  &
+quot;%s&quot; ,%s &quot;%s  :%d:%d&quot;, &quot;args_count: %d&quot; %s, &quot;%s&quot;, %s,%d, %s,%s, %d,%d, %.0f suspect-read, 
+active-runtime-timer, ,%d ,1, ,0, ,overflow Keyed %lf ,%s, CompareIC, ,%s,%s,%s,%s,%s,%s,%s PatchIC, Unknown code from the snapshot
+ A stub from the snapshot Regular expression code An IC handler from the snapshot A keyed load IC from the snapshot A load IC from
+ the snapshot A load global IC from the snapshot A store IC from the snapshot A store global IC from the snapshot A keyed store
+IC from the snapshot A Wasm function A JavaScript to Wasm adapter A Wasm to JavaScript adapter A Wasm to Interpreter adapter unimplemented
+ code V8.RecompileConcurrent V8.DeoptimizeCode V8.Execute V8.External symbol( &quot;  hash  ~ * %x code-creation code-disable-optimization
+ code-move code-delete code-moving-gc sfi-move snapshot-code-name tick repeat Builtin CallDebugBreak CallDebugPrepareStepIn CallInitialize
+ CallMegamorphic CallMiss CallNormal LoadInitialize LoadMegamorphic StoreInitialize StoreGeneric StoreMegamorphic KeyedCallDebugBreak
+ KeyedCallDebugPrepareStepIn KeyedCallInitialize KeyedCallMegamorphic KeyedCallMiss KeyedCallNormal Callback Eval Function Handler
+ BytecodeHandler KeyedLoadIC KeyedLoadPolymorphicIC KeyedExternalArrayLoadIC KeyedStoreIC KeyedStorePolymorphicIC KeyedExternalArrayStoreIC
+ LazyCompile CallIC LoadIC LoadGlobalIC LoadPolymorphicIC RegExp Script StoreIC StoreGlobalIC StorePolymorphicIC Stub %s,%s,%d, ,%
+d, isolate- - SamplingThread V8.Runtime_Runtime_FixedArrayGet ../../v8/src/runtime/runtime-array.cc args[0]-&gt;IsFixedArray() V8
+.Runtime_Runtime_FixedArraySet V8.Runtime_Runtime_TransitionElementsKind args[0]-&gt;IsJSObject() args[1]-&gt;IsMap() V8.Runtime_Runtime_RemoveArrayHoles
+ args[0]-&gt;IsJSReceiver() V8.Runtime_Runtime_MoveArrayContents args[0]-&gt;IsJSArray() args[1]-&gt;IsJSArray() V8.Runtime_Runtime_EstimateNumberOfElements
+ V8.Runtime_Runtime_GetArrayKeys V8.Runtime_Runtime_NewArray args[0]-&gt;IsJSFunction() args[argc + 1]-&gt;IsJSReceiver() args[argc
+ + 2]-&gt;IsHeapObject() V8.Runtime_Runtime_NormalizeElements !array-&gt;HasFixedTypedArrayElements() !array-&gt;IsJSGlobalProxy
+() V8.Runtime_Runtime_GrowArrayElements V8.Runtime_Runtime_HasComplexElements V8.Runtime_Runtime_ArrayIsArray V8.Runtime_Runtime_IsArray
+ V8.Runtime_Runtime_ArraySpeciesConstructor V8.Runtime_Runtime_ArrayIncludes_Slow V8.Runtime_Runtime_ArrayIndexOf Array.prototype
+.indexOf V8.Runtime_Runtime_SpreadIterablePrepare DeadCodeElimination ../../v8/src/api-natives.cc !obj-&gt;instance_call_handler
+()-&gt;IsUndefined(isolate) DisableAccessChecks EnableAccessChecks ApiNatives::InstantiateObject ../../v8/src/isolate.cc thread_data_table_
+ == NULL 
 
-window.addEventListener(&apos;message&apos;, event =&gt; {
-  if (event.origin != &apos;chrome://pdf-viewer&apos; &amp;&amp;
-      event.origin != &apos;chrome://print&apos;) {
-    console.<span class="apidocCodeKeywordSpan">error</span>(
-        &apos;Received message that was not from the extension: &apos; + event);
-    return;
-  }
-  switch (event.data.type) {
-    case &apos;viewport&apos;:
-      /**
-       * @type {{
+Attempt to print stack while printing stack (double fault)
+ If you are lucky you may find a partial stack dump on stdout.
+
+ Stacktrace:
 ...</pre></li>
     </ul>
 
@@ -9155,17 +9403,17 @@ window.addEventListener(&apos;message&apos;, event =&gt; {
     <li>description and source-code<pre class="apidocCodePre">createEmpty = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     try {
-        local.electron = require(&apos;electron&apos;);
-    } catch (errorCaught) {
+        local.electron = require(&quot;electron&quot;);
+    } catch (ignore) {
         onError(null, options);
         return;
     }
-    if (process.env.npm_config_mode_test_case === &apos;testCase_buildApidoc_default&apos;) {
+    if (process.env.npm_config_mode_test_case === &quot;testCase_buildApidoc_default&quot;) {
         local.electron.NativeImage = local.electron.nativeImage.<span class="apidocCodeKeywordSpan">createEmpty</span>().constructor
 ;
         local.electron.WebContents = local.electron.webContents.create().constructor;
     }
-    options = { moduleDict: { electron: local.electron } };
+    options = {moduleDict: {electron: local.electron}};
     local.buildApidoc(options, onError);
 };
 
@@ -9532,16 +9780,16 @@ local.testCase_buildApp_default = function (options, onError) {
   return binding.create(options)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        local.electron = require(&apos;electron&apos;);
-    } catch (errorCaught) {
+        local.electron = require(&quot;electron&quot;);
+    } catch (ignore) {
         onError(null, options);
         return;
     }
-    if (process.env.npm_config_mode_test_case === &apos;testCase_buildApidoc_default&apos;) {
+    if (process.env.npm_config_mode_test_case === &quot;testCase_buildApidoc_default&quot;) {
         local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;
         local.electron.WebContents = local.electron.webContents.<span class="apidocCodeKeywordSpan">create</span>().constructor;
     }
-    options = { moduleDict: { electron: local.electron } };
+    options = {moduleDict: {electron: local.electron}};
     local.buildApidoc(options, onError);
 };
 
