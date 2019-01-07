@@ -128,7 +128,7 @@ textarea {
 <div id="ajaxProgressDiv1" style="background: transparent; height: 2px; left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
 <a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
-<input class="zeroPixel" id="dbImportInput1" type="file">
+<input class="zeroPixel" data-onevent="onEventDomDb" data-onevent-db="dbImportInput" type="file">
 <script>
 /* jslint utility2:true */
 // init domOnEventWindowOnloadTimeElapsed
@@ -152,6 +152,88 @@ textarea {
                 + window.domOnEventWindowOnloadTimeElapsed
             );
         }, 100);
+    });
+}());
+
+
+
+// init domOnEventDelegateDict
+(function () {
+/*
+ * this function will handle delegated dom-event
+ * example usage:
+ */
+    "use strict";
+    var timerTimeoutDict;
+    if (window.domOnEventDelegateDict) {
+        return;
+    }
+    window.domOnEventDelegateDict = {};
+    timerTimeoutDict = {};
+    window.domOnEventDelegateDict.domOnEventDelegate = function (event) {
+        event.targetOnEvent = event.target.closest(
+            "[data-onevent]"
+        );
+        if (!event.targetOnEvent) {
+            return;
+        }
+        // rate-limit keyboard-event
+        switch (event.type) {
+        case "keydown":
+        case "keyup":
+            if (timerTimeoutDict[event.type] !== true) {
+                timerTimeoutDict[event.type] = (
+                    timerTimeoutDict[event.type]
+                    || setTimeout(function () {
+                        timerTimeoutDict[event.type] = true;
+                        window.domOnEventDelegateDict.domOnEventDelegate(
+                            event
+                        );
+                    }, 50)
+                );
+                return;
+            }
+            timerTimeoutDict[event.type] = null;
+            // filter non-input keyboard-event
+            if (!event.target.closest(
+                "input, option, select, textarea"
+            )) {
+                return;
+            }
+            break;
+        }
+        switch (event.targetOnEvent.tagName) {
+        case "BUTTON":
+        case "FORM":
+            event.preventDefault();
+            break;
+        }
+        // reset output
+        if (event.targetOnEvent.dataset.oneventResetOutput) {
+            Array.from(document.querySelectorAll(
+                ".onevent-reset-output"
+            )).forEach(function (element) {
+                switch (element.tagName) {
+                case "INPUT":
+                case "TEXTAREA":
+                    element.value = "";
+                    break;
+                default:
+                    element.innerHTML = "";
+                }
+            });
+        }
+        event.stopPropagation();
+        window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
+            event
+        );
+    };
+    // init event-handling
+    ["change", "click", "keydown", "submit"].forEach(function (eventType) {
+        document.body.addEventListener(
+            eventType,
+            window.domOnEventDelegateDict.domOnEventDelegate
+        );
     });
 }());
 
@@ -226,16 +308,21 @@ textarea {
             event
             && event.key === "a"
             && (event.ctrlKey || event.metaKey)
-            && event.target.closest("pre")
+            && event.target.closest(
+                "pre"
+            )
         ) {
             range = document.createRange();
-            range.selectNodeContents(event.target.closest("pre"));
+            range.selectNodeContents(event.target.closest(
+                "pre"
+            ));
             selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
             event.preventDefault();
         }
     };
+    // init event-handling
     document.addEventListener(
         "keydown",
         window.domOnEventSelectAllWithinPre
@@ -254,7 +341,7 @@ textarea {
 <h3>this zero-dependency package will download and install the electron (v2.0.10) prebuilt-binary from https://github.com/electron/electron/releases</h3>
 
 <a class="button" download="" href="assets.app.js">download standalone app</a><br>
-<button class="button eventDelegateClick onreset" data-event="testRunBrowser" id="testRunButton1">run internal test</button><br>
+<button class="button" data-onevent="testRunBrowser" data-onevent-reset-output="1" id="testRunButton1">run internal test</button><br>
 <div class="uiAnimateSlide" id="testReportDiv1" style="max-height: 100%;">
 
 
@@ -436,7 +523,7 @@ textarea {
 <div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
 <a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>
-<input class="zeroPixel" id="dbImportInput1" type="file">
+<input class="zeroPixel" data-onevent="onEventDomDb" data-onevent-db="dbImportInput" type="file">
 <script>
 /* jslint utility2:true */
 // init domOnEventWindowOnloadTimeElapsed
@@ -460,6 +547,88 @@ textarea {
                 + window.domOnEventWindowOnloadTimeElapsed
             );
         }, 100);
+    });
+}());
+
+
+
+// init domOnEventDelegateDict
+(function () {
+/*
+ * this function will handle delegated dom-event
+ * example usage:
+ */
+    "use strict";
+    var timerTimeoutDict;
+    if (window.domOnEventDelegateDict) {
+        return;
+    }
+    window.domOnEventDelegateDict = {};
+    timerTimeoutDict = {};
+    window.domOnEventDelegateDict.domOnEventDelegate = function (event) {
+        event.targetOnEvent = event.target.closest(
+            "[data-onevent]"
+        );
+        if (!event.targetOnEvent) {
+            return;
+        }
+        // rate-limit keyboard-event
+        switch (event.type) {
+        case "keydown":
+        case "keyup":
+            if (timerTimeoutDict[event.type] !== true) {
+                timerTimeoutDict[event.type] = (
+                    timerTimeoutDict[event.type]
+                    || setTimeout(function () {
+                        timerTimeoutDict[event.type] = true;
+                        window.domOnEventDelegateDict.domOnEventDelegate(
+                            event
+                        );
+                    }, 50)
+                );
+                return;
+            }
+            timerTimeoutDict[event.type] = null;
+            // filter non-input keyboard-event
+            if (!event.target.closest(
+                "input, option, select, textarea"
+            )) {
+                return;
+            }
+            break;
+        }
+        switch (event.targetOnEvent.tagName) {
+        case "BUTTON":
+        case "FORM":
+            event.preventDefault();
+            break;
+        }
+        // reset output
+        if (event.targetOnEvent.dataset.oneventResetOutput) {
+            Array.from(document.querySelectorAll(
+                ".onevent-reset-output"
+            )).forEach(function (element) {
+                switch (element.tagName) {
+                case "INPUT":
+                case "TEXTAREA":
+                    element.value = "";
+                    break;
+                default:
+                    element.innerHTML = "";
+                }
+            });
+        }
+        event.stopPropagation();
+        window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
+            event
+        );
+    };
+    // init event-handling
+    ["change", "click", "keydown", "submit"].forEach(function (eventType) {
+        document.body.addEventListener(
+            eventType,
+            window.domOnEventDelegateDict.domOnEventDelegate
+        );
     });
 }());
 
@@ -534,16 +703,21 @@ textarea {
             event
             && event.key === "a"
             && (event.ctrlKey || event.metaKey)
-            && event.target.closest("pre")
+            && event.target.closest(
+                "pre"
+            )
         ) {
             range = document.createRange();
-            range.selectNodeContents(event.target.closest("pre"));
+            range.selectNodeContents(event.target.closest(
+                "pre"
+            ));
             selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
             event.preventDefault();
         }
     };
+    // init event-handling
     document.addEventListener(
         "keydown",
         window.domOnEventSelectAllWithinPre
@@ -561,7 +735,7 @@ textarea {
 <h4>
     <span>version</span>-
         2018.9.23<br>
-    <span>test date</span>- 2018-12-26T00:40:17.460Z<br>
+    <span>test date</span>- 2019-01-07T07:02:22.665Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -577,7 +751,7 @@ textarea {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1007 ms</td>
+    <td>1012 ms</td>
     <td class="testPassed">0</td>
     <td>4</td>
     <td>0</td>
@@ -587,10 +761,10 @@ textarea {
 
 <div class="platform">
 <h4>
-    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2018-12-26T00:40:16.834Z<br>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.10 Safari/537.36 - 2019-01-07T07:02:21.834Z<br>
     
     
-    <span>time-elapsed</span>- 1007 ms<br>
+    <span>time-elapsed</span>- 1012 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -613,7 +787,7 @@ textarea {
 
 <tr>
     <td>2</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApp_default</td>
 </tr>
@@ -627,7 +801,7 @@ textarea {
 
 <tr>
     <td>4</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_nop_default</td>
 </tr>
@@ -652,7 +826,7 @@ textarea {
 
 
 <label>stderr and stdout</label>
-<textarea class="resettable" id="outputStdoutTextarea1" readonly=""></textarea>
+<textarea class="onevent-reset-output" id="outputStdout1" readonly=""></textarea>
 
 
 
