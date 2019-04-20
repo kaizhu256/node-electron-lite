@@ -119,10 +119,10 @@ instruction
         case 2:
             // init options
             options = {
-                frame: false, 
-                height: 768, 
-                width: 1024, 
-                x: 0, 
+                frame: false,
+                height: 768,
+                width: 1024,
+                x: 0,
                 y: 0
             };
             // init browserWindow;

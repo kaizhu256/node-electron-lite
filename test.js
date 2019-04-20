@@ -183,7 +183,9 @@ local.testCase_buildApidoc_default = function (options, onError) {
         local.electron.WebContents = local.electron.webContents.create().constructor;
     }
     options = {
-        moduleDict: {electron: local.electron}
+        moduleDict: {
+            electron: local.electron
+        }
     };
     local.buildApidoc(options, onError);
 };
