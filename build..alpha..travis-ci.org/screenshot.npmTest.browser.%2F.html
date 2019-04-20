@@ -39,19 +39,21 @@ a {
 body {
     background: #eef;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     margin: 0 40px;
 }
 body > div,
 body > form > div,
 body > form > input,
 body > form > pre,
-body > form > textarea,
 body > form > .button,
+body > form > .textarea,
 body > input,
 body > pre,
-body > textarea,
-body > .button {
+body > .button,
+body > .textarea {
     margin-bottom: 20px;
+    margin-top: 0;
 }
 body > form > input,
 body > form > .button,
@@ -59,27 +61,23 @@ body > input,
 body > .button {
     width: 20rem;
 }
-body > form > textarea,
-body > textarea {
+body > form > .textarea,
+body > .textarea {
     height: 10rem;
     width: 100%;
 }
-body > textarea[readonly] {
+body > .readonly {
     background: #ddd;
 }
 code,
 pre,
-textarea {
+.textarea {
     font-family: Consolas, Menlo, monospace;
-    font-size: small;
+    font-size: smaller;
 }
 pre {
     overflow-wrap: break-word;
     white-space: pre-wrap;
-}
-textarea {
-    overflow: auto;
-    white-space: pre;
 }
 .button {
     background-color: #fff;
@@ -103,6 +101,14 @@ textarea {
 }
 .colorError {
     color: #d00;
+}
+.textarea {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 0;
+    cursor: auto;
+    overflow: auto;
+    padding: 2px;
 }
 .uiAnimateShake {
     animation-duration: 500ms;
@@ -134,7 +140,7 @@ textarea {
 // init domOnEventWindowOnloadTimeElapsed
 (function () {
 /*
- * this function will measure and print the time-elapsed for window.onload
+ * this function will measure and print time-elapsed for window.onload
  */
     "use strict";
     if (window.domOnEventWindowOnloadTimeElapsed) {
@@ -161,7 +167,6 @@ textarea {
 (function () {
 /*
  * this function will handle delegated dom-event
- * example usage:
  */
     "use strict";
     var timerTimeoutDict;
@@ -174,32 +179,37 @@ textarea {
         event.targetOnEvent = event.target.closest(
             "[data-onevent]"
         );
-        if (!event.targetOnEvent) {
+        if (
+            !event.targetOnEvent
+            || event.targetOnEvent.dataset.onevent === "domOnEventNop"
+            || event.target.closest(
+                ".disabled, .readonly"
+            )
+        ) {
             return;
         }
-        // rate-limit keyboard-event
+        // rate-limit high-frequency-event
         switch (event.type) {
         case "keydown":
         case "keyup":
-            if (timerTimeoutDict[event.type] !== true) {
-                timerTimeoutDict[event.type] = (
-                    timerTimeoutDict[event.type]
-                    || setTimeout(function () {
-                        timerTimeoutDict[event.type] = true;
-                        window.domOnEventDelegateDict.domOnEventDelegate(
-                            event
-                        );
-                    }, 50)
-                );
-                return;
-            }
-            timerTimeoutDict[event.type] = null;
             // filter non-input keyboard-event
             if (!event.target.closest(
                 "input, option, select, textarea"
             )) {
                 return;
             }
+            if (timerTimeoutDict[event.type] !== true) {
+                timerTimeoutDict[event.type] = timerTimeoutDict[
+                    event.type
+                ] || setTimeout(function () {
+                    timerTimeoutDict[event.type] = true;
+                    window.domOnEventDelegateDict.domOnEventDelegate(
+                        event
+                    );
+                }, 50);
+                return;
+            }
+            timerTimeoutDict[event.type] = null;
             break;
         }
         switch (event.targetOnEvent.tagName) {
@@ -208,29 +218,36 @@ textarea {
             event.preventDefault();
             break;
         }
-        // reset output
-        if (event.targetOnEvent.dataset.oneventResetOutput) {
-            Array.from(document.querySelectorAll(
-                ".onevent-reset-output"
-            )).forEach(function (element) {
-                switch (element.tagName) {
-                case "INPUT":
-                case "TEXTAREA":
-                    element.value = "";
-                    break;
-                default:
-                    element.innerHTML = "";
-                }
-            });
-        }
         event.stopPropagation();
         window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
             event
         );
     };
+    window.domOnEventDelegateDict.domOnEventResetOutput = function () {
+        Array.from(document.querySelectorAll(
+            ".onevent-reset-output"
+        )).forEach(function (elem) {
+            switch (elem.tagName) {
+            case "INPUT":
+            case "TEXTAREA":
+                elem.value = "";
+                break;
+            case "PRE":
+                elem.textContent = "";
+                break;
+            default:
+                elem.innerHTML = "";
+            }
+        });
+    };
     // init event-handling
-    ["change", "click", "keydown", "submit"].forEach(function (eventType) {
-        document.body.addEventListener(
+    [
+        "change",
+        "click",
+        "keydown",
+        "submit"
+    ].forEach(function (eventType) {
+        document.addEventListener(
             eventType,
             window.domOnEventDelegateDict.domOnEventDelegate
         );
@@ -242,8 +259,8 @@ textarea {
 // init timerIntervalAjaxProgressUpdate
 (function () {
 /*
- * this function will increment the ajax-progress-bar
- * until the webpage has loaded
+ * this function will increment ajax-progress-bar
+ * until webpage has loaded
  */
     "use strict";
     var ajaxProgressDiv1;
@@ -385,19 +402,21 @@ a {
 body {
     background: #eef;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     margin: 0 40px;
 }
 body > div,
 body > form > div,
 body > form > input,
 body > form > pre,
-body > form > textarea,
 body > form > .button,
+body > form > .textarea,
 body > input,
 body > pre,
-body > textarea,
-body > .button {
+body > .button,
+body > .textarea {
     margin-bottom: 20px;
+    margin-top: 0;
 }
 body > form > input,
 body > form > .button,
@@ -405,27 +424,23 @@ body > input,
 body > .button {
     width: 20rem;
 }
-body > form > textarea,
-body > textarea {
+body > form > .textarea,
+body > .textarea {
     height: 10rem;
     width: 100%;
 }
-body > textarea[readonly] {
+body > .readonly {
     background: #ddd;
 }
 code,
 pre,
-textarea {
+.textarea {
     font-family: Consolas, Menlo, monospace;
-    font-size: small;
+    font-size: smaller;
 }
 pre {
     overflow-wrap: break-word;
     white-space: pre-wrap;
-}
-textarea {
-    overflow: auto;
-    white-space: pre;
 }
 .button {
     background-color: #fff;
@@ -449,6 +464,14 @@ textarea {
 }
 .colorError {
     color: #d00;
+}
+.textarea {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 0;
+    cursor: auto;
+    overflow: auto;
+    padding: 2px;
 }
 .uiAnimateShake {
     animation-duration: 500ms;
@@ -529,7 +552,7 @@ textarea {
 // init domOnEventWindowOnloadTimeElapsed
 (function () {
 /*
- * this function will measure and print the time-elapsed for window.onload
+ * this function will measure and print time-elapsed for window.onload
  */
     "use strict";
     if (window.domOnEventWindowOnloadTimeElapsed) {
@@ -556,7 +579,6 @@ textarea {
 (function () {
 /*
  * this function will handle delegated dom-event
- * example usage:
  */
     "use strict";
     var timerTimeoutDict;
@@ -569,32 +591,37 @@ textarea {
         event.targetOnEvent = event.target.closest(
             "[data-onevent]"
         );
-        if (!event.targetOnEvent) {
+        if (
+            !event.targetOnEvent
+            || event.targetOnEvent.dataset.onevent === "domOnEventNop"
+            || event.target.closest(
+                ".disabled, .readonly"
+            )
+        ) {
             return;
         }
-        // rate-limit keyboard-event
+        // rate-limit high-frequency-event
         switch (event.type) {
         case "keydown":
         case "keyup":
-            if (timerTimeoutDict[event.type] !== true) {
-                timerTimeoutDict[event.type] = (
-                    timerTimeoutDict[event.type]
-                    || setTimeout(function () {
-                        timerTimeoutDict[event.type] = true;
-                        window.domOnEventDelegateDict.domOnEventDelegate(
-                            event
-                        );
-                    }, 50)
-                );
-                return;
-            }
-            timerTimeoutDict[event.type] = null;
             // filter non-input keyboard-event
             if (!event.target.closest(
                 "input, option, select, textarea"
             )) {
                 return;
             }
+            if (timerTimeoutDict[event.type] !== true) {
+                timerTimeoutDict[event.type] = timerTimeoutDict[
+                    event.type
+                ] || setTimeout(function () {
+                    timerTimeoutDict[event.type] = true;
+                    window.domOnEventDelegateDict.domOnEventDelegate(
+                        event
+                    );
+                }, 50);
+                return;
+            }
+            timerTimeoutDict[event.type] = null;
             break;
         }
         switch (event.targetOnEvent.tagName) {
@@ -603,29 +630,36 @@ textarea {
             event.preventDefault();
             break;
         }
-        // reset output
-        if (event.targetOnEvent.dataset.oneventResetOutput) {
-            Array.from(document.querySelectorAll(
-                ".onevent-reset-output"
-            )).forEach(function (element) {
-                switch (element.tagName) {
-                case "INPUT":
-                case "TEXTAREA":
-                    element.value = "";
-                    break;
-                default:
-                    element.innerHTML = "";
-                }
-            });
-        }
         event.stopPropagation();
         window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
             event
         );
     };
+    window.domOnEventDelegateDict.domOnEventResetOutput = function () {
+        Array.from(document.querySelectorAll(
+            ".onevent-reset-output"
+        )).forEach(function (elem) {
+            switch (elem.tagName) {
+            case "INPUT":
+            case "TEXTAREA":
+                elem.value = "";
+                break;
+            case "PRE":
+                elem.textContent = "";
+                break;
+            default:
+                elem.innerHTML = "";
+            }
+        });
+    };
     // init event-handling
-    ["change", "click", "keydown", "submit"].forEach(function (eventType) {
-        document.body.addEventListener(
+    [
+        "change",
+        "click",
+        "keydown",
+        "submit"
+    ].forEach(function (eventType) {
+        document.addEventListener(
             eventType,
             window.domOnEventDelegateDict.domOnEventDelegate
         );
@@ -637,8 +671,8 @@ textarea {
 // init timerIntervalAjaxProgressUpdate
 (function () {
 /*
- * this function will increment the ajax-progress-bar
- * until the webpage has loaded
+ * this function will increment ajax-progress-bar
+ * until webpage has loaded
  */
     "use strict";
     var ajaxProgressDiv1;
@@ -735,7 +769,7 @@ textarea {
 <h4>
     <span>version</span>-
         2019.1.7<br>
-    <span>test date</span>- 2019-01-07T07:42:42.093Z<br>
+    <span>test date</span>- 2019-04-20T19:27:54.811Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -751,7 +785,7 @@ textarea {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1006 ms</td>
+    <td>1013 ms</td>
     <td class="testPassed">0</td>
     <td>4</td>
     <td>0</td>
@@ -761,10 +795,10 @@ textarea {
 
 <div class="platform">
 <h4>
-    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-01-07T07:42:41.388Z<br>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-04-20T19:27:54.013Z<br>
     
     
-    <span>time-elapsed</span>- 1006 ms<br>
+    <span>time-elapsed</span>- 1013 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -780,7 +814,7 @@ textarea {
 
 <tr>
     <td>1</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -826,7 +860,7 @@ textarea {
 
 
 <label>stderr and stdout</label>
-<textarea class="onevent-reset-output" id="outputStdout1" readonly=""></textarea>
+<pre class="onevent-reset-output readonly textarea" id="outputStdout1" tabindex="0"></pre>
 
 
 

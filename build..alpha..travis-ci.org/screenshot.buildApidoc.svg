@@ -1,9 +1,9 @@
-<svg height="830" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="830" fill="#555" width="720"></rect>
+<svg height="1102" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1102" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-01-07T07:43:13.219Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-04-20T19:28:25.864Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 44218</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 61967</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -21,77 +21,108 @@
 
 <tspan x="10" y="186">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
 
-<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/busybox-i486</tspan>
+<tspan x="10" y="202"></tspan>
 
-<tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.gitignore</tspan>
+<tspan x="10" y="218">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
+<tspan x="10" y="234">uild/test-report.json</tspan>
 
-<tspan x="10" y="234">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/busybox-i486</tspan>
 
-<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/LICENSE</tspan>
+<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.gitignore</tspan>
 
-<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
 
-<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/LICENSE</tspan>
 
-<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package-lock.json</tspan>
+<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
 
-<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/releases.txt</tspan>
+<tspan x="10" y="346">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/package-lock.json</tspan>
 
-<tspan x="10" y="346">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
 
-<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.travis.yml</tspan>
+<tspan x="10" y="378">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/releases.txt</tspan>
 
-<tspan x="10" y="378">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/blink_image_\</tspan>
-<tspan x="10" y="394">resources_200_percent.pak</tspan>
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
 
-<tspan x="10" y="410">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_reso\</tspan>
-<tspan x="10" y="426">urces_200_percent.pak</tspan>
+<tspan x="10" y="410">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/.travis.yml</tspan>
 
-<tspan x="10" y="442">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_shel\</tspan>
-<tspan x="10" y="458">l.pak</tspan>
+<tspan x="10" y="426">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/blink_image_\</tspan>
+<tspan x="10" y="442">resources_200_percent.pak</tspan>
 
-<tspan x="10" y="474">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/electron</tspan>
+<tspan x="10" y="458">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_reso\</tspan>
+<tspan x="10" y="474">urces_200_percent.pak</tspan>
 
-<tspan x="10" y="490"></tspan>
+<tspan x="10" y="490">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/content_shel\</tspan>
+<tspan x="10" y="506">l.pak</tspan>
 
-<tspan x="10" y="506">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
-<tspan x="10" y="522">uild/test-report.json</tspan>
+<tspan x="10" y="522">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/electron</tspan>
 
-<tspan x="10" y="538"></tspan>
+<tspan x="10" y="538">jslint - 61ms /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
 
-<tspan x="10" y="554">-------------------------------------------------------</tspan>
+<tspan x="10" y="554">jslint - 7ms /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="570">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="586">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-01-07T07:42:41.388Z</tspan>
+<tspan x="10" y="570">jslint - 0ms /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
 
-<tspan x="10" y="602">|    1006 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="586">jslint - 43ms /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
 
-<tspan x="10" y="618">-------------------------------------------------------</tspan>
+<tspan x="10" y="602">jslint - 6ms /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
 
-<tspan x="10" y="634">| test-report - npmTest - node - linux v8.9.3 - 2019-01-07T07:42:22.966Z</tspan>
+<tspan x="10" y="618">apidocCreate - readExample /home/travis/build/kaizhu256/node-electron-lite/external/icudtl.dat</tspan>
 
-<tspan x="10" y="650">|   24091 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="634"></tspan>
 
-<tspan x="10" y="666">-------------------------------------------------------</tspan>
+<tspan x="10" y="650">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/b\</tspan>
+<tspan x="10" y="666">uild/test-report.json</tspan>
 
 <tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="698">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
-<tspan x="10" y="714">tml</tspan>
+<tspan x="10" y="698">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="730"></tspan>
+<tspan x="10" y="714">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="730">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-04-20T19:27:54.013Z</tspan>
 
-<tspan x="10" y="746"></tspan>
+<tspan x="10" y="746">|    1013 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="762">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="762">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="778"></tspan>
+<tspan x="10" y="778">| test-report - npmTest - node - linux v8.9.3 - 2019-04-20T19:27:35.928Z</tspan>
 
-<tspan x="10" y="794"></tspan>
+<tspan x="10" y="794">|   23600 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="810">[MODE_BUILD=buildApidoc] - 2019-01-07T07:43:15.542Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="810">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="826">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="842">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-04-20T19:26:42\</tspan>
+<tspan x="10" y="858">.965Z</tspan>
+
+<tspan x="10" y="874">|    1009 ms            0 failed        4 passed      |</tspan>
+
+<tspan x="10" y="890">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="906">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-04-20T19:26:22.696Z</tspan>
+
+<tspan x="10" y="922">|   25811 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="938">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="954"></tspan>
+
+<tspan x="10" y="970">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="986">tml</tspan>
+
+<tspan x="10" y="1002"></tspan>
+
+<tspan x="10" y="1018"></tspan>
+
+<tspan x="10" y="1034">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="1050"></tspan>
+
+<tspan x="10" y="1066"></tspan>
+
+<tspan x="10" y="1082">[MODE_BUILD=buildApidoc] - 2019-04-20T19:28:28.198Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
