@@ -118,7 +118,13 @@ instruction
             break;
         case 2:
             // init options
-            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};
+            options = {
+                frame: false, 
+                height: 768, 
+                width: 1024, 
+                x: 0, 
+                y: 0
+            };
             // init browserWindow;
             try {
                 options.BrowserWindow = require("browser-window");
@@ -180,12 +186,6 @@ instruction
 
 1. [https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
 [![screenshot](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-electron-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
-
-
-
-
-
-
 
 
 

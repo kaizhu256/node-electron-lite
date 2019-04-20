@@ -46,30 +46,30 @@
     // init function
     local.assertThrow = function (passed, message) {
     /*
-     * this function will throw the error <message> if <passed> is falsy
+     * this function will throw error-<message> if <passed> is falsy
      */
-        var error;
+        var err;
         if (passed) {
             return;
         }
-        error = (
+        err = (
             // ternary-condition
             (
                 message
                 && typeof message.message === "string"
                 && typeof message.stack === "string"
             )
-            // if message is an error-object, then leave it as is
+            // if message is error-object, then leave as is
             ? message
             : new Error(
                 typeof message === "string"
-                // if message is a string, then leave it as is
+                // if message is a string, then leave as is
                 ? message
                 // else JSON.stringify message
                 : JSON.stringify(message, null, 4)
             )
         );
-        throw error;
+        throw err;
     };
     local.functionOrNop = function (fnc) {
     /*
@@ -97,7 +97,8 @@
      * null, undefined, or empty-string,
      * then overwrite them with items from <source>
      */
-        Object.keys(source).forEach(function (key) {
+        target = target || {};
+        Object.keys(source || {}).forEach(function (key) {
             if (
                 target[key] === null
                 || target[key] === undefined
@@ -106,6 +107,7 @@
                 target[key] = target[key] || source[key];
             }
         });
+        return target;
     };
     // require builtin
     if (!local.isBrowser) {
@@ -149,7 +151,9 @@
 // run shared js-env code - init-before
 (function () {
 // init local
-local = (globalThis.utility2 || require("utility2")).requireReadme();
+local = (
+    globalThis.utility2 || require("utility2")
+).requireReadme();
 globalThis.local = local;
 // init test
 local.testRunDefault(local);
@@ -178,7 +182,9 @@ local.testCase_buildApidoc_default = function (options, onError) {
         local.electron.NativeImage = local.electron.nativeImage.createEmpty().constructor;
         local.electron.WebContents = local.electron.webContents.create().constructor;
     }
-    options = {moduleDict: {electron: local.electron}};
+    options = {
+        moduleDict: {electron: local.electron}
+    };
     local.buildApidoc(options, onError);
 };
 

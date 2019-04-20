@@ -56,30 +56,30 @@
     // init function
     local.assertThrow = function (passed, message) {
     /*
-     * this function will throw the error <message> if <passed> is falsy
+     * this function will throw error-<message> if <passed> is falsy
      */
-        var error;
+        var err;
         if (passed) {
             return;
         }
-        error = (
+        err = (
             // ternary-condition
             (
                 message
                 && typeof message.message === "string"
                 && typeof message.stack === "string"
             )
-            // if message is an error-object, then leave it as is
+            // if message is error-object, then leave as is
             ? message
             : new Error(
                 typeof message === "string"
-                // if message is a string, then leave it as is
+                // if message is a string, then leave as is
                 ? message
                 // else JSON.stringify message
                 : JSON.stringify(message, null, 4)
             )
         );
-        throw error;
+        throw err;
     };
     local.functionOrNop = function (fnc) {
     /*
@@ -107,7 +107,8 @@
      * null, undefined, or empty-string,
      * then overwrite them with items from <source>
      */
-        Object.keys(source).forEach(function (key) {
+        target = target || {};
+        Object.keys(source || {}).forEach(function (key) {
             if (
                 target[key] === null
                 || target[key] === undefined
@@ -116,6 +117,7 @@
                 target[key] = target[key] || source[key];
             }
         });
+        return target;
     };
     // require builtin
     if (!local.isBrowser) {
@@ -191,16 +193,13 @@ return;
 if (local.isBrowser || module !== require.main || process.versions.electron) {
     return;
 }
-([
-    (
-        process.platform === "darwin"
-        && __dirname + "/external/Atom.app/Contents/MacOS/Atom"
-    ), (
-        process.platform === "darwin"
-        && __dirname + "/external/Electron.app/Contents/MacOS/Electron"
-    ),
-    __dirname + "/external/electron"
-]).some(function (file) {
+([(
+    process.platform === "darwin"
+    && __dirname + "/external/Atom.app/Contents/MacOS/Atom"
+), (
+    process.platform === "darwin"
+    && __dirname + "/external/Electron.app/Contents/MacOS/Electron"
+), __dirname + "/external/electron"]).some(function (file) {
     if (file && local.fs.existsSync(file)) {
         local.__filename = file;
         return true;
@@ -210,7 +209,9 @@ if (local.isBrowser || module !== require.main || process.versions.electron) {
 local.child = local.child_process.spawn(
     local.__filename,
     process.argv.slice(2),
-    {stdio: [0, "pipe", 2]}
+    {
+        stdio: [0, "pipe", 2]
+    }
 );
 local.child.on("exit", process.exit);
 local.child.stdout.on("data", function (chunk, encoding, cb) {
