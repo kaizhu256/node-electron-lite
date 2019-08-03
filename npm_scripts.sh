@@ -175,17 +175,11 @@ shNpmReleasesMinorVersions () {(set -e
 var dict;
 dict = {};
 require("fs").readFileSync("releases.txt", "utf8").replace((
-    /(v\d+?\.\d+?)\.\d.*?\//g
-), function (match0, match1) {
-    switch (dict[match1] || match1) {
-    case "v0.3":
-    case "v0.4":
-    case true:
-        return;
-    }
-    dict[match1] = true;
-    console.log(match0.slice(0, -1));
+    /v\d+?\.\d+?\.\d+?\//g
+), function (match0) {
+    dict[match0] = true;
 });
+console.log(dict);
 }());
 '
 )}
@@ -196,7 +190,7 @@ shNpmReleasesParse () {(set -e
 # npm run eval shNpmReleasesParse
     cat .releases.txt |
         grep -E "https:.*(electron-|atom-shell).*\.zip" | \
-        grep -E "[0-9]{1,}-(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
+        grep -E "v[0-9]{1,}\.[0-9]{1,}\.[0-9]{1,}-(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
 )}
 
 # run command
