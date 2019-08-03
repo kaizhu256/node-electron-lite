@@ -2,7 +2,7 @@
 /*
  * lib.electron.js (2019.1.7)
  * https://github.com/kaizhu256/node-electron-lite
- * this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases
+ * this zero-dependency package will download and install the electron (v4.2.8) prebuilt-binary from https://github.com/electron/electron/releases
  *
  */
 

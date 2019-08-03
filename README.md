@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v4.2.8) prebuilt-binary from https://github.com/electron/electron/releases
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v2.0.16) pr
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.16/electron-v2.0.16-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-darwin-x64.zip](https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-linux-x64.zip](https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-linux-x64.zip)
 
 
 
@@ -55,12 +55,12 @@ this zero-dependency package will download and install the electron (v2.0.16) pr
 
 #### todo
 - add npm-script shell-function shNpmPostinstallAll
-- upgrade to electron v3.0.x when stable
+- upgrade to electron v6.0.x when stable
 - none
 
 #### changelog 2019.1.7
 - npm publish 2019.1.7
-- minor update to v2.0.16
+- major update to v4.2.8
 - none
 
 #### this package requires
@@ -196,7 +196,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v2.0.16) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v4.2.8) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
