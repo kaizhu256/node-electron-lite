@@ -196,7 +196,7 @@ shNpmReleasesParse () {(set -e
 # npm run eval shNpmReleasesParse
     cat .releases.txt |
         grep -E "https:.*(electron-|atom-shell).*\.zip" | \
-        grep -E "(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
+        grep -E "[0-9]{1,}-(linux|linux-x64|atom-shell)\.zip" | tee releases.txt
 )}
 
 # run command
