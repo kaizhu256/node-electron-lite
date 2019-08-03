@@ -1,101 +1,118 @@
-<svg height="862" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="862" fill="#555" width="720"></rect>
+<svg height="1038" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1038" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-08-03T20:50:44.196Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-08-03T21:00:51.526Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
 
-<tspan x="10" y="90"></tspan>
+<tspan x="10" y="90">/home/travis/build/kaizhu256/node-electron-lite/external/electron: /lib/x86_64-linux-gnu/libdbus\</tspan>
+<tspan x="10" y="106">-1.so.3: no version information available (required by /home/travis/build/kaizhu256/node-electro\</tspan>
+<tspan x="10" y="122">n-lite/external/electron)</tspan>
 
-<tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
-<tspan x="10" y="122">d/test-report.json</tspan>
+<tspan x="10" y="138">/home/travis/build/kaizhu256/node-electron-lite/external/electron: /lib/x86_64-linux-gnu/libdbus\</tspan>
+<tspan x="10" y="154">-1.so.3: no version information available (required by /home/travis/build/kaizhu256/node-electro\</tspan>
+<tspan x="10" y="170">n-lite/external/electron)</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 40523</tspan>
+<tspan x="10" y="186"></tspan>
 
-<tspan x="10" y="154">db - dropping database ...</tspan>
+<tspan x="10" y="202">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
+<tspan x="10" y="218">d/test-report.json</tspan>
 
-<tspan x="10" y="170">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="234">&gt; http-server listening on port 58994</tspan>
 
-<tspan x="10" y="186">testRunDefault - 34 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="250">db - dropping database ...</tspan>
 
-<tspan x="10" y="202"></tspan>
+<tspan x="10" y="266">Fontconfig warning: "/etc/fonts/fonts.conf", line 86: unknown element "blank"</tspan>
 
-<tspan x="10" y="218">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
-<tspan x="10" y="234">d/test-report.json</tspan>
+<tspan x="10" y="282">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="250">jslint - 29ms /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
+<tspan x="10" y="298">/proc/self/exe: /lib/x86_64-linux-gnu/libdbus-1.so.3: no version information available (required\</tspan>
+<tspan x="10" y="314"> by /proc/self/exe)</tspan>
 
-<tspan x="10" y="266">jslint - 49ms /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
+<tspan x="10" y="330">ATTENTION: default value of option force_s3tc_enable overridden by environment.</tspan>
 
-<tspan x="10" y="282">jslint - 7ms /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="346">testRunDefault - 64145 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="298">jslint - 0ms /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
+<tspan x="10" y="362"></tspan>
 
-<tspan x="10" y="314">jslint - 45ms /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
+<tspan x="10" y="378">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
+<tspan x="10" y="394">d/test-report.json</tspan>
 
-<tspan x="10" y="330">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+<tspan x="10" y="410">jslint - 19ms /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
 
-<tspan x="10" y="346"></tspan>
+<tspan x="10" y="426">jslint - 9ms /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="362">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
-<tspan x="10" y="378">d/test-report.json</tspan>
+<tspan x="10" y="442">jslint - 80ms /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
 
-<tspan x="10" y="394"></tspan>
+<tspan x="10" y="458">jslint - 0ms /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
 
-<tspan x="10" y="410">-------------------------------------------------------</tspan>
+<tspan x="10" y="474">jslint - 36ms /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
 
-<tspan x="10" y="426">| test-report - buildApp - node - linux v8.9.3 - 2019-08-03T20:50:44.612Z</tspan>
+<tspan x="10" y="490">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
 
-<tspan x="10" y="442">|      35 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="506">testRunDefault - 65099 ms - testCase pending -  ...</tspan>
 
-<tspan x="10" y="458">-------------------------------------------------------</tspan>
+<tspan x="10" y="522"></tspan>
 
-<tspan x="10" y="474">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="490">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:49:52.002Z</tspan>
+<tspan x="10" y="538">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/buil\</tspan>
+<tspan x="10" y="554">d/test-report.json</tspan>
 
-<tspan x="10" y="506">|    1006 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="570"></tspan>
 
-<tspan x="10" y="522">-------------------------------------------------------</tspan>
+<tspan x="10" y="586">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="538">| test-report - npmTest - node - linux v8.9.3 - 2019-08-03T20:49:34.177Z</tspan>
+<tspan x="10" y="602">| test-report - buildApidoc - node - linux v10.11.0 - 2019-08-03T20:59:47.777Z</tspan>
 
-<tspan x="10" y="554">|   23566 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="618">|   64149 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="570">-------------------------------------------------------</tspan>
+<tspan x="10" y="634">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="586">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="602">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:48:42\</tspan>
-<tspan x="10" y="618">.046Z</tspan>
+<tspan x="10" y="650">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="666">L, like Gecko) Chrome/69.0.3497.128 Electron/4.2.8 Safari/537.36 - 2019-08-03T20:59:15.858Z</tspan>
 
-<tspan x="10" y="634">|    1012 ms            0 failed        4 passed      |</tspan>
-
-<tspan x="10" y="650">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="666">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T20:48:21.753Z</tspan>
-
-<tspan x="10" y="682">|   25778 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="682">|    1010 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="698">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="714"></tspan>
+<tspan x="10" y="714">| test-report - npmTest - node - linux v10.11.0 - 2019-08-03T20:58:43.845Z</tspan>
 
-<tspan x="10" y="730">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
-<tspan x="10" y="746">tml</tspan>
+<tspan x="10" y="730">|   37348 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="762"></tspan>
+<tspan x="10" y="746">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="778"></tspan>
+<tspan x="10" y="762">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="778">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:57:51\</tspan>
+<tspan x="10" y="794">.467Z</tspan>
 
-<tspan x="10" y="794">buildApp - 0 failed tests</tspan>
+<tspan x="10" y="810">|    1006 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="810"></tspan>
+<tspan x="10" y="826">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="826"></tspan>
+<tspan x="10" y="842">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T20:57:30.403Z</tspan>
 
-<tspan x="10" y="842">[MODE_BUILD=buildApp] - 2019-08-03T20:50:46.044Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="858">|   26608 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="874">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="890"></tspan>
+
+<tspan x="10" y="906">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="922">tml</tspan>
+
+<tspan x="10" y="938"></tspan>
+
+<tspan x="10" y="954"></tspan>
+
+<tspan x="10" y="970">buildApp - 0 failed tests</tspan>
+
+<tspan x="10" y="986"></tspan>
+
+<tspan x="10" y="1002"></tspan>
+
+<tspan x="10" y="1018">[MODE_BUILD=buildApp] - 2019-08-03T21:00:53.338Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

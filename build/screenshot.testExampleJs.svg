@@ -1,5 +1,5 @@
-<svg height="542" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="542" fill="#555" width="720"></rect>
+<svg height="830" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="830" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
@@ -31,32 +31,59 @@
 
 <tspan x="10" y="250">+ electron-lite@2019.1.7</tspan>
 
-<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 2.725s</tspan>
+<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 3.116s</tspan>
 
 <tspan x="10" y="282">found 0 vulnerabilities</tspan>
 
 <tspan x="10" y="298"></tspan>
 
-<tspan x="10" y="314">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="314">/tmp/app/node_modules/electron-lite/external/electron: /lib/x86_64-linux-gnu/libdbus-1.so.3: no \</tspan>
+<tspan x="10" y="330">version information available (required by /tmp/app/node_modules/electron-lite/external/electron\</tspan>
+<tspan x="10" y="346">)</tspan>
 
-<tspan x="10" y="330">[7165:0803/204916.642261:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
-<tspan x="10" y="346"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
+<tspan x="10" y="362">/tmp/app/node_modules/electron-lite/external/electron: /lib/x86_64-linux-gnu/libdbus-1.so.3: no \</tspan>
+<tspan x="10" y="378">version information available (required by /tmp/app/node_modules/electron-lite/external/electron\</tspan>
+<tspan x="10" y="394">)</tspan>
 
-<tspan x="10" y="362">[7199:0803/204916.730540:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
-<tspan x="10" y="378">hreads in process gpu-process.</tspan>
+<tspan x="10" y="410">Fontconfig warning: "/etc/fonts/fonts.conf", line 86: unknown element "blank"</tspan>
 
-<tspan x="10" y="394">[7165:0803/204917.530961:INFO:CONSOLE(1)] "no-wrap,win32-only,linux-only", source: https://elect\</tspan>
-<tspan x="10" y="410">ronjs.org/scripts/index.js (1)</tspan>
+<tspan x="10" y="426">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="426">[7165:0803/204917.630053:INFO:CONSOLE(145)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
-<tspan x="10" y="442">th Remote Content)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asa\</tspan>
-<tspan x="10" y="458">r/renderer/security-warnings.js (145)</tspan>
+<tspan x="10" y="442">/proc/self/exe: /lib/x86_64-linux-gnu/libdbus-1.so.3: no version information available (required\</tspan>
+<tspan x="10" y="458"> by /proc/self/exe)</tspan>
 
-<tspan x="10" y="474">[7165:0803/204917.636100:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="490">ity-Policy)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asar/rende\</tspan>
-<tspan x="10" y="506">rer/security-warnings.js (188)</tspan>
+<tspan x="10" y="474">[7304:0803/205826.311999:ERROR:bus.cc(394)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="490"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="522">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+<tspan x="10" y="506">ATTENTION: default value of option force_s3tc_enable overridden by environment.</tspan>
+
+<tspan x="10" y="522">[7328:0803/205826.333134:ERROR:sandbox_linux.cc(379)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="538">hreads in process gpu-process.</tspan>
+
+<tspan x="10" y="554">[7304:0803/205826.348403:ERROR:gpu_process_transport_factory.cc(1017)] Lost UI shared context.</tspan>
+
+<tspan x="10" y="570">[7335:0803/205826.374353:ERROR:command_buffer_proxy_impl.cc(111)] ContextResult::kFatalFailure: \</tspan>
+<tspan x="10" y="586">Shared memory region is not valid</tspan>
+
+<tspan x="10" y="602">[7328:0803/205826.376190:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroy\</tspan>
+<tspan x="10" y="618">ed with unconsumed attachments: 0/1</tspan>
+
+<tspan x="10" y="634">[7304:0803/205827.226892:INFO:CONSOLE(1)] "no-wrap,win32-only,linux-only", source: https://elect\</tspan>
+<tspan x="10" y="650">ronjs.org/scripts/index.js (1)</tspan>
+
+<tspan x="10" y="666">[7304:0803/205827.243623:INFO:CONSOLE(128)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
+<tspan x="10" y="682">th Remote Content)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asa\</tspan>
+<tspan x="10" y="698">r/renderer/security-warnings.js (128)</tspan>
+
+<tspan x="10" y="714">[7304:0803/205827.245724:INFO:CONSOLE(259)] "%cElectron Deprecation Warning (nodeIntegration def\</tspan>
+<tspan x="10" y="730">ault change)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asar/rend\</tspan>
+<tspan x="10" y="746">erer/security-warnings.js (259)</tspan>
+
+<tspan x="10" y="762">[7304:0803/205827.247042:INFO:CONSOLE(170)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="778">ity-Policy)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asar/rende\</tspan>
+<tspan x="10" y="794">rer/security-warnings.js (170)</tspan>
+
+<tspan x="10" y="810">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
 
 </text>
 </svg>
