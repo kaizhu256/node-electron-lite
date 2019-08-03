@@ -193,6 +193,7 @@ return;
 if (local.isBrowser || module !== require.main || process.versions.electron) {
     return;
 }
+local.__filename = "electron";
 ([(
     process.platform === "darwin"
     && __dirname + "/external/Atom.app/Contents/MacOS/Atom"
