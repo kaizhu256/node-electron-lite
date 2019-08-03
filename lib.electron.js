@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * lib.electron.js (2019.1.7)
+ * lib.electron.js (2019.1.8)
  * https://github.com/kaizhu256/node-electron-lite
  * this zero-dependency package will download and install the electron (v2.0.18) prebuilt-binary from https://github.com/electron/electron/releases
  *

@@ -32,14 +32,14 @@
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
-        "build-ci": "$PWD/npm_scripts.sh",
+        "build-ci": "sh ./npm_scripts.sh",
         "env": "env",
-        "eval": "$PWD/npm_scripts.sh",
-        "heroku-postbuild": "$PWD/npm_scripts.sh",
-        "postinstall": "$PWD/npm_scripts.sh",
-        "start": "$PWD/npm_scripts.sh",
-        "test": "$PWD/npm_scripts.sh",
-        "utility2": "$PWD/npm_scripts.sh"
+        "eval": "sh ./npm_scripts.sh",
+        "heroku-postbuild": "sh ./npm_scripts.sh",
+        "postinstall": "sh ./npm_scripts.sh",
+        "start": "sh ./npm_scripts.sh",
+        "test": "sh ./npm_scripts.sh",
+        "utility2": "sh ./npm_scripts.sh"
     },
-    "version": "2019.1.7"
+    "version": "2019.1.8"
 }

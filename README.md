@@ -58,8 +58,8 @@ this zero-dependency package will download and install the electron (v2.0.18) pr
 - upgrade to electron v6.0.x when stable
 - none
 
-#### changelog 2019.1.7
-- npm publish 2019.1.7
+#### changelog 2019.1.8
+- npm publish 2019.1.8
 - minor update to v2.0.18
 - none
 
@@ -225,16 +225,16 @@ instruction
         "url": "https://github.com/kaizhu256/node-electron-lite.git"
     },
     "scripts": {
-        "build-ci": "$PWD/npm_scripts.sh",
+        "build-ci": "sh ./npm_scripts.sh",
         "env": "env",
-        "eval": "$PWD/npm_scripts.sh",
-        "heroku-postbuild": "$PWD/npm_scripts.sh",
-        "postinstall": "$PWD/npm_scripts.sh",
-        "start": "$PWD/npm_scripts.sh",
-        "test": "$PWD/npm_scripts.sh",
-        "utility2": "$PWD/npm_scripts.sh"
+        "eval": "sh ./npm_scripts.sh",
+        "heroku-postbuild": "sh ./npm_scripts.sh",
+        "postinstall": "sh ./npm_scripts.sh",
+        "start": "sh ./npm_scripts.sh",
+        "test": "sh ./npm_scripts.sh",
+        "utility2": "sh ./npm_scripts.sh"
     },
-    "version": "2019.1.7"
+    "version": "2019.1.8"
 }
 ```
 
