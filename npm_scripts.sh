@@ -7,7 +7,7 @@ shMain () {(set -e
     ARG1="$1"
     # run command - custom
     case "$1" in
-    # npm postinstall --electron-version=v1.0
+    # npm run postinstall --electron-version=v1.0
     postinstall)
         VERSION="${npm_config_electron_version:-v4.2.8}"
         FILE_URL="$(cat releases.txt | grep -m 1 -F "$VERSION." ||
