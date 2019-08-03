@@ -1,5 +1,5 @@
 # electron-lite
-this zero-dependency package will download and install the electron (v4.2.8) prebuilt-binary from https://github.com/electron/electron/releases
+this zero-dependency package will download and install the electron (v2.0.18) prebuilt-binary from https://github.com/electron/electron/releases
 
 # live web demo
 - none
@@ -39,8 +39,8 @@ this zero-dependency package will download and install the electron (v4.2.8) pre
 
 
 # cdn download
-- [https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-darwin-x64.zip](https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-darwin-x64.zip)
-- [https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-linux-x64.zip](https://github.com/electron/electron/releases/download/v4.2.8/electron-v4.2.8-linux-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.18/electron-v2.0.18-darwin-x64.zip](https://github.com/electron/electron/releases/download/v2.0.18/electron-v2.0.18-darwin-x64.zip)
+- [https://github.com/electron/electron/releases/download/v2.0.18/electron-v2.0.18-linux-x64.zip](https://github.com/electron/electron/releases/download/v2.0.18/electron-v2.0.18-linux-x64.zip)
 
 
 
@@ -60,7 +60,7 @@ this zero-dependency package will download and install the electron (v4.2.8) pre
 
 #### changelog 2019.1.7
 - npm publish 2019.1.7
-- major update to v4.2.8
+- minor update to v2.0.18
 - none
 
 #### this package requires
@@ -196,7 +196,7 @@ instruction
     "bin": {
         "electron": "lib.electron.js"
     },
-    "description": "this zero-dependency package will download and install the electron (v4.2.8) prebuilt-binary from https://github.com/electron/electron/releases",
+    "description": "this zero-dependency package will download and install the electron (v2.0.18) prebuilt-binary from https://github.com/electron/electron/releases",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },

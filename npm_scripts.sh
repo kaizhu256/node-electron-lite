@@ -9,7 +9,7 @@ shMain () {(set -e
     case "$1" in
     # npm run postinstall --electron-version=v1.0
     postinstall)
-        VERSION="${npm_config_electron_version:-v4.2.8}"
+        VERSION="${npm_config_electron_version:-v2.0.18}"
         FILE_URL="$(cat releases.txt | grep -m 1 -F "$VERSION." ||
             cat releases.txt | grep -m 1 -F "$VERSION")"
         FILE_BASE="$(printf "$FILE_URL" | sed -e "s/.*\///")"
