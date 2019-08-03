@@ -177,9 +177,20 @@ dict = {};
 require("fs").readFileSync("releases.txt", "utf8").replace((
     /v\d+?\.\d+?\.\d+?\//g
 ), function (match0) {
-    dict[match0] = true;
+    match0 = match0.slice(0, -1).replace((
+        /\d+/g
+    ), function (match0) {
+        return match0.padStart(4, "0");
+    });
+    if ((dict[match0.slice(0, -4)] || "") < match0) {
+        dict[match0.slice(0, -4)] = match0;
+    }
 });
-console.log(dict);
+console.log(Object.keys(dict).sort().reverse().map(function (key) {
+    return dict[key].replace((
+        /0+(\d)/g
+    ), "$1");
+}).join("\n"));
 }());
 '
 )}
