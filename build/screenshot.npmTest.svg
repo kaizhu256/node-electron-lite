@@ -1,9 +1,9 @@
-<svg height="2670" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2670" fill="#555" width="720"></rect>
+<svg height="2718" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2718" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2019-08-03T11:34:27.557Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2019-08-03T20:49:33.724Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
 <tspan x="10" y="58">electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -18,126 +18,126 @@
 <tspan x="10" y="154">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/build\</tspan>
 <tspan x="10" y="170">/test-report.json</tspan>
 
-<tspan x="10" y="186">&gt; http-server listening on port 55801</tspan>
+<tspan x="10" y="186">&gt; http-server listening on port 62038</tspan>
 
 <tspan x="10" y="202">db - dropping database ...</tspan>
 
-<tspan x="10" y="218">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="218"></tspan>
 
-<tspan x="10" y="234"></tspan>
+<tspan x="10" y="234">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/build\</tspan>
+<tspan x="10" y="250">/test-report.json</tspan>
 
-<tspan x="10" y="250">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/build\</tspan>
-<tspan x="10" y="266">/test-report.json</tspan>
+<tspan x="10" y="266">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="282">jslint - 30ms /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
+<tspan x="10" y="282">jslint - 62ms /home/travis/build/kaizhu256/node-electron-lite/README.md</tspan>
 
-<tspan x="10" y="298">jslint - 96ms /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
+<tspan x="10" y="298">jslint - 135ms /home/travis/build/kaizhu256/node-electron-lite/lib.electron.js</tspan>
 
-<tspan x="10" y="314">jslint - 10ms /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="314">jslint - 14ms /home/travis/build/kaizhu256/node-electron-lite/npm_scripts.sh</tspan>
 
 <tspan x="10" y="330">jslint - 0ms /home/travis/build/kaizhu256/node-electron-lite/package.json</tspan>
 
-<tspan x="10" y="346">jslint - 59ms /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
+<tspan x="10" y="346">jslint - 79ms /home/travis/build/kaizhu256/node-electron-lite/test.js</tspan>
 
-<tspan x="10" y="362">testRunDefault - 16149 ms - [node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="362">testRunDefault - 16105 ms - [node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="378">testRunDefault - 16162 ms - [node test-case 2 of 8 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="378">testRunDefault - 16118 ms - [node test-case 2 of 8 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="394">testRunDefault - 16163 ms - [node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
+<tspan x="10" y="394">testRunDefault - 16119 ms - [node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
 
-<tspan x="10" y="410">testRunDefault - 16170 ms - [node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
+<tspan x="10" y="410">testRunDefault - 16125 ms - [node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
 
-<tspan x="10" y="426">testRunDefault - 16171 ms - [node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
+<tspan x="10" y="426">testRunDefault - 16126 ms - [node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
 
-<tspan x="10" y="442">testRunDefault - 16172 ms - [node test-case 6 of 8 passed] - testCase_nop_default</tspan>
+<tspan x="10" y="442">testRunDefault - 16127 ms - [node test-case 6 of 8 passed] - testCase_nop_default</tspan>
 
 <tspan x="10" y="458">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="474">[7841:0803/113445.106813:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="474">[7749:0803/204951.244516:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="490"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="506">[7841:0803/113445.114110:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="506">[7749:0803/204951.271051:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="522"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="538">[7876:0803/113445.285603:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="538">[7795:0803/204951.396901:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="554">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="570">[7841:0803/113445.548231:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="570">[7749:0803/204951.650743:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="586">ity-Policy)", source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electro\</tspan>
 <tspan x="10" y="602">n.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="618">[7841:0803/113445.660757:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="618">[7749:0803/204951.777135:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="634">ity-Policy)", source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electro\</tspan>
 <tspan x="10" y="650">n.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="666">[7841:0803/113446.618571:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
-<tspan x="10" y="682">rce: http://127.0.0.1:55801/assets.example.js (8)</tspan>
+<tspan x="10" y="666">testRunDefault - 18297 ms - [node test-case 7 of 8 passed] - testCase_exampleJs_exit</tspan>
 
-<tspan x="10" y="698">[7841:0803/113446.627589:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
-<tspan x="10" y="714">0.1:55801/assets.utility2.rollup.js (3188)</tspan>
+<tspan x="10" y="682">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
 
-<tspan x="10" y="730">[7841:0803/113446.643698:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
-<tspan x="10" y="746">ngs.</tspan>
+<tspan x="10" y="698">[7749:0803/204952.881955:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
+<tspan x="10" y="714">rce: http://127.0.0.1:62038/assets.example.js (8)</tspan>
 
-<tspan x="10" y="762">[7841:0803/113446.663195:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
-<tspan x="10" y="778">source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electron.asar/rendere\</tspan>
-<tspan x="10" y="794">r/security-warnings.js (128)</tspan>
+<tspan x="10" y="730">[7749:0803/204952.887219:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
+<tspan x="10" y="746">0.1:62038/assets.utility2.rollup.js (3188)</tspan>
 
-<tspan x="10" y="810">[7841:0803/113446.672551:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="826">ity-Policy)", source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electro\</tspan>
-<tspan x="10" y="842">n.asar/renderer/security-warnings.js (188)</tspan>
+<tspan x="10" y="762">[7749:0803/204952.910194:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
+<tspan x="10" y="778">ngs.</tspan>
 
-<tspan x="10" y="858">[7841:0803/113446.712536:INFO:CONSOLE(25615)] "testRunDefault - 10 ms - [browser test-case 1 of \</tspan>
-<tspan x="10" y="874">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:55801/assets.utility2.rollup\</tspan>
-<tspan x="10" y="890">.js (25615)</tspan>
+<tspan x="10" y="794">[7749:0803/204952.913849:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
+<tspan x="10" y="810">rce: http://127.0.0.1:62038/assets.example.js (8)</tspan>
 
-<tspan x="10" y="906">[7841:0803/113446.721970:INFO:CONSOLE(25615)] "testRunDefault - 20 ms - [browser test-case 2 of \</tspan>
-<tspan x="10" y="922">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:55801/assets.utility2.rollup.js\</tspan>
-<tspan x="10" y="938"> (25615)</tspan>
+<tspan x="10" y="826">[7749:0803/204952.923690:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="842">source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electron.asar/rendere\</tspan>
+<tspan x="10" y="858">r/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="954">[7841:0803/113446.734898:INFO:CONSOLE(25615)] "testRunDefault - 28 ms - [browser test-case 3 of \</tspan>
-<tspan x="10" y="970">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:55801/assets.utility2.rollup.js (\</tspan>
-<tspan x="10" y="986">25615)</tspan>
+<tspan x="10" y="874">[7749:0803/204952.924394:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="890">ity-Policy)", source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electro\</tspan>
+<tspan x="10" y="906">n.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="1002">[7841:0803/113446.736099:INFO:CONSOLE(25615)] "testRunDefault - 29 ms - [browser test-case 4 of \</tspan>
-<tspan x="10" y="1018">4 passed] - testCase_nop_default", source: http://127.0.0.1:55801/assets.utility2.rollup.js (256\</tspan>
-<tspan x="10" y="1034">15)</tspan>
+<tspan x="10" y="922">[7749:0803/204952.944953:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
+<tspan x="10" y="938">0.1:62038/assets.utility2.rollup.js (3188)</tspan>
 
-<tspan x="10" y="1050">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+<tspan x="10" y="954">[7749:0803/204952.959171:INFO:CONSOLE(25615)] "testRunDefault - 7 ms - [browser test-case 1 of 4\</tspan>
+<tspan x="10" y="970"> passed] - testCase_buildApidoc_default", source: http://127.0.0.1:62038/assets.utility2.rollup.\</tspan>
+<tspan x="10" y="986">js (25615)</tspan>
 
-<tspan x="10" y="1066">testRunDefault - 18415 ms - [node test-case 7 of 8 passed] - testCase_exampleJs_exit</tspan>
+<tspan x="10" y="1002">[7749:0803/204952.961153:INFO:CONSOLE(25615)] "testRunDefault - 9 ms - [browser test-case 2 of 4\</tspan>
+<tspan x="10" y="1018"> passed] - testCase_buildApp_default", source: http://127.0.0.1:62038/assets.utility2.rollup.js \</tspan>
+<tspan x="10" y="1034">(25615)</tspan>
 
-<tspan x="10" y="1082">[7841:0803/113446.822669:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
-<tspan x="10" y="1098">rce: http://127.0.0.1:55801/assets.example.js (8)</tspan>
+<tspan x="10" y="1050">[7749:0803/204952.962887:INFO:CONSOLE(25615)] "testRunDefault - 11 ms - [browser test-case 3 of \</tspan>
+<tspan x="10" y="1066">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:62038/assets.utility2.rollup.js (\</tspan>
+<tspan x="10" y="1082">25615)</tspan>
 
-<tspan x="10" y="1114">[7841:0803/113446.832375:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
-<tspan x="10" y="1130">0.1:55801/assets.utility2.rollup.js (3188)</tspan>
+<tspan x="10" y="1098">[7749:0803/204952.964283:INFO:CONSOLE(25615)] "testRunDefault - 12 ms - [browser test-case 4 of \</tspan>
+<tspan x="10" y="1114">4 passed] - testCase_nop_default", source: http://127.0.0.1:62038/assets.utility2.rollup.js (256\</tspan>
+<tspan x="10" y="1130">15)</tspan>
 
-<tspan x="10" y="1146">[7841:0803/113446.875369:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="1146">[7749:0803/204952.983912:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
 <tspan x="10" y="1162">source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electron.asar/rendere\</tspan>
 <tspan x="10" y="1178">r/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="1194">[7841:0803/113446.886827:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="1194">[7749:0803/204952.983992:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="1210">ity-Policy)", source: /home/travis/build/kaizhu256/node-electron-lite/external/resources/electro\</tspan>
 <tspan x="10" y="1226">n.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="1242">[7841:0803/113446.914174:INFO:CONSOLE(25615)] "testRunDefault - 10 ms - [browser test-case 1 of \</tspan>
-<tspan x="10" y="1258">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:55801/assets.utility2.rollup\</tspan>
+<tspan x="10" y="1242">[7749:0803/204953.013263:INFO:CONSOLE(25615)] "testRunDefault - 13 ms - [browser test-case 1 of \</tspan>
+<tspan x="10" y="1258">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:62038/assets.utility2.rollup\</tspan>
 <tspan x="10" y="1274">.js (25615)</tspan>
 
-<tspan x="10" y="1290">[7841:0803/113446.919719:INFO:CONSOLE(25615)] "testRunDefault - 11 ms - [browser test-case 2 of \</tspan>
-<tspan x="10" y="1306">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:55801/assets.utility2.rollup.js\</tspan>
+<tspan x="10" y="1290">[7749:0803/204953.015911:INFO:CONSOLE(25615)] "testRunDefault - 16 ms - [browser test-case 2 of \</tspan>
+<tspan x="10" y="1306">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:62038/assets.utility2.rollup.js\</tspan>
 <tspan x="10" y="1322"> (25615)</tspan>
 
-<tspan x="10" y="1338">[7841:0803/113446.929622:INFO:CONSOLE(25615)] "testRunDefault - 12 ms - [browser test-case 3 of \</tspan>
-<tspan x="10" y="1354">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:55801/assets.utility2.rollup.js (\</tspan>
+<tspan x="10" y="1338">[7749:0803/204953.017752:INFO:CONSOLE(25615)] "testRunDefault - 18 ms - [browser test-case 3 of \</tspan>
+<tspan x="10" y="1354">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:62038/assets.utility2.rollup.js (\</tspan>
 <tspan x="10" y="1370">25615)</tspan>
 
-<tspan x="10" y="1386">[7841:0803/113446.932639:INFO:CONSOLE(25615)] "testRunDefault - 13 ms - [browser test-case 4 of \</tspan>
-<tspan x="10" y="1402">4 passed] - testCase_nop_default", source: http://127.0.0.1:55801/assets.utility2.rollup.js (256\</tspan>
+<tspan x="10" y="1386">[7749:0803/204953.019458:INFO:CONSOLE(25615)] "testRunDefault - 20 ms - [browser test-case 4 of \</tspan>
+<tspan x="10" y="1402">4 passed] - testCase_nop_default", source: http://127.0.0.1:62038/assets.utility2.rollup.js (256\</tspan>
 <tspan x="10" y="1418">15)</tspan>
 
-<tspan x="10" y="1434">[7841:0803/113447.734648:INFO:CONSOLE(8278)] "----------|-----------|-----------|-----------|---\</tspan>
+<tspan x="10" y="1434">[7749:0803/204953.968873:INFO:CONSOLE(8278)] "----------|-----------|-----------|-----------|---\</tspan>
 <tspan x="10" y="1450">--------|</tspan>
 
 <tspan x="10" y="1466">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
@@ -150,12 +150,12 @@
 
 <tspan x="10" y="1530">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1546">", source: http://127.0.0.1:55801/assets.utility2.rollup.js (8278)</tspan>
+<tspan x="10" y="1546">", source: http://127.0.0.1:62038/assets.utility2.rollup.js (8278)</tspan>
 
-<tspan x="10" y="1562">[7841:0803/113447.738708:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
-<tspan x="10" y="1578">ex.html", source: http://127.0.0.1:55801/assets.utility2.rollup.js (5943)</tspan>
+<tspan x="10" y="1562">[7749:0803/204953.974521:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
+<tspan x="10" y="1578">ex.html", source: http://127.0.0.1:62038/assets.utility2.rollup.js (5943)</tspan>
 
-<tspan x="10" y="1594">[7841:0803/113447.921021:INFO:CONSOLE(8278)] "----------|-----------|-----------|-----------|---\</tspan>
+<tspan x="10" y="1594">[7749:0803/204954.032986:INFO:CONSOLE(8278)] "----------|-----------|-----------|-----------|---\</tspan>
 <tspan x="10" y="1610">--------|</tspan>
 
 <tspan x="10" y="1626">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
@@ -168,114 +168,118 @@
 
 <tspan x="10" y="1690">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1706">", source: http://127.0.0.1:55801/assets.utility2.rollup.js (8278)</tspan>
+<tspan x="10" y="1706">", source: http://127.0.0.1:62038/assets.utility2.rollup.js (8278)</tspan>
 
-<tspan x="10" y="1722">[7841:0803/113447.929698:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
-<tspan x="10" y="1738">ex.html", source: http://127.0.0.1:55801/assets.utility2.rollup.js (5943)</tspan>
+<tspan x="10" y="1722">[7749:0803/204954.036861:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
+<tspan x="10" y="1738">ex.html", source: http://127.0.0.1:62038/assets.utility2.rollup.js (5943)</tspan>
 
-<tspan x="10" y="1754">testRunDefault - 20210 ms - testCase pending - testCase_webpage_default ...</tspan>
+<tspan x="10" y="1754">testRunDefault - 20327 ms - testCase pending - testCase_webpage_default ...</tspan>
 
-<tspan x="10" y="1770">[7841:0803/113451.644391:INFO:CONSOLE(135)] "null", source: fs.js (135)</tspan>
+<tspan x="10" y="1770">[7749:0803/204957.898438:INFO:CONSOLE(135)] "null", source: fs.js (135)</tspan>
 
-<tspan x="10" y="1786"></tspan>
-
-<tspan x="10" y="1802">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="1818">screenshot.npmTest.browser.%2F.png</tspan>
+<tspan x="10" y="1786">[7749:0803/204958.063330:INFO:CONSOLE(135)] "Error: ENOENT: no such file or directory, rename '/\</tspan>
+<tspan x="10" y="1802">home/travis/build/kaizhu256/node-electron-lite/tmp/electron.16c593ee8500.e9d0fa39a5398.html' -&gt; \</tspan>
+<tspan x="10" y="1818">'/home/travis/build/kaizhu256/node-electron-lite/tmp/electron.html'", source: fs.js (135)</tspan>
 
 <tspan x="10" y="1834"></tspan>
 
 <tspan x="10" y="1850">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="1866">screenshot.npmTest.browser.%2F.html</tspan>
+<tspan x="10" y="1866">screenshot.npmTest.browser.%2F.png</tspan>
 
 <tspan x="10" y="1882"></tspan>
 
 <tspan x="10" y="1898">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="1914">screenshot.npmTest.browser.%2F.png</tspan>
+<tspan x="10" y="1914">screenshot.npmTest.browser.%2F.html</tspan>
 
 <tspan x="10" y="1930"></tspan>
 
 <tspan x="10" y="1946">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="1962">screenshot.npmTest.browser.%2F.html</tspan>
+<tspan x="10" y="1962">screenshot.npmTest.browser.%2F.png</tspan>
 
-<tspan x="10" y="1978">testRunDefault - 23470 ms - [node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="1978"></tspan>
 
-<tspan x="10" y="1994">-----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1994">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
+<tspan x="10" y="2010">screenshot.npmTest.browser.%2F.html</tspan>
 
-<tspan x="10" y="2010">File                   |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="2026">testRunDefault - 23566 ms - [node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="2026">-----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2042">-----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2042">   node-electron-lite/ |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2058">File                   |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="2058">      example.js       |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2074">-----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2074">      lib.electron.js  |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2090">   node-electron-lite/ |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2090">      test.js          |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2106">      example.js       |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2106">-----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2122">      lib.electron.js  |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2122">All files              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2138">      test.js          |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2138">-----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2154">-----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2154"></tspan>
+<tspan x="10" y="2170">All files              |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2170">created coverage file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/coverage.html/in\</tspan>
-<tspan x="10" y="2186">dex.html</tspan>
+<tspan x="10" y="2186">-----------------------|-----------|-----------|-----------|-----------|</tspan>
 
 <tspan x="10" y="2202"></tspan>
 
-<tspan x="10" y="2218">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/build\</tspan>
-<tspan x="10" y="2234">/test-report.json</tspan>
+<tspan x="10" y="2218">created coverage file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/coverage.html/in\</tspan>
+<tspan x="10" y="2234">dex.html</tspan>
 
 <tspan x="10" y="2250"></tspan>
 
-<tspan x="10" y="2266">-------------------------------------------------------</tspan>
+<tspan x="10" y="2266">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-electron-lite/tmp/build\</tspan>
+<tspan x="10" y="2282">/test-report.json</tspan>
 
-<tspan x="10" y="2282">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2298">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T11:34:46.082Z</tspan>
+<tspan x="10" y="2298"></tspan>
 
-<tspan x="10" y="2314">|    1009 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="2314">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2330">-------------------------------------------------------</tspan>
+<tspan x="10" y="2330">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="2346">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:49:52.002Z</tspan>
 
-<tspan x="10" y="2346">| test-report - npmTest - node - linux v8.9.3 - 2019-08-03T11:34:28.013Z</tspan>
-
-<tspan x="10" y="2362">|   23471 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2362">|    1006 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="2378">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2394">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="2410">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T11:33:36\</tspan>
-<tspan x="10" y="2426">.022Z</tspan>
+<tspan x="10" y="2394">| test-report - npmTest - node - linux v8.9.3 - 2019-08-03T20:49:34.177Z</tspan>
 
-<tspan x="10" y="2442">|    1005 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="2410">|   23566 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="2458">-------------------------------------------------------</tspan>
+<tspan x="10" y="2426">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2474">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T11:33:15.645Z</tspan>
+<tspan x="10" y="2442">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="2458">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:48:42\</tspan>
+<tspan x="10" y="2474">.046Z</tspan>
 
-<tspan x="10" y="2490">|   25706 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2490">|    1012 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="2506">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2522"></tspan>
+<tspan x="10" y="2522">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T20:48:21.753Z</tspan>
 
-<tspan x="10" y="2538">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
-<tspan x="10" y="2554">tml</tspan>
+<tspan x="10" y="2538">|   25778 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="2554">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="2570"></tspan>
 
-<tspan x="10" y="2586"></tspan>
-
-<tspan x="10" y="2602">npmTest - 0 failed tests</tspan>
+<tspan x="10" y="2586">created test-report file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="2602">tml</tspan>
 
 <tspan x="10" y="2618"></tspan>
 
 <tspan x="10" y="2634"></tspan>
 
-<tspan x="10" y="2650">[MODE_BUILD=npmTest] - 2019-08-03T11:35:16.777Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2650">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="2666"></tspan>
+
+<tspan x="10" y="2682"></tspan>
+
+<tspan x="10" y="2698">[MODE_BUILD=npmTest] - 2019-08-03T20:50:22.872Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

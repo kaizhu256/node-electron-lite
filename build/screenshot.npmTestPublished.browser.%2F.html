@@ -177,52 +177,50 @@ pre {
     }
     window.domOnEventDelegateDict = {};
     timerTimeoutDict = {};
-    window.domOnEventDelegateDict.domOnEventDelegate = function (event) {
-        event.targetOnEvent = event.target.closest(
+    window.domOnEventDelegateDict.domOnEventDelegate = function (evt) {
+        evt.targetOnEvent = evt.target.closest(
             "[data-onevent]"
         );
         if (
-            !event.targetOnEvent
-            || event.targetOnEvent.dataset.onevent === "domOnEventNop"
-            || event.target.closest(
+            !evt.targetOnEvent
+            || evt.targetOnEvent.dataset.onevent === "domOnEventNop"
+            || evt.target.closest(
                 ".disabled, .readonly"
             )
         ) {
             return;
         }
         // rate-limit high-frequency-event
-        switch (event.type) {
+        switch (evt.type) {
         case "keydown":
         case "keyup":
             // filter non-input keyboard-event
-            if (!event.target.closest(
+            if (!evt.target.closest(
                 "input, option, select, textarea"
             )) {
                 return;
             }
-            if (timerTimeoutDict[event.type] !== true) {
-                timerTimeoutDict[event.type] = timerTimeoutDict[
-                    event.type
+            if (timerTimeoutDict[evt.type] !== true) {
+                timerTimeoutDict[evt.type] = timerTimeoutDict[
+                    evt.type
                 ] || setTimeout(function () {
-                    timerTimeoutDict[event.type] = true;
-                    window.domOnEventDelegateDict.domOnEventDelegate(
-                        event
-                    );
+                    timerTimeoutDict[evt.type] = true;
+                    window.domOnEventDelegateDict.domOnEventDelegate(evt);
                 }, 50);
                 return;
             }
-            timerTimeoutDict[event.type] = null;
+            timerTimeoutDict[evt.type] = null;
             break;
         }
-        switch (event.targetOnEvent.tagName) {
+        switch (evt.targetOnEvent.tagName) {
         case "BUTTON":
         case "FORM":
-            event.preventDefault();
+            evt.preventDefault();
             break;
         }
-        event.stopPropagation();
-        window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
-            event
+        evt.stopPropagation();
+        window.domOnEventDelegateDict[evt.targetOnEvent.dataset.onevent](
+            evt
         );
     };
     window.domOnEventDelegateDict.domOnEventResetOutput = function () {
@@ -320,25 +318,25 @@ pre {
     if (window.domOnEventSelectAllWithinPre) {
         return;
     }
-    window.domOnEventSelectAllWithinPre = function (event) {
+    window.domOnEventSelectAllWithinPre = function (evt) {
         var range;
         var selection;
         if (
-            event
-            && event.key === "a"
-            && (event.ctrlKey || event.metaKey)
-            && event.target.closest(
+            evt
+            && evt.key === "a"
+            && (evt.ctrlKey || evt.metaKey)
+            && evt.target.closest(
                 "pre"
             )
         ) {
             range = document.createRange();
-            range.selectNodeContents(event.target.closest(
+            range.selectNodeContents(evt.target.closest(
                 "pre"
             ));
             selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
-            event.preventDefault();
+            evt.preventDefault();
         }
     };
     // init event-handling
@@ -591,52 +589,50 @@ pre {
     }
     window.domOnEventDelegateDict = {};
     timerTimeoutDict = {};
-    window.domOnEventDelegateDict.domOnEventDelegate = function (event) {
-        event.targetOnEvent = event.target.closest(
+    window.domOnEventDelegateDict.domOnEventDelegate = function (evt) {
+        evt.targetOnEvent = evt.target.closest(
             "[data-onevent]"
         );
         if (
-            !event.targetOnEvent
-            || event.targetOnEvent.dataset.onevent === "domOnEventNop"
-            || event.target.closest(
+            !evt.targetOnEvent
+            || evt.targetOnEvent.dataset.onevent === "domOnEventNop"
+            || evt.target.closest(
                 ".disabled, .readonly"
             )
         ) {
             return;
         }
         // rate-limit high-frequency-event
-        switch (event.type) {
+        switch (evt.type) {
         case "keydown":
         case "keyup":
             // filter non-input keyboard-event
-            if (!event.target.closest(
+            if (!evt.target.closest(
                 "input, option, select, textarea"
             )) {
                 return;
             }
-            if (timerTimeoutDict[event.type] !== true) {
-                timerTimeoutDict[event.type] = timerTimeoutDict[
-                    event.type
+            if (timerTimeoutDict[evt.type] !== true) {
+                timerTimeoutDict[evt.type] = timerTimeoutDict[
+                    evt.type
                 ] || setTimeout(function () {
-                    timerTimeoutDict[event.type] = true;
-                    window.domOnEventDelegateDict.domOnEventDelegate(
-                        event
-                    );
+                    timerTimeoutDict[evt.type] = true;
+                    window.domOnEventDelegateDict.domOnEventDelegate(evt);
                 }, 50);
                 return;
             }
-            timerTimeoutDict[event.type] = null;
+            timerTimeoutDict[evt.type] = null;
             break;
         }
-        switch (event.targetOnEvent.tagName) {
+        switch (evt.targetOnEvent.tagName) {
         case "BUTTON":
         case "FORM":
-            event.preventDefault();
+            evt.preventDefault();
             break;
         }
-        event.stopPropagation();
-        window.domOnEventDelegateDict[event.targetOnEvent.dataset.onevent](
-            event
+        evt.stopPropagation();
+        window.domOnEventDelegateDict[evt.targetOnEvent.dataset.onevent](
+            evt
         );
     };
     window.domOnEventDelegateDict.domOnEventResetOutput = function () {
@@ -734,25 +730,25 @@ pre {
     if (window.domOnEventSelectAllWithinPre) {
         return;
     }
-    window.domOnEventSelectAllWithinPre = function (event) {
+    window.domOnEventSelectAllWithinPre = function (evt) {
         var range;
         var selection;
         if (
-            event
-            && event.key === "a"
-            && (event.ctrlKey || event.metaKey)
-            && event.target.closest(
+            evt
+            && evt.key === "a"
+            && (evt.ctrlKey || evt.metaKey)
+            && evt.target.closest(
                 "pre"
             )
         ) {
             range = document.createRange();
-            range.selectNodeContents(event.target.closest(
+            range.selectNodeContents(evt.target.closest(
                 "pre"
             ));
             selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
-            event.preventDefault();
+            evt.preventDefault();
         }
     };
     // init event-handling
@@ -773,7 +769,7 @@ pre {
 <h4>
     <span>version</span>-
         2019.1.7<br>
-    <span>test date</span>- 2019-08-03T11:33:37.398Z<br>
+    <span>test date</span>- 2019-08-03T20:48:42.827Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -789,7 +785,7 @@ pre {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1024 ms</td>
+    <td>1012 ms</td>
     <td class="testPassed">0</td>
     <td>4</td>
     <td>0</td>
@@ -799,12 +795,10 @@ pre {
 
 <div class="platform">
 <h4>
-    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T11:33:35.743Z<br>
+    1. browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:48:42.046Z<br>
     
     
-    <span>onload-time</span>- 898 ms<br>
-    
-    <span>time-elapsed</span>- 1024 ms<br>
+    <span>time-elapsed</span>- 1012 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 4<br>
     <span>tests pending</span>- 0<br>
@@ -820,7 +814,7 @@ pre {
 
 <tr>
     <td>1</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -841,7 +835,7 @@ pre {
 
 <tr>
     <td>4</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_nop_default</td>
 </tr>

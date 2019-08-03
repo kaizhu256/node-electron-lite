@@ -5,7 +5,7 @@
 
 <tspan x="10" y="42">&gt; electron-lite@2019.1.7 postinstall /tmp/app/node_modules/electron-lite</tspan>
 
-<tspan x="10" y="58">&gt; ./npm_scripts.sh</tspan>
+<tspan x="10" y="58">&gt; $PWD/npm_scripts.sh</tspan>
 
 <tspan x="10" y="74"></tspan>
 
@@ -31,7 +31,7 @@
 
 <tspan x="10" y="250">+ electron-lite@2019.1.7</tspan>
 
-<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 2.67s</tspan>
+<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 2.725s</tspan>
 
 <tspan x="10" y="282">found 0 vulnerabilities</tspan>
 
@@ -39,20 +39,20 @@
 
 <tspan x="10" y="314">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="330">[7251:0803/113410.375936:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="330">[7165:0803/204916.642261:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="346"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="362">[7285:0803/113410.462221:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="362">[7199:0803/204916.730540:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="378">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="394">[7251:0803/113411.286102:INFO:CONSOLE(1)] "no-wrap,win32-only,linux-only", source: https://elect\</tspan>
+<tspan x="10" y="394">[7165:0803/204917.530961:INFO:CONSOLE(1)] "no-wrap,win32-only,linux-only", source: https://elect\</tspan>
 <tspan x="10" y="410">ronjs.org/scripts/index.js (1)</tspan>
 
-<tspan x="10" y="426">[7251:0803/113411.396734:INFO:CONSOLE(145)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
+<tspan x="10" y="426">[7165:0803/204917.630053:INFO:CONSOLE(145)] "%cElectron Security Warning (Node.js Integration wi\</tspan>
 <tspan x="10" y="442">th Remote Content)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asa\</tspan>
 <tspan x="10" y="458">r/renderer/security-warnings.js (145)</tspan>
 
-<tspan x="10" y="474">[7251:0803/113411.405523:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="474">[7165:0803/204917.636100:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="490">ity-Policy)", source: /tmp/app/node_modules/electron-lite/external/resources/electron.asar/rende\</tspan>
 <tspan x="10" y="506">rer/security-warnings.js (188)</tspan>
 
