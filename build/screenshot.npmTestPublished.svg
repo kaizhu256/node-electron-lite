@@ -1,9 +1,9 @@
-<svg height="6782" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="6782" fill="#555" width="720"></rect>
+<svg height="6750" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="6750" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2019-08-03T20:57:29.673Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2019-08-03T22:57:11.785Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
 <tspan x="10" y="58">e_modules/electron-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,175 +13,175 @@
 <tspan x="10" y="106">covering $ /tmp/npmTestPublished/node_modules/electron-lite/external/electron /tmp/npmTestPublis\</tspan>
 <tspan x="10" y="122">hed/node_modules/electron-lite/test.js</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 33953</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 61102</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
-<tspan x="10" y="170">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="170">jslint /tmp/npmTestPublished/node_modules/electron-lite/README.md.&lt;```javascript&gt;.js</tspan>
 
-<tspan x="10" y="186">jslint /tmp/npmTestPublished/node_modules/electron-lite/README.md.&lt;```javascript&gt;.js</tspan>
+<tspan x="10" y="186">  1 Unexpected trailing space. // line 122, column 30</tspan>
 
-<tspan x="10" y="202">  1 Unexpected trailing space. // line 122, column 30</tspan>
+<tspan x="10" y="202">    frame: false,</tspan>
 
-<tspan x="10" y="218">    frame: false,</tspan>
+<tspan x="10" y="218">{</tspan>
 
-<tspan x="10" y="234">{</tspan>
+<tspan x="10" y="234">    "name": "JSLintError",</tspan>
 
-<tspan x="10" y="250">    "name": "JSLintError",</tspan>
+<tspan x="10" y="250">    "column": 30,</tspan>
 
-<tspan x="10" y="266">    "column": 30,</tspan>
+<tspan x="10" y="266">    "line": 122,</tspan>
 
-<tspan x="10" y="282">    "line": 122,</tspan>
+<tspan x="10" y="282">    "code": "unexpected_trailing_space",</tspan>
 
-<tspan x="10" y="298">    "code": "unexpected_trailing_space",</tspan>
+<tspan x="10" y="298">    "message": "Unexpected trailing space.",</tspan>
 
-<tspan x="10" y="314">    "message": "Unexpected trailing space.",</tspan>
+<tspan x="10" y="314">    "source": "                frame: false, ",</tspan>
 
-<tspan x="10" y="330">    "source": "                frame: false, ",</tspan>
+<tspan x="10" y="330">    "ignore": null,</tspan>
 
-<tspan x="10" y="346">    "ignore": null,</tspan>
+<tspan x="10" y="346">    "c": {},</tspan>
 
-<tspan x="10" y="362">    "c": {},</tspan>
+<tspan x="10" y="362">    "d": {},</tspan>
 
-<tspan x="10" y="378">    "d": {},</tspan>
+<tspan x="10" y="378">    "a": "frame: false,",</tspan>
 
-<tspan x="10" y="394">    "a": "frame: false,",</tspan>
+<tspan x="10" y="394">    "option": {</tspan>
 
-<tspan x="10" y="410">    "option": {</tspan>
+<tspan x="10" y="410">        "modeNext": 12,</tspan>
 
-<tspan x="10" y="426">        "modeNext": 12,</tspan>
+<tspan x="10" y="426">        "autofix": true,</tspan>
 
-<tspan x="10" y="442">        "autofix": true,</tspan>
+<tspan x="10" y="442">        "conditional": true,</tspan>
 
-<tspan x="10" y="458">        "conditional": true,</tspan>
+<tspan x="10" y="458">        "file": "/tmp/npmTestPublished/node_modules/electron-lite/README.md.&lt;```javascript&gt;.js",</tspan>
 
-<tspan x="10" y="474">        "file": "/tmp/npmTestPublished/node_modules/electron-lite/README.md.&lt;```javascript&gt;.js",</tspan>
+<tspan x="10" y="474">        "errorText": "",</tspan>
 
-<tspan x="10" y="490">        "errorText": "",</tspan>
+<tspan x="10" y="490">        "fileType": ".js",</tspan>
 
-<tspan x="10" y="506">        "fileType": ".js",</tspan>
+<tspan x="10" y="506">        "utility2": true,</tspan>
 
-<tspan x="10" y="522">        "utility2": true,</tspan>
+<tspan x="10" y="522">        "fileType0": ".md",</tspan>
 
-<tspan x="10" y="538">        "fileType0": ".md",</tspan>
+<tspan x="10" y="538">        "lineOffset": 79,</tspan>
 
-<tspan x="10" y="554">        "lineOffset": 79,</tspan>
+<tspan x="10" y="554">        "edition": "2019-01-31",</tspan>
 
-<tspan x="10" y="570">        "edition": "2019-01-31",</tspan>
+<tspan x="10" y="570">        "id": "(JSLint)",</tspan>
 
-<tspan x="10" y="586">        "id": "(JSLint)",</tspan>
+<tspan x="10" y="586">        "json": false,</tspan>
 
-<tspan x="10" y="602">        "json": false,</tspan>
+<tspan x="10" y="602">        "module": false,</tspan>
 
-<tspan x="10" y="618">        "module": false,</tspan>
+<tspan x="10" y="618">        "ok": false,</tspan>
 
-<tspan x="10" y="634">        "ok": false,</tspan>
+<tspan x="10" y="634">        "stop": false,</tspan>
 
-<tspan x="10" y="650">        "stop": false,</tspan>
+<tspan x="10" y="650">        "bitwise": true,</tspan>
 
-<tspan x="10" y="666">        "bitwise": true,</tspan>
+<tspan x="10" y="666">        "browser": true,</tspan>
 
-<tspan x="10" y="682">        "browser": true,</tspan>
+<tspan x="10" y="682">        "node": true,</tspan>
 
-<tspan x="10" y="698">        "node": true,</tspan>
+<tspan x="10" y="698">        "this": true</tspan>
 
-<tspan x="10" y="714">        "this": true</tspan>
+<tspan x="10" y="714">    },</tspan>
 
-<tspan x="10" y="730">    },</tspan>
+<tspan x="10" y="730">    "stack": null,</tspan>
 
-<tspan x="10" y="746">    "stack": null,</tspan>
+<tspan x="10" y="746">    "evidence": "                frame: false, "</tspan>
 
-<tspan x="10" y="762">    "evidence": "                frame: false, "</tspan>
+<tspan x="10" y="762">}</tspan>
 
-<tspan x="10" y="778">}</tspan>
+<tspan x="10" y="778">Error</tspan>
 
-<tspan x="10" y="794">Error</tspan>
+<tspan x="10" y="794">    at warn_at_extra (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib\</tspan>
+<tspan x="10" y="810">.jslint.js:7154:42)</tspan>
 
-<tspan x="10" y="810">    at warn_at_extra (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib\</tspan>
-<tspan x="10" y="826">.jslint.js:7154:42)</tspan>
+<tspan x="10" y="826">    at warn_at (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslin\</tspan>
+<tspan x="10" y="842">t.js:2462:5)</tspan>
 
-<tspan x="10" y="842">    at warn_at (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslin\</tspan>
-<tspan x="10" y="858">t.js:2462:5)</tspan>
+<tspan x="10" y="858">    at next_line (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jsl\</tspan>
+<tspan x="10" y="874">int.js:2602:17)</tspan>
 
-<tspan x="10" y="874">    at next_line (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jsl\</tspan>
-<tspan x="10" y="890">int.js:2602:17)</tspan>
+<tspan x="10" y="890">    at lex (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslint.js\</tspan>
+<tspan x="10" y="906">:3215:27)</tspan>
 
-<tspan x="10" y="906">    at lex (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslint.js\</tspan>
-<tspan x="10" y="922">:3215:27)</tspan>
+<tspan x="10" y="922">    at tokenize (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jsli\</tspan>
+<tspan x="10" y="938">nt.js:3475:13)</tspan>
 
-<tspan x="10" y="938">    at tokenize (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jsli\</tspan>
-<tspan x="10" y="954">nt.js:3475:13)</tspan>
+<tspan x="10" y="954">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslint.js:6847\</tspan>
+<tspan x="10" y="970">:9</tspan>
 
-<tspan x="10" y="970">    at /tmp/npmTestPublished/node_modules/electron-lite/node_modules/utility2/lib.jslint.js:6847\</tspan>
-<tspan x="10" y="986">:9</tspan>
+<tspan x="10" y="986">    at Object.jslint_extra (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utilit\</tspan>
+<tspan x="10" y="1002">y2/lib.jslint.js:6949:21)</tspan>
 
-<tspan x="10" y="1002">    at Object.jslint_extra (/tmp/npmTestPublished/node_modules/electron-lite/node_modules/utilit\</tspan>
-<tspan x="10" y="1018">y2/lib.jslint.js:6949:21)</tspan>
+<tspan x="10" y="1018">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
+<tspan x="10" y="1034">s/utility2/lib.jslint.js:7299:41)</tspan>
 
-<tspan x="10" y="1034">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
-<tspan x="10" y="1050">s/utility2/lib.jslint.js:7299:41)</tspan>
+<tspan x="10" y="1050">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
+<tspan x="10" y="1066">s/utility2/lib.jslint.js:7410:18)</tspan>
 
-<tspan x="10" y="1066">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
-<tspan x="10" y="1082">s/utility2/lib.jslint.js:7410:18)</tspan>
+<tspan x="10" y="1082">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
+<tspan x="10" y="1098">s/utility2/lib.jslint.js:7410:18)</tspan>
 
-<tspan x="10" y="1098">    at Object.local.jslintAndPrint (/tmp/npmTestPublished/node_modules/electron-lite/node_module\</tspan>
-<tspan x="10" y="1114">s/utility2/lib.jslint.js:7410:18)</tspan>
+<tspan x="10" y="1114">  2 Unexpected trailing space. // line 123, column 29</tspan>
 
-<tspan x="10" y="1130">  2 Unexpected trailing space. // line 123, column 29</tspan>
+<tspan x="10" y="1130">    height: 768,</tspan>
 
-<tspan x="10" y="1146">    height: 768,</tspan>
+<tspan x="10" y="1146">  3 Unexpected trailing space. // line 124, column 29</tspan>
 
-<tspan x="10" y="1162">  3 Unexpected trailing space. // line 124, column 29</tspan>
+<tspan x="10" y="1162">    width: 1024,</tspan>
 
-<tspan x="10" y="1178">    width: 1024,</tspan>
+<tspan x="10" y="1178">  4 Unexpected trailing space. // line 125, column 22</tspan>
 
-<tspan x="10" y="1194">  4 Unexpected trailing space. // line 125, column 22</tspan>
+<tspan x="10" y="1194">    x: 0,</tspan>
 
-<tspan x="10" y="1210">    x: 0,</tspan>
+<tspan x="10" y="1210">--- /tmp/npmTestPublished/node_modules/electron-lite/README.md.autofix.old	2019-08-03 22:57:12.7\</tspan>
+<tspan x="10" y="1226">68027994 +0000</tspan>
 
-<tspan x="10" y="1226">--- /tmp/npmTestPublished/node_modules/electron-lite/README.md.autofix.old	2019-08-03 20:57:30.7\</tspan>
-<tspan x="10" y="1242">45520889 +0000</tspan>
+<tspan x="10" y="1242">+++ /tmp/npmTestPublished/node_modules/electron-lite/README.md	2019-08-03 22:57:12.768027994 +00\</tspan>
+<tspan x="10" y="1258">00</tspan>
 
-<tspan x="10" y="1258">+++ /tmp/npmTestPublished/node_modules/electron-lite/README.md	2019-08-03 20:57:30.745520889 +00\</tspan>
-<tspan x="10" y="1274">00</tspan>
+<tspan x="10" y="1274">@@ -118,7 +118,13 @@</tspan>
 
-<tspan x="10" y="1290">@@ -118,7 +118,13 @@</tspan>
+<tspan x="10" y="1290">             break;</tspan>
 
-<tspan x="10" y="1306">             break;</tspan>
+<tspan x="10" y="1306">         case 2:</tspan>
 
-<tspan x="10" y="1322">         case 2:</tspan>
+<tspan x="10" y="1322">             // init options</tspan>
 
-<tspan x="10" y="1338">             // init options</tspan>
+<tspan x="10" y="1338">-            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};</tspan>
 
-<tspan x="10" y="1354">-            options = {frame: false, height: 768, width: 1024, x: 0, y: 0};</tspan>
+<tspan x="10" y="1354">+            options = {</tspan>
 
-<tspan x="10" y="1370">+            options = {</tspan>
+<tspan x="10" y="1370">+                frame: false, </tspan>
 
-<tspan x="10" y="1386">+                frame: false, </tspan>
+<tspan x="10" y="1386">+                height: 768, </tspan>
 
-<tspan x="10" y="1402">+                height: 768, </tspan>
+<tspan x="10" y="1402">+                width: 1024, </tspan>
 
-<tspan x="10" y="1418">+                width: 1024, </tspan>
+<tspan x="10" y="1418">+                x: 0, </tspan>
 
-<tspan x="10" y="1434">+                x: 0, </tspan>
+<tspan x="10" y="1434">+                y: 0</tspan>
 
-<tspan x="10" y="1450">+                y: 0</tspan>
+<tspan x="10" y="1450">+            };</tspan>
 
-<tspan x="10" y="1466">+            };</tspan>
+<tspan x="10" y="1466">             // init browserWindow;</tspan>
 
-<tspan x="10" y="1482">             // init browserWindow;</tspan>
+<tspan x="10" y="1482">             try {</tspan>
 
-<tspan x="10" y="1498">             try {</tspan>
+<tspan x="10" y="1498">                 options.BrowserWindow = require("browser-window");</tspan>
 
-<tspan x="10" y="1514">                 options.BrowserWindow = require("browser-window");</tspan>
+<tspan x="10" y="1514">@@ -183,12 +189,6 @@</tspan>
 
-<tspan x="10" y="1530">@@ -183,12 +189,6 @@</tspan>
+<tspan x="10" y="1530"> </tspan>
 
 <tspan x="10" y="1546"> </tspan>
 
 <tspan x="10" y="1562"> </tspan>
 
-<tspan x="10" y="1578"> </tspan>
+<tspan x="10" y="1578">-</tspan>
 
 <tspan x="10" y="1594">-</tspan>
 
@@ -193,218 +193,218 @@
 
 <tspan x="10" y="1658">-</tspan>
 
-<tspan x="10" y="1674">-</tspan>
+<tspan x="10" y="1674"> # package.json</tspan>
 
-<tspan x="10" y="1690"> # package.json</tspan>
+<tspan x="10" y="1690"> ```json</tspan>
 
-<tspan x="10" y="1706"> ```json</tspan>
+<tspan x="10" y="1706"> {</tspan>
 
-<tspan x="10" y="1722"> {</tspan>
+<tspan x="10" y="1722">jslint-autofix - modified and saved file /tmp/npmTestPublished/node_modules/electron-lite/README\</tspan>
+<tspan x="10" y="1738">.md</tspan>
 
-<tspan x="10" y="1738">jslint-autofix - modified and saved file /tmp/npmTestPublished/node_modules/electron-lite/README\</tspan>
-<tspan x="10" y="1754">.md</tspan>
+<tspan x="10" y="1754">jslint - 50ms /tmp/npmTestPublished/node_modules/electron-lite/README.md</tspan>
 
-<tspan x="10" y="1770">jslint - 72ms /tmp/npmTestPublished/node_modules/electron-lite/README.md</tspan>
+<tspan x="10" y="1770">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="1786">jslint - 21ms /tmp/npmTestPublished/node_modules/electron-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="1786">--- /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js.autofix.old	2019-08-03 22:5\</tspan>
+<tspan x="10" y="1802">7:12.947943907 +0000</tspan>
 
-<tspan x="10" y="1802">--- /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js.autofix.old	2019-08-03 20:5\</tspan>
-<tspan x="10" y="1818">7:30.905524131 +0000</tspan>
+<tspan x="10" y="1818">+++ /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js	2019-08-03 22:57:12.9479439\</tspan>
+<tspan x="10" y="1834">07 +0000</tspan>
 
-<tspan x="10" y="1834">+++ /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js	2019-08-03 20:57:30.9055241\</tspan>
-<tspan x="10" y="1850">31 +0000</tspan>
+<tspan x="10" y="1850">@@ -56,30 +56,30 @@</tspan>
 
-<tspan x="10" y="1866">@@ -56,30 +56,30 @@</tspan>
+<tspan x="10" y="1866">     // init function</tspan>
 
-<tspan x="10" y="1882">     // init function</tspan>
+<tspan x="10" y="1882">     local.assertThrow = function (passed, message) {</tspan>
 
-<tspan x="10" y="1898">     local.assertThrow = function (passed, message) {</tspan>
+<tspan x="10" y="1898">     /*</tspan>
 
-<tspan x="10" y="1914">     /*</tspan>
+<tspan x="10" y="1914">-     * this function will throw the error &lt;message&gt; if &lt;passed&gt; is falsy</tspan>
 
-<tspan x="10" y="1930">-     * this function will throw the error &lt;message&gt; if &lt;passed&gt; is falsy</tspan>
+<tspan x="10" y="1930">+     * this function will throw error-&lt;message&gt; if &lt;passed&gt; is falsy</tspan>
 
-<tspan x="10" y="1946">+     * this function will throw error-&lt;message&gt; if &lt;passed&gt; is falsy</tspan>
+<tspan x="10" y="1946">      */</tspan>
 
-<tspan x="10" y="1962">      */</tspan>
+<tspan x="10" y="1962">-        var error;</tspan>
 
-<tspan x="10" y="1978">-        var error;</tspan>
+<tspan x="10" y="1978">+        var err;</tspan>
 
-<tspan x="10" y="1994">+        var err;</tspan>
+<tspan x="10" y="1994">         if (passed) {</tspan>
 
-<tspan x="10" y="2010">         if (passed) {</tspan>
+<tspan x="10" y="2010">             return;</tspan>
 
-<tspan x="10" y="2026">             return;</tspan>
+<tspan x="10" y="2026">         }</tspan>
 
-<tspan x="10" y="2042">         }</tspan>
+<tspan x="10" y="2042">-        error = (</tspan>
 
-<tspan x="10" y="2058">-        error = (</tspan>
+<tspan x="10" y="2058">+        err = (</tspan>
 
-<tspan x="10" y="2074">+        err = (</tspan>
+<tspan x="10" y="2074">             // ternary-condition</tspan>
 
-<tspan x="10" y="2090">             // ternary-condition</tspan>
+<tspan x="10" y="2090">             (</tspan>
 
-<tspan x="10" y="2106">             (</tspan>
+<tspan x="10" y="2106">                 message</tspan>
 
-<tspan x="10" y="2122">                 message</tspan>
+<tspan x="10" y="2122">                 &amp;&amp; typeof message.message === "string"</tspan>
 
-<tspan x="10" y="2138">                 &amp;&amp; typeof message.message === "string"</tspan>
+<tspan x="10" y="2138">                 &amp;&amp; typeof message.stack === "string"</tspan>
 
-<tspan x="10" y="2154">                 &amp;&amp; typeof message.stack === "string"</tspan>
+<tspan x="10" y="2154">             )</tspan>
 
-<tspan x="10" y="2170">             )</tspan>
+<tspan x="10" y="2170">-            // if message is an error-object, then leave it as is</tspan>
 
-<tspan x="10" y="2186">-            // if message is an error-object, then leave it as is</tspan>
+<tspan x="10" y="2186">+            // if message is error-object, then leave as is</tspan>
 
-<tspan x="10" y="2202">+            // if message is error-object, then leave as is</tspan>
+<tspan x="10" y="2202">             ? message</tspan>
 
-<tspan x="10" y="2218">             ? message</tspan>
+<tspan x="10" y="2218">             : new Error(</tspan>
 
-<tspan x="10" y="2234">             : new Error(</tspan>
+<tspan x="10" y="2234">                 typeof message === "string"</tspan>
 
-<tspan x="10" y="2250">                 typeof message === "string"</tspan>
+<tspan x="10" y="2250">-                // if message is a string, then leave it as is</tspan>
 
-<tspan x="10" y="2266">-                // if message is a string, then leave it as is</tspan>
+<tspan x="10" y="2266">+                // if message is a string, then leave as is</tspan>
 
-<tspan x="10" y="2282">+                // if message is a string, then leave as is</tspan>
+<tspan x="10" y="2282">                 ? message</tspan>
 
-<tspan x="10" y="2298">                 ? message</tspan>
+<tspan x="10" y="2298">                 // else JSON.stringify message</tspan>
 
-<tspan x="10" y="2314">                 // else JSON.stringify message</tspan>
+<tspan x="10" y="2314">                 : JSON.stringify(message, null, 4)</tspan>
 
-<tspan x="10" y="2330">                 : JSON.stringify(message, null, 4)</tspan>
+<tspan x="10" y="2330">             )</tspan>
 
-<tspan x="10" y="2346">             )</tspan>
+<tspan x="10" y="2346">         );</tspan>
 
-<tspan x="10" y="2362">         );</tspan>
+<tspan x="10" y="2362">-        throw error;</tspan>
 
-<tspan x="10" y="2378">-        throw error;</tspan>
+<tspan x="10" y="2378">+        throw err;</tspan>
 
-<tspan x="10" y="2394">+        throw err;</tspan>
+<tspan x="10" y="2394">     };</tspan>
 
-<tspan x="10" y="2410">     };</tspan>
+<tspan x="10" y="2410">     local.functionOrNop = function (fnc) {</tspan>
 
-<tspan x="10" y="2426">     local.functionOrNop = function (fnc) {</tspan>
+<tspan x="10" y="2426">     /*</tspan>
 
-<tspan x="10" y="2442">     /*</tspan>
+<tspan x="10" y="2442">@@ -107,7 +107,8 @@</tspan>
 
-<tspan x="10" y="2458">@@ -107,7 +107,8 @@</tspan>
+<tspan x="10" y="2458">      * null, undefined, or empty-string,</tspan>
 
-<tspan x="10" y="2474">      * null, undefined, or empty-string,</tspan>
+<tspan x="10" y="2474">      * then overwrite them with items from &lt;source&gt;</tspan>
 
-<tspan x="10" y="2490">      * then overwrite them with items from &lt;source&gt;</tspan>
+<tspan x="10" y="2490">      */</tspan>
 
-<tspan x="10" y="2506">      */</tspan>
+<tspan x="10" y="2506">-        Object.keys(source).forEach(function (key) {</tspan>
 
-<tspan x="10" y="2522">-        Object.keys(source).forEach(function (key) {</tspan>
+<tspan x="10" y="2522">+        target = target || {};</tspan>
 
-<tspan x="10" y="2538">+        target = target || {};</tspan>
+<tspan x="10" y="2538">+        Object.keys(source || {}).forEach(function (key) {</tspan>
 
-<tspan x="10" y="2554">+        Object.keys(source || {}).forEach(function (key) {</tspan>
+<tspan x="10" y="2554">             if (</tspan>
 
-<tspan x="10" y="2570">             if (</tspan>
+<tspan x="10" y="2570">                 target[key] === null</tspan>
 
-<tspan x="10" y="2586">                 target[key] === null</tspan>
+<tspan x="10" y="2586">                 || target[key] === undefined</tspan>
 
-<tspan x="10" y="2602">                 || target[key] === undefined</tspan>
+<tspan x="10" y="2602">@@ -116,6 +117,7 @@</tspan>
 
-<tspan x="10" y="2618">@@ -116,6 +117,7 @@</tspan>
+<tspan x="10" y="2618">                 target[key] = target[key] || source[key];</tspan>
 
-<tspan x="10" y="2634">                 target[key] = target[key] || source[key];</tspan>
+<tspan x="10" y="2634">             }</tspan>
 
-<tspan x="10" y="2650">             }</tspan>
+<tspan x="10" y="2650">         });</tspan>
 
-<tspan x="10" y="2666">         });</tspan>
+<tspan x="10" y="2666">+        return target;</tspan>
 
-<tspan x="10" y="2682">+        return target;</tspan>
+<tspan x="10" y="2682">     };</tspan>
 
-<tspan x="10" y="2698">     };</tspan>
+<tspan x="10" y="2698">     // require builtin</tspan>
 
-<tspan x="10" y="2714">     // require builtin</tspan>
+<tspan x="10" y="2714">     if (!local.isBrowser) {</tspan>
 
-<tspan x="10" y="2730">     if (!local.isBrowser) {</tspan>
+<tspan x="10" y="2730">@@ -191,16 +193,13 @@</tspan>
 
-<tspan x="10" y="2746">@@ -191,16 +193,13 @@</tspan>
+<tspan x="10" y="2746"> if (local.isBrowser || module !== require.main || process.versions.electron) {</tspan>
 
-<tspan x="10" y="2762"> if (local.isBrowser || module !== require.main || process.versions.electron) {</tspan>
+<tspan x="10" y="2762">     return;</tspan>
 
-<tspan x="10" y="2778">     return;</tspan>
+<tspan x="10" y="2778"> }</tspan>
 
-<tspan x="10" y="2794"> }</tspan>
+<tspan x="10" y="2794">-([</tspan>
 
-<tspan x="10" y="2810">-([</tspan>
+<tspan x="10" y="2810">-    (</tspan>
 
-<tspan x="10" y="2826">-    (</tspan>
+<tspan x="10" y="2826">-        process.platform === "darwin"</tspan>
 
-<tspan x="10" y="2842">-        process.platform === "darwin"</tspan>
+<tspan x="10" y="2842">-        &amp;&amp; __dirname + "/external/Atom.app/Contents/MacOS/Atom"</tspan>
 
-<tspan x="10" y="2858">-        &amp;&amp; __dirname + "/external/Atom.app/Contents/MacOS/Atom"</tspan>
+<tspan x="10" y="2858">-    ), (</tspan>
 
-<tspan x="10" y="2874">-    ), (</tspan>
+<tspan x="10" y="2874">-        process.platform === "darwin"</tspan>
 
-<tspan x="10" y="2890">-        process.platform === "darwin"</tspan>
+<tspan x="10" y="2890">-        &amp;&amp; __dirname + "/external/Electron.app/Contents/MacOS/Electron"</tspan>
 
-<tspan x="10" y="2906">-        &amp;&amp; __dirname + "/external/Electron.app/Contents/MacOS/Electron"</tspan>
+<tspan x="10" y="2906">-    ),</tspan>
 
-<tspan x="10" y="2922">-    ),</tspan>
+<tspan x="10" y="2922">-    __dirname + "/external/electron"</tspan>
 
-<tspan x="10" y="2938">-    __dirname + "/external/electron"</tspan>
+<tspan x="10" y="2938">-]).some(function (file) {</tspan>
 
-<tspan x="10" y="2954">-]).some(function (file) {</tspan>
+<tspan x="10" y="2954">+([(</tspan>
 
-<tspan x="10" y="2970">+([(</tspan>
+<tspan x="10" y="2970">+    process.platform === "darwin"</tspan>
 
-<tspan x="10" y="2986">+    process.platform === "darwin"</tspan>
+<tspan x="10" y="2986">+    &amp;&amp; __dirname + "/external/Atom.app/Contents/MacOS/Atom"</tspan>
 
-<tspan x="10" y="3002">+    &amp;&amp; __dirname + "/external/Atom.app/Contents/MacOS/Atom"</tspan>
+<tspan x="10" y="3002">+), (</tspan>
 
-<tspan x="10" y="3018">+), (</tspan>
+<tspan x="10" y="3018">+    process.platform === "darwin"</tspan>
 
-<tspan x="10" y="3034">+    process.platform === "darwin"</tspan>
+<tspan x="10" y="3034">+    &amp;&amp; __dirname + "/external/Electron.app/Contents/MacOS/Electron"</tspan>
 
-<tspan x="10" y="3050">+    &amp;&amp; __dirname + "/external/Electron.app/Contents/MacOS/Electron"</tspan>
+<tspan x="10" y="3050">+), __dirname + "/external/electron"]).some(function (file) {</tspan>
 
-<tspan x="10" y="3066">+), __dirname + "/external/electron"]).some(function (file) {</tspan>
+<tspan x="10" y="3066">     if (file &amp;&amp; local.fs.existsSync(file)) {</tspan>
 
-<tspan x="10" y="3082">     if (file &amp;&amp; local.fs.existsSync(file)) {</tspan>
+<tspan x="10" y="3082">         local.__filename = file;</tspan>
 
-<tspan x="10" y="3098">         local.__filename = file;</tspan>
+<tspan x="10" y="3098">         return true;</tspan>
 
-<tspan x="10" y="3114">         return true;</tspan>
+<tspan x="10" y="3114">@@ -210,7 +209,9 @@</tspan>
 
-<tspan x="10" y="3130">@@ -210,7 +209,9 @@</tspan>
+<tspan x="10" y="3130"> local.child = local.child_process.spawn(</tspan>
 
-<tspan x="10" y="3146"> local.child = local.child_process.spawn(</tspan>
+<tspan x="10" y="3146">     local.__filename,</tspan>
 
-<tspan x="10" y="3162">     local.__filename,</tspan>
+<tspan x="10" y="3162">     process.argv.slice(2),</tspan>
 
-<tspan x="10" y="3178">     process.argv.slice(2),</tspan>
+<tspan x="10" y="3178">-    {stdio: [0, "pipe", 2]}</tspan>
 
-<tspan x="10" y="3194">-    {stdio: [0, "pipe", 2]}</tspan>
+<tspan x="10" y="3194">+    {</tspan>
 
-<tspan x="10" y="3210">+    {</tspan>
+<tspan x="10" y="3210">+        stdio: [0, "pipe", 2]</tspan>
 
-<tspan x="10" y="3226">+        stdio: [0, "pipe", 2]</tspan>
+<tspan x="10" y="3226">+    }</tspan>
 
-<tspan x="10" y="3242">+    }</tspan>
+<tspan x="10" y="3242"> );</tspan>
 
-<tspan x="10" y="3258"> );</tspan>
+<tspan x="10" y="3258"> local.child.on("exit", process.exit);</tspan>
 
-<tspan x="10" y="3274"> local.child.on("exit", process.exit);</tspan>
+<tspan x="10" y="3274"> local.child.stdout.on("data", function (chunk, encoding, cb) {</tspan>
 
-<tspan x="10" y="3290"> local.child.stdout.on("data", function (chunk, encoding, cb) {</tspan>
+<tspan x="10" y="3290">jslint-autofix - modified and saved file /tmp/npmTestPublished/node_modules/electron-lite/lib.el\</tspan>
+<tspan x="10" y="3306">ectron.js</tspan>
 
-<tspan x="10" y="3306">jslint-autofix - modified and saved file /tmp/npmTestPublished/node_modules/electron-lite/lib.el\</tspan>
-<tspan x="10" y="3322">ectron.js</tspan>
+<tspan x="10" y="3322">jslint - 193ms /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js</tspan>
 
-<tspan x="10" y="3338">jslint - 123ms /tmp/npmTestPublished/node_modules/electron-lite/lib.electron.js</tspan>
+<tspan x="10" y="3338">jslint - 14ms /tmp/npmTestPublished/node_modules/electron-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="3354">jslint - 1ms /tmp/npmTestPublished/node_modules/electron-lite/package.json</tspan>
+<tspan x="10" y="3354">jslint - 0ms /tmp/npmTestPublished/node_modules/electron-lite/package.json</tspan>
 
-<tspan x="10" y="3370">--- /tmp/npmTestPublished/node_modules/electron-lite/test.js.autofix.old	2019-08-03 20:57:31.001\</tspan>
-<tspan x="10" y="3386">526077 +0000</tspan>
+<tspan x="10" y="3370">--- /tmp/npmTestPublished/node_modules/electron-lite/test.js.autofix.old	2019-08-03 22:57:13.135\</tspan>
+<tspan x="10" y="3386">856067 +0000</tspan>
 
-<tspan x="10" y="3402">+++ /tmp/npmTestPublished/node_modules/electron-lite/test.js	2019-08-03 20:57:31.001526077 +0000</tspan>
+<tspan x="10" y="3402">+++ /tmp/npmTestPublished/node_modules/electron-lite/test.js	2019-08-03 22:57:13.135856067 +0000</tspan>
 
 <tspan x="10" y="3418">@@ -46,30 +46,30 @@</tspan>
 
@@ -541,238 +541,234 @@
 <tspan x="10" y="4474">jslint-autofix - modified and saved file /tmp/npmTestPublished/node_modules/electron-lite/test.j\</tspan>
 <tspan x="10" y="4490">s</tspan>
 
-<tspan x="10" y="4506">jslint - 94ms /tmp/npmTestPublished/node_modules/electron-lite/test.js</tspan>
+<tspan x="10" y="4506">jslint - 165ms /tmp/npmTestPublished/node_modules/electron-lite/test.js</tspan>
 
-<tspan x="10" y="4522">testRunDefault - 18798 ms - [node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="4522">testRunDefault - 18342 ms - [node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="4538">testRunDefault - 18812 ms - [node test-case 2 of 8 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="4538">testRunDefault - 18354 ms - [node test-case 2 of 8 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="4554">testRunDefault - 18813 ms - [node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
+<tspan x="10" y="4554">testRunDefault - 18355 ms - [node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
 
-<tspan x="10" y="4570">testRunDefault - 18821 ms - [node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
+<tspan x="10" y="4570">testRunDefault - 18362 ms - [node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
 
-<tspan x="10" y="4586">testRunDefault - 18823 ms - [node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
+<tspan x="10" y="4586">testRunDefault - 18363 ms - [node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
 
-<tspan x="10" y="4602">testRunDefault - 18825 ms - [node test-case 6 of 8 passed] - testCase_nop_default</tspan>
+<tspan x="10" y="4602">testRunDefault - 18364 ms - [node test-case 6 of 8 passed] - testCase_nop_default</tspan>
 
 <tspan x="10" y="4618">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="4634">[6981:0803/205750.504142:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="4634">[6924:0803/225731.882735:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="4650"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="4666">[6981:0803/205750.512421:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="4666">[6924:0803/225731.890680:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="4682"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="4698">[7029:0803/205750.689674:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="4698">[6958:0803/225732.001943:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="4714">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="4730">[6981:0803/205750.998209:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="4730">[6924:0803/225732.241312:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="4746">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
 <tspan x="10" y="4762">on.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="4778">[6981:0803/205751.125933:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="4778">[6924:0803/225732.243220:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="4794">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
 <tspan x="10" y="4810">on.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="4826">[6981:0803/205751.152048:WARNING:sqlite_persistent_cookie_store.cc(849)] Cookie database is too \</tspan>
-<tspan x="10" y="4842">new.</tspan>
+<tspan x="10" y="4826">[6924:0803/225733.025631:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
+<tspan x="10" y="4842">rce: http://127.0.0.1:61102/assets.example.js (8)</tspan>
 
-<tspan x="10" y="4858">[6981:0803/205751.152276:ERROR:backend_impl.cc(1380)] Unable to map Index file</tspan>
+<tspan x="10" y="4858">[6924:0803/225733.033967:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
+<tspan x="10" y="4874">0.1:61102/assets.utility2.rollup.js (3188)</tspan>
 
-<tspan x="10" y="4874">[6981:0803/205751.155776:WARNING:sqlite_persistent_cookie_store.cc(849)] Cookie database is too \</tspan>
-<tspan x="10" y="4890">new.</tspan>
+<tspan x="10" y="4890">[6924:0803/225733.056325:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
+<tspan x="10" y="4906">ngs.</tspan>
 
-<tspan x="10" y="4906">testRunDefault - 20885 ms - testCase pending - testCase_exampleJs_exit, testCase_webpage_default\</tspan>
-<tspan x="10" y="4922"> ...</tspan>
+<tspan x="10" y="4922">[6924:0803/225733.061844:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="4938">source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electron.asar/render\</tspan>
+<tspan x="10" y="4954">er/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="4938">[6981:0803/205752.292819:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
-<tspan x="10" y="4954">rce: http://127.0.0.1:33953/assets.example.js (8)</tspan>
+<tspan x="10" y="4970">[6924:0803/225733.063065:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="4986">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
+<tspan x="10" y="5002">on.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="4970">[6981:0803/205752.312389:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
-<tspan x="10" y="4986">0.1:33953/assets.utility2.rollup.js (3188)</tspan>
+<tspan x="10" y="5018">[6924:0803/225733.100663:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
+<tspan x="10" y="5034">rce: http://127.0.0.1:61102/assets.example.js (8)</tspan>
 
-<tspan x="10" y="5002">[6981:0803/205752.346278:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
-<tspan x="10" y="5018">ngs.</tspan>
+<tspan x="10" y="5050">[6924:0803/225733.103991:INFO:CONSOLE(25623)] "testRunDefault - 15 ms - [browser test-case 1 of \</tspan>
+<tspan x="10" y="5066">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:61102/assets.utility2.rollup\</tspan>
+<tspan x="10" y="5082">.js (25623)</tspan>
 
-<tspan x="10" y="5034">[6981:0803/205752.352570:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
-<tspan x="10" y="5050">source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electron.asar/render\</tspan>
-<tspan x="10" y="5066">er/security-warnings.js (128)</tspan>
+<tspan x="10" y="5098">[6924:0803/225733.106701:INFO:CONSOLE(25623)] "testRunDefault - 18 ms - [browser test-case 2 of \</tspan>
+<tspan x="10" y="5114">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:61102/assets.utility2.rollup.js\</tspan>
+<tspan x="10" y="5130"> (25623)</tspan>
 
-<tspan x="10" y="5082">[6981:0803/205752.361224:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="5098">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
-<tspan x="10" y="5114">on.asar/renderer/security-warnings.js (188)</tspan>
+<tspan x="10" y="5146">[6924:0803/225733.108626:INFO:CONSOLE(25623)] "testRunDefault - 20 ms - [browser test-case 3 of \</tspan>
+<tspan x="10" y="5162">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:61102/assets.utility2.rollup.js (\</tspan>
+<tspan x="10" y="5178">25623)</tspan>
 
-<tspan x="10" y="5130">[6981:0803/205752.405905:INFO:CONSOLE(25623)] "testRunDefault - 8 ms - [browser test-case 1 of 4\</tspan>
-<tspan x="10" y="5146"> passed] - testCase_buildApidoc_default", source: http://127.0.0.1:33953/assets.utility2.rollup.\</tspan>
-<tspan x="10" y="5162">js (25623)</tspan>
+<tspan x="10" y="5194">[6924:0803/225733.111778:INFO:CONSOLE(25623)] "testRunDefault - 23 ms - [browser test-case 4 of \</tspan>
+<tspan x="10" y="5210">4 passed] - testCase_nop_default", source: http://127.0.0.1:61102/assets.utility2.rollup.js (256\</tspan>
+<tspan x="10" y="5226">23)</tspan>
 
-<tspan x="10" y="5178">[6981:0803/205752.415567:INFO:CONSOLE(25623)] "testRunDefault - 17 ms - [browser test-case 2 of \</tspan>
-<tspan x="10" y="5194">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:33953/assets.utility2.rollup.js\</tspan>
-<tspan x="10" y="5210"> (25623)</tspan>
+<tspan x="10" y="5242">[6924:0803/225733.117337:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
+<tspan x="10" y="5258">0.1:61102/assets.utility2.rollup.js (3188)</tspan>
 
-<tspan x="10" y="5226">[6981:0803/205752.424259:INFO:CONSOLE(25623)] "testRunDefault - 26 ms - [browser test-case 3 of \</tspan>
-<tspan x="10" y="5242">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:33953/assets.utility2.rollup.js (\</tspan>
-<tspan x="10" y="5258">25623)</tspan>
+<tspan x="10" y="5274">[6924:0803/225733.151329:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="5290">source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electron.asar/render\</tspan>
+<tspan x="10" y="5306">er/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="5274">[6981:0803/205752.436713:INFO:CONSOLE(25623)] "testRunDefault - 39 ms - [browser test-case 4 of \</tspan>
-<tspan x="10" y="5290">4 passed] - testCase_nop_default", source: http://127.0.0.1:33953/assets.utility2.rollup.js (256\</tspan>
-<tspan x="10" y="5306">23)</tspan>
+<tspan x="10" y="5322">[6924:0803/225733.153261:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="5338">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
+<tspan x="10" y="5354">on.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="5322">testRunDefault - 21510 ms - [node test-case 7 of 8 passed] - testCase_exampleJs_exit</tspan>
+<tspan x="10" y="5370">[6924:0803/225733.186242:INFO:CONSOLE(25623)] "testRunDefault - 10 ms - [browser test-case 1 of \</tspan>
+<tspan x="10" y="5386">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:61102/assets.utility2.rollup\</tspan>
+<tspan x="10" y="5402">.js (25623)</tspan>
 
-<tspan x="10" y="5338">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
+<tspan x="10" y="5418">[6924:0803/225733.188295:INFO:CONSOLE(25623)] "testRunDefault - 12 ms - [browser test-case 2 of \</tspan>
+<tspan x="10" y="5434">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:61102/assets.utility2.rollup.js\</tspan>
+<tspan x="10" y="5450"> (25623)</tspan>
 
-<tspan x="10" y="5354">[6981:0803/205752.517708:INFO:CONSOLE(8)] "Uncaught ReferenceError: process is not defined", sou\</tspan>
-<tspan x="10" y="5370">rce: http://127.0.0.1:33953/assets.example.js (8)</tspan>
+<tspan x="10" y="5466">[6924:0803/225733.189495:INFO:CONSOLE(25623)] "testRunDefault - 14 ms - [browser test-case 3 of \</tspan>
+<tspan x="10" y="5482">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:61102/assets.utility2.rollup.js (\</tspan>
+<tspan x="10" y="5498">25623)</tspan>
 
-<tspan x="10" y="5386">[6981:0803/205752.529895:INFO:CONSOLE(3188)] "db - dropping database ...", source: http://127.0.\</tspan>
-<tspan x="10" y="5402">0.1:33953/assets.utility2.rollup.js (3188)</tspan>
+<tspan x="10" y="5514">[6924:0803/225733.190397:INFO:CONSOLE(25623)] "testRunDefault - 15 ms - [browser test-case 4 of \</tspan>
+<tspan x="10" y="5530">4 passed] - testCase_nop_default", source: http://127.0.0.1:61102/assets.utility2.rollup.js (256\</tspan>
+<tspan x="10" y="5546">23)</tspan>
 
-<tspan x="10" y="5418">[6981:0803/205752.567711:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
-<tspan x="10" y="5434">source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electron.asar/render\</tspan>
-<tspan x="10" y="5450">er/security-warnings.js (128)</tspan>
+<tspan x="10" y="5562">testRunDefault - 20389 ms - testCase pending - testCase_exampleJs_exit, testCase_webpage_default\</tspan>
+<tspan x="10" y="5578"> ...</tspan>
 
-<tspan x="10" y="5466">[6981:0803/205752.570603:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="5482">ity-Policy)", source: /tmp/npmTestPublished/node_modules/electron-lite/external/resources/electr\</tspan>
-<tspan x="10" y="5498">on.asar/renderer/security-warnings.js (188)</tspan>
+<tspan x="10" y="5594">created screenshot file /tmp/screenshot.testExampleJs.browser..png</tspan>
 
-<tspan x="10" y="5514">[6981:0803/205752.608481:INFO:CONSOLE(25623)] "testRunDefault - 12 ms - [browser test-case 1 of \</tspan>
-<tspan x="10" y="5530">4 passed] - testCase_buildApidoc_default", source: http://127.0.0.1:33953/assets.utility2.rollup\</tspan>
-<tspan x="10" y="5546">.js (25623)</tspan>
+<tspan x="10" y="5610">testRunDefault - 20655 ms - [node test-case 7 of 8 passed] - testCase_exampleJs_exit</tspan>
 
-<tspan x="10" y="5562">[6981:0803/205752.610425:INFO:CONSOLE(25623)] "testRunDefault - 13 ms - [browser test-case 2 of \</tspan>
-<tspan x="10" y="5578">4 passed] - testCase_buildApp_default", source: http://127.0.0.1:33953/assets.utility2.rollup.js\</tspan>
-<tspan x="10" y="5594"> (25623)</tspan>
+<tspan x="10" y="5626">[6924:0803/225734.124002:INFO:CONSOLE(8288)] "----------|-----------|-----------|-----------|---\</tspan>
+<tspan x="10" y="5642">--------|</tspan>
 
-<tspan x="10" y="5610">[6981:0803/205752.613582:INFO:CONSOLE(25623)] "testRunDefault - 18 ms - [browser test-case 3 of \</tspan>
-<tspan x="10" y="5626">4 passed] - testCase_exampleJs_exit", source: http://127.0.0.1:33953/assets.utility2.rollup.js (\</tspan>
-<tspan x="10" y="5642">25623)</tspan>
+<tspan x="10" y="5658">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="5658">[6981:0803/205752.620895:INFO:CONSOLE(25623)] "testRunDefault - 22 ms - [browser test-case 4 of \</tspan>
-<tspan x="10" y="5674">4 passed] - testCase_nop_default", source: http://127.0.0.1:33953/assets.utility2.rollup.js (256\</tspan>
-<tspan x="10" y="5690">23)</tspan>
+<tspan x="10" y="5674">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5706">[6981:0803/205753.448941:INFO:CONSOLE(8288)] "----------|-----------|-----------|-----------|---\</tspan>
-<tspan x="10" y="5722">--------|</tspan>
+<tspan x="10" y="5690">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5738">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="5706">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="5754">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5722">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5770">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5738">", source: http://127.0.0.1:61102/assets.utility2.rollup.js (8288)</tspan>
 
-<tspan x="10" y="5786">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="5754">[6924:0803/225734.127885:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
+<tspan x="10" y="5770">ex.html", source: http://127.0.0.1:61102/assets.utility2.rollup.js (5943)</tspan>
 
-<tspan x="10" y="5802">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5786">[6924:0803/225734.195752:INFO:CONSOLE(8288)] "----------|-----------|-----------|-----------|---\</tspan>
+<tspan x="10" y="5802">--------|</tspan>
 
-<tspan x="10" y="5818">", source: http://127.0.0.1:33953/assets.utility2.rollup.js (8288)</tspan>
+<tspan x="10" y="5818">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="5834">[6981:0803/205753.454944:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
-<tspan x="10" y="5850">ex.html", source: http://127.0.0.1:33953/assets.utility2.rollup.js (5943)</tspan>
+<tspan x="10" y="5834">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5866">[6981:0803/205753.630949:INFO:CONSOLE(8288)] "----------|-----------|-----------|-----------|---\</tspan>
-<tspan x="10" y="5882">--------|</tspan>
+<tspan x="10" y="5850">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5898">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="5866">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="5914">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5882">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="5930">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5898">", source: http://127.0.0.1:61102/assets.utility2.rollup.js (8288)</tspan>
 
-<tspan x="10" y="5946">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="5914">[6924:0803/225734.202499:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
+<tspan x="10" y="5930">ex.html", source: http://127.0.0.1:61102/assets.utility2.rollup.js (5943)</tspan>
 
-<tspan x="10" y="5962">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="5946">[6924:0803/225738.043413:INFO:CONSOLE(135)] "null", source: fs.js (135)</tspan>
 
-<tspan x="10" y="5978">", source: http://127.0.0.1:33953/assets.utility2.rollup.js (8288)</tspan>
+<tspan x="10" y="5962">[6924:0803/225738.208605:INFO:CONSOLE(135)] "Error: ENOENT: no such file or directory, rename '/\</tspan>
+<tspan x="10" y="5978">tmp/npmTestPublished/node_modules/electron-lite/tmp/electron.16c59b3cd140.fcc39979ebe.html' -&gt; '\</tspan>
+<tspan x="10" y="5994">/tmp/npmTestPublished/node_modules/electron-lite/tmp/electron.html'", source: fs.js (135)</tspan>
 
-<tspan x="10" y="5994">[6981:0803/205753.640389:INFO:CONSOLE(5943)] "created coverage file /tmp/build/coverage.html/ind\</tspan>
-<tspan x="10" y="6010">ex.html", source: http://127.0.0.1:33953/assets.utility2.rollup.js (5943)</tspan>
+<tspan x="10" y="6010"></tspan>
 
-<tspan x="10" y="6026">testRunDefault - 25912 ms - testCase pending - testCase_webpage_default ...</tspan>
-
-<tspan x="10" y="6042">[6981:0803/205757.332667:INFO:CONSOLE(135)] "null", source: fs.js (135)</tspan>
+<tspan x="10" y="6026">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
+<tspan x="10" y="6042">screenshot.npmTestPublished.browser.%2F.png</tspan>
 
 <tspan x="10" y="6058"></tspan>
 
 <tspan x="10" y="6074">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="6090">screenshot.npmTestPublished.browser.%2F.png</tspan>
+<tspan x="10" y="6090">screenshot.npmTestPublished.browser.%2F.html</tspan>
 
 <tspan x="10" y="6106"></tspan>
 
 <tspan x="10" y="6122">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="6138">screenshot.npmTestPublished.browser.%2F.html</tspan>
+<tspan x="10" y="6138">screenshot.npmTestPublished.browser.%2F.png</tspan>
 
 <tspan x="10" y="6154"></tspan>
 
 <tspan x="10" y="6170">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="6186">screenshot.npmTestPublished.browser.%2F.png</tspan>
+<tspan x="10" y="6186">screenshot.npmTestPublished.browser.%2F.html</tspan>
 
-<tspan x="10" y="6202"></tspan>
+<tspan x="10" y="6202">testRunDefault - 25221 ms - [node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="6218">browserTest - created screenshot file /home/travis/build/kaizhu256/node-electron-lite/tmp/build/\</tspan>
-<tspan x="10" y="6234">screenshot.npmTestPublished.browser.%2F.html</tspan>
+<tspan x="10" y="6218">testRunDefault - 25405 ms - testCase pending -  ...</tspan>
 
-<tspan x="10" y="6250">testRunDefault - 26608 ms - [node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="6234">----------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="6250">File                  |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
 <tspan x="10" y="6266">----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="6282">File                  |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="6282">   electron-lite/     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="6298">----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="6298">      example.js      |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="6314">   electron-lite/     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="6314">      lib.electron.js |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="6330">      example.js      |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="6330">      test.js         |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="6346">      lib.electron.js |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="6346">----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="6362">      test.js         |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="6362">All files             |       100 |       100 |       100 |       100 |</tspan>
 
 <tspan x="10" y="6378">----------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="6394">All files             |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="6394"></tspan>
 
-<tspan x="10" y="6410">----------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="6410">created coverage file /tmp/npmTestPublished/node_modules/electron-lite/tmp/build/coverage.html/i\</tspan>
+<tspan x="10" y="6426">ndex.html</tspan>
 
-<tspan x="10" y="6426"></tspan>
+<tspan x="10" y="6442"></tspan>
 
-<tspan x="10" y="6442">created coverage file /tmp/npmTestPublished/node_modules/electron-lite/tmp/build/coverage.html/i\</tspan>
-<tspan x="10" y="6458">ndex.html</tspan>
+<tspan x="10" y="6458">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="6474"></tspan>
+<tspan x="10" y="6474">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="6490">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T22:57:32\</tspan>
+<tspan x="10" y="6506">.480Z</tspan>
 
-<tspan x="10" y="6490">-------------------------------------------------------</tspan>
+<tspan x="10" y="6522">|    1014 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="6506">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="6522">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-08-03T20:57:51\</tspan>
-<tspan x="10" y="6538">.467Z</tspan>
+<tspan x="10" y="6538">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="6554">|    1006 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="6554">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T22:57:12.464Z</tspan>
 
-<tspan x="10" y="6570">-------------------------------------------------------</tspan>
+<tspan x="10" y="6570">|   25222 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="6586">| test-report - npmTestPublished - node - linux v8.9.3 - 2019-08-03T20:57:30.403Z</tspan>
+<tspan x="10" y="6586">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="6602">|   26608 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="6602"></tspan>
 
-<tspan x="10" y="6618">-------------------------------------------------------</tspan>
+<tspan x="10" y="6618">created test-report file /tmp/npmTestPublished/node_modules/electron-lite/tmp/build/test-report.\</tspan>
+<tspan x="10" y="6634">html</tspan>
 
-<tspan x="10" y="6634"></tspan>
+<tspan x="10" y="6650"></tspan>
 
-<tspan x="10" y="6650">created test-report file /tmp/npmTestPublished/node_modules/electron-lite/tmp/build/test-report.\</tspan>
-<tspan x="10" y="6666">html</tspan>
+<tspan x="10" y="6666"></tspan>
 
-<tspan x="10" y="6682"></tspan>
+<tspan x="10" y="6682">npmTestPublished - 0 failed tests</tspan>
 
 <tspan x="10" y="6698"></tspan>
 
-<tspan x="10" y="6714">npmTestPublished - 0 failed tests</tspan>
+<tspan x="10" y="6714"></tspan>
 
-<tspan x="10" y="6730"></tspan>
-
-<tspan x="10" y="6746"></tspan>
-
-<tspan x="10" y="6762">[MODE_BUILD=npmTestPublished] - 2019-08-03T20:58:22.030Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="6730">[MODE_BUILD=npmTestPublished] - 2019-08-03T22:58:03.602Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
