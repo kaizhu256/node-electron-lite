@@ -1,5 +1,5 @@
-<svg height="318" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="318" fill="#555" width="720"></rect>
+<svg height="302" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="302" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
@@ -34,8 +34,6 @@
 <tspan x="10" y="266">    -v, --version         Print the version.</tspan>
 
 <tspan x="10" y="282">    -a, --abi             Print the Node ABI version.</tspan>
-
-<tspan x="10" y="298">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
 </text>
 </svg>
